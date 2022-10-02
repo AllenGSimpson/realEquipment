@@ -16,6 +16,7 @@ equipments = {
 		#Misc Abilities
 		reliability = 0.8
 		manpower = 3
+		maximum_speed = 3
 		#Defensive Abilities
 		defense = 4
 		breakthrough = 1

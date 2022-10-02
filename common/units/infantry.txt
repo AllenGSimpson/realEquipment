@@ -32,7 +32,6 @@ sub_units = {
 		max_strength = 25
 		max_organisation = 60
 		default_morale = 0.3
-		maximum_speed = 5.0
 		manpower = 1000
 
 		#Misc Abilities
@@ -303,7 +302,7 @@ sub_units = {
 		max_strength = 25
 		max_organisation = 60
 		default_morale = 0.30
-		manpower = 1000
+		manpower = 1100
 
 		#Misc Abilities
 		training_time = 90
@@ -377,7 +376,7 @@ sub_units = {
 		max_strength = 30
 		max_organisation = 60
 		default_morale = 0.3
-		manpower = 1000
+		manpower = 1100
 
 		#Misc Abilities
 		training_time = 120
