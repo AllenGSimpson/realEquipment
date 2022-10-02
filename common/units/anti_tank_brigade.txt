@@ -26,7 +26,7 @@ sub_units = {
 		need = {
 			anti_tank_equipment = 12
 		}
-		manpower = 4
+		manpower = 36
 		max_organisation = 0
 		default_morale = 0
 		max_strength = 0.6
@@ -99,10 +99,10 @@ sub_units = {
 			motorized_equipment
 		}
 		need = {
-			anti_tank_equipment = 36
-			motorized_equipment = 50
+			anti_tank_equipment = 12
+			motorized_equipment = 12
 		}
-		manpower = 500
+		manpower = 48
 		max_organisation = 0
 		default_morale = 0
 		max_strength = 0.6

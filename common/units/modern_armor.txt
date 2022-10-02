@@ -28,7 +28,7 @@ sub_units = {
 		need = {
 			modern_tank_chassis = 100
 		}
-		manpower = 10
+		manpower = 400
 		max_organisation = 10
 		max_strength = 2
 		default_morale = 0.3
