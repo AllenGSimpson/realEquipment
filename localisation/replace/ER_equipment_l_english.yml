@@ -2596,7 +2596,7 @@
  GER_mechanized_equipment_2_desc:0 "The Sd.Kfz. 251 half-track was an armored fighting vehicle designed and first built by the Hanomag company during World War II, based on their earlier Sd.Kfz. 11 vehicle."
  GER_mechanized_equipment_3:0 "Schütenpanzer 12-3"
  GER_mechanized_equipment_3_short:0 "SPz 12-3"
- GER_mechanized_equipment_3_desc:0 "Armed with a 20-mm Cannon, with a fully enclosed personnel compartment the SPz 12-3 was designed with the Doctrine of the Panzergrenadiere of World War II in mind."
+ GER_mechanized_equipment_3_desc:0 "Armed with a 20-mm Cannon, with a fully enclosed personnel compartment the SPz 12-3 was designed with the Doctrine of Mobile armored infantry in mind. The SPz 12-3 was one of the early IFV designs that would go on to inspire designs of the Cold War."
  SWE_mechanized_equipment_3:0 "Terrängbil m/42 KP"
  SWE_mechanized_equipment_3_short:0 "m/42 KP"
 
@@ -3109,14 +3109,14 @@
  armored_car_at_equipment:0 "Anti-Tank Armored Car"
  armored_car_at_equipment_desc:0 "Our light mechanized units will come into contact with enemy tank forces at some point. Developing a special anti-tank variant would give them a fighting chance."
 
- GER_gw_armored_car_equipment:0 "Sonderkraftfahrzeug 222"
- GER_gw_armored_car_equipment_short:0 "Sdkfz 222"
+ GER_gw_armored_car_equipment:0 "Sonderkraftfahrzeug 221 "Panzerspähwagen"
+ GER_gw_armored_car_equipment_short:0 "Sdkfz 221"
  GER_armored_car_equipment_1:0 "Sonderkraftfahrzeug 231 8-rad"
  GER_armored_car_equipment_1_short:0 "Sdkfz 231"
  GER_armored_car_equipment_2:0 "Sonderkraftfahrzeug 234 "Puma""
- GER_armored_car_equipment_2_short:0 "Puma"
+ GER_armored_car_equipment_2_short:0 "Sdkfz 234"
  GER_armored_car_at_equipment:0 "Sdkfz 234/4 "Pakwagen""
- GER_armored_car_at_equipment_short:0 "Pakwagen"
+ GER_armored_car_at_equipment_short:0 "Sdkfz 234/4"
 
  USA_gw_armored_car_equipment:0 "M1 Armored Car"
  USA_gw_armored_car_equipment_short:0 "M1"
@@ -3124,7 +3124,7 @@
  USA_armored_car_equipment_1_short:0 "M3"
  USA_armored_car_equipment_2:0 "M8 Greyhound"
  USA_armored_car_equipment_2_short:0 "M8"
- USA_armored_car_at_equipment:0 "M38 90mm Turret"
+ USA_armored_car_at_equipment:0 "M38 Wolfhound"
  USA_armored_car_at_equipment_short:0 "M38"
 
  ENG_gw_armored_car_equipment:0 "Daimler Dingo"
