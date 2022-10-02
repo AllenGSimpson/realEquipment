@@ -130,7 +130,7 @@ equipments = {
 			chromium = 1
 		}
 
-		manpower = 4000
+		manpower = 400
 
 		naval_supremacy_factor = 2.6
 	}
@@ -193,7 +193,7 @@ equipments = {
 			chromium = 1
 		}
 
-		manpower = 3200
+		manpower = 360
 	}
 	ship_hull_heavy_1 = {
 		abbreviation = "hcc"
@@ -581,7 +581,7 @@ equipments = {
 			steel = 1
 			chromium = 1
 		}
-		manpower = 9000
+		manpower = 900
 	}
 
 	battleship_1 = { 

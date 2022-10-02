@@ -87,7 +87,7 @@ equipments = {
 			steel = 1
 		}
 		
-		manpower = 50
+		manpower = 5
 
 		naval_supremacy_factor = 0.8
 	}

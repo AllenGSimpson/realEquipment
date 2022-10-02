@@ -115,7 +115,7 @@ equipments = {
 			steel = 2
 		}
 		
-		manpower = 250
+		manpower = 50
 	}
 
 	ship_hull_light_1 = {
