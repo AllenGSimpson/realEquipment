@@ -35,17 +35,22 @@ NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	            -- 0 armor w
 } 	                                                                -- Piercing Damage follows a [threshold]^2e curve (This is the not simplified version)
 NDefines.NMilitary.SLOWEST_SPEED = 1 
 NDefines.NMilitary.UNIT_DIGIN_CAP = 100                             -- how "deep" you can dig you can dig in until hitting max bonus
+NDefines.NMilitary.DIG_IN_FACTOR = 0.002						    -- bonus factor for each dug-in level
 NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT = 0.9 					-- Minimum damage from nukes as a percentage of current strength/organisation
 NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT = 1.0 					-- Minimum damage from nukes as a percentage of current strength/organisation
 NDefines.NMilitary.STRATEGIC_SPEED_INFRA_BASE = 0.0                 -- Base speed of strategic redeployment when not on railways
 NDefines.NMilitary.STRATEGIC_SPEED_INFRA_MAX = 10.0                 -- Additional speed of strategic redeployment on max-level infrastructure
-NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.09     -- speed penalty per infrastucture below maximum.
+NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.19     -- speed penalty per infrastucture below maximum.
 NDefines.NMilitary.STRATEGIC_SPEED_RAIL_BASE = 90.0                 -- Base speed of strategic redeployment when on railways
 NDefines.NMilitary.STRATEGIC_SPEED_RAIL_MAX = 120.0                 -- Additional speed of strategic redeployment on max-level railways
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.75   -- damage reduction if armor outclassing enemy
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.75   -- damage reduction if armor outclassing enemy
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.75                    -- percentage of experienced solders who die when manpower is removed
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0          -- percentage of manpower returned when an encircled unit is disbanded
+NDefines.NMilitary.RELIABILTY_RECOVERY = 1.0                     -- factor affecting how much equipment is returned "from the dead"
+NDefines.NMilitary.ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.2		   -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+NDefines.NMilitary.ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE = 0.2 -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+
 
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 1.00 					-- Global speed multiplier for airplanes (affects fe.transferring to another base)
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 1.0 							-- Higher value = more shot down planes
@@ -56,6 +61,7 @@ NDefines.NAir.STRATEGIC_BOMBER_NUKE_AIR_SUPERIORITY = 0.25 		    -- How much air
 
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.95 
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = -1.0 		-- All damage reduction % when target armor is >= then shooter armor piercing.
+NDefines.NNavy.AMPHIBIOUS_INVADE_LANDING_PENALTY_DECREASE = 1 --1.65 				-- scale of bonus that decreases "amphibious penalty" during combat, relative to invading transporter tech.
 
 NDefines.NRailwayGun.RAILWAY_GUN_RANGE = 48 						-- The range of railway guns in pixels
 NDefines.NRailwayGun.ATTACK_TO_FORTS_MODIFIER_FACTOR = 4.0   		-- Forts modifier is calculated by multiplying railway gun attack value with this and dividing by 100

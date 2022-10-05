@@ -31,7 +31,7 @@ upgrades = {
 			}
 		}
 
-		maximum_speed = 0.1
+		maximum_speed = 0.50
 		reliability = -0.015
 		add_stats = {
 			fuel_consumption = 0.05
