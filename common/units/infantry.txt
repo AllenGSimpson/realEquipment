@@ -29,8 +29,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 60
+		max_strength = 1000
+		max_organisation = 1000
 		default_morale = 0.3
 		manpower = 1000
 
@@ -71,8 +71,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 60
+		max_strength = 250
+		max_organisation = 1000
 		default_morale = 0.3
 		maximum_speed = 16.0
 		manpower = 250
@@ -146,8 +146,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 20
-		max_organisation = 70
+		max_strength = 250
+		max_organisation = 1500
 		default_morale = 0.4
 		manpower = 250
 
@@ -201,8 +201,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 20
-		max_organisation = 70
+		max_strength = 250
+		max_organisation = 1500
 		default_morale = 0.4
 		manpower = 250
 
@@ -257,8 +257,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 22
-		max_organisation = 70
+		max_strength = 250
+		max_organisation = 1500
 		default_morale = 0.4
 		manpower = 250
 
@@ -299,8 +299,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 60
+		max_strength = 1000
+		max_organisation = 1000
 		default_morale = 0.30
 		manpower = 1100
 
@@ -373,8 +373,8 @@ sub_units = {
 		hard_attack = 4.0
 		
 		#Size Definitions
-		max_strength = 30
-		max_organisation = 60
+		max_strength = 100
+		max_organisation = 1000
 		default_morale = 0.3
 		manpower = 1100
 
@@ -493,8 +493,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 15 #25 (HP)
-		max_organisation = 70 #60 -> Lower HP but higher Org: They should keep fighting longer
+		max_strength = 850 #25 (HP)
+		max_organisation = 1100 #60 -> Lower HP but higher Org: They should keep fighting longer
 		default_morale = 0.4 #0.3 (Recovery) -> Easy to get more punishees
 		manpower = 850 #1000 -> Usually no more than 850
 
@@ -506,7 +506,7 @@ sub_units = {
 		supply_consumption = 0.05 #0.07 -> Don't need that much supply, and they have lower HP
 	
 		need = {
-			infantry_equipment = 85 #100 -> 1/10th ratio of regular Infantry			
+			infantry_equipment = 850 #100 -> 1/10th ratio of regular Infantry			
 		}
 	}
 
@@ -535,8 +535,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 30 # reg inf 25
-		max_organisation = 45 # reg inf 60
+		max_strength = 750 # reg inf 25
+		max_organisation = 900 # reg inf 60
 		default_morale = 0.2 #  reg inf 0.3
 		manpower = 750
 
@@ -603,8 +603,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 50 #reg infantry 60
+		max_strength = 750
+		max_organisation = 500 #reg infantry 60
 		default_morale = 0.3
 		manpower = 750
 

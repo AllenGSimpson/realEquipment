@@ -1,5 +1,10 @@
 equipments = {
 
+	#ATTENTION
+	#special_type_slot_1 IS THE DEDICATED SLOT FOR THE RADIO
+
+
+
 	light_tank_chassis = {
 		year = 1922
 		is_archetype = yes
@@ -20,6 +25,20 @@ equipments = {
 		
 
 		module_slots = {
+			ammo_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_ammo
+				}
+			}
+			
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					tank_radio_module
+				}
+			}
+		
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -32,13 +51,16 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_light_turret_type
+					tank_air_turret_type
+					tank_dbl_turret_type
 				}
 			}
+
 			suspension_type_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_suspension_type
-					tank_non_tracked_suspension_type
+					#tank_non_tracked_suspension_type        A light tank with wheels is basically a armored car
 				}
 			}
 
@@ -56,20 +78,10 @@ equipments = {
 				}
 			}
 
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_radio_module
 					tank_secondary_turret
 				}
 			}
@@ -78,7 +90,6 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_radio_module
 					tank_secondary_turret
 				}
 			}
@@ -87,10 +98,56 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_radio_module
 					tank_secondary_turret
 				}
 			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_6 = {				    # hull mod
+				required = yes
+				allowed_module_categories = {
+					hull_mod
+				}
+			}
+
+			special_type_slot_7 = {					#turret design mod
+				required = no
+				allowed_module_categories = {
+					turret_design_mod
+				}
+			}
+
+			special_type_slot_8 = { #Track type
+				required = yes
+				allowed_module_categories = {
+					tank_track_type
+					tank_track_type_rubber
+					tank_track_type_padded
+				}
+			}
+
+			#special_type_slot_9 = {
+			#	required = no
+			#	allowed_module_categories = {
+			#		tank_special_module
+			#		tank_radio_module
+			#		tank_secondary_turret
+			#	}
+			#}
+
+			#turret_mod_slot = {
+			#	required = no
+			#	allowed_module_categories = {
+			#		
+			#	}
+			#}
 			
 		}
 		module_count_limit = {
@@ -126,6 +183,11 @@ equipments = {
 		}
 
 		module_count_limit = {
+			module = ostketten
+			count < 2
+		}
+
+		module_count_limit = {
 			module = dozer_blade
 			count < 2
 		}
@@ -142,16 +204,24 @@ equipments = {
 			module = stabilizer
 			count < 2
 		}
+		module_count_limit = {
+			module = tank_night_vision
+			count < 2
+		}
 		default_modules = {
+			special_type_slot_1 = tank_flag_signaling
+			ammo_slot = mech_dft_shell
 			main_armament_slot = empty
 			turret_type_slot = tank_light_one_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_8 = tank_steel_tracks_0
+			special_type_slot_6 = flat_armor
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 4
+		maximum_speed = 1
 		build_cost_ic = 1
 		reliability = 0.8
 		hardness = 0.8
@@ -160,7 +230,7 @@ equipments = {
 			steel = 1
 		}
 
-		manpower = 1
+		manpower = 2
 
 	}
 
@@ -188,8 +258,8 @@ equipments = {
 		parent = light_tank_chassis_0
 		priority = 2000
 		module_slots = inherit
-		maximum_speed = 4
-		build_cost_ic = 1.25
+		maximum_speed = 1
+		build_cost_ic = 1
 		reliability = 0.95
 		armor_value = 10
 	}
@@ -203,8 +273,8 @@ equipments = {
 		parent = light_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 1.6
-		maximum_speed = 4.5
+		build_cost_ic = 1.5
+		maximum_speed = 1
 		reliability = 1.1
 		armor_value = 15
 		resources = {
@@ -222,7 +292,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		build_cost_ic = 2
-		maximum_speed = 5
+		maximum_speed = 1
 		reliability = 1.3
 		armor_value = 20
 		resources = {
@@ -248,10 +318,25 @@ equipments = {
 		priority = 2000
 
 		module_slots = {
+			ammo_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_ammo
+				}
+			}
+			
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					tank_radio_module
+				}
+			}
+			
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
+					tank_medium_main_armament
 					tank_flamethrower
 				}
 			}
@@ -261,6 +346,8 @@ equipments = {
 				allowed_module_categories = {
 					tank_light_turret_type
 					tank_medium_turret_type
+					#tank_dbl_turret_type
+					tank_dbm_turret_type
 				}
 			}
 
@@ -285,21 +372,11 @@ equipments = {
 				}
 			}
 
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_radio_module
-					tank_special_module
-					tank_secondary_turret
-				}
-			}
-
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
 					tank_secondary_turret
-					tank_radio_module
 				}
 			}
 
@@ -308,7 +385,6 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_secondary_turret
-					tank_radio_module
 				}
 			}
 
@@ -317,7 +393,45 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_secondary_turret
-					tank_radio_module
+				}
+			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_6 = {				    #hull mod
+				required = yes
+				allowed_module_categories = {
+					hull_mod
+				}
+			}
+
+			special_type_slot_7 = {					#Turret Mod Slot
+				required = no
+				allowed_module_categories = {
+					turret_design_mod
+				}
+			}
+
+			special_type_slot_8 = { #Track type
+				required = yes
+				allowed_module_categories = {
+					tank_track_type
+					#tank_track_type_rubber
+					tank_track_type_padded
+				}
+			}
+
+			special_type_slot_9 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
 				}
 			}
 			
@@ -370,16 +484,29 @@ equipments = {
 			module = stabilizer
 			count < 2
 		}
+		module_count_limit = {
+			module = ostketten
+			count < 2
+		}
+		module_count_limit = {
+			module = tank_night_vision
+			count < 2
+		}
+		
 		default_modules = {
+			ammo_slot = mech_dft_shell
+			special_type_slot_1 = tank_flag_signaling
 			main_armament_slot = empty
 			turret_type_slot = tank_medium_one_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_8 = tank_steel_tracks_0
+			special_type_slot_6 = flat_armor
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 4
+		maximum_speed = 1
 		build_cost_ic = 2
 		reliability = 1
 		armor_value = 15
@@ -388,7 +515,7 @@ equipments = {
 			steel = 1
 		}
 
-		manpower = 1
+		manpower = 2
 
 	}
 	medium_tank_chassis_0 = { #used for interwar tanks
@@ -403,8 +530,7 @@ equipments = {
 			tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
-		maximum_speed = 4
-		build_cost_ic = 2.5
+		build_cost_ic = 2
 		reliability = 0.75
 		armor_value = 25
 		resources = {
@@ -420,9 +546,10 @@ equipments = {
 		archetype = medium_tank_chassis
 		parent = medium_tank_chassis_0
 		priority = 2000
+		maximum_speed = 1
 		module_slots = inherit
 		armor_value = 35
-		build_cost_ic = 2.5
+		build_cost_ic = 2
 	}
 	medium_tank_chassis_2 = {
 		abbreviation = "mt2"
@@ -433,8 +560,8 @@ equipments = {
 		archetype = medium_tank_chassis
 		priority = 2000
 		module_slots = inherit
-		maximum_speed = 4
-		build_cost_ic = 3.2
+		maximum_speed = 1
+		build_cost_ic = 3
 		reliability = 1.3
 		armor_value = 45
 		resources = {
@@ -450,7 +577,7 @@ equipments = {
 		archetype = medium_tank_chassis
 		priority = 2000
 		module_slots = inherit
-		maximum_speed = 4.5
+		maximum_speed = 1
 		build_cost_ic = 4
 		reliability = 1.6
 		armor_value = 50
@@ -475,10 +602,26 @@ equipments = {
 		priority = 2000
 
 		module_slots = {
+			ammo_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_ammo
+				}
+			}
+			
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					tank_radio_module
+				}
+			}
+			
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
+					tank_medium_main_armament
+					tank_heavy_main_armament
 					tank_flamethrower
 				}
 			}
@@ -489,6 +632,8 @@ equipments = {
 					tank_light_turret_type
 					tank_medium_turret_type
 					tank_heavy_turret_type
+					#tank_dbm_turret_type
+					tank_dbh_turret_type
 				}
 			}
 
@@ -513,21 +658,11 @@ equipments = {
 				}
 			}
 
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
 					tank_secondary_turret
-					tank_radio_module
 				}
 			}
 
@@ -536,7 +671,6 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_secondary_turret
-					tank_radio_module
 				}
 			}
 
@@ -545,7 +679,53 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_secondary_turret
-					tank_radio_module
+				}
+			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_6 = {				    # Shell slot
+				required = yes
+				allowed_module_categories = {
+					hull_mod
+				}
+			}
+
+			special_type_slot_7 = {					#Turret Mod Slot
+				required = no
+				allowed_module_categories = {
+					turret_design_mod
+				}
+			}
+
+			special_type_slot_8 = {              #Tracks
+				required = no
+				allowed_module_categories = {
+					tank_track_type
+					#tank_track_type_rubber
+					tank_track_type_padded
+				}
+			}
+
+			special_type_slot_9 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_10 = {					
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
 				}
 			}
 
@@ -595,16 +775,28 @@ equipments = {
 			module = stabilizer
 			count < 2
 		}
+		module_count_limit = {
+			module = ostketten
+			count < 2
+		}
+		module_count_limit = {
+			module = tank_night_vision
+			count < 2
+		}
 		default_modules = {
+			ammo_slot = mech_dft_shell
+			special_type_slot_1 = tank_flag_signaling
 			main_armament_slot = empty
 			turret_type_slot = tank_heavy_two_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_8 = tank_steel_tracks_0
+			special_type_slot_6 = flat_armor
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 3.5
+		maximum_speed = 1.5
 		build_cost_ic = 10
 		reliability = 1
 		armor_value = 25
@@ -613,7 +805,7 @@ equipments = {
 			steel = 1
 		}
 
-		manpower = 1
+		manpower = 2
 
 	}
 
@@ -629,7 +821,7 @@ equipments = {
 			tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
-		maximum_speed = 4
+		maximum_speed = 1
 		build_cost_ic = 10
 		reliability = 1
 		armor_value = 30
@@ -645,6 +837,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		armor_value = 35
+		maximum_speed = 1
 	}
 
 	heavy_tank_chassis_2 = {
@@ -656,8 +849,8 @@ equipments = {
 		parent = heavy_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 10
-		maximum_speed = 4
+		build_cost_ic = 12
+		maximum_speed = 1
 		reliability = 1.15
 		armor_value = 55
 		resources = {
@@ -675,8 +868,8 @@ equipments = {
 		parent = heavy_tank_chassis_2
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 12
-		maximum_speed = 4
+		build_cost_ic = 14
+		maximum_speed = 1.5
 		reliability = 1.3
 		armor_value = 75
 		resources = {
@@ -701,10 +894,26 @@ equipments = {
 		priority = 2000
 
 		module_slots = {
+			ammo_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_ammo
+				}
+			}
+			
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					tank_radio_module
+				}
+			}
+			
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
+					tank_medium_main_armament
+					tank_heavy_main_armament
 				}
 			}
 
@@ -739,19 +948,11 @@ equipments = {
 				}
 			}
 
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-				}
-			}
-
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_radio_module
+					tank_secondary_turret
 				}
 			}
 
@@ -759,7 +960,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_radio_module
+					tank_secondary_turret
 				}
 			}
 
@@ -767,7 +968,54 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_radio_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_6 = {				    # Shell slot
+				required = yes
+				allowed_module_categories = {
+					hull_mod
+				}
+			}
+
+			special_type_slot_7 = {					#Turret Mod Slot
+				required = no
+				allowed_module_categories = {
+					turret_design_mod
+				}
+			}
+
+			special_type_slot_8 = { #Track type
+				required = yes
+				allowed_module_categories = {
+					tank_track_type
+					#tank_track_type_rubber
+					tank_track_type_padded
+				}
+			}
+
+			special_type_slot_9 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_10 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
 				}
 			}
 
@@ -787,6 +1035,11 @@ equipments = {
 
 		module_count_limit = {
 			module = wet_ammo_storage
+			count < 2
+		}
+
+		module_count_limit = {
+			module = ostketten
 			count < 2
 		}
 
@@ -813,22 +1066,29 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
-
 		module_count_limit = {
 			module = stabilizer
 			count < 2
 		}
+		module_count_limit = {
+			module = tank_night_vision
+			count < 2
+		}
 
 		default_modules = {
+			ammo_slot = mech_dft_shell
+			special_type_slot_1 = tank_flag_signaling
 			main_armament_slot = empty
 			turret_type_slot = tank_modern_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_8 = tank_steel_tracks_0
+			special_type_slot_6 = flat_armor
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 4.5
+		maximum_speed = 1.5
 		build_cost_ic = 6
 		reliability = 1.6
 		armor_value = 75
@@ -850,6 +1110,7 @@ equipments = {
 		archetype = modern_tank_chassis
 		priority = 2000
 		module_slots = inherit
+		maximum_speed = 1.2
 
 		upgrades = {
 			tank_nsb_engine_upgrade
@@ -873,10 +1134,27 @@ equipments = {
 		priority = 2000
 
 		module_slots = {
+			ammo_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_ammo
+				}
+			}
+			
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					tank_radio_module
+				}
+			}
+			
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
+					tank_medium_main_armament
+					tank_heavy_main_armament
+					tank_super_heavy_main_armament
 				}
 			}
 
@@ -887,6 +1165,7 @@ equipments = {
 					tank_medium_turret_type
 					tank_heavy_turret_type
 					tank_super_heavy_turret_type
+					tank_dbsh_turret_type
 				}
 			}
 
@@ -911,21 +1190,11 @@ equipments = {
 				}
 			}
 
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-					tank_secondary_turret
-				}
-			}
-
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
 					tank_secondary_turret
-					tank_radio_module
 				}
 			}
 
@@ -934,7 +1203,6 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_secondary_turret
-					tank_radio_module
 				}
 			}
 
@@ -943,7 +1211,53 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_secondary_turret
-					tank_radio_module
+				}
+			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_6 = {				    # Shell slot
+				required = yes
+				allowed_module_categories = {
+					hull_mod
+				}
+			}
+
+			special_type_slot_7 = {					#Turret Mod Slot
+				required = no
+				allowed_module_categories = {
+					turret_design_mod
+				}
+			}
+
+			special_type_slot_8 = {					#tracks
+				required = no
+				allowed_module_categories = {
+					tank_track_type
+					#tank_track_type_rubber
+					tank_track_type_padded
+				}
+			}
+
+			special_type_slot_9 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_10 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_moduleù
+					tank_secondary_turret
 				}
 			}
 
@@ -959,6 +1273,10 @@ equipments = {
 		module_count_limit = {
 			module = amphibious_drive
 			count < 1
+		}
+		module_count_limit = {
+			module = ostketten
+			count < 2
 		}
 		module_count_limit = {
 			module = wet_ammo_storage
@@ -992,17 +1310,25 @@ equipments = {
 			module = stabilizer
 			count < 2
 		}
+		module_count_limit = {
+			module = tank_night_vision
+			count < 2
+		}
 		default_modules = {
+			ammo_slot = mech_dft_shell
+			special_type_slot_1 = tank_flag_signaling
 			main_armament_slot = empty
 			turret_type_slot = tank_super_heavy_three_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_8 = tank_steel_tracks_0
+			special_type_slot_6 = flat_armor
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 2.5
-		build_cost_ic = 24
+		maximum_speed = 1.5
+		build_cost_ic = 35
 		reliability = 1.3
 		armor_value = 85
 		hardness = 1
@@ -1045,10 +1371,25 @@ equipments = {
 		priority = 2000
 
 		module_slots = {
+			ammo_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_ammo
+				}
+			}
+			
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					tank_radio_module
+				}
+			}
+			
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
+					tank_medium_main_armament
 				}
 			}
 
@@ -1081,19 +1422,11 @@ equipments = {
 				}
 			}
 
-			special_type_slot_1 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-				}
-			}
-
 			special_type_slot_2 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_radio_module
+					tank_secondary_turret
 				}
 			}
 
@@ -1101,7 +1434,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_radio_module
+					tank_secondary_turret
 				}
 			}
 
@@ -1109,7 +1442,47 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_6 = {				    # Shell slot
+				required = yes
+				allowed_module_categories = {
+					hull_mod
+				}
+			}
+
+			special_type_slot_7 = {					#Turret Mod Slot
+				required = no
+				allowed_module_categories = {
+					turret_design_mod
+				}
+			}
+
+			special_type_slot_8 = { #Track type
+				required = yes
+				allowed_module_categories = {
+					tank_track_type
+					#tank_track_type_rubber
+					tank_track_type_padded
+				}
+			}
+
+			special_type_slot_9 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
 					tank_radio_module
+					tank_secondary_turret
 				}
 			}
 
@@ -1120,6 +1493,10 @@ equipments = {
 		}	
 		module_count_limit = {
 			category = tank_radio_module
+			count < 2
+		}
+		module_count_limit = {
+			module = ostketten
 			count < 2
 		}
 
@@ -1155,23 +1532,26 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
-
 		module_count_limit = {
-			module = stabilizer
+			module = tank_night_vision
 			count < 2
 		}
 
 		default_modules = {
+			ammo_slot = mech_dft_shell
+			special_type_slot_1 = tank_flag_signaling
 			main_armament_slot = empty
 			turret_type_slot = tank_light_one_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_8 = tank_steel_tracks_0
+			special_type_slot_6 = flat_armor
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 4
-		build_cost_ic = 4.5
+		maximum_speed = 1
+		build_cost_ic = 5
 		reliability = 1.1
 		armor_value = 15
 		hardness = 0.85
@@ -1179,7 +1559,7 @@ equipments = {
 			steel = 1
 		}
 
-		manpower = 1
+		manpower = 2
 
 	}
 

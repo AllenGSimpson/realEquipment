@@ -4,6 +4,7 @@
  anti_air:0 "Support Anti-Air Battery"
  anti_air_desc:0 ""
  artillery:0 "Support Artillery Battery"
+#  GER_artillery:0 "Artillery Stützbatterie"
  artillery_desc:0 ""
  rocket_artillery:0 "Support Rocket Artillery Battery"
  rocket_artillery_desc:0 ""
@@ -107,3 +108,6 @@
  amphibious_medium_armor_desc:0 "A battalion of medium tanks, capable of amphibious operations."
  amphibious_heavy_armor:0 "Heavy Amphibious Tank Squadron"
  amphibious_heavy_armor_desc:0 "A battalion of heavy tanks, capable of amphibious operations."
+ 
+ 
+ 

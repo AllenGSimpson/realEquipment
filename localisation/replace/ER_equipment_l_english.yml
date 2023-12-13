@@ -2097,7 +2097,7 @@
  GER_light_tank_artillery_equipment_1_short:0 "Bison"
  GER_light_tank_artillery_equipment_1_desc:0 "Towed guns which were assigned to the infantry gun companies of motorized infantry regiments had difficulties keeping up with tanks during combat. The easiest solution was to modify a spare tank chassis to carry it into battle. In the case of the Bison, it uses the chassis of the Panzer I."
  GER_light_tank_artillery_equipment_2:0 "Sd. Kfz. 124 Wespe"
- GER_light_tank_artillery_equipment_2_short:0 "Wespe"
+ GER_light_tank_artillery_equipment_2_short:0 "Wespe I"
  GER_light_tank_artillery_equipment_2_desc:0 "The Sd.Kfz. 124 Wespe (German for Wasp), was a German self-propelled artillery vehicle based on a modified Panzer II chassis."
  GER_light_tank_artillery_equipment_3:1 "Waffenträger Leopard"
  GER_light_tank_artillery_equipment_3_short:0 "WT Leopard"
@@ -3623,7 +3623,7 @@
 
 
 
- tank_armor_upgrade:0 "Armor"
+ tank_armor_upgrade:0 "Armor (mm)"
  tank_armor_upgrade_desc:0 "Better armor than your enemies can penetrate is a huge advantage to your divisions but is probably going to slow you down."
  tank_gun_upgrade:0 "Main Gun"
  tank_gun_upgrade_desc:0 "It's important to have a gun that keep up with enemy armor strength and can penetrate."
@@ -3637,7 +3637,7 @@
  tank_reliability_upgrade_desc:1 "Improving reliability leads to less broken down equipment you'll need to replace."
  mech_cost_upgrade:0 "Production Cost"
  mech_cost_upgrade_desc:0 "Optimizations to the design and substitution of less important materials allow the vehicle to be built faster, but suffering slightly more defects."
- tank_engine_upgrade:0 "Engine"
+ tank_engine_upgrade:0 "Engine (CcL)"
  tank_engine_upgrade_desc:0 "More mobility give tactical and strategic advantages, as well as allowing more armor without being slowed down significantly."
  ac_engine_upgrade:0 "Engine"
  ac_engine_upgrade_desc:0 "More mobility give tactical and strategic advantages, as well as allowing more armor without being slowed down significantly."

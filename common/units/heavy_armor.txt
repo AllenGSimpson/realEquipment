@@ -63,7 +63,7 @@ sub_units = {
 		}
 
 		manpower = 250
-		max_organisation = 10
+		max_organisation = 800
 		default_morale = 0.3
 		max_strength = 2
 		weight = 1.5

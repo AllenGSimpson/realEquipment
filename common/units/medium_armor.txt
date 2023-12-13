@@ -27,7 +27,7 @@ sub_units = {
 			medium_tank_chassis = 100
 		}
 		manpower = 500
-		max_organisation = 10
+		max_organisation = 650
 		max_strength = 2
 		default_morale = 0.3
 		training_time = 180
