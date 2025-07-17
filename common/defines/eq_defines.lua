@@ -21,17 +21,17 @@ NDefines.NMilitary.PIERCING_THRESHOLDS = {					        -- Our piercing / their a
     0.00,                                                           --there isn't much point setting this higher than 0
 } 
 NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	            -- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
-    1.000, --100%
-    0.564, -- 90%	
-    0.297, -- 80%
-    0.144, -- 70%
-    0.062, -- 60%
-    0.023, -- 50%
-    0.006, -- 40%
-    0.001, -- 30%
-    0.000, -- 20%
-    0.000, -- 10%
-    0.000, -- 00%
+    1.000, --100 piercing %
+    0.564, -- 90 piercing %	
+    0.297, -- 80 piercing %
+    0.144, -- 70 piercing %
+    0.062, -- 60 piercing %
+    0.023, -- 50 piercing %
+    0.006, -- 40 piercing %
+    0.001, -- 30 piercing %
+    0.000, -- 20 piercing %
+    0.000, -- 10 piercing %
+    0.000, --  0 piercing %
 } 	                                                                -- Piercing Damage follows a [threshold]^2e curve (This is the not simplified version)
 NDefines.NMilitary.SLOWEST_SPEED = 1 
 NDefines.NMilitary.LAND_COMBAT_ORG_DICE_SIZE = 2                 -- nr of damage dice
