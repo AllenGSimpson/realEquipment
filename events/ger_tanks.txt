@@ -1,0 +1,630 @@
+add_namespace = ger_tanks
+
+#1937
+country_event = {
+	id = ger_tanks.0
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		GER = {
+			is_ai = yes
+		}
+		date > 1937.1.1
+		
+	}
+	
+	immediate = {
+		GER = {
+			set_technology = {
+				basic_medium_tank_chassis = 1
+			}
+			
+			create_equipment_variant = {
+				name = "Panzer III Ausf. A"
+				type = medium_tank_chassis_1
+				modules = {
+					ammo_slot = mech_ap_shell_1
+					special_type_slot_1 = tank_radio_1
+					main_armament_slot = tank_high_velocity_cannon
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = flat_armor
+					special_type_slot_8 = tank_steel_tracks_0
+					special_type_slot_7 = empty
+					
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = internal_machine_gun
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 3
+					tank_nsb_armor_upgrade = 1
+				}
+			}
+			
+			division_template = {
+				name = "Mittlerer Panzer-Division"
+				is_locked = yes
+				division_names_group = GER_Arm_01
+				priority = 2
+				regiments = {
+					medium_armor = { x=0 y=0 }
+					medium_armor = { x=0 y=1 }
+					medium_armor = { x=0 y=2 }
+					medium_armor = { x=1 y=0 }
+					medium_armor = { x=1 y=1 }
+					medium_armor = { x=1 y=2 }
+					motorized = { x=2 y=0 }
+					motorized = { x=2 y=1 }
+					motorized = { x=2 y=2 }
+					motorized = { x=2 y=3 }
+				}
+				support = {
+					artillery = { x=0 y=0 }
+					signal_company = { x=0 y=1 }
+					engineer = { x=0 y=2 }
+					mot_recon = { x=0 y=3 }
+					anti_air = { x=0 y=4 }
+				}
+			}
+		
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Mittlerer Panzer-Division\""
+					owner = GER
+					count = 2
+				}
+			}
+		}
+		
+	}
+	
+	option={
+	}
+}
+
+#half 1938
+country_event = {
+	id = ger_tanks.1
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		GER = {
+			is_ai = yes
+		}
+		date > 1938.6.1
+	}
+	
+	immediate = {
+		GER = {
+			create_equipment_variant = {
+				name = "Panzer III Ausf. B"
+				type = medium_tank_chassis_1
+				modules = {
+					ammo_slot = mech_ap_shell_1
+					special_type_slot_1 = tank_radio_1
+					main_armament_slot = tank_high_velocity_cannon
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = flat_armor
+					special_type_slot_7 = add_on_armor_turret
+					special_type_slot_8 = tank_steel_tracks_0
+					
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = internal_machine_gun
+					special_type_slot_4 = armor_skirts
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 3
+					tank_nsb_armor_upgrade = 3
+				}
+			}
+			
+			capital_scope = {
+			
+				create_unit = {
+					division = "division_template = \"Mittlerer Panzer-Division\""
+					owner = GER
+					count = 2
+				}
+			}
+		}
+	}
+	
+	option={
+	}
+}
+
+#1940
+country_event = {
+	id = ger_tanks.2
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		GER = {
+			is_ai = yes
+		}
+		date > 1940.1.1
+	}
+	
+	immediate = {
+		GER = {
+			set_technology = {
+				improved_medium_tank_chassis = 1
+			}
+			
+			create_equipment_variant = {
+				name = "Panzer IV Ausf. A"
+				type = medium_tank_chassis_2
+				modules = {
+					ammo_slot = mech_ap_shell_1
+					special_type_slot_1 = tank_radio_2
+					main_armament_slot = tank_medium_cannon
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = semi-flat_armor
+					special_type_slot_7 = empty
+					special_type_slot_8 = tank_steel_tracks_1
+					
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = internal_machine_gun
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 4
+					tank_nsb_armor_upgrade = 4
+				}
+			}
+			
+			capital_scope = {
+			
+				create_unit = {
+					division = "division_template = \"Mittlerer Panzer-Division\""
+					owner = GER
+					count = 4
+				}
+			}
+		}
+	}
+	
+	option={
+	}
+}
+
+#1941
+country_event = {
+	id = ger_tanks.3
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		GER = {
+			is_ai = yes
+		}
+		date > 1941.1.1
+	}
+	
+	immediate = {
+		GER = {
+			
+			
+			create_equipment_variant = {
+				name = "Panzer IV Ausf. B"
+				type = medium_tank_chassis_2
+				modules = {
+					ammo_slot = mech_ap_shell_2
+					special_type_slot_1 = tank_radio_2
+					main_armament_slot = tank_medium_cannon_2
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = semi-flat_armor
+					special_type_slot_7 = add_on_armor_turret
+					special_type_slot_8 = tank_steel_tracks_1
+					
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = internal_machine_gun
+					special_type_slot_4 = armor_skirts
+					special_type_slot_5 = ostketten
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 4
+					tank_nsb_armor_upgrade = 6
+				}
+			}
+			
+			capital_scope = {
+			
+				create_unit = {
+					division = "division_template = \"Mittlerer Panzer-Division\""
+					owner = GER
+					count = 4
+				}
+			}
+		}
+	}
+	
+	option={
+	}
+}
+
+# early 42
+country_event = {
+	id = ger_tanks.4
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		GER = {
+			is_ai = yes
+		}
+		date > 1942.1.1
+	}
+	
+	immediate = {
+		GER = {
+			
+			set_technology = {
+				improved_heavy_tank_chassis = 1
+			}
+			
+			create_equipment_variant = {
+				name = "Panzer VI Tiger"
+				type = heavy_tank_chassis_2
+				modules = {
+					ammo_slot = mech_ap_shell_1
+					special_type_slot_1 = tank_radio_2
+					main_armament_slot = tank_heavy_cannon
+					turret_type_slot = tank_heavy_three_man_tank_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = semi-flat_armor
+					special_type_slot_7 = empty
+					special_type_slot_8 = tank_steel_tracks_2
+					
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = internal_machine_gun
+					special_type_slot_4 = armor_skirts
+					special_type_slot_5 = ostketten
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 4
+					tank_nsb_armor_upgrade = 6
+				}
+			}
+			
+			division_template = {
+				name = "Schwerer Panzer-Division"
+				is_locked = yes
+				division_names_group = GER_Arm_01
+				priority = 2
+				regiments = {
+					heavy_armor = { x=0 y=0 }
+					heavy_armor = { x=0 y=1 }
+					heavy_armor = { x=0 y=2 }
+					heavy_armor = { x=1 y=0 }
+					heavy_armor = { x=1 y=1 }
+					heavy_armor = { x=1 y=2 }
+					motorized = { x=2 y=0 }
+					motorized = { x=2 y=1 }
+					motorized = { x=2 y=2 }
+					motorized = { x=2 y=3 }
+				}
+				support = {
+					artillery = { x=0 y=0 }
+					signal_company = { x=0 y=1 }
+					engineer = { x=0 y=2 }
+					mot_recon = { x=0 y=3 }
+					anti_air = { x=0 y=4 }
+				}
+			}
+			
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Schwerer Panzer-Division\""
+					owner = GER
+					count = 6
+				}
+			}
+		}
+	}
+	
+	option={
+	}
+}
+
+# late 42
+country_event = {
+	id = ger_tanks.5
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		GER = {
+			is_ai = yes
+		}
+		date > 1942.10.1
+	}
+	
+	immediate = {
+		GER = {
+			set_technology = {
+				advanced_medium_tank_chassis = 1
+			}
+			
+			create_equipment_variant = {
+				name = "Panzer V Panther"
+				type = medium_tank_chassis_3
+				modules = {
+					ammo_slot = mech_ap_shell_2
+					special_type_slot_1 = tank_radio_2
+					main_armament_slot = tank_high_velocity_cannon_2
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_hh_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = sloped_armor
+					special_type_slot_7 = empty
+					special_type_slot_8 = tank_steel_tracks_2
+					
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = internal_machine_gun
+					special_type_slot_4 = armor_skirts
+					special_type_slot_5 = ostketten
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 5
+					tank_nsb_armor_upgrade = 6
+				}
+			}
+			
+			capital_scope = {
+			
+				create_unit = {
+					division = "division_template = \"Mittlerer Panzer-Division\""
+					owner = GER
+					count = 4
+				}
+			}
+		}
+	}
+	
+	option={
+	}
+}
+
+# half 1943
+country_event = {
+	id = ger_tanks.6
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		GER = {
+			is_ai = yes
+		}
+		date > 1943.6.1
+	}
+	
+	immediate = {
+		GER = {
+			set_technology = {
+				advanced_heavy_tank_chassis = 1
+			}
+			
+			create_equipment_variant = {
+				name = "Panzer VI Ausf B Königstiger"
+				type = heavy_tank_chassis_3
+				modules = {
+					ammo_slot = mech_ap_shell_3
+					special_type_slot_1 = tank_radio_3
+					main_armament_slot = tank_heavy_cannon_3
+					turret_type_slot = tank_heavy_three_man_tank_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_hh_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = sloped_armor
+					special_type_slot_7 = empty
+					special_type_slot_8 = tank_steel_tracks_3
+					
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = internal_machine_gun
+					special_type_slot_4 = armor_skirts
+					special_type_slot_5 = ostketten
+					special_type_slot_9 = extra_ammo_storage
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 0
+					tank_nsb_armor_upgrade = 10
+				}
+			}
+			
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Schwerer Panzer-Division\""
+					owner = GER
+					count = 6
+				}
+			}
+		}
+	}
+	
+	option={
+	}
+}
+
+# half 1944
+country_event = {
+	id = ger_tanks.7
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		GER = {
+			is_ai = yes
+		}
+		date > 1944.6.1
+	}
+	
+	immediate = {
+		GER = {
+			
+			create_equipment_variant = {
+				name = "Panzer V Ausf B Panther"
+				type = medium_tank_chassis_3
+				modules = {
+					ammo_slot = mech_ap_shell_3
+					special_type_slot_1 = tank_radio_3
+					main_armament_slot = tank_high_velocity_cannon_2
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_interleaved_suspension
+					armor_type_slot = tank_hh_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = sloped_armor
+					special_type_slot_7 = schmalturm_turret
+					special_type_slot_8 = tank_steel_tracks_3
+					
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = internal_machine_gun
+					special_type_slot_4 = armor_skirts
+					special_type_slot_5 = ostketten
+					special_type_slot_9 = extra_ammo_storage
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 7
+					tank_nsb_armor_upgrade = 9
+				}
+			}
+			
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Mittlerer Panzer-Division\""
+					owner = GER
+					count = 6
+				}
+			}
+		}
+	}
+	
+	option={
+	}
+}
+
+# 1945
+country_event = {
+	id = ger_tanks.8
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		GER = {
+			is_ai = yes
+		}
+		date > 1945.1.1
+	}
+	
+	immediate = {
+		GER = {
+			set_technology = {
+				main_battle_tank_chassis = 1
+			}
+			
+			
+			create_equipment_variant = {
+				name = "E-50 Ausf. F"
+				type = modern_tank_chassis_1
+				modules = {
+					ammo_slot = mech_ap_shell_3
+					special_type_slot_1 = tank_radio_3
+					main_armament_slot = tank_high_velocity_cannon_3
+					turret_type_slot = tank_modern_tank_turret
+					suspension_type_slot = tank_hydropneumatic_suspension
+					armor_type_slot = tank_hh_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = sloped_armor_zwei
+					special_type_slot_7 = exp_rangefinder_turret
+					special_type_slot_8 = tank_steel_tracks_3
+					
+					special_type_slot_2 = smoke_launchers
+					special_type_slot_3 = stabilizer
+					special_type_slot_4 = armor_skirts
+					special_type_slot_5 = ostketten
+					special_type_slot_9 = tank_night_vision
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 13
+					tank_nsb_armor_upgrade = 6
+				}
+			}
+			
+			division_template = {
+				name = "Hauptkampfpanzer-Division"
+				is_locked = yes
+				division_names_group = GER_Arm_01
+				priority = 2
+				regiments = {
+					modern_armor = { x=0 y=0 }
+					modern_armor = { x=0 y=1 }
+					modern_armor = { x=0 y=2 }
+					modern_armor = { x=1 y=0 }
+					modern_armor = { x=1 y=1 }
+					modern_armor = { x=1 y=2 }
+					motorized = { x=2 y=0 }
+					motorized = { x=2 y=1 }
+					motorized = { x=2 y=2 }
+					motorized = { x=2 y=3 }
+				}
+				support = {
+					artillery = { x=0 y=0 }
+					signal_company = { x=0 y=1 }
+					engineer = { x=0 y=2 }
+					mot_recon = { x=0 y=3 }
+					anti_air = { x=0 y=4 }
+				}
+			}
+			
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Hauptkampfpanzer-Division\""
+					owner = GER
+					count = 6
+				}
+			}
+		}
+	}
+	
+	option={
+	}
+}

@@ -1,0 +1,1 @@
+NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 4

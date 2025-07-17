@@ -1,0 +1,629 @@
+add_namespace = sov_tanks
+
+# 1938
+country_event = {
+	id = sov_tanks.0
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		SOV = {
+			is_ai = yes
+		}
+		date > 1938.1.1
+		
+	}
+	
+	immediate = {
+		SOV = {
+			set_technology = {
+				basic_medium_tank_chassis = 1
+				basic_heavy_tank_chassis = 1
+			}
+			
+			create_equipment_variant = {
+				name = "T-32/38"
+				type = medium_tank_chassis_1
+				modules = {
+					ammo_slot = mech_dft_shell
+					special_type_slot_1 = tank_radio_1
+					main_armament_slot = tank_small_cannon
+					turret_type_slot = tank_medium_two_man_tank_turret
+					suspension_type_slot = tank_torsion_bar_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = sloped_armor
+					special_type_slot_8 = tank_steel_tracks_0
+					special_type_slot_7 = empty
+					
+					special_type_slot_2 = internal_machine_gun
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 0
+					tank_nsb_armor_upgrade = 0
+				}
+			}
+			
+			create_equipment_variant = {
+				name = "T-28/38"
+				type = heavy_tank_chassis_1
+				modules = {
+					ammo_slot = mech_dft_shell
+					special_type_slot_1 = tank_radio_1
+					main_armament_slot = tank_heavy_cannon
+					turret_type_slot = tank_heavy_two_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = semi-flat_armor
+					special_type_slot_7 = empty
+					special_type_slot_8 = tank_steel_tracks_1
+					
+					special_type_slot_2 = secondary_turret_small_cannon
+					special_type_slot_3 = secondary_turret_small_cannon
+					special_type_slot_4 = secondary_turret_hmg
+					special_type_slot_5 = secondary_turret_hmg
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 0
+					tank_nsb_armor_upgrade = 0
+				}
+			}
+			
+			division_template = {
+				name = "Srednyaya Tankovaya Diviziya"
+				is_locked = yes
+				division_names_group = SOV_Arm_01
+				priority = 2
+				regiments = {
+					medium_armor = { x=0 y=0 }
+					medium_armor = { x=0 y=1 }
+					medium_armor = { x=0 y=2 }
+					medium_armor = { x=1 y=0 }
+					medium_armor = { x=1 y=1 }
+					medium_armor = { x=1 y=2 }
+					motorized = { x=2 y=0 }
+					motorized = { x=2 y=1 }
+					motorized = { x=2 y=2 }
+					motorized = { x=2 y=3 }
+				}
+				support = {
+					artillery = { x=0 y=0 }
+					signal_company = { x=0 y=1 }
+					engineer = { x=0 y=2 }
+					mot_recon = { x=0 y=3 }
+					anti_air = { x=0 y=4 }
+				}
+			}
+			
+			division_template = {
+				name = "Tyazhelaya Tankovaya Diviziya"
+				is_locked = yes
+				division_names_group = SOV_Arm_01
+				priority = 2
+				regiments = {
+					heavy_armor = { x=0 y=0 }
+					heavy_armor = { x=0 y=1 }
+					heavy_armor = { x=0 y=2 }
+					heavy_armor = { x=1 y=0 }
+					heavy_armor = { x=1 y=1 }
+					heavy_armor = { x=1 y=2 }
+					motorized = { x=2 y=0 }
+					motorized = { x=2 y=1 }
+					motorized = { x=2 y=2 }
+					motorized = { x=2 y=3 }
+				}
+				support = {
+					artillery = { x=0 y=0 }
+					signal_company = { x=0 y=1 }
+					engineer = { x=0 y=2 }
+					mot_recon = { x=0 y=3 }
+					anti_air = { x=0 y=4 }
+				}
+			}
+		
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Srednyaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 2
+				}
+				
+				create_unit = {
+					division = "division_template = \"Tyazhelaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 2
+				}
+			}
+		}
+		
+	}
+	
+	option={
+	}
+}
+
+#half 1940
+country_event = {
+	id = sov_tanks.1
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		SOV = {
+			is_ai = yes
+		}
+		date > 1940.6.1
+		
+	}
+	
+	immediate = {
+		SOV = {
+			set_technology = {
+				improved_medium_tank_chassis = 1
+				improved_heavy_tank_chassis = 1
+			}
+			
+			create_equipment_variant = {
+				name = "T-34 L/11"
+				type = medium_tank_chassis_2
+				modules = {
+					ammo_slot = mech_cheap_shell
+					special_type_slot_1 = tank_radio_1
+					main_armament_slot = tank_small_cannon_2
+					turret_type_slot = tank_medium_two_man_tank_turret
+					suspension_type_slot = tank_torsion_bar_suspension
+					armor_type_slot = tank_riveted_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = sloped_armor
+					special_type_slot_8 = tank_steel_tracks_0
+					special_type_slot_7 = empty
+					
+					special_type_slot_2 = internal_machine_gun
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 0
+					tank_nsb_armor_upgrade = 2
+				}
+			}
+			
+			create_equipment_variant = {
+				name = "KV-1 L/11"
+				type = heavy_tank_chassis_2
+				modules = {
+					ammo_slot = mech_dft_shell
+					special_type_slot_1 = tank_radio_1
+					main_armament_slot = tank_small_cannon_2
+					turret_type_slot = tank_heavy_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = semi-flat_armor
+					special_type_slot_7 = empty
+					special_type_slot_8 = tank_steel_tracks_1
+					
+					special_type_slot_2 = internal_machine_gun
+					special_type_slot_3 = extra_ammo_storage
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 0
+					tank_nsb_armor_upgrade = 4
+				}
+			}
+			
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Srednyaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 6
+				}
+				
+				create_unit = {
+					division = "division_template = \"Tyazhelaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 4
+				}
+			}
+		}
+		
+	}
+	
+	option={
+	}
+}
+
+#war with germany
+country_event = {
+	id = sov_tanks.2
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		SOV = {
+			is_ai = yes
+		}
+		
+		has_war_with = GER
+		
+	}
+	
+	immediate = {
+		SOV = {
+			
+			create_equipment_variant = {
+				name = "T-34-57"
+				type = medium_tank_chassis_2
+				modules = {
+					ammo_slot = mech_cheap_shell
+					special_type_slot_1 = tank_radio_1
+					main_armament_slot = tank_high_velocity_cannon_2
+					turret_type_slot = tank_medium_two_man_tank_turret
+					suspension_type_slot = tank_torsion_bar_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = sloped_armor
+					special_type_slot_8 = tank_steel_tracks_1
+					special_type_slot_7 = empty
+					
+					special_type_slot_2 = internal_machine_gun
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 1
+					tank_nsb_armor_upgrade = 2
+				}
+			}
+			
+			create_equipment_variant = {
+				name = "KV-1 Zis-5"
+				type = heavy_tank_chassis_2
+				modules = {
+					ammo_slot = mech_dft_shell
+					special_type_slot_1 = tank_radio_1
+					main_armament_slot = tank_heavy_cannon_2
+					turret_type_slot = tank_heavy_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = semi-flat_armor
+					special_type_slot_7 = empty
+					special_type_slot_8 = tank_steel_tracks_1
+					
+					special_type_slot_2 = internal_machine_gun
+					special_type_slot_3 = extra_ammo_storage
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 0
+					tank_nsb_armor_upgrade = 5
+				}
+			}
+			
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Srednyaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 12
+				}
+				
+				create_unit = {
+					division = "division_template = \"Tyazhelaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 8
+				}
+			}
+		}
+		
+	}
+	
+	option={
+	}
+}
+
+#late 41
+country_event = {
+	id = sov_tanks.3
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		SOV = {
+			is_ai = yes
+		}
+		
+		date > 1941.10.1
+		
+	}
+	
+	immediate = {
+		SOV = {
+			
+			create_equipment_variant = {
+				name = "T-34-85"
+				type = medium_tank_chassis_2
+				modules = {
+					ammo_slot = mech_cheap_shell
+					special_type_slot_1 = tank_radio_2
+					main_armament_slot = tank_medium_cannon_2
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_torsion_bar_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = sloped_armor
+					special_type_slot_8 = tank_steel_tracks_1
+					special_type_slot_7 = empty
+					
+					special_type_slot_2 = internal_machine_gun
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 2
+					tank_nsb_armor_upgrade = 3
+				}
+			}
+			
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Srednyaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 8
+				}
+				
+				create_unit = {
+					division = "division_template = \"Tyazhelaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 4
+				}
+			}
+		}
+		
+	}
+	
+	option={
+	}
+}
+
+#half 42
+country_event = {
+	id = sov_tanks.4
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		SOV = {
+			is_ai = yes
+		}
+		
+		date > 1942.6.1
+		
+	}
+	
+	immediate = {
+		SOV = {
+			
+			
+			set_technology = {
+				advanced_heavy_tank_chassis = 1
+			}
+			
+			create_equipment_variant = {
+				name = "Is-2"
+				type = heavy_tank_chassis_3
+				modules = {
+					ammo_slot = mech_ap_shell_2
+					special_type_slot_1 = tank_radio_2
+					main_armament_slot = tank_heavy_cannon_3
+					turret_type_slot = tank_heavy_three_man_tank_turret
+					suspension_type_slot = tank_torsion_bar_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = sloped_armor
+					special_type_slot_7 = empty
+					special_type_slot_8 = tank_steel_tracks_2
+					
+					special_type_slot_2 = extra_ammo_storage
+					special_type_slot_3 = ostketten
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 4
+					tank_nsb_armor_upgrade = 6
+				}
+			}
+			
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Srednyaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 8
+				}
+				
+				create_unit = {
+					division = "division_template = \"Tyazhelaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 4
+				}
+			}
+		}
+		
+	}
+	
+	option={
+	}
+}
+
+#march 43
+country_event = {
+	id = sov_tanks.5
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		SOV = {
+			is_ai = yes
+		}
+		
+		date > 1943.3.1
+		
+	}
+	
+	immediate = {
+		SOV = {
+			
+			
+			set_technology = {
+				advanced_medium_tank_chassis = 1
+			}
+			
+			create_equipment_variant = {
+				name = "T-44-85"
+				type = medium_tank_chassis_3
+				modules = {
+					ammo_slot = mech_ap_shell_1
+					special_type_slot_1 = tank_radio_2
+					main_armament_slot = tank_medium_cannon_2
+					turret_type_slot = tank_medium_three_man_tank_turret
+					suspension_type_slot = tank_torsion_bar_suspension
+					armor_type_slot = tank_hh_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = sloped_armor
+					special_type_slot_7 = empty
+					special_type_slot_8 = tank_steel_tracks_3
+					
+					special_type_slot_2 = extra_ammo_storage
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 5
+					tank_nsb_armor_upgrade = 6
+				}
+			}
+			
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Srednyaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 12
+				}
+				
+				create_unit = {
+					division = "division_template = \"Tyazhelaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 6
+				}
+			}
+		}
+		
+	}
+	
+	option={
+	}
+}
+
+#half 45
+country_event = {
+	id = sov_tanks.6
+	
+	hidden = yes
+	fire_only_once = yes
+	mean_time_to_happen = { days = 1 }
+	trigger = {
+		SOV = {
+			is_ai = yes
+		}
+		
+		date > 1945.6.1
+		
+	}
+	
+	immediate = {
+		SOV = {
+			
+			
+			set_technology = {
+				main_battle_tank_chassis = 1
+			}
+			
+			create_equipment_variant = {
+				name = "T-54"
+				type = modern_tank_chassis_1
+				modules = {
+					ammo_slot = mech_ap_shell_2
+					special_type_slot_1 = tank_radio_3
+					main_armament_slot = tank_heavy_cannon_3
+					turret_type_slot = tank_modern_tank_turret
+					suspension_type_slot = tank_torsion_bar_suspension
+					armor_type_slot = tank_hh_welded_armor
+					engine_type_slot = tank_gasoline_engine
+					special_type_slot_6 = sloped_armor_zwei
+					special_type_slot_7 = empty
+					special_type_slot_8 = tank_steel_tracks_3
+					
+					special_type_slot_2 = extra_ammo_storage
+					special_type_slot_3 = ostketten
+					special_type_slot_4 = additional_machine_guns
+				}
+				
+				upgrades = {
+					tank_nsb_engine_upgrade = 6
+					tank_nsb_armor_upgrade = 4
+				}
+			}
+			
+			division_template = {
+				name = "Shturmovaya Tankovaya Diviziya"
+				is_locked = yes
+				division_names_group = SOV_Arm_01
+				priority = 2
+				regiments = {
+					modern_armor = { x=0 y=0 }
+					modern_armor = { x=0 y=1 }
+					modern_armor = { x=0 y=2 }
+					modern_armor = { x=1 y=0 }
+					modern_armor = { x=1 y=1 }
+					modern_armor = { x=1 y=2 }
+					motorized = { x=2 y=0 }
+					motorized = { x=2 y=1 }
+					motorized = { x=2 y=2 }
+					motorized = { x=2 y=3 }
+				}
+				support = {
+					artillery = { x=0 y=0 }
+					signal_company = { x=0 y=1 }
+					engineer = { x=0 y=2 }
+					mot_recon = { x=0 y=3 }
+					anti_air = { x=0 y=4 }
+				}
+			}
+			
+			capital_scope = {
+				
+				create_unit = {
+					division = "division_template = \"Shturmovaya Tankovaya Diviziya\""
+					owner = SOV
+					count = 12
+				}
+			}
+		}
+		
+	}
+	
+	option={
+	}
+}

@@ -138,6 +138,22 @@ equipments = {
 					mech_special_astolfo
 				}
 			}
+
+			carry_slot_9 = {
+				required = no
+				allowed_module_categories = {
+					mech_special_2
+					mech_special_astolfo
+				}
+			}
+
+			carry_slot_10 = {
+				required = no
+				allowed_module_categories = {
+					mech_special_2
+					mech_special_astolfo
+				}
+			}
 			
 		}
 		

@@ -1,6 +1,7 @@
 # options for map_icon_category:
 # For land units: infantry,armored,other
 # For sea units: ship,transport,uboat
+# Tank Designer
 
 sub_units = {
 
@@ -29,8 +30,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 1000
-		max_organisation = 1000
+		max_strength = 25
+		max_organisation = 60
 		default_morale = 0.3
 		manpower = 1000
 
@@ -42,7 +43,7 @@ sub_units = {
 		supply_consumption = 0.06
 	
 		need = {
-			infantry_equipment = 1000
+			infantry_equipment = 100
 		}
 	}
 
@@ -71,11 +72,11 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 250
-		max_organisation = 1000
+		max_strength = 25
+		max_organisation = 60
 		default_morale = 0.3
-		maximum_speed = 16.0
-		manpower = 250
+		maximum_speed = 0.6
+		manpower = 1000
 
 		#Misc Abilities
 		training_time = 90
@@ -85,8 +86,8 @@ sub_units = {
 		supply_consumption = 0.06
 	
 		need = {
-			infantry_equipment = 250
-			support_equipment = 250			
+			infantry_equipment = 100
+			support_equipment = 10			
 		}
 
 		forest = {
@@ -141,15 +142,16 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_special_forces
+			category_marines
 		}
 		
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 250
-		max_organisation = 1500
+		max_strength = 20
+		max_organisation = 70
 		default_morale = 0.4
-		manpower = 250
+		manpower = 1000
 
 		#Misc Abilities
 		training_time = 120
@@ -159,7 +161,64 @@ sub_units = {
 		breakthrough = 0.3
 	
 		need = {
-			infantry_equipment = 250
+			infantry_equipment = 150
+		}
+
+		marsh = {
+			attack = 0.3
+		}
+		river = {
+			attack = 0.3
+		}
+		amphibious = {
+			attack = 0.5
+		}
+	}
+	
+	marine_commando  = {
+		abbreviation = "MRC"
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		marines = yes
+		can_exfiltrate_from_coast = yes
+		
+		priority = 601
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = infantry
+		
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+			category_special_forces
+			category_marines
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 20
+		max_organisation = 70
+		default_morale = 0.4
+		manpower = 1000
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 1
+		weight = 0.5
+		supply_consumption = 0.05
+		breakthrough = 0.3
+	
+		need = {
+			infantry_equipment = 150
 		}
 
 		marsh = {
@@ -196,15 +255,16 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_special_forces
+			category_mountaineers
 		}
 		
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 250
-		max_organisation = 1500
+		max_strength = 20
+		max_organisation = 70
 		default_morale = 0.4
-		manpower = 250
+		manpower = 1000
 
 		#Misc Abilities
 		training_time = 120
@@ -215,7 +275,7 @@ sub_units = {
 		breakthrough = 0.3
 	
 		need = {
-			infantry_equipment = 250
+			infantry_equipment = 140
 		}
 
 		hills = {
@@ -252,15 +312,16 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_special_forces
+			category_paratroopers
 		}
 		
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 250
-		max_organisation = 1500
+		max_strength = 22
+		max_organisation = 70
 		default_morale = 0.4
-		manpower = 250
+		manpower = 1000
 
 		#Misc Abilities
 		training_time = 150
@@ -271,7 +332,7 @@ sub_units = {
 		can_be_parachuted = yes
 	
 		need = {
-			infantry_equipment = 250
+			infantry_equipment = 130
 		}
 	}
 
@@ -299,10 +360,10 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 1000
-		max_organisation = 1000
+		max_strength = 25
+		max_organisation = 60
 		default_morale = 0.30
-		manpower = 1100
+		manpower = 1200
 
 		#Misc Abilities
 		training_time = 90
@@ -314,8 +375,8 @@ sub_units = {
 		transport = motorized_equipment
 	
 		need = {
-			infantry_equipment = 1000
-			motorized_equipment = 100
+			infantry_equipment = 100
+			motorized_equipment = 35
 		}
 
 		forest = {
@@ -373,10 +434,10 @@ sub_units = {
 		hard_attack = 4.0
 		
 		#Size Definitions
-		max_strength = 100
-		max_organisation = 1000
+		max_strength = 30
+		max_organisation = 60
 		default_morale = 0.3
-		manpower = 1100
+		manpower = 1200
 
 		#Misc Abilities
 		training_time = 120
@@ -392,11 +453,11 @@ sub_units = {
 		}
 
 		# this is what moves us and sets speed
-		transport = mechanized_equipment
+		transport = mech_chassis
 
 		need = {
-			mechanized_equipment = 100
-			infantry_equipment = 1000
+			mech_chassis = 40
+			infantry_equipment = 100
 		}
 
 		forest = {
@@ -493,8 +554,8 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 850 #25 (HP)
-		max_organisation = 1100 #60 -> Lower HP but higher Org: They should keep fighting longer
+		max_strength = 15 #25 (HP)
+		max_organisation = 70 #60 -> Lower HP but higher Org: They should keep fighting longer
 		default_morale = 0.4 #0.3 (Recovery) -> Easy to get more punishees
 		manpower = 850 #1000 -> Usually no more than 850
 
@@ -506,7 +567,7 @@ sub_units = {
 		supply_consumption = 0.05 #0.07 -> Don't need that much supply, and they have lower HP
 	
 		need = {
-			infantry_equipment = 850 #100 -> 1/10th ratio of regular Infantry			
+			infantry_equipment = 85 #100 -> Same ratio as regular Infantry			
 		}
 	}
 
@@ -535,10 +596,10 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 750 # reg inf 25
-		max_organisation = 900 # reg inf 60
+		max_strength = 30 # reg inf 25
+		max_organisation = 45 # reg inf 60
 		default_morale = 0.2 #  reg inf 0.3
-		manpower = 750
+		manpower = 1000
 
 		#Misc Abilities
 		training_time = 30 # was 75  # reg inf 90
@@ -573,7 +634,7 @@ sub_units = {
 		
 		
 		need = {
-			infantry_equipment = 750 # was 100 
+			infantry_equipment = 80 # was 100 
 		}
 	}
 
@@ -603,10 +664,10 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 750
-		max_organisation = 500 #reg infantry 60
+		max_strength = 25
+		max_organisation = 50 #reg infantry 60
 		default_morale = 0.3
-		manpower = 750
+		manpower = 1000
 
 		#Misc Abilities
 		training_time = 80 #reg infantry 90
@@ -616,7 +677,7 @@ sub_units = {
 		supply_consumption = 0.06
 	
 		need = {
-			infantry_equipment = 750
+			infantry_equipment = 100
 		}
 	}
 }
