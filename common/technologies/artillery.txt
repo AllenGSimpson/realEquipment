@@ -23,7 +23,6 @@ technologies = {
 			leads_to_tech = interwar_antiair
 			research_cost_coeff = 1
 		}
-
 		enable_equipment_modules = {
 			ship_anti_air_1
 			tank_small_cannon
@@ -32,7 +31,7 @@ technologies = {
 			mech_dft_shell
 			mech_cheap_shell
 		}
-
+		
 		on_research_complete = {
 			if = {
 				limit = {
@@ -55,9 +54,9 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-			mio_cat_artillery #Only Artillery
+			mio_cat_artillery #Only Artillery 
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 
 		ai_will_do = {
 			factor = 2
@@ -93,6 +92,21 @@ technologies = {
 		category_self_propelled_artillery = {
 			soft_attack = 0.15
 		}
+		light_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		super_heavy_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		modern_sp_artillery_brigade= {
+			soft_attack = 0.1
+		}
 
 		enable_equipment_modules = {
 			tank_small_cannon_2
@@ -120,17 +134,17 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-			mio_cat_artillery #Only Artillery
+			mio_cat_artillery #Only Artillery 
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 
 		ai_will_do = {
 			factor = 2
-
+			
 			modifier = { #This is needed for a lot of tank designs
 				factor = 2.0
 				is_major = yes
-			}
+            } 
 
 			modifier = {
 				factor = 2
@@ -146,8 +160,8 @@ technologies = {
 				factor = 5
 				date > "1939.1.1"
 			}
-
-			# It is imperative to prepare military tech for the war with China
+			
+			# It is imperative to prepare military tech for the war with China 
 			modifier = {
 				factor = 5
 				original_tag = JAP
@@ -169,21 +183,24 @@ technologies = {
 			mech_mortar_1
 			mech_small_cannon
 			mech_grenade_launcher
+			
+			lc_medium_cannon_turret #Module for Land Cruiser
+			lc_assault_gun #Module for Land Cruiser
 		}
 
 		path = {
 			leads_to_tech = artillery2
 			research_cost_coeff = 1
 		}
-
+		
 		path = {
-			leads_to_tech = sp_artillery_rocket_assisted_projectiles_tech
-			research_cost_coeff = 1
+			leads_to_tech = sp_artillery_rocket_assisted_projectiles_tech 
+			research_cost_coeff = 1 
 		}
-
+		
 		path = {
 			leads_to_tech = sp_artillery_purpose_built_gun_motor_carriages_tech
-			research_cost_coeff = 1
+			research_cost_coeff = 1 
 		}
 
 		research_cost = 1
@@ -200,7 +217,7 @@ technologies = {
 			mio_cat_all_artillery_equipment
 			mio_cat_artillery #Only Artillery
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 
 		ai_will_do = {
 			factor = 2
@@ -236,12 +253,27 @@ technologies = {
 		category_self_propelled_artillery = {
 			soft_attack = 0.1
 		}
-
+		light_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		super_heavy_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		modern_sp_artillery_brigade= {
+			soft_attack = 0.1
+		}
+		
 		enable_equipment_modules = {
 			mech_grenade_launcher
 			mech_he_shell_2
 		}
-
+		
 		path = {
 			leads_to_tech = artillery3
 			research_cost_coeff = 1
@@ -264,9 +296,9 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-			mio_cat_artillery #Only Artillery
+			mio_cat_artillery #Only Artillery 
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 
 		ai_will_do = {
 			factor = 2
@@ -302,6 +334,21 @@ technologies = {
 		category_self_propelled_artillery = {
 			soft_attack = 0.05
 		}
+		light_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		super_heavy_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		modern_sp_artillery_brigade= {
+			soft_attack = 0.1
+		}
 
 		enable_equipment_modules = {
 			tank_medium_howitzer_2
@@ -326,9 +373,9 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-			mio_cat_artillery #Only Artillery
+			mio_cat_artillery #Only Artillery 
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 
 		ai_will_do = {
 			factor = 2
@@ -371,9 +418,9 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-			mio_cat_artillery #Only Artillery
+			mio_cat_artillery #Only Artillery 
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 
 		ai_will_do = {
 			factor = 2
@@ -409,6 +456,21 @@ technologies = {
 		category_self_propelled_artillery = {
 			soft_attack = 0.05
 		}
+		light_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		medium_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		heavy_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		super_heavy_sp_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		modern_sp_artillery_brigade= {
+			soft_attack = 0.1
+		}
 
 		enable_equipment_modules = {
 			auto_loader
@@ -429,9 +491,9 @@ technologies = {
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
-			mio_cat_artillery #Only Artillery
+			mio_cat_artillery #Only Artillery 
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 
 		ai_will_do = {
 			factor = 2
@@ -480,16 +542,16 @@ technologies = {
 		enable_equipments = {
 			rocket_artillery_equipment_1
 		}
-
-#		enable_subunits = {
-#			rocket_artillery_brigade
-#		}
+		
+		enable_subunits = { 
+			rocket_artillery_brigade
+		}
 
 		enable_equipment_modules = {
 			tank_rocket_launcher
 			rocket_rails
-			car_rocket_launcher
 			lc_rocket_launcher #Module for Land Cruiser
+			car_rocket_launcher
 		}
 
 		path = {
@@ -519,7 +581,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_air } 
 	}
 
 	rocket_artillery2 = {
@@ -564,7 +626,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_air } 
 	}
 
 	rocket_artillery3 = {
@@ -609,7 +671,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_air } 
 	}
 
 	rocket_artillery4 = {
@@ -645,7 +707,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_air }
+		special_project_specialization = { specialization_air } 
 	}
 
 	interwar_antiair = {
@@ -659,12 +721,11 @@ technologies = {
 			tank_auto_cannon
 			tank_anti_air_cannon
 			tank_heavy_cannon
+			lc_light_anti_air_battery #Module for Land Cruiser
 			car_auto_cannon
 			car_medium_cannon
 			mech_auto_cannon
 			mech_small_cannon
-			#mech_aa
-			lc_light_anti_air_battery #Module for Land Cruiser
 		}
 
 		enable_building = {
@@ -723,10 +784,14 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		special_project_specialization = { specialization_land specialization_air } 
 	}
 
 	antiair1 = {
+
+		enable_equipment_modules = {
+			car_small_cannon_2
+		}
 
 		anti_air = {
 			air_attack = 0.1
@@ -776,7 +841,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		special_project_specialization = { specialization_land specialization_air } 
 	}
 
 	antiair2 = {
@@ -791,16 +856,15 @@ technologies = {
 			ship_anti_air_3
 			tank_auto_cannon_2
 			tank_anti_air_cannon_2
-			mech_auto_cannon_2
-			#mech_aa2
 			lc_heavy_anti_air_battery #Module for Land Cruiser
+			mech_auto_cannon_2
 		}
 
 		path = {
 			leads_to_tech = antiair3
 			research_cost_coeff = 1
 		}
-
+		
 		path = {
 			leads_to_tech = sp_shock_hardening_techniques
 			research_cost_coeff = 1
@@ -837,7 +901,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		special_project_specialization = { specialization_land specialization_air } 
 	}
 
 	antiair3 = {
@@ -896,7 +960,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		special_project_specialization = { specialization_land specialization_air } 
 	}
 
 	antiair4 = {
@@ -949,7 +1013,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		special_project_specialization = { specialization_land specialization_air } 
 	}
 
 	antiair5 = {
@@ -965,8 +1029,8 @@ technologies = {
 			tank_heavy_cannon_3
 			tank_anti_air_cannon_3
 			auto_loader
-			car_auto_loader
 			lc_heavy_anti_air_platform #Module for Land Cruiser
+			car_auto_loader
 		}
 
 		research_cost = 1
@@ -1000,7 +1064,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land specialization_air }
+		special_project_specialization = { specialization_land specialization_air } 
 	}
 
 	interwar_antitank = {
@@ -1008,18 +1072,16 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_1
 		}
-		
 		enable_equipment_modules = {
 			tank_high_velocity_cannon
 			tank_heavy_cannon
 			tank_buster_1
+			lc_high_velocity_cannon_turret #Module for Land Cruiser
 			car_medium_cannon
 			car_high_velocity_cannon
 			mech_small_cannon
 			mech_ap_shell_1
-			lc_high_velocity_cannon_turret #Module for Land Cruiser
 		}
-
 		path = {
 			leads_to_tech = antitank1
 			research_cost_coeff = 1
@@ -1100,17 +1162,15 @@ technologies = {
 	}
 
 	antitank1 = {
-	
+
 		enable_equipment_modules = {
 			car_small_cannon_2
 			mech_small_cannon_2
 		}
-
 		category_tank_destroyers = {
 			hard_attack = 0.15
 			ap_attack = 0.2
 		}
-
 		anti_tank = {
 			hard_attack = 0.1
 			ap_attack = 0.2
@@ -1123,7 +1183,6 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.2
 		}
-
 		enable_equipment_modules = {
 			tank_medium_cannon
 			squeezebore_adaptor
@@ -1181,7 +1240,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 	}
 
 	antitank2 = {
@@ -1195,7 +1254,6 @@ technologies = {
 			anti_tank_equipment_2
 		}
 		enable_equipment_modules = {
-			#tank_high_velocity_cannon_2
 			tank_heavy_cannon_2
 			tank_buster_2
 			mech_ap_shell_2
@@ -1268,6 +1326,8 @@ technologies = {
 	antitank3 = {
 		enable_equipment_modules = {
 			tank_medium_cannon_2
+		}
+		enable_equipment_modules = {
 			car_high_velocity_cannon_2
 			car_medium_cannon_2
 			car_stabilizer
@@ -1302,15 +1362,7 @@ technologies = {
 			name = artillery_folder
 			position = { x = @anti_tank y = 8 }
 		}
-
-		categories = {
-			artillery
-			cat_anti_tank
-			mio_cat_all_artillery_equipment
-		}
-
-		special_project_specialization = { specialization_land }
-
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1349,6 +1401,13 @@ technologies = {
 				}
 			}
 		}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+		special_project_specialization = { specialization_land } 
 	}
 
 	antitank4 = {
@@ -1425,7 +1484,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 	}
 
 	antitank5 = {
@@ -1433,16 +1492,14 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_3
 		}
-
 		enable_equipment_modules = {
 			tank_high_velocity_cannon_3
 			tank_heavy_cannon_3
 			auto_loader
+			lc_heavy_high_velocity_cannons #Module for Land Cruiser
 			car_auto_loader
 			mech_ap_shell_3
-			lc_heavy_high_velocity_cannons #Module for Land Cruiser
 		}
-
 		research_cost = 1
 
 		start_year = 1943
@@ -1496,9 +1553,9 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 	}
-
+	
 	SWE_bofors_antitank_gun = {
 
 		research_cost = 1
@@ -1547,8 +1604,7 @@ technologies = {
 			mio_cat_all_artillery_equipment
 		}
 	}
-
-
+	
 	### SPECIAL PROJECTS ###
 
 	sp_artillery_rocket_assisted_projectiles_tech = {
@@ -1669,7 +1725,7 @@ technologies = {
 			}
 		}
 
-		static_anti_air_damage_factor = 0.15 #Remember to adjust sp_naval_proximity_fuze_custom_tt when changing value
+		static_anti_air_damage_factor = 0.15
 		static_anti_air_hit_chance_factor = 0.3 
 
 		path = {
@@ -1737,3 +1793,4 @@ technologies = {
 
 		special_project_specialization = { specialization_land specialization_air }
 	}
+}

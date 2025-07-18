@@ -74,7 +74,7 @@ technologies = {
 		
 		ai_will_do = {
 			base = 2
-
+			
 			modifier = {
 				factor = 2
 				is_major = yes
@@ -108,6 +108,14 @@ technologies = {
 		}
 		
 		category_vehicle_infantry = {
+			soft_attack = 0.05
+		}
+		
+		mechanized = {
+			soft_attack = 0.05
+		}
+		
+		amphibious_mechanized = {
 			soft_attack = 0.05
 		}
 		
@@ -149,7 +157,7 @@ technologies = {
 				is_major = yes
 				date > "1938.1.1"
 			}
-
+			
 			modifier = {
 				factor = 5
 				date > "1939.1.1"
@@ -185,12 +193,12 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 3
-
+			
 			modifier = {
 				factor = 2
 				is_major = yes
 			}
-
+			
 			modifier = {
 				factor = 10
 				date > "1939.1.1"
@@ -212,6 +220,7 @@ technologies = {
 			#}
 		}
 	}
+	
 	improved_infantry_weapons_2 = {
 
 		category_light_infantry = {
@@ -223,6 +232,14 @@ technologies = {
 		}
 		
 		category_vehicle_infantry = {
+			soft_attack = 0.05
+		}
+		
+		mechanized = {
+			soft_attack = 0.05
+		}
+		
+		amphibious_mechanized = {
 			soft_attack = 0.05
 		}
 		
@@ -268,7 +285,7 @@ technologies = {
 			hard_attack = 0.25
 			ap_attack = 1
 		}
-
+		
 		category_cavalry = {
 			hard_attack = 0.1
 			ap_attack = 0.4
@@ -316,7 +333,7 @@ technologies = {
 			hard_attack = 0.25
 			ap_attack = 1
 		}
-
+		
 		category_cavalry = {
 			hard_attack = 0.1
 			ap_attack = 0.4
@@ -378,22 +395,21 @@ technologies = {
 		ai_will_do = {
 			base = 1
 			
-			
 			modifier = {
 				tag = GER
 				factor = 2.5
 			}
-
+			
 			modifier = {
 				factor = 2
 				date > "1942.1.1"
 			}
-
+			
 			modifier = {
 				factor = 2
 				date > "1944.1.1"
 			}
-
+			
 			modifier = {
 				num_of_military_factories > 150
 				factor = 2.5
@@ -411,10 +427,20 @@ technologies = {
 		category_light_infantry = {
 			soft_attack = 0.05
 		}
+		
 		category_cavalry = {
 			soft_attack = 0.05
 		}		
+
 		category_vehicle_infantry = {
+			soft_attack = 0.1
+		}
+		
+		mechanized = {
+			soft_attack = 0.1
+		}
+		
+		amphibious_mechanized = {
 			soft_attack = 0.1
 		}		
 
@@ -477,7 +503,7 @@ technologies = {
 				load_oob = "unlock_paratroopers"
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-
+			
 			IF = {
 				limit = { has_dlc = "Gotterdammerung" }
 				custom_effect_tooltip = {
@@ -500,8 +526,9 @@ technologies = {
 			factor = 0.5
 			
 			modifier = {
-				factor = 5
+				factor = 20
 				tag = USA
+				date > 1943.1.1
 			}
 			
 			modifier = {
@@ -513,11 +540,10 @@ technologies = {
 				factor = 5
 				tag = ENG
 			}
-
+			
 			modifier = {
 				factor = 5
 				tag = GER
-				#TODO_Danne Add Fallschirmsjäger focus here!
 			}
 		}
 	}
@@ -563,7 +589,7 @@ technologies = {
 				factor = 2
 				tag = ENG
 			}
-
+			
 			modifier = {
 				factor = 2
 				tag = GER
@@ -836,14 +862,6 @@ technologies = {
 		}
 		
 		allow_branch = { NOT = { has_dlc = "Arms Against Tyranny" } }
-		
-		#dependencies = {
-		#	OR = {
-		#		marines = 1
-		#		paratrooper = 1
-		#		mountaineer = 1
-		#	}
-		#}
 
 		path = {
 			leads_to_tech = advanced_special_forces
@@ -1054,7 +1072,7 @@ technologies = {
 		#Change the custom tooltip too: RAJ_jungle_training_effect
 		marine = {
 			jungle = {
-				attack = 0.05 
+				attack = 0.05
 				movement = 0.1
 			}
 		}
@@ -1117,7 +1135,7 @@ technologies = {
 			}
 
 			urban = {
-				attack = 0.05 
+				attack = 0.05
 				movement = 0.05
 			}
 		}
@@ -1144,7 +1162,7 @@ technologies = {
 
 		marine = {
 			mountain = {
-				attack = 0.05 
+				attack = 0.05
 				movement = 0.1
 			}
 		}
@@ -1163,19 +1181,16 @@ technologies = {
 				movement = 0.1
 			}
 		}
-
 	}
-
-	mountain_defensive_training = {
-
+	
+	mountain_defensive_training = { 
 		research_cost = 1
-
+		
 		# only from focus!
 		allow = {
 			always = no
 		}
-
-
+		
 		#If you change these
 		#Change the custom tooltip too: AUS_osterreichische_gebirgsjager_tt
 		infantry = {
@@ -1184,14 +1199,13 @@ technologies = {
 				movement = 0.05
 			}
 		}
-
+		
 		mountaineers = {
 			mountain = {
 				defence = 0.05
 				movement = 0.1
 			}
 		}
-
 	}
 
 	night_vision = {
@@ -1202,7 +1216,7 @@ technologies = {
 			leads_to_tech = night_vision2
 			research_cost_coeff = 1
 		}
-
+		
 		enable_equipment_modules = {
 			tank_night_vision
 			mech_night_vision
@@ -1297,6 +1311,14 @@ technologies = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
 		
 		path = {
 			leads_to_tech = support_weapons2
@@ -1316,10 +1338,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 1
-
-			# All participants in this war will want to have this tech as early as possible
+			
+			# All participants in this war will want to have this tech as early as possible 
 			modifier = {
 				factor = 15
+
 				OR = {
 					tag = CHI
 					tag = PRC
@@ -1333,7 +1356,6 @@ technologies = {
 					tag = JAP
 				}
 			}
-
 			modifier = {
 				factor = 2
 				date > "1937.1.1"
@@ -1364,12 +1386,20 @@ technologies = {
 		category_cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
-		}		
+		}
 		category_special_forces_leg_infantry = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
 		category_vehicle_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -1433,7 +1463,7 @@ technologies = {
 	}
 	
 	support_weapons3 = {
-		
+
 		category_infantry_and_bicycle = {
 			defense = 0.05
 			breakthrough = 0.05
@@ -1447,6 +1477,14 @@ technologies = {
 			breakthrough = 0.03
 		}
 		category_vehicle_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -1511,6 +1549,14 @@ technologies = {
 			breakthrough = 0.03
 		}
 		category_vehicle_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		mechanized = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		amphibious_mechanized = {
 			defense = 0.05
 			breakthrough = 0.05
 		}
@@ -1673,7 +1719,7 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
-			mio_cat_tech_all_motorized_mechanized
+			mio_cat_tech_all_motorized_mechanized 
 			infantry_tech
 		}
 		special_project_specialization = { specialization_land }
@@ -1729,7 +1775,7 @@ technologies = {
 			mot_rockets
 			mio_cat_tech_all_motorized_mechanized
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 	}
 	
 	armored_car1 = {
@@ -1752,11 +1798,9 @@ technologies = {
 			car_nft_two_man_tank_turret
 			car_nft_three_man_tank_turret
 			car_machine_gun
-		   #car_medium_cannon
 			car_smoke_launchers
 			car_extra_ammo_storage
 			car_wet_ammo_storage
-		   #car_wide
 			car_additional_machine_guns
 			car_internal_machine_gun
 			car_gasoline_engine
@@ -1769,7 +1813,6 @@ technologies = {
 		enable_equipments = {
 			armored_car_chassis_0
 		}
-
 		allow_branch = { has_dlc = "La Resistance" }
 		path = {
 			leads_to_tech = armored_car2
@@ -1837,7 +1880,7 @@ technologies = {
 			armor
 			cat_armored_cars
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 		
 		ai_will_do = {
 			factor = 1
@@ -1927,7 +1970,6 @@ technologies = {
 			armor
 			cat_armored_cars
 		}
-
 		special_project_specialization = { specialization_land }
 
 		ai_will_do = {
@@ -2013,25 +2055,25 @@ technologies = {
 	}
 
 	mechanised_infantry = {
-
+		
 		enable_subunits = {
 			mechanized
 		}
-
+		
 		enable_equipments = {
 			mech_chassis_0
 		}
 
 		enable_equipment_modules = {
 			tank_half_track_suspension
+		}
+		
+		enable_equipment_modules = {
 			mech_gasoline_engine
 			mech_diesel_engine
 			mech_riveted_armor
 			half_interleaf_suspension
 			half_boogie_suspension
-			interleaf_suspension
-			boogie_suspension
-			christie_suspension
 			mech_sex_machine_gun
 			mech_sex_heavy_machine_gun
 			mech_machine_gun
@@ -2088,13 +2130,34 @@ technologies = {
 			infantry_tech
 			cat_mechanized_equipment
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 		
 		ai_will_do = {
-			factor = 2
+			base = 2
+			
 			modifier = {
-				tag = USA
 				factor = 2
+				is_major = yes
+			}
+			
+			modifier = {
+				factor = 3
+				tag = USA
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > 1941.1.1
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > 1942.1.1
+			}
+			
+			modifier = {
+				factor = 1.5
+				date > 1943.1.1
 			}
 		}
 	}
@@ -2134,7 +2197,7 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
-			mio_cat_tech_all_motorized_mechanized
+			mio_cat_tech_all_motorized_mechanized 
 			infantry_tech
 			cat_mechanized_equipment
 			tp_tech
@@ -2156,6 +2219,8 @@ technologies = {
 			amphibious_mechanized_equipment_2
 		}
 
+		
+
 		research_cost = 2
 		start_year = 1943
 		folder = {
@@ -2165,13 +2230,12 @@ technologies = {
 		
 		categories = {
 			motorized_equipment
-			mio_cat_tech_all_motorized_mechanized
+			mio_cat_tech_all_motorized_mechanized 
 			infantry_tech
 			cat_mechanized_equipment
 			tp_tech
 		}
-
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 		
 		ai_will_do = {
 			factor = 2
@@ -2183,7 +2247,7 @@ technologies = {
 		enable_equipments = {
 			mech_chassis_1
 		}
-
+		
 		enable_equipment_modules = {
 			mech_longer_barrel
 		}
@@ -2218,9 +2282,10 @@ technologies = {
 		enable_equipments = {
 			mech_chassis_2
 		}
-
+		
 		enable_equipment_modules = {
 			mech_closed_top
+		}
 
 		mechanized = {
 			soft_attack = 0.15
@@ -2240,7 +2305,7 @@ technologies = {
 			infantry_tech
 			cat_mechanized_equipment
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 		
 		ai_will_do = {
 			factor = 1
@@ -2462,9 +2527,9 @@ technologies = {
 			}
 		}
 	}
-
+	
 	TOA_jungle_pioneers_support_tech = {
-		
+
 		allow = {
 			always = no
 		}
@@ -2479,7 +2544,7 @@ technologies = {
 
 	ToA_river_boats_tech = { #hidden tech to boost Brazil via Brown Water Navy focus
 		# Remember to update tt: BRA_brown_water_navy_idea_bonus_tt
-		
+
 		allow = {
 			always = no
 		}
@@ -2498,7 +2563,7 @@ technologies = {
 
 	######### FROM GERMAN FOCUS ##########
 	sturmtruppe_battalion_tech = {
-		
+
 		allow = {
 			always = no
 		}
@@ -2520,7 +2585,7 @@ technologies = {
 		research_cost = 1
 		start_year = 1936
 		sub_tech_index = 1
-		
+
 		categories = {
 			motorized_equipment
 			armor
@@ -2548,12 +2613,11 @@ technologies = {
 				movement = 0.1
 			}
 		}
-	}	
-
+	}
 
 	##### FROM BELGIAN FOCUS #####
 	BEL_chasseurs_ardennais = { #hidden tech to boost Mountaineers in Forests. Remember to update BEL_chasseurs_ardennais_tt if you change these numbers!
-		
+
 		allow = {
 			always = no
 		}

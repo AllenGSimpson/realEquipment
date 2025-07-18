@@ -83,9 +83,6 @@ country_event = {
 		}
 		
 	}
-	
-	option={
-	}
 }
 
 #half 1938
@@ -139,9 +136,6 @@ country_event = {
 				}
 			}
 		}
-	}
-	
-	option={
 	}
 }
 
@@ -200,9 +194,6 @@ country_event = {
 			}
 		}
 	}
-	
-	option={
-	}
 }
 
 #1941
@@ -259,9 +250,6 @@ country_event = {
 				}
 			}
 		}
-	}
-	
-	option={
 	}
 }
 
@@ -349,9 +337,6 @@ country_event = {
 			}
 		}
 	}
-	
-	option={
-	}
 }
 
 # late 42
@@ -410,9 +395,6 @@ country_event = {
 				}
 			}
 		}
-	}
-	
-	option={
 	}
 }
 
@@ -474,9 +456,6 @@ country_event = {
 			}
 		}
 	}
-	
-	option={
-	}
 }
 
 # half 1944
@@ -533,9 +512,6 @@ country_event = {
 				}
 			}
 		}
-	}
-	
-	option={
 	}
 }
 
@@ -623,8 +599,5 @@ country_event = {
 				}
 			}
 		}
-	}
-	
-	option={
 	}
 }

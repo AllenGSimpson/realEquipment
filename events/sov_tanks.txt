@@ -139,11 +139,7 @@ country_event = {
 					count = 2
 				}
 			}
-		}
-		
-	}
-	
-	option={
+		}	
 	}
 }
 
@@ -233,10 +229,6 @@ country_event = {
 				}
 			}
 		}
-		
-	}
-	
-	option={
 	}
 }
 
@@ -323,10 +315,6 @@ country_event = {
 				}
 			}
 		}
-		
-	}
-	
-	option={
 	}
 }
 
@@ -388,10 +376,6 @@ country_event = {
 				}
 			}
 		}
-		
-	}
-	
-	option={
 	}
 }
 
@@ -459,10 +443,6 @@ country_event = {
 				}
 			}
 		}
-		
-	}
-	
-	option={
 	}
 }
 
@@ -529,10 +509,6 @@ country_event = {
 				}
 			}
 		}
-		
-	}
-	
-	option={
 	}
 }
 
@@ -621,9 +597,5 @@ country_event = {
 				}
 			}
 		}
-		
-	}
-	
-	option={
 	}
 }

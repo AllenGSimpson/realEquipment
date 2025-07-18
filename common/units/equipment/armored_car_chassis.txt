@@ -113,33 +113,6 @@ equipments = {
 				}
 			}
 			
-			special_type_slot_7 = {
-				required = no
-				allowed_module_categories = {
-					car_special_module
-				}
-			}
-			
-			special_type_slot_8 = {
-				required = no
-				allowed_module_categories = {
-					car_special_module
-				}
-			}
-			
-			special_type_slot_9 = {
-				required = no
-				allowed_module_categories = {
-					car_special_module
-				}
-			}
-			
-			special_type_slot_10 = {
-				required = no
-				allowed_module_categories = {
-					car_special_module
-				}
-			}
 		}
 		
 		module_count_limit = {

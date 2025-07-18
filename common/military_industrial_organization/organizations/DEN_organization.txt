@@ -863,7 +863,7 @@ DEN_triangel_organization = {
         all_parents = { DEN_mio_trait_truck_mass_production }
 
         limit_to_equipment_type = {
-            mechanized_equipment
+            mech_chassis
         }
 
         production_bonus = {
@@ -886,7 +886,7 @@ DEN_triangel_organization = {
         
         limit_to_equipment_type = {
             motorized_equipment
-            mechanized_equipment
+            mech_chassis
         }
 
         equipment_bonus = {

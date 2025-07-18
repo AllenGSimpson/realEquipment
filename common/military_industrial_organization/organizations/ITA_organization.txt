@@ -1058,13 +1058,14 @@ ITA_officine_meccaniche_organization = {
 
 	equipment_type = {
 		motorized_equipment
-		mechanized_equipment
+		mech_chassis
 		motorized_rocket_equipment
 		train_equipment
 	}
 	
 	research_categories = {
-		mio_cat_tech_all_motorized_mechanized
+		motorized_equipment
+		mot_rockets
 		train_equipment
 	}
 
@@ -1081,7 +1082,7 @@ ITA_officine_meccaniche_organization = {
 
 		limit_to_equipment_type = {
 			motorized_equipment
-			mechanized_equipment
+			mech_chassis
 			motorized_rocket_equipment
 		}
 	}
@@ -1091,14 +1092,14 @@ ITA_officine_meccaniche_organization = {
 
 		limit_to_equipment_type = {
 			motorized_equipment
-			mechanized_equipment
+			mech_chassis
 			motorized_rocket_equipment
 		}
 	}
 
 	add_trait = { 
 		token = ITA_mio_trait_new_ricostruzione_iundustriale_motorized
-		name = ITA_new_ricostruzione_industriale_motorized
+		name = ITA_new_ricostruzione_industriale
 		icon = GFX_generic_mio_department_icon_motorized_production
 		special_trait_background = yes
 
@@ -1107,7 +1108,8 @@ ITA_officine_meccaniche_organization = {
 		
 		available = {
 			FROM = {
-				has_completed_focus = ITA_new_ricostruzione_industriale
+				has_completed_focus = ITA_new_industrialization_program
+				has_completed_focus = ITA_strengthen_northern_industry
 			}
 		}
 
@@ -1117,7 +1119,7 @@ ITA_officine_meccaniche_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
+			military_industrial_organization_research_bonus = 0.1
 		}
 
 		production_bonus = {
@@ -1127,7 +1129,7 @@ ITA_officine_meccaniche_organization = {
 
 	add_trait = { 
 		token = ITA_mio_trait_new_ricostruzione_iundustriale_mechanized
-		name = ITA_new_ricostruzione_industriale_mechanized
+		name = ITA_new_ricostruzione_industriale
 		icon = GFX_generic_mio_department_icon_mechanized_production
 		special_trait_background = yes
 
@@ -1136,16 +1138,17 @@ ITA_officine_meccaniche_organization = {
 		
 		available = {
 			FROM = {
-				has_completed_focus = ITA_new_ricostruzione_industriale
+				has_completed_focus = ITA_new_industrialization_program
+				has_completed_focus = ITA_strengthen_northern_industry
 			}
 		}
 
 		limit_to_equipment_type = {
-			mechanized_equipment
+			mech_chassis
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
+			military_industrial_organization_research_bonus = 0.1
 		}
 
 		production_bonus = {
@@ -1155,7 +1158,7 @@ ITA_officine_meccaniche_organization = {
 
 	add_trait = { 
 		token = ITA_mio_trait_new_ricostruzione_iundustriale_train
-		name = ITA_new_ricostruzione_industriale_train
+		name = ITA_new_ricostruzione_industriale
 		icon = GFX_military_industrial_organization_train
 		special_trait_background = yes
 
@@ -1163,7 +1166,8 @@ ITA_officine_meccaniche_organization = {
 		
 		available = {
 			FROM = {
-				has_completed_focus = ITA_new_ricostruzione_industriale
+				has_completed_focus = ITA_new_industrialization_program
+				has_completed_focus = ITA_strengthen_northern_industry
 			}
 		}
 
@@ -1172,7 +1176,7 @@ ITA_officine_meccaniche_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.05
+			military_industrial_organization_research_bonus = 0.1
 		}
 
 		production_bonus = {

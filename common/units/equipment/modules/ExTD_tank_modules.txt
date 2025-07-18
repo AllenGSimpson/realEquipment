@@ -130,11 +130,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		xp_cost = 1
 		add_stats = {
-			reliability = 0.1
+			reliability = 0.075
 			breakthrough = 1.5
 			defense = 0.75
 			armor_value = 1
 			
+			hardness = -0.15
 		}
 		multiply_stats = {
 			maximum_speed = 0.05
@@ -155,6 +156,7 @@ equipment_modules = {
 			defense = 1
 			armor_value = 2
 			
+			hardness = -0.125
 		}
 		multiply_stats = {
 			maximum_speed = 0.075
@@ -170,11 +172,12 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		xp_cost = 1
 		add_stats = {
-			reliability = 0.2
-			breakthrough = 4.0
+			reliability = 0.15
+			breakthrough = 3.25
 			defense = 2
 			armor_value = 3
 			
+			hardness = -0.1
 		}
 		multiply_stats = {
 			maximum_speed = 0.1
@@ -294,7 +297,7 @@ equipment_modules = {
 		abbreviation = "slop"
 		category = hull_mod
 		sfx = sfx_ui_sd_module_turret
-
+	
 		add_stats = {
 		}
 		xp_cost = 1
@@ -627,8 +630,8 @@ equipment_modules = {
 		abbreviation = "skirt"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
-
-		add_stats = {
+	
+			add_stats = {
 			armor_value = 4
 			breakthrough = 5
 			build_cost_ic = 1.0
