@@ -110,4 +110,9 @@
  amphibious_heavy_armor_desc:0 "A battalion of heavy tanks, capable of amphibious operations."
  
  
- 
+ armored_engineer:0 "Armored Engineer Company"
+armored_engineer_desc:0 "Specialized armored vehicles equipped for construction and breaching tasks."
+armored_maintenance:0 "Armored Maintenance Company"
+armored_maintenance_desc:0 "Armored recovery and repair vehicles supporting frontline formations."
+armored_signal:0 "Armored Signal Company"
+armored_signal_desc:0 "Command vehicles outfitted with superior communications gear."

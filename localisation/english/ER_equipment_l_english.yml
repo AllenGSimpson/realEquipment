@@ -3867,6 +3867,12 @@
 
  heavy_tank_flame_equipment:0 "Heavy Flame Tank"
  heavy_tank_flame_equipment_1:0 "Heavy Flame Tank I"
+armored_engineer_vehicle:0 "Armored Engineer Vehicle"
+armored_engineer_vehicle_1:0 "Armored Engineer Vehicle"
+armored_maintenance_vehicle:0 "Armored Maintenance Vehicle"
+armored_maintenance_vehicle_1:0 "Armored Maintenance Vehicle"
+armored_command_vehicle:0 "Armored Command Vehicle"
+armored_command_vehicle_1:0 "Armored Command Vehicle"
  heavy_tank_flame_equipment_2:0 "Heavy Flame Tank II"
  heavy_tank_flame_equipment_3:0 "Heavy Flame Tank III"
 

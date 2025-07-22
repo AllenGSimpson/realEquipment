@@ -712,6 +712,37 @@ equipment_modules = {
 			build_cost_ic = -0.1
 		}
 		
-		xp_cost = 1
+                xp_cost = 1
+        }
+        dozer_blade = {
+                abbreviation = "dozer"
+                category = tank_special_module
+                sfx = sfx_ui_sd_module_turret
+                add_stats = {
+                        entrenchment = 1
+                        build_cost_ic = 1
+                }
+                allow_equipment_type = engineer_vehicle
+                xp_cost = 1
+        }
+
 	}
+        bridge_layer = {
+                abbreviation = "brdg"
+                category = tank_logistics_module
+                sfx = sfx_ui_sd_module_turret
+                allow_equipment_type = engineer_vehicle
+                forbid_equipment_type_exact_match = armor
+                xp_cost = 1
+        }
+
+        crane = {
+                abbreviation = "crne"
+                category = tank_logistics_module
+                sfx = sfx_ui_sd_module_turret
+                allow_equipment_type = maintenance_vehicle
+                forbid_equipment_type_exact_match = armor
+                xp_cost = 1
+        }
+
 }

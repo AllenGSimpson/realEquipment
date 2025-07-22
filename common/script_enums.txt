@@ -143,6 +143,9 @@ script_enum_equipment_category = {
 	rocket
 	flame
 	land_cruiser
+        engineer_vehicle
+        maintenance_vehicle
+        command_vehicle
 }
 
 script_enum_equipment_bonus_type = {
@@ -193,6 +196,9 @@ script_enum_equipment_bonus_type = {
 	rocket
 	flame
 	land_cruiser
+        engineer_vehicle
+        maintenance_vehicle
+        command_vehicle
 	super_heavy_artillery_equipment
 	super_heavy_artillery_equipment_1
 	self_propelled_super_heavy_artillery_equipment
@@ -210,8 +216,17 @@ script_enum_equipment_bonus_type = {
 
 	# Equipment archetypes & types
 	land_cruiser_chassis
+        engineer_vehicle
+        maintenance_vehicle
+        command_vehicle
 	land_cruiser_chassis_1
+        engineer_vehicle
+        maintenance_vehicle
+        command_vehicle
 	land_cruiser_equipment_1 #(No-NSB version)
+        engineer_vehicle
+        maintenance_vehicle
+        command_vehicle
 	destroyer
 	infantry_equipment
 	artillery_equipment
