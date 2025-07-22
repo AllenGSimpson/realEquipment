@@ -1,4 +1,4 @@
--- OLD:
+NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 4
 
 -- NDefines.NMilitary.STRATEGIC_SPEED_BASE = 60.0
 -- NDefines.NMilitary.STRATEGIC_INFRA_SPEED = 60.0
@@ -60,6 +60,7 @@ NDefines.NMilitary.ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE = 0.2 -- Chance for 
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 20
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 5	--Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 10 	--Base cost to unlock a support slot
+NDefines.NMilitary.MAX_DIVISION_SUPPORT_WIDTH = 2;          --10 support companies
 
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 1.00 					-- Global speed multiplier for airplanes (affects fe.transferring to another base)
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 1.0 							-- Higher value = more shot down planes

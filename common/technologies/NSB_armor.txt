@@ -1,6 +1,5 @@
 technologies = {
 
-
 	@1918 = 0
 	@1934 = 2
 	@1935 = 3
@@ -18,7 +17,7 @@ technologies = {
 
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
 	gwtank_chassis = { #Leichttraktor
-
+	
 		show_equipment_icon = yes
 
 		enable_equipments = {
@@ -119,9 +118,9 @@ technologies = {
 			leads_to_tech = basic_medium_tank_chassis
 			research_cost_coeff = 1
 		}
-
+		
 		path = {
-			leads_to_tech = sp_armored_advanced_flamethrower_tech
+			leads_to_tech = sp_armored_advanced_flamethrower_tech 
 			research_cost_coeff = 1
 		}
 
@@ -202,7 +201,6 @@ technologies = {
 
 					load_oob = "unlock_tanks"
 				}
-
 				if = { #Italian templates
 					limit = {
 						original_tag = ITA
@@ -257,7 +255,7 @@ technologies = {
 			cat_light_armor
 			mio_cat_tech_light_armor_and_modules
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 	}
 
 	improved_light_tank_chassis = { #Panzer II
@@ -273,7 +271,7 @@ technologies = {
 			leads_to_tech = advanced_light_tank_chassis
 			research_cost_coeff = 1
 		}
-
+		
 		path = {
 			leads_to_tech = amphibious_tank_chassis
 			research_cost_coeff = 1
@@ -310,24 +308,26 @@ technologies = {
 				tag = SOV
 				factor = 3
 			}
+
 			modifier = {
 				factor = 8
-				# Matilda II was designed and entered production in 1937
+				# Matilda II was designed and entered production in 1937 
 				tag = ENG
 				date > 1936.9.1
 			}
+			
 			modifier = {
 				factor = 8
-				# M3 Stuart entered production in 1941
+				# M3 Stuart entered production in 1941 
 				tag = USA
-				date > 1940.9.1
+				date > 1940.9.1 
 			}
 
 			modifier = {
 				factor = 1.1
 				date > 1937.1.1
 			}
-
+			
 			modifier = {
 				factor = 1.1
 				date > 1938.1.1
@@ -338,7 +338,6 @@ technologies = {
 				date > 1939.1.1
 			}
 		}
-
 		on_research_complete = {
 			if = { #Italian templates
 				limit = {
@@ -347,7 +346,7 @@ technologies = {
 				}
 				ITA_add_improved_light_tank_templates = yes
 			}
-			IF = { #Hungarian templates
+			IF = { #Hungarian templates 
 				limit = {
 					original_tag = HUN
 					has_completed_focus = wuw_HUN_the_toldi
@@ -358,18 +357,17 @@ technologies = {
 					type = light_tank_chassis_2
 					parent_version = 0
 					modules = {
-						main_armament_slot = tank_small_cannon_2
+						main_armament_slot = tank_small_cannon_2 
 						turret_type_slot = tank_light_fixed_superstructure_turret
-						suspension_type_slot = tank_torsion_bar_suspension
+						suspension_type_slot = tank_torsion_bar_suspension 
 						armor_type_slot = tank_riveted_armor
 						engine_type_slot = tank_gasoline_engine
-						special_type_slot_2 = tank_radio_1
+						special_type_slot_2 = tank_radio_1 
 					}
 					upgrades = {
-						tank_nsb_engine_upgrade = 3
-						tank_nsb_armor_upgrade = 2
+					tank_nsb_engine_upgrade = 3
+					tank_nsb_armor_upgrade = 2
 					}
-					#icon = "GFX_ITA_improved_light_tank_medium"
 				}
 			}
 		}
@@ -380,10 +378,8 @@ technologies = {
 			cat_light_armor
 			mio_cat_tech_light_armor_and_modules
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 	}
-
-
 
 	amphibious_tank_chassis = { #SchwimmPanzer II
 
@@ -450,7 +446,7 @@ technologies = {
 			tp_tech
 			mio_cat_tech_light_armor_and_modules
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 	}
 
 	amphibious_drive = { #SchwimmPanzer II
@@ -513,7 +509,7 @@ technologies = {
 			tp_tech
 			mio_cat_tech_light_armor_and_modules
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 	}
 
 	advanced_light_tank_chassis = { #Leopard
@@ -543,8 +539,9 @@ technologies = {
 			factor = 0.5
 			modifier = {
 				is_major = no
-				factor = 2  # Minors prefer light tanks
+				factor = 2 # Minors prefer light tanks
 			}
+			
 			modifier = {
 				factor = 8
 				# M24 Chaffee was designed and entered production in 1943
@@ -636,27 +633,27 @@ technologies = {
 
 		ai_will_do = {
 			base = 2
-
+			
 			modifier = {
 				factor = 1.1
 				date > 1939.1.1
 			}
-
+			
 			modifier = {
 				factor = 1.1
 				date > 1940.1.1
 			}
-
+			
 			modifier = {
 				factor = 1.1
 				date > 1941.1.1
 			}
-
+			
 			modifier = {
 				factor = 1.1
 				date > 1942.1.1
 			}
-
+			
 			modifier = {
 				factor = 3
 				is_major = yes
@@ -668,12 +665,10 @@ technologies = {
 				}
 				date > 1938.1.1
 			}
-
 			modifier = {
 				factor = 1.5
 				tag = SOV
 			}
-
 			modifier = {
 				factor = 4
 				# M3 Lee was designed and entered production in 1940-1941
@@ -686,18 +681,18 @@ technologies = {
 				tag = GER
 				has_completed_focus = GER_advanced_panzer_research
 				has_tech_bonus = {
-				    category = cat_medium_armor
+					category = cat_medium_armor
 				}
 			}
-
-			modifier = { #Use the research bonus from the focus!
+			
+			modifier = { #Use the research bonus from the focus! 
 				factor = 0.5
 				tag = GER
 				NOT = {
 					has_completed_focus = GER_advanced_panzer_research
 				}
 			}
-
+			
 			modifier = {
 				factor = 6
 				# Crusader was designed and entered production in 1939
@@ -712,9 +707,8 @@ technologies = {
 			cat_medium_armor
 			mio_cat_tech_medium_armor_and_modules
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 	}
-
 
 	improved_medium_tank_chassis = { #Panzer IV
 
@@ -743,7 +737,7 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1940 }
 		}
-
+		
 		on_research_complete = {
 			if = { #Italian templates
 				limit = {
@@ -778,7 +772,6 @@ technologies = {
 						tank_nsb_engine_upgrade = 3
 						tank_nsb_armor_upgrade = 3
 					}
-					#icon = "GFX_ITA_basic_medium_tank_medium"
 				}
 			}
 			IF = { #Hungarian templates
@@ -804,7 +797,6 @@ technologies = {
 						tank_nsb_engine_upgrade = 6
 						tank_nsb_armor_upgrade = 2
 					}
-					#icon = "GFX_ITA_advanced_medium_spaa_medium"
 				}
 			}
 		}
@@ -832,21 +824,21 @@ technologies = {
 				factor = 2
 				tag = SOV
 			}
-
+			
 			modifier = {
 				factor = 6
 				# M4 Sherman was entered production in late 1941
 				tag = USA
 				date > 1941.6.1
 			}
-
+			
 			modifier = {
 				factor = 6
 				# Cromwell was designed and entered production in 1942-1944
 				tag = ENG
 				date > 1942.9.1
 			}
-
+			
 			modifier = {
 				factor = 1.1
 				date > 1941.1.1
@@ -856,7 +848,7 @@ technologies = {
 				factor = 1.1
 				date > 1942.1.1
 			}
-
+			
 			modifier = {
 				factor = 1.1
 				date > 1943.1.1
@@ -904,7 +896,7 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1943 }
 		}
-
+		
 		on_research_complete = {
 			if = { #Italian templates
 				limit = {
@@ -982,6 +974,7 @@ technologies = {
 				factor = 1.2
 				date > "1946.1.1"
 			}
+			
 			modifier = {
 				factor = 5.0
 				tag = GER
@@ -991,7 +984,7 @@ technologies = {
 				    category = cat_medium_armor
 				}
 			}
-
+			
 			modifier = {
 				factor = 6
 				# Comet was designed and entered production in 1943-1944
@@ -1050,7 +1043,7 @@ technologies = {
 				factor = 2
 				date > 1948.1.1
 			}
-
+			
 			modifier = {
 				factor = 6
 				# Centurion was designed and entered production in 1945-1946
@@ -1148,10 +1141,6 @@ technologies = {
 				factor = 3
 			}
 			modifier = {
-				tag = SOV
-				factor = 5
-			}
-			modifier = {
 				tag = JAP
 				num_of_military_factories < 100
 				factor = 0
@@ -1199,7 +1188,7 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 5 y = @1940 }
 		}
-
+		
 		on_research_complete = {
 			if = { #Italian templates
 				limit = {
@@ -1234,10 +1223,7 @@ technologies = {
 				factor = 1.2
 				date > "1944.1.1"
 			}
-			modifier = {
-				tag = SOV
-				factor = 5
-			}
+			
 			modifier = {
 				factor = 5.0
 				tag = GER
@@ -1254,7 +1240,7 @@ technologies = {
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 	}
 
 
@@ -1285,7 +1271,7 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 5 y = @1943 }
 		}
-
+		
 		on_research_complete = {
 			if = { #Italian templates
 				limit = {
@@ -1313,11 +1299,7 @@ technologies = {
 				factor = 1.2
 				date > "1946.1.1"
 			}
-			modifier = {
-				tag = SOV
-				factor = 5
-			}
-
+			
 			modifier = {
 				factor = 8
 				# M26 Pershing entered production in 1944
@@ -1332,7 +1314,7 @@ technologies = {
 			cat_heavy_armor
 			mio_cat_tech_heavy_armor_and_modules
 		}
-		special_project_specialization = { specialization_land }
+		special_project_specialization = { specialization_land } 
 	}
 
 	super_heavy_tank_chassis = { #Maus
@@ -1364,7 +1346,7 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 9 y = @1941 }
 		}
-
+		
 		path = {
 			leads_to_tech = sp_armored_lc_high_impact_obliterator_cannon_tech
 			research_cost_coeff = 1
@@ -1384,7 +1366,7 @@ technologies = {
 			leads_to_tech = sp_armored_lc_specialized_field_manuals_tech
 			research_cost_coeff = 1
 		}
-
+		
 		on_research_complete = {
 			if = { #Italian templates
 				limit = {
@@ -1409,7 +1391,7 @@ technologies = {
 					ITA_add_hand_of_god_sh_tank_template_and_production = yes
 				}
 			}
-
+			
 			if = {
 				limit = {
 					has_dlc = "Gotterdammerung"
@@ -1425,15 +1407,14 @@ technologies = {
 			base = 0
 			modifier = {
 				add = 1
-				date > 1943.9.1
+				date > 1943.6.1
 				NOT = { has_government = democratic }
 				num_of_military_factories > 150
 			}
 			modifier = {
 				add = 2
 				original_tag = GER
-				date > 1944.5.1
-				surrender_progress < 0.1
+				date > 1943.9.1
 				has_government = fascism
 				has_war_with = SOV
 			}
@@ -2030,7 +2011,7 @@ technologies = {
 		}
 		special_project_specialization = { specialization_land }
 	}
-
+	
 	NOR_rikstanken_tech = {
 
 		allow = { always = no } #Only obtained through Rikstanken Event
@@ -2044,7 +2025,7 @@ technologies = {
 		}
 
 		on_research_complete = {
-
+		
 		}
 
 		show_effect_as_desc = no
@@ -2057,8 +2038,7 @@ technologies = {
 			armor
 		}
 	}
-
-
+	
 	########################
 	### SPECIAL PROJECTS ###
 	########################
@@ -2537,5 +2517,4 @@ technologies = {
 		}
 		special_project_specialization = { specialization_land }
 	}
-
 }

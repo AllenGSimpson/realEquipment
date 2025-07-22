@@ -1,0 +1,39 @@
+﻿l_english:
+
+
+### MIO Stuff ###
+
+USA_mio_trait_naca_cooperative_development: "NACA Cooperative Development"
+USA_mio_trait_standardized_wind_tunnel_tests: "Standardized Wind Tunnel Tests"
+USA_mio_trait_low_drag_wings: "Laminar Flow Airfoils"
+USA_mio_trait_meredith_effect_radiator: "Meredith Effect Radiator"
+USA_mio_trait_conic_section_fuselage_design: "Conic Section Fuselage Design"
+USA_mio_trait_fine_tuned_design: "Fine Tuned Fighter Design"
+USA_mio_trait_sectional_preassembly: "Sectional Pre-Assembly"
+USA_mio_trait_medium_plane_development: "Medium Bomber Contract"
+USA_mio_trait_twin_tails: "Twin Vertical Stabilizers"
+USA_mio_trait_transport_experience: "DC-3 Experience"
+USA_mio_trait_reinforced_construction: "Reinforced Construction"
+USA_mio_trait_reliable_engines: "Fuel Efficient Pratt & Whitney Radial Engines"
+USA_mio_trait_design_refinements: "Design Experience Refinements"
+USA_mio_trait_skunk_works: "Kelley's Skunk Works"
+USA_mio_trait_flush_riveted_panels: "Stainless Steel with Flush Riveted Skin Panels"
+USA_mio_trait_turbosupercharger: "GE Turbosuperchargers"
+USA_republic_aviation_organization: "Republic Aviation"
+# USA_mio_trait_lockheed_aircraft: "Lockheed Aircraft Corporation"
+USA_mio_trait_single_engine_design: "Very Large Single Engine Design"
+USA_mio_trait_lengthened_fuselage: "Lengthened Fuselage"
+petlyakov_design_bureau_organization: "Petlyakov Design Bureau"
+mio_header_transports: "Transports"
+GER_mio_trait_interceptor: "Interceptor Design Philosophy"
+GER_mio_trait_oversized_propeller_spinner: "Oversized Propellor Spinner"
+GER_mio_trait_pushrod_control_system: "Pushrod Control System"
+GER_mio_trait_electrically_powered_equipment: "Electrically Powered Equipment"
+
+
+### Focus Stuff ###
+
+USA_radial_engine_supremacy:0 "Radial Engine Supremacy"
+USA_radial_engine_supremacy_desc:0 "With the two powerhouse engine makers Pratt & Whitney and Curtis Wright, the U.S. had an undeniable lead in radial engine technology. P&W developed the famous 18 cylinder R-2800 Double Wasp engine boasting 2000 hp with a turbosupercharger, 3 years ahead of the Germans in this tech, an engine that would go on to be used until 1960."
+GER_interceptors:0 "Interceptor Design"
+GER_interceptors_desc:0 "Germany needs a fast, heavily armed fighter to intercept Allied bombers.  Kurt Tank at Focke-Wulf has a promising prototype that we must encourage.  The German government will provide extra resources to ensure its success."

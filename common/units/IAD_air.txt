@@ -1,0 +1,14 @@
+sub_units = {
+
+	# Medium airframe
+	
+	medium_nav_bomber = {
+		sprite = medium_plane
+		priority = 2
+		active = yes
+		type = naval_bomber
+		need = { medium_plane_naval_bomber_airframe = 1 }
+		categories = { category_medium_nav_bomber }
+		land_air_wing_size = 10
+	}
+}

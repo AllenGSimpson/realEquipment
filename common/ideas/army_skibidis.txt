@@ -1,0 +1,684 @@
+ideas = {
+	academy_spirit = {
+		Centralized_High_Command_spirit = {
+    		ledger = army
+    		available = { has_tech = Top_Down_Structure }
+    		modifier = {
+				experience_gain_factor  = 0.05
+				supply_consumption_factor = -0.05
+				max_command_power_mult  = 0.25
+				max_commander_army_size = 5
+				max_army_group_size = 1
+			}
+    		on_add = {
+				every_army_leader = {
+					###limit = {
+					###	is_army_leader = yes
+					###	NOT = { has_trait = custom_centralized_command_trait } 
+					###	###original_tag = ROOT
+					###}
+					add_unit_leader_trait  = centralized_command_trait 
+				}
+   			}
+			on_remove = {
+				every_army_leader = {
+				###limit = {
+				###    has_trait = centralized_command_trait
+				###    ###original_tag = ROOT
+				###}
+				remove_unit_leader_trait = centralized_command_trait 
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+			}
+		}
+		Cross_Branch_Training_spirit = {
+			ledger = army
+			###visible = { has_tech = Front_Level_Coordination }
+			available = { has_tech = Front_Level_Coordination }
+			modifier = {
+				trait_infantry_leader_xp_gain_factor = 0.2
+				trait_panzer_leader_xp_gain_factor = 0.2
+				coordination_bonus = 0.05
+				command_abilities_cost_factor = -0.25
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+			}
+		}
+		Field_Experience_For_All_Officers_spirit = {
+			ledger = army
+			###visible = { has_tech = Forward_Control }
+			available = { has_tech = Forward_Control }
+			modifier = {
+				experience_gain_factor  = 0.05
+				terrain_penalty_reduction = 0.05
+				terrain_trait_xp_gain_factor = 0.2
+				skill_bonus_factor = 0.10
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+			}
+		}
+###		mobile_warfare_academy_spirit = {
+###			ledger = army
+###			available = { has_military_academy = yes }
+###			visible = { has_tech = mobile_warfare }
+###			modifier = {
+###				custom_modifier_tooltip = mobile_warfare_academy_spirit_tt
+###				trait_panzer_leader_xp_gain_factor = 0.2
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = mobile_warfare
+###				}
+###			}
+###		}
+###		superior_firepower_academy_spirit = {
+###			ledger = army
+###			available = { has_military_academy = yes }
+###			visible = { has_tech = superior_firepower }
+###			modifier = {
+###				custom_modifier_tooltip = superior_firepower_academy_spirit_tt
+###				trait_engineer_xp_gain_factor = 0.2
+###				initiative_factor = 0.04
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = superior_firepower
+###				}
+###			}
+###		}
+###		theatre_training_spirit = {
+###			ledger = army
+###			available = { has_military_academy = yes }
+###			visible = { has_tech = trench_warfare }
+###			modifier = {
+###				custom_modifier_tooltip = theatre_training_academy_spirit_tt
+###				terrain_trait_xp_gain_factor = 0.2
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = trench_warfare
+###				}
+###			}
+###		}
+###		mass_assault_academy_spirit = {
+###			ledger = army
+###			available = { has_military_academy = yes }
+###			visible = { has_tech = mass_assault }
+###			modifier = {
+###				custom_modifier_tooltip = mass_assault_academy_spirit_tt
+###				trait_infantry_leader_xp_gain_factor = 0.2
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = mass_assault
+###				}
+###			}
+###		}
+	}
+
+	army_spirit = {
+		artillery_primer_spirit = {
+			###visible = {
+				###	OR = {
+					###		has_tech = Massed_Fire
+					###		has_tech = Forward_Operators
+				###	}
+			###}
+			available = { 
+				OR = {
+					has_tech = Massed_Fire
+					has_tech = Forward_Operators
+				}
+			}
+			ledger = army
+			modifier = {
+				experience_gain_artillery_combat_factor = 0.1
+				experience_gain_artillery_training_factor = 0.15
+				unit_artillery_design_cost_factor = -1
+				shore_bombardment_bonus = 0.15
+				railway_gun_bombardment_factor = 0.15
+				fortification_collateral_chance = 0.25
+			}
+			ai_will_do = {
+				base = 1
+
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+
+				modifier = {
+					factor = 2
+					has_government = fascism
+				}
+			}
+		}
+		infantry_studies_spirit = {
+			###visible = {
+			###	OR = {
+			###		has_tech = Fire_Superiority
+			###		has_tech = Fire_And_Maneuver
+			###	}
+			###}
+			available = { 
+				OR = {
+					has_tech = Fire_Superiority
+					has_tech = Fire_And_Maneuver
+				}
+			}
+
+			ledger = army
+			modifier = {
+				experience_gain_infantry_combat_factor = 0.1
+				experience_gain_infantry_training_factor = 0.15
+				unit_infantry_design_cost_factor = -1
+				dig_in_speed_factor = 0.25
+				cas_damage_reduction = 0.10
+				land_night_attack = 0.05
+			}
+			ai_will_do = {
+				base = 1
+
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+
+				modifier = {
+					factor = 2
+					has_government = fascism
+				}
+			}
+		}
+		mobility_integration_spirit = {
+			###visible = {
+			###	OR = {
+			###		has_tech = Emphasis_On_Movement
+			###		has_tech = Emphasis_On_Firepower
+			###		has_tech = Emphasis_On_Cooperation
+			###	}
+			###}
+			available = { 
+				OR = {
+					has_tech = Emphasis_On_Movement
+					has_tech = Emphasis_On_Firepower
+					has_tech = Emphasis_On_Cooperation
+				}
+			}
+			ledger = army
+			modifier = {
+				experience_gain_mechanized_combat_factor = 0.1
+				experience_gain_mechanized_training_factor = 0.15
+				experience_gain_motorized_combat_factor = 0.1
+				experience_gain_motorized_training_factor = 0.15
+				unit_motorized_design_cost_factor = -1
+				army_attack_speed_factor = 0.15
+				org_loss_when_moving = -0.15
+			}
+			ai_will_do = {
+				base = 1
+
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+
+				modifier = {
+					factor = 2
+					has_government = fascism
+				}
+			}
+		}
+		command_lessons_spirit = {
+			###visible = {
+			###	OR = {
+			###		has_tech = Mission_Command
+			###		has_tech = Unity_Of_Command
+			###	}
+			###}
+			available = { 
+				OR = {
+					has_tech = Mission_Command
+					has_tech = Unity_Of_Command
+				}
+			}
+			ledger = army
+			modifier = {
+				experience_gain_army = 0.05
+				land_doctrine_cost_factor = -0.05
+				experience_gain_army_factor = 0.10
+			}
+			ai_will_do = {
+				base = 1
+
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+
+				modifier = {
+					factor = 2
+					has_government = fascism
+				}
+			}
+		}
+
+###		mobile_warfare_army_spirit = {
+###			visible = { has_tech = mobile_warfare }
+###			ledger = army
+###			modifier = {
+###
+###				experience_gain_motorized_combat_factor = 0.1
+###				experience_gain_mechanized_combat_factor = 0.1
+###				unit_light_armor_design_cost_factor = -1
+###				#light_tank_destroyer_brigade
+###				unit_medium_armor_design_cost_factor = -1
+###				#medium_tank_destroyer_brigade 
+###				unit_modern_armor_design_cost_factor = -1
+###				unit_heavy_armor_design_cost_factor = -1
+###				#heavy_tank_destroyer_brigade 
+###				unit_super_heavy_armor_design_cost_factor = -1
+###				unit_motorized_design_cost_factor = -1
+###				unit_mechanized_design_cost_factor = -1
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = mobile_warfare
+###				}
+###			}
+###		}
+
+###		superior_firepower_army_spirit = {
+###			visible = { has_tech = superior_firepower  }
+###			ledger = army
+###			modifier = {
+###				experience_gain_artillery_combat_factor = 0.1
+###				unit_infantry_design_cost_factor = -1
+###				unit_artillery_brigade_design_cost_factor = -1
+###				unit_artillery_design_cost_factor = -1
+###				unit_mot_artillery_brigade_design_cost_factor = -1
+###				unit_light_sp_artillery_brigade_design_cost_factor = -1
+###				unit_medium_sp_artillery_brigade_design_cost_factor = -1
+###				unit_heavy_sp_artillery_brigade_design_cost_factor = -1
+###				unit_super_heavy_sp_artillery_brigade_design_cost_factor = -1
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = superior_firepower
+###				}
+###			}
+###		}
+
+###		grand_battleplan_army_spirit = {
+###			visible = { has_tech = trench_warfare }
+###			ledger = army
+###			modifier = {
+###				unit_marine_design_cost_factor = -0.5
+###				unit_mountaineers_design_cost_factor = -0.5
+###				unit_paratrooper_design_cost_factor = -0.5
+###				special_forces_cap_flat = 24
+###				extra_paratrooper_supply_grace = 24
+###				extra_marine_supply_grace = 24
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = trench_warfare
+###				}
+###			}
+###		}
+
+###		mass_assault_army_spirit = {
+###			ledger = army
+###			visible = { has_tech = mass_assault }
+###			modifier = {
+###				experience_gain_infantry_combat_factor = 0.1
+###				unit_infantry_design_cost_factor = -1
+###				unit_motorized_design_cost_factor = -1
+###				unit_mechanized_design_cost_factor = -1
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = mass_assault
+###				}
+###			}
+###		}
+		
+	}
+
+	division_command_spirit = {
+		King_Of_Battle_spirit = {
+			###visible = { has_tech = Huge_Barrages }
+			available = { has_tech = Huge_Barrages }
+			ledger = army
+			modifier = {
+				tactic_barrage_preferred_weight_factor = 1
+				army_artillery_attack_factor = 0.10
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+				modifier = {
+					factor = 4
+					tag = SOU
+					GER = { is_ai = no }
+				}
+			}
+		}
+		Cannons_Are_Always_Ready_spirit = {
+			###visible = { has_tech = Superior_Calculations }
+			available = { has_tech = Superior_Calculations }
+			ledger = army
+			modifier = {
+				tactic_overwhelming_fire_preferred_weight_factor = 1
+				army_artillery_defence_factor = 0.1
+				breakthrough_factor = 0.075
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+				modifier = {
+					factor = 4
+					tag = SOU
+					GER = { is_ai = no }
+				}
+			}
+		}
+		Unbreakable_Will_spirit = {
+			###visible = { has_tech = Frontal_Assault }
+			available = { has_tech = Frontal_Assault }
+			ledger = army
+			modifier = { 
+				tactic_guerrilla_tactics_preferred_weight_factor = 1
+				tactic_relentless_assault_preferred_weight_factor = 1
+				tactic_human_wave_tactics_preferred_weight_factor = 1
+				army_morale_factor = 0.10
+				org_loss_at_low_org_factor = -0.075
+				army_strength_factor = -0.10
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+				modifier = {
+					factor = 4
+					tag = SOU
+					GER = { is_ai = no }
+				}
+			}
+		}
+		Tyranny_Of_Technique_spirit = {
+			###visible = { has_tech = Multiple_Sides_Attack }
+			available = { has_tech = Multiple_Sides_Attack }
+			ledger = army
+			modifier = {
+				tactic_backhand_blow_preferred_weight_factor = 1
+				tactic_infantry_charge_preferred_weight_factor = 1
+				tactic_unexpected_thrust_preferred_weight_factor = 1
+				army_org_factor = 0.05
+				intel_from_combat_factor = 0.075
+				max_dig_in_factor = 0.1
+				land_night_attack = 0.05
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+				modifier = {
+					factor = 4
+					tag = SOU
+					GER = { is_ai = no }
+				}
+			}
+		}
+		Armor_First_In_The_Fight_spirit = {
+			###visible = { has_tech = Mobile_Combat_Formations }
+			available = { has_tech = Mobile_Combat_Formations }
+			ledger = army
+			modifier = {
+				army_armor_speed_factor = 0.05
+				army_attack_speed_factor = 0.10
+				tactic_blitz_preferred_weight_factor = 1
+				tactic_breakthrough_preferred_weight_factor = 1
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+				modifier = {
+					factor = 4
+					tag = SOU
+					GER = { is_ai = no }
+				}
+			}
+		}
+		One_Hand_Washes_The_Other_spirit = {
+			###visible = { has_tech = Combat_Command }
+			available = { has_tech = Combat_Command }
+			ledger = army
+			modifier = {
+				army_armor_attack_factor = 0.05
+				coordination_bonus = 0.075
+				tactic_blitz_preferred_weight_factor = 1
+				tactic_breakthrough_preferred_weight_factor = 1
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+				modifier = {
+					factor = 4
+					tag = SOU
+					GER = { is_ai = no }
+				}
+			}
+		}
+		The_Ever_Faithful_Companion_spirit = {
+			###visible = { has_tech = Integrated_Forces }
+			available = { has_tech = Integrated_Forces }
+			ledger = army
+			modifier = {
+				army_armor_defence_factor = 0.10
+				army_infantry_attack_factor = 0.05
+				tactic_blitz_preferred_weight_factor = 1
+				tactic_breakthrough_preferred_weight_factor = 1
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					NOT = { has_dlc = "No Step Back" }
+				}
+				modifier = {
+					factor = 4
+					tag = SOU
+					GER = { is_ai = no }
+				}
+			}
+		}
+
+###		maneuver_warfare_spirit = {
+###			visible = { has_tech = mobile_warfare }
+###			modifier = {
+###				tactic_unexpected_thrust_preferred_weight_factor = 1
+###				army_speed_factor = 0.05
+###				coordination_bonus = 0.05
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = mobile_warfare
+###				}
+###
+###			}
+###		}
+
+###		smoke_and_fire_spirit = {
+###			ledger = army
+###			visible = { has_tech = superior_firepower }
+###			modifier = {
+###				tactic_barrage_preferred_weight_factor = 1
+###				breakthrough_factor = 0.05
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = superior_firepower
+###				}
+###			}
+###		}
+
+###		logistical_focus_spirit = {
+###			ledger = army
+###			visible = { has_tech = trench_warfare }
+###			modifier = {
+###				tactic_planned_attack_preferred_weight_factor = 1
+###				supply_consumption_factor = -0.05
+###				air_fuel_consumption_factor = -0.05
+###				navy_fuel_consumption_factor = -0.05
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = trench_warfare
+###				}
+###			}
+###		}
+
+###		operational_reserve_spirit = {
+###			ledger = army
+###			visible = { has_tech = mass_assault }
+###			modifier = {
+###				tactic_relentless_assault_preferred_weight_factor = 1
+###				army_strength_factor = 0.1
+###			}
+###			ai_will_do = {
+###				base = 1
+###
+###				modifier = {
+###					factor = 0
+###					NOT = { has_dlc = "No Step Back" }
+###				}
+###
+###				modifier = {
+###					factor = 2
+###					has_tech = mass_assault
+###				}
+###			}
+###		}
+	}
+}

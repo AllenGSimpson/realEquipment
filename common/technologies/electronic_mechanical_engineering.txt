@@ -74,8 +74,8 @@ technologies = {
 	radio = {
 
 		# units with radios can more efficiently join combats when there is room
-		land_reinforce_rate = 0.02
-		coordination_bonus = 0.02
+		land_reinforce_rate = 0.05 ## was 0.02 ##
+		coordination_bonus = 0.04 ## was 0.02 ##
 		
 		path = {
 			leads_to_tech = improved_radio 
@@ -376,6 +376,7 @@ technologies = {
 		enable_equipment_modules = { 
 			air_air_radar_1
 			air_ground_radar_1
+			magnetic_anomaly_detector			
 		}
 		
 		path = {
@@ -428,6 +429,7 @@ technologies = {
 		enable_equipment_modules = {
 			air_air_radar_2
 			ship_radar_3
+			sonobuoy			
 		}
 
 		special_project_specialization = { specialization_air specialization_nuclear }
@@ -531,6 +533,8 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			bomb_sights_1
+			reflex_gunsight_1
+			cas_reflex_gunsight_1			
 		}
 		
 		research_cost = 2.5
@@ -573,6 +577,10 @@ technologies = {
 			leads_to_tech = improved_fire_control_system
 			research_cost_coeff = 1
 		}
+		enable_equipment_modules = {
+			reflex_gunsight_2
+			cas_reflex_gunsight_2
+		}		
 		research_cost = 2.5
 		start_year = 1938
 		
@@ -611,6 +619,7 @@ technologies = {
 		enable_equipment_modules = {
 			stabilizer
 			bomb_sights_2
+			gyro_gunsight_1			
 		}
 		path = {
 			leads_to_tech = advanced_computing_machine 
@@ -679,6 +688,10 @@ technologies = {
 			leads_to_tech = advanced_decryption 
 			research_cost_coeff = 1
 		}
+
+		enable_equipment_modules = {
+			gyro_gunsight_2
+		}			
 		
 		research_cost = 2.5
 		start_year = 1942
@@ -1045,6 +1058,7 @@ technologies = {
 
 		enable_equipment_modules = { 
 			ship_fire_control_system_3
+			remote_control_turret_system			
 		}
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -1245,6 +1259,11 @@ technologies = {
 
 	
 	experimental_rockets = {
+
+		enable_equipment_modules = {
+			compressor
+			single_stage_rocket
+		}
 
 		enable_building = {
 			building = rocket_site
@@ -1508,6 +1527,9 @@ technologies = {
 
 		enable_equipment_modules = {
 			rocket_engine_2
+			dual_stage_rocket
+			improved_compressor
+
 		}
 		
 		rocket_artillery = {
@@ -1603,6 +1625,7 @@ technologies = {
 		start_year = 1944
 		research_cost = 2
 		enable_equipment_modules = {
+			compressor		
 			tank_gas_turbine_engine
 			jet_engine_1x
 			jet_engine_2x
@@ -1881,6 +1904,8 @@ technologies = {
 
 		enable_equipment_modules = {
 			rocket_engine_2
+			dual_stage_rocket
+			improved_compressor
 		}		
 		
 		path = {

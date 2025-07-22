@@ -1,0 +1,979 @@
+scripted_gui = {
+	
+	
+	#
+	op_win  {
+		window_name = op_win
+		parent_window_token = selected_state_view
+		context_type = selected_state_context
+		visible = {
+			THIS = {
+				owner = {
+					TAG = ROOT
+					is_ai = no
+				}
+				
+			}
+		}
+		properties = {
+			
+		}
+		triggers = {
+			header_bg_visible = {
+				ROOT = {
+					NOT = {
+						has_country_flag = no_ecy_flag
+						check_variable = {root.open_close = 1}
+					}
+				}
+			}
+		}		
+		effects = {
+			op_win_button_click = {
+				set_variable = {
+					root.open_close = 1
+				}
+			}
+			op_win_button_alt_right_click = {
+				ROOT = {
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { has_country_flag = no_ecy_flag }
+							}
+						}
+						set_country_flag = no_ecy_flag
+					}
+					else = {
+						clr_country_flag = no_ecy_flag
+					}
+				}
+			}
+		}
+	}
+	bui_del_win = {
+		context_type = selected_state_context
+		window_name = "Building_delet"
+		parent_window_token = selected_state_view
+		visible = {
+			THIS = {
+				owner = {
+					TAG = ROOT
+					is_ai = no
+					check_variable = {
+						root.open_close = 1
+					}
+				}
+				
+			}
+		}
+		properties = {
+			
+		}
+		triggers = {
+			header_bg_visible = {
+				ROOT = {
+					NOT = {
+						has_country_flag = no_ecy_flag
+					}
+				}
+			}
+			Dismantling_1_click_enabled = {
+				#always = no
+			}
+			Dismantling_2_click_enabled = {
+				#always = no
+			}
+			Dismantling_3_click_enabled = {
+				#always = no
+			}
+			Dismantling_4_click_enabled = {
+				#always = no
+			}
+			Dismantling_5_click_enabled = {
+				#always = no
+			}
+			Dismantling_6_click_enabled = {
+				#always = no
+			}
+			Dismantling_7_click_enabled = {
+				#always = no
+			}
+			Dismantling_8_click_enabled = {
+				#always = no
+			}
+			Dismantling_9_click_enabled = {
+				#always = no
+			}
+			Dismantling_10_click_enabled = {
+				#always = no
+			}
+			
+		}
+		effects = {
+			open_close_click = {
+				if = {
+					limit = {
+						ROOT = {
+							NOT = { has_variable = root.open_close }
+						}
+					}
+					set_variable = {
+						root.open_close = 2
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							root.open_close = 2
+						}
+					}
+					set_variable = {
+						root.open_close = 1
+					}
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							root.open_close = 1
+						}
+					}
+					set_variable = {
+						root.open_close = 2
+					}
+				}
+			}
+			open_close_alt_right_click = {
+				ROOT = {
+					if = {
+						limit = {
+							ROOT = {
+								NOT = { has_country_flag = no_ecy_flag }
+							}
+						}
+						set_country_flag = no_ecy_flag
+					}
+					else = {
+						clr_country_flag = no_ecy_flag
+					}
+				}
+			}
+
+			Dismantling_1_alt_right_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 10
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 10
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_2_alt_right_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 1000
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 1000
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_3_alt_right_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 1000
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 1000
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_4_alt_right_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+								is_coastal = yes
+							}
+							add_building_construction = {
+								type = dockyard
+								level = 1000
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+								is_coastal = yes
+							}
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_5_alt_right_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = synthetic_refinery
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = synthetic_refinery
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_6_alt_right_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = oil_smelter
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = oil_smelter
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_7_alt_right_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = steel_mill
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = steel_mill
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_8_alt_right_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = aluminum_mill
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = 	aluminum_mill
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_9_alt_right_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = tungsten_smelter
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = tungsten_smelter
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_10_alt_right_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = chromium_smelter
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = chromium_smelter
+								level = 50
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+
+			Dismantling_1_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_2_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_3_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_4_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+								is_coastal = yes
+							}
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+								is_coastal = yes
+							}
+							add_building_construction = {
+								type = dockyard
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_5_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = synthetic_refinery
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = synthetic_refinery
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_6_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = oil_smelter
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = oil_smelter
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_7_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = steel_mill
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = steel_mill
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_8_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = aluminum_mill
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = 	aluminum_mill
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_9_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = tungsten_smelter
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = tungsten_smelter
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			Dismantling_10_click = {
+				if = {
+					limit = { 
+						THIS = { is_core_of = ROOT }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								is_core_of = ROOT
+							}
+							add_building_construction = {
+								type = chromium_smelter
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+				if = {
+					limit = { 
+						THIS = { NOT = { is_core_of = ROOT } }
+					}
+					ROOT = {
+						every_controlled_state = {
+							limit = {
+								NOT = { is_core_of = ROOT }
+							}
+							add_building_construction = {
+								type = chromium_smelter
+								level = 1
+								instant_build = no
+							}
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	GC_GC_state_Level_of_regional_development = {
+		window_name = "GC_state_Level_of_regional_development"
+		parent_window_token = selected_state_view
+		context_type = selected_state_context
+		ai_enabled = {
+			always = no
+		}
+		visible = {
+		}
+		triggers = {
+			state_picture_visible = {
+				owner = {
+					TAG = ROOT
+				}
+				NOT = { has_state_category = megalopolis }
+			}
+			state_picture_click_enabled = {
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = gc_dym_1_state
+					}
+					is_in_array = {
+						array = ROOT.regional_development_state_gc
+						value = THIS
+					}
+				}
+				ROOT = {
+					num_of_available_civilian_factories > 10
+				}
+			}
+		}
+		effects = {
+			state_picture_click = {
+				custom_effect_tooltip = THIS_STATE
+				if = {
+					limit = { 
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = gc_dym_1_state
+							}
+							is_in_array = {
+								array = ROOT.regional_development_state_gc
+								value = THIS
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = gc_dym_1_state
+						days = 18
+					}
+					add_to_array = {
+						array = ROOT.regional_development_state_gc
+						value = THIS
+					}
+				}
+				else = {
+					custom_effect_tooltip = development_state_disabled
+				}
+				owner = {
+					clear_variable = ROOT.gc_dym_1_country^1
+					clear_variable = ROOT.gc_dym_1_country^2
+					hidden_effect = {
+						every_owned_state = {
+							add_to_variable = {
+								ROOT.gc_dym_1_country^1 = THIS.modifier@factories_used_by_regional_development_gc
+							}
+							add_to_variable = {
+								ROOT.gc_dym_1_country^2 = THIS.modifier@steel_for_regional_development_gc
+							}
+						}
+					}
+					if = {
+						limit = { 
+							NOT = {
+								has_dynamic_modifier = {
+									modifier = gc_dym_1_country
+								}
+							}
+						}
+						add_dynamic_modifier = {
+							modifier = gc_dym_1_country
+						}
+					}
+				}
+			}
+		}
+	}
+	
+}
+

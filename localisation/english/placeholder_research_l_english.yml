@@ -1,0 +1,366 @@
+﻿l_english:
+ PLACEHOLDER_DOCTRINE_LABEL:0 "Cavalry Offensive Doctrine"
+ PLACEHOLDER_2_LABEL:0 "MOTORIZATION"
+ PLACEHOLDER_2_LABEL_TT:0 "He abandoned the outdated horse and turned the rudder to the introduction of armored vehicles."
+ placeholder_2_desc:0 "Each weapon has its own role, and when it is operated in the right place and according to its role, it will show remarkable performance. A rifle optimized for cavalry raises the basic combat power of a unit."
+
+tank_doc_initiator_desc: "CACCA"
+ilcazzo: "ilcazzo"
+TANK_DOCTRINE_LABEL: "Armored Doctrine"
+ARMORED_WAVE_LABEL: "Armored Wave"
+COMBINED_ARMOR_LABEL: "Combined Armor"
+ARMOR_SPEARHEAD_LABEL: "Armor Spearhead"
+ARMORED_WAVE_LABEL_TT: "Tanks are powerful instruments, like hammers: the enemy will collapse under our crippling, overwhelming blows"
+COMBINED_ARMOR_LABEL_TT: "Tanks are but one part of our military orchestra: only by working in closely with the rest will they create a debilitating symphony for our enemies!"
+ARMOR_SPEARHEAD_LABEL_TT: "Tanks are precision machines, like scalpels: we need but one swift and precise strike to make the enemy front crumble!"
+
+INFANTRY_DOCTRINE_LABEL: "Infantry Doctrine"
+OVERWHELMING_INFANTRY_LABEL: "Overwhelming Infantry"
+DECISIVE_INFANTRY_LABEL: "Decisive Infantry"
+ADAPTABLE_INFANTRY_LABEL: "Adaptable Infantry"
+OVERWHELMING_INFANTRY_LABEL_TT: "We cannot worry about every single engagement our units find themselves in, we have a war to win!"
+DECISIVE_INFANTRY_LABEL_TT: "Only by making sure we can win every battle, we’ll ensure total victory over the enemy!"
+ADAPTABLE_INFANTRY_LABEL_TT: "Infantry Operations are the backbone of any army, to have them as an unflexible and unorganized rabble is plain unacceptable!"
+
+COMMAND_CONTROL_DOCTRINE_LABEL: "Command & Control Doctrine"
+CENTRALISED_COMMAND_LABEL: "Centralised Command"
+DECENTRALISED_COMMAND_LABEL: "Decentralised Command"
+FLEXIBLE_COMMAND_LABEL: "Flexible Command"
+CENTRALISED_COMMAND_LABEL_TT: "Leave the thinking to the generals, they’ll cook up a plan the enemy will never forget!"
+DECENTRALISED_COMMAND_LABEL_TT: "If there’s anyone in our army that knows how the war will be won, it’s our officers in the field, let them take command!"
+FLEXIBLE_COMMAND_LABEL_TT: "By ensuring flawless communication between the higher and lower echelons of our armed forces we’ll achieve maximum efficiency!"
+
+
+ARTILLERY_DOCTRINE_LABEL: "Artillery Doctrine"
+RELENTLESS_ARTILLERY_LABEL: "Relentless Artillery"
+VERSATILE_ARTILLERY_LABEL: "Versatile Artillery"
+INTEGRATED_ARTILLERY_LABEL: "Integrated Artillery"
+RELENTLESS_ARTILLERY_LABEL_TT: "Our previous experiences dictate that artillery will win us the war, a lot of artillery."
+VERSATILE_ARTILLERY_LABEL_TT: "Only by making sure all our combat elements work in close cooperation, we can ensure victory"
+INTEGRATED_ARTILLERY_LABEL_TT: "By entrusting our men in the field with commanding the big guns we’ll ensure success!"
+
+
+Emphasis_On_Movement: "Emphasis On Movement"  
+Emphasis_On_Firepower: "Emphasis On Firepower"  
+Emphasis_On_Cooperation: "Emphasis On Cooperation"  
+Tank_Primacy: "Tank Primacy"  
+Infantry_Armor_Cooperation: "Infantry Armor Cooperation"  
+Tank_Heavy_Formations: "Tank Heavy Formations"
+Tank_Heavy_Formations_tt: "\n§YEffects§!§W:§!\n£$unit_medium_armor$ All §YArmored Support Companies§! now grant:\n -§G+1§! $MODIFIER_ARMY_ORG$ to §YArmored Battalions§!"
+
+###Unique_Key: "\n§YEffects§!§W:§!\n£$[ICON_NAME]$ [Unit Names/Types]:\n- $[MODIFIER_1]$§G+[Value]%§!\n- $[MODIFIER_2]$§G+[Value]%§!\n§Y[Condition or Terrain]§!\n  [Effect Type]: §R-[Value]%§!\n£$[ICON_NAME]$ §Y[Modifier Category]:§! $[CATEGORY_KEY|Y]$:\n  - $[MODIFIER]$§G+[Value]%§!"
+
+All_Around_Versatility: "All Around Versatility"  
+All_Around_Versatility_tt: "\n§YEffects§!§W:§!\n£$armor_icon$ All §YArmored Support Companies§! now grant:\n- §G+5%§! $MODIFIER_BREAKTHROUGH$\n- §G+5%§! $MODIFIER_DEFENCE$\nto §YInfantry Battalions§!"
+Cruiser_Infantry_Split: "Cruiser Infantry Split"
+Cruiser_Infantry_Split_tt: "\n§YEffects§!§W:§!\n£$armor_icon$ §YArmored Support Companies§! grant bonuses to §YInfantry Battalions§! based on armor type:\n- §G+5%§! $MODIFIER_ARMY_SPEED_FACTOR$\n- §G+5%§! $MODIFIER_BREAKTHROUGH$\n- §G+5%§! $MODIFIER_DEFENCE$"
+Focal_Point: "Focal Point"  
+Large_Front_Advances: "Large Front Advances"  
+Mobile_Combat_Formations: "Mobile Combat Formations"  
+Mobile_Exploitation_Force: "Mobile Exploitation Force"  
+Combat_Command: "Combat Command"  
+Mobile_Reserves: "Mobile Reserves"  
+Integrated_Forces: "Integrated Forces"  
+Armored_Spearhead: "Armored Spearhead"  
+Ensure_Operational_Depth: "Ensure Operational Depth"  
+Break_Trough_And_Encircle: "Break Through And Encircle"  
+Ravage_Their_BackLines: "Ravage Their Backlines"  
+Cross_Branch_Coordination: "Cross Branch Coordination"  
+War_Of_Movement: "War Of Movement"  
+Battle_Of_Annihilation: "Battle Of Annihilation"  
+War_Of_Supremacy: "War Of Supremacy"  
+Fire_Superiority: "Fire Superiority"  
+Fire_And_Maneuver: "Fire And Maneuver"  
+Attritional_Defense: "Attritional Defense"  
+Elastic_Defense: "Elastic Defense"  
+Static_Defense: "Static Defense"  
+Mass_Infantry_Organization: "Mass Infantry Organization"  
+Small_Unit_Tactics: "Small Unit Tactics"  
+All_Around_Defense: "All Around Defense"  
+Overlapping_Defensive_Positions: "Overlapping Defensive Positions"  
+Combined_Arms: "Combined Arms"  
+Flexible_Formations: "Flexible Formations"  
+Skirmish_Lines: "Skirmish Lines"  
+Violent_Attacks: "Violent Attacks"  
+Lightning_Attacks: "Lightning Attacks"  
+Continuous_Operations: "Continuous Operations"  
+Continuous_Front: "Continuous Front"  
+Frontal_Assault: "Frontal Assault"  
+Infiltration_Tactics: "Infiltration Tactics"  
+Counterstrikes: "Counterstrikes"  
+Multiple_Sides_Attack: "Multiple Sides Attack"  
+Massed_Fire: "Massed Fire"  
+Massed_Fire_tt: "\n§YEffects§!§W:§!\n£$unit_engineer_icon$ Engineers, £$unit_artillery_icon_small$	 Assault Engineers & Armored Engineers:\n- $MODIFIER_ARMY_STRENGTH$§G+2000%§!\n- $TRICKLEBACK$§G+10%§!\n- $SUPPLY$§G+200%§!\n§YUrban§!\n  Movement: §R-10.0%§!\n£$ENGINEER_ICON$ §YBattalion Modifier:§! $CATEGORY|Y$:\n  - $MORALE$§G+10.00%§!"
+Forward_Operators: "Forward Operators"  
+Pre_Assault_Barrage: "Pre Assault Barrage"  
+Dedicated_Artillery_Divisions: "Dedicated Artillery Divisions"  
+Huge_Barrages: "Huge Barrages"  
+Direct_Fire_Support: "Direct Fire Support" 
+Direct_Fire_Support_tt: "\n§YEffects§!§W:§!\nApplies to:\n- §YAll Artillery Units§! (including SPG, Rocket, and Motorized variants)\n\nStat Changes:\n- Piercing §G+100%§!\n- $MODIFIER_COMBAT_WIDTH_FACTOR$ §G-1§!\n- $MODIFIER_ARMY_STRENGTH$ §R-100%§!"
+Establish_Kill_Zones: "Establish Kill Zones"  
+Regimental_Fire_Support: "Regimental Fire Support"  
+Fire_By_Command: "Fire By Command"  
+Fire_By_Request: "Fire By Request"  
+Counterbattery_Fire: "Counterbattery Fire"  
+Converging_Fire: "Converging Fire"  
+Superior_Calculations: "Superior Calculations"  
+Rapid_Fire: "Rapid Fire"  
+Emphasis_On_Neutralization: "Emphasis On Neutralization"  
+Advanced_Firebases: "Advanced Firebases"  
+Concentrated_Strongpoints: "Concentrated Strongpoints"  
+Suppressive_Barrages: "Suppressive Barrages"  
+Shock_And_Awe: "Shock And Awe"  
+Unity_Of_Command: "Unity Of Command"  
+Mission_Command: "Mission Command"  
+Control_By_Directive: "Control By Directive"  
+Maintain_Flexibility: "Maintain Flexibility"  
+Encourage_Local_Initiative: "Encourage Local Initiative" 
+Encourage_Local_Initiative_tt: "\n§YEffects§!§W:§!\n£$recon_icon$ All §YRecon Battalions§! now grant:\n- §G+1%§! $MODIFIER_INITIATIVE_FACTOR$\nto §YInfantry Battalions§!"
+Strong_Hierarchy: "Strong Hierarchy"  
+Top_Down_Structure: "Top Down Structure"  
+Always_Ensure_Grip: "Always Ensure Grip"  
+Set_Piece_Battle: "Set Piece Battle"  
+Ensure_Supply_Effectiveness: "Ensure Supply Effectiveness"  
+Assign_Air_Armies_To_Fronts: "Assign Air Armies To Fronts"  
+Unity_Trough_Effort: "Unity Through Effort"  
+Ensure_Supply_Efficiency: "Ensure Supply Efficiency"  
+Front_Level_Coordination: "Front Level Coordination"  
+Seamless_Airforce_Cooperation: "Seamless Airforce Cooperation"  
+Decentralised_Decisionmaking: "Decentralized Decision-Making"  
+Forward_Control: "Forward Control"  
+Tactical_Autonomy: "Tactical Autonomy"  
+Dynamic_Battle: "Dynamic Battle"  
+Focus_On_Operational_Mobility: "Focus On Operational Mobility"  
+Focus_On_Operational_Secrecy: "Focus On Operational Secrecy"  
+Maintain_Operational_Intent: "Maintain Operational Intent"  
+Bridge_The_Gap_Between_Tactics_And_Strategy: "Bridge The Gap Between Tactics And Strategy"  
+Bridge_The_Gap_Between_Tactics_And_Strategy_tt: "\n§YEffects§!§W:§!\n£$recon_icon$ All §YRecon Battalions§! now grant:\n- §G+1§! $MODIFIER_ARMY_ORG$\n to §YInfantry Battalions§!"
+Methodical_Battle: "Methodical Battle"  
+Culminating_Point_Of_Victory: "Culminating Point Of Victory"  
+
+Emphasis_On_Movement_desc: "The greatest asset in our armoured forces is their mobility, let us emphasize that"
+
+Emphasis_On_Firepower_desc: "Our tanks exist to blow holes in the enemy formations, nothing more, nothing less."  
+
+Emphasis_On_Cooperation_desc: "The tanks will support the infantry in all manners of operations, as it has always been the case."  
+
+Tank_Primacy_desc: "Battlefield dominance is in the hands of whoever can employ their tanks in the best way."  
+
+Infantry_Armor_Cooperation_desc: "Infantry and armour are like the two wheels of a cart: one can't go without the other."  
+
+Tank_Heavy_Formations_desc: "Tanks perform at their peak when massed together: our armour deployments must reflect that."  
+
+All_Around_Versatility_desc: "Our forces must be capable of working in tandem with tanks to minimize losses and failures."  
+
+Cruiser_Infantry_Split_desc: "Only by giving clear designations on the purpose of our armour will we be sure that every gear turns in the way it is supposed to."  
+
+Focal_Point_desc: "Identifying the focal point of the operation is a must if we to ensure a breakthrough."  
+
+Large_Front_Advances_desc: "We will achieve multiple localized breakthroughs by spreading out our armour ."  
+
+Mobile_Combat_Formations_desc: "Although weaker and slower, our infantry must follow their armoured brethren in the fight to mop up any resistance left."  
+
+Mobile_Exploitation_Force_desc: "The gaps created by our tanks must be exploited by other mobile formations to ensure that no opportunity is left unturned."  
+
+Combat_Command_desc: "Allowing the formation of flexible formations created to accomplish tasks will grant flexibility to our armored forces."  
+
+Mobile_Reserves_desc: "Whenever mobile operations are set, a cohort of mobile units must always be kept to cover any flanks, holes or gaps that may appear."  
+
+Integrated_Forces_desc: "Cooperative training and special drills must be established to make sure that the infantryman knows to count on the tanker and vice versa."  
+
+Armored_Spearhead_desc: "Concentrating our hardest hitting units in a narrow front will cause any enemy front to crumble."  
+
+Ensure_Operational_Depth_desc: "Our offensive operations do not aim simply at annihilating the enemy in front of us, as such preparations must be made to ensure prolonged operational capabilities."  
+
+Break_Trough_And_Encircle_desc: "Focusing on the immediate creation and liquidations of 'cauldrons' whereby enemy resistance can be quickly silenced is vital to our armored operations."  
+
+Ravage_Their_BackLines_desc: "Once the breaktrough is made, eliminating enemy resistance in the rear is of vital importance."  
+
+Cross_Branch_Coordination_desc: "Establishing liasons between our armor and the infantry will ensure proper coordination between the two."  
+
+War_Of_Movement_desc: "Our success will be decided not by the size of our guns, but by the speed of our tracks."  
+
+Battle_Of_Annihilation_desc: "Our tanks main purpose is to blow up the enemy, anything else comes second."  
+
+War_Of_Supremacy_desc: "Our tank corps must establish total dominance over the enemy in all aspects of warfare."  
+
+Fire_Superiority_desc: "The best way to win a firefight is to bring more, bigger guns."  
+
+Fire_And_Maneuver_desc: "Ensuring mobility is always kept in mind during infantry operations will guarantee us the edge over the enemy."  
+
+Attritional_Defense_desc: "The enemy's attacks will break by a thousand grains, like the waves in the sand."  
+
+Elastic_Defense_desc: "Our lines must bend and flex under enemy pressure, just to snap in place when the time is right."  
+
+Static_Defense_desc: "Ground is taken to be held, our defensive operations will uphold this fact."  
+
+Mass_Infantry_Organization_desc: "The superiority of our infantry will be shown in numbers and coordination."  
+
+Small_Unit_Tactics_desc: "Small, well coordinated units can often accomplish grand tasks where the rabble would fail ."  
+
+All_Around_Defense_desc: "Covering against all vectors of attack must be engrained in our soldier's minds, especially when cut off."  
+
+Overlapping_Defensive_Positions_desc: "Layered fields of fire will ensure opposition in force to any strike made by our enemies."  
+
+Combined_Arms_desc: "Infantry is but one part of the grander structure that is our army."  
+
+Flexible_Formations_desc: "Letting our units adopt more ad-hoc formations rather than entombing them into rigidity is vital to their continued success."  
+
+Skirmish_Lines_desc: "Establishing clear lines of fire and keeping our formations in check will ensure order and discipline in all operations."  
+
+Violent_Attacks_desc: "Only the usage of overwhelming force and disregard for all else will allow to strike the enemy where it hurts the most."  
+
+Lightning_Attacks_desc: "To keep the enemy off balance, our strikes will be fast, unexpected and lethal."  
+
+Continuous_Operations_desc: "Our men must be drilled and rotated to ensure prolonged operational capacity."  
+
+Continuous_Front_desc: "Ensuring that no gaps exist in the lines ensures wherever our soldiers fight, they'll never be alone."  
+
+Frontal_Assault_desc: "I ask of you a desperate charge against the enemy today. I promise you victory over the enemy tomorrow."  
+
+Infiltration_Tactics_desc: "Instructing our soldiers to bypass and flank enemy positions just to reveal themselves when poised to strike is the greatest of tactics."  
+
+Counterstrikes_desc: "Never give the enemy a moment of respite! Never cede ground without biting back! Retaliation is our motto."  
+
+Multiple_Sides_Attack_desc: "Converging on even the strongest of enemy positions from multiple positions will inevitably spell their defeat."  
+
+Massed_Fire_desc: "The lacking precision of artillery can be obviated by concentrating enough tubes in an area ."  
+
+Forward_Operators_desc: "Advanced recoinnassance giving accurate feedback will ensure our artillery strikes where it hurts the most."  
+
+Pre_Assault_Barrage_desc: "Pummeling enemy positions before an attack will throw all opposition in disarray."  
+
+Dedicated_Artillery_Divisions_desc: "The concentration of artillery into select formations brings unparalleled firepower to any fight we wish to take."  
+
+Huge_Barrages_desc: "Whenever a tube fires it must not be alone, it has to be accompanied by the thunder of hundreds of others in the same deadly purpose."  
+
+Direct_Fire_Support_desc: "When the necessity arises we'll instruct our artillery to fire directly onto the enemy forces, ballistics be damned."  
+
+Establish_Kill_Zones_desc: "Divvying up sectors in the battlefield under the watch of different guns ensures no target will survive the coming onslaught."  
+
+Regimental_Fire_Support_desc: "We must ensure each regiment in our army brings some firepower to the field, empowered by our command systems."  
+
+Fire_By_Command_desc: "Let's not let the rabble call the shots whenever artillery is concerned, our generals are much more suited for that."  
+
+Fire_By_Request_desc: "Frontline units are delegated the matter of target acquisition and fire control for their immediate benefits."  
+
+Counterbattery_Fire_desc: "Silencing the guns of the enemy takes precedence over blindly firing and exposing our positions."  
+
+Converging_Fire_desc: "Multiple fire sources concentrating on a single target ensures maximum local destruction."  
+
+Superior_Calculations_desc: "Advanced targeting and firing techniques allow our guns to be more efficient."  
+
+Rapid_Fire_desc: "Drilling our men in the art of rapid reloading, aiming and firing of their guns increases firepower without bringing in more cannons."  
+
+Emphasis_On_Neutralization_desc: "Keeping the enemy pinned in position while our forces run amok free to do their bidding is a great accomplishment for our crews."  
+
+Advanced_Firebases_desc: "The creation of forward positions where our artillery can operate in close cooperation is the pinnacle for sustained fire support"
+
+Concentrated_Strongpoints_desc: "By fortifying key positions with artillery we can ensure that we'll be able to strike the enemy while being untouchable from their efforts."  
+
+Suppressive_Barrages_desc: "Continuous fire meant to keep the enemy in place and demoralized will allow greater freedom to the rest of our forces in the fight."  
+
+Shock_And_Awe_desc: "Establishing dominance in regards to firepower and force ensures the enemy will have no doubts about who's the hunter and who's the prey."  
+
+Unity_Of_Command_desc: "It's paramount to ensure our units follow the orders from command precisely and exactly as they were ordered to by the higher ups."
+
+Mission_Command_desc: "It's better to give freedom of operation to our leaders in the field, let them come up with their own plans."  
+
+Control_By_Directive_desc: "Train our soldiers into proper procedures and drills providing clear, high-level orders while allowing some flexibility."  
+
+Maintain_Flexibility_desc: "A rigid strategy is bound to break, we must ensure at all levels that adaptability is placed in great consideration."  
+
+Encourage_Local_Initiative_desc: "It is the duty of the officer in the field to adapt and respond to the ever changing battlefield occurrences."  
+
+Strong_Hierarchy_desc: "Orders are not to be disobeyed or misinterpreted in any way by making sure everyone answers to someone above them."  
+
+Top_Down_Structure_desc: "Orders flow from the highest levels of command downward, like the river flows from the mountain."  
+
+Always_Ensure_Grip_desc: "The moment our mooks begin to call the shots is the moment things go awry, we must give them detailed orders to follow to prevent them from doing that."  
+
+Set_Piece_Battle_desc: "The war is won with deliberate and well-planned pitched battles from which the enemy cannot escape."  
+
+Ensure_Supply_Effectiveness_desc: "Damn the logistics officers! Our supplies must be given with priority to the units considered most worthy by command for the following operations."  
+
+Assign_Air_Armies_To_Fronts_desc: "Air units must be directed by generals and marshals to give aid where they feel is needed the most."  
+
+Unity_Trough_Effort_desc: "Coordination and discipline in the ranks is reinforced to achieve cohesion and success."  
+
+Ensure_Supply_Efficiency_desc: "We are not always in the position to moan about missing supplies, when that happens we must make do with what we have."  
+
+Front_Level_Coordination_desc: "Cooperation between different military formations must be ensured at the highest levels for devastating effects."  
+
+Seamless_Airforce_Cooperation_desc: "The creation of air liaisons deployed on the frontlines allows air support to operate where our men need it the most."  
+
+Decentralised_Decisionmaking_desc: "Out of all the men in the field, the ones who know best the enemy are the ones shooting it every day, let them call some shots."  
+
+Forward_Control_desc: "Commanders close to the action are better suited to planning and executing operations, rather than some stuffy armchair general."  
+
+Tactical_Autonomy_desc: "Independent action is the mother all successes, let it flourish under our commands."  
+
+Dynamic_Battle_desc: "Keeping combat fluid and responsive to changing situations means no enemy will be prepared for what we are coming up with."  
+
+Focus_On_Operational_Mobility_desc: "All efforts must be taken to ensure that mobility is kept during our operations in order to gain strategic advantages."  
+
+Focus_On_Operational_Secrecy_desc: "By purposefully misdirecting the enemy attention and creating deception on all levels the enemy will have no idea where or when we are striking."  
+
+Maintain_Operational_Intent_desc: "Above all else let this be known: the offensive must reach all its objectives."  
+
+Bridge_The_Gap_Between_Tactics_And_Strategy_desc: "The establishment of a proper operational art will be the supreme conjunction of tactics and strategy."  
+
+Methodical_Battle_desc: "Each battle we fight, each offensive we launch, must all be for a greater strategic purpose."  
+
+Culminating_Point_Of_Victory_desc: "The culminating point of victory is the moment in which a military force can no longer fight, we are to bring our enemy to it at the earliest."  
+
+
+
+
+Centralized_High_Command_spirit: "Centralized High Command"  
+Centralized_High_Command_spirit_desc: "Our high command must be called up to plan even the finer details of any plan, if we are to win this war."  
+
+Cross_Branch_Training_spirit: "Cross Branch Training"  
+Cross_Branch_Training_spirit_desc: "No fight can be won if two soldiers of the same side don't trust eachother completely."  
+
+Field_Experience_For_All_Officers_spirit: "Field Experience For All Officers"  
+Field_Experience_For_All_Officers_spirit_desc: "No trustworthy commander has ever been called so for sitting all day in an armchair."  
+
+artillery_primer_spirit: "Artillery Primer"  
+artillery_primer_spirit_desc: "Artillery has come a long way from the good old times of volley guns, there is much to be learned."
+modifier_experience_gain_artillery_training_factor:1 "Artillery experience gain from training"
+
+infantry_studies_spirit: "Infantry Studies"  
+infantry_studies_spirit_desc: "We cannot repeat the mistakes of the last war, our soldier's lives depend on it!"  
+modifier_experience_gain_infantry_training_factor:1 "Infantry experience gain from training"
+
+mobility_integration_spirit: "Mobility Integration"  
+mobility_integration_spirit_desc: "Everyone has a plan, until their allies get overrun and their position flanked."  
+modifier_experience_gain_motorized_training_factor:1 "Motorized infantry experience gain from training"
+modifier_experience_gain_mechanized_training_factor:1 "Mechanised experience gain from training"
+
+command_lessons_spirit: "Command Lessons"  
+command_lessons_spirit_desc: "The harder you study now, the harder you'll win on the battlefield."  
+
+King_Of_Battle_spirit: "King Of Battle"  
+King_Of_Battle_spirit_desc: "I've never seen a situation where bringing a couple more big guns wouldn't help."  
+
+Cannons_Are_Always_Ready_spirit: "Cannons Are Always Ready"  
+Cannons_Are_Always_Ready_spirit_desc: "As the old adage goes: Artillery conquers, Infantry holds."  
+
+Unbreakable_Will_spirit: "Unbreakable Will"  
+Unbreakable_Will_spirit_desc: "Our soldiers may lack food, cover and guns, but they don't lack guts."  
+tactic_guerrilla_tactics_preferred_weight_factor:1 "Additional §YGuerrilla Tactics§! Tactic Chance if it is Preferred tactic"
+
+Tyranny_Of_Technique_spirit: "Tyranny Of Technique"  
+Tyranny_Of_Technique_spirit_desc: "War is just an equation, and boy are we good at math."  
+tactic_backhand_blow_preferred_weight_factor:1 "Additional §YBackhand Blow§! Tactic Chance if it is Preferred tactic"
+
+Armor_First_In_The_Fight_spirit: "Armor First In The Fight"  
+Armor_First_In_The_Fight_spirit_desc: "Gentlemen, the day our infantry catches up with our tanks will be the day you see me eat my own shoes."  
+tactic_breakthrough_preferred_weight_factor:1 "Additional §YBreakthrough§! Tactic Chance if it is Preferred tactic"
+tactic_blitz_preferred_weight_factor:1 "Additional §YBlitz§! Tactic Chance if it is Preferred tactic"
+
+One_Hand_Washes_The_Other_spirit: "One Hand Washes The Other"  
+One_Hand_Washes_The_Other_spirit_desc: "Armor is blind without effective infantry support, and you know what they say about the blind leading the blind."  
+
+The_Ever_Faithful_Companion_spirit: "The Ever Faithful Companion"  
+The_Ever_Faithful_Companion_spirit_desc: "20 Years ago tank and man marched together, why should it change in any way now?"  

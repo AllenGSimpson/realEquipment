@@ -1,0 +1,13 @@
+on_actions = {
+    on_unit_leader_created = {
+        effect = {
+        if = {
+            limit = {
+                FROM = { has_idea = Centralized_High_Command_spirit }
+                NOT = { has_trait = centralized_command_trait }
+            }
+            add_unit_leader_trait = centralized_command_trait
+        }
+        }
+    }
+}

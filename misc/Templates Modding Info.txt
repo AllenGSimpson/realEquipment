@@ -1,0 +1,5 @@
+*Presets (templates) are based on the AI templates found in \common\Hearts of Iron IV\common\ai_equipment\<x>_tank.txt
+
+*Tank / Plane Names are defined in the equipment localisation file "equipment_l_english.yml" this can then be overridden in the templates using the "name=" field
+
+https://forum.paradoxplaza.com/forum/threads/t-34-preset-remains-locked-in-tank-designer-as-sov-bug-or-wad.1687802/#post-29699984

@@ -1,0 +1,12 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_republic"
+		texturefile = "gfx/interface/ideas/idea_republic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_petlyakov_design_bureau"
+		texturefile = "gfx/interface/ideas/idea_petlyakov_design_bureau.dds"
+	}	
+}

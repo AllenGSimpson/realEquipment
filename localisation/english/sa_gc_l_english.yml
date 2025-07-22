@@ -1,0 +1,165 @@
+﻿l_english:
+ steel_mill:0 "Steel Mill"
+ steel_mill_plural:0 "Steel Mills"
+ steel_mill_desc:0 "This building provides §Y+10§! £resources_strip|5 to the region"
+ aluminum_mill:0 "Aluminum Mill"
+ aluminum_mill_plural:0 "Aluminum Mills"
+ aluminum_mill_desc:0 "This building provides §Y+10§! £resources_strip|2 to the region"
+ tungsten_smelter:0 "Tungsten Smelter"
+ tungsten_smelter_plural:0 "Tungsten Smelters"
+ tungsten_smelter_desc:0 "This building provides §Y+10§! £resources_strip|4 to the region"
+ chromium_smelter:0 "Chromium Smelter"
+ chromium_smelter_plural:0 "Chromium Smelters"
+ chromium_smelter_desc:0 "This building provides §Y+10§! £resources_strip|6 to the region"
+
+ oil_smelter:0 "Oil Well"
+ oil_smelter_plural:0 "Oil Wells"
+ oil_smelter_desc:0 "This building provides §Y+10§! £resources_strip|1 to the region"
+ BEX_SLOTS_dynamic_modifier:0 "£infrastructure_texticon Infrastructure"
+
+ army_school:0 "Army School"
+ naval_school:0 "Naval School"
+ air_school:0 "Air School"
+ Academy_of_Sciences:0 "Academy of Sciences"
+ Government_agency:0 "Government Agency"
+ architectural_institute:0 "Architectural Institute"
+ hospitals_gc:0 "Medical Complex"
+
+ army_school_plural:0 "Army Schools"
+ naval_school_plural:0 "Naval Schools"
+ air_school_plural:0 "Air Schools"
+ Academy_of_Sciences_plural:0 "Academies of Sciences"
+ Government_agency_plural:0 "Government Agencies"
+ architectural_institute_plural:0 "Architectural Institutes"
+ hospitals_gc_plural:0 "Medical Complexes"
+
+ modifier_production_cost_industrial_complex_factor: "§YCivilian Factory§! Construction Cost"
+ modifier_production_cost_arms_factory_factor: "§YMilitary Factory§! Construction Cost"
+
+ modifier_state_production_speed_land_facility_factor: "State §Y$land_facility$§! Construction Speed Bonus"
+ production_cost_land_facility_factor: "§Y$land_facility$§! Construction Cost"
+
+ modifier_state_production_speed_nuclear_facility_factor: "State §Y$nuclear_facility$§! Construction Speed Bonus"
+ production_cost_nuclear_facility_factor: "§Y$nuclear_facility$§! Construction Cost"
+
+ modifier_state_production_speed_air_facility_factor: "State §Y$air_facility$§! Construction Speed Bonus"
+ production_cost_air_facility_factor: "§Y$air_facility$§! Construction Cost"
+
+ modifier_state_production_speed_naval_facility_factor: "State §Y$naval_facility$§! Construction Speed Bonus"
+ production_cost_naval_facility_factor: "§Y$naval_facility$§! Construction Cost"
+
+ modifier_Research_points_gc: "§YWeekly Special Project Breakthrough Progress§! §G(Random)§!"
+ Research_points_gc: "§YWeekly Special Project Breakthrough Progress§! §G(Random)§!"
+
+ army_school_desc:0 "Each level of this building provides the country with §Y0.05§! £army_experience daily army experience gain and §Y10§! £command_power command points cap,\nAdditionally, for the §Ycountry§!:\nReduces §G1%§! $production_cost_land_facility_factor$\nAnd for the §Ystate§!:\nIncreases §G25%§! £construction_speed_icon$modifier_state_production_speed_land_facility_factor$"
+
+ naval_school_desc:0 "Each level of this building provides the country with §Y0.05§! £navy_experience daily navy experience gain and §Y10§! £command_power command points cap,\nAdditionally, for the §Ycountry§!:\nReduces §G1%§! $production_cost_naval_facility_factor$\nAnd for the §Ystate§!:\nIncreases §G25%§! £construction_speed_icon$modifier_state_production_speed_naval_facility_factor$"
+
+ air_school_desc:0 "Each level of this building provides the country with §Y0.05§! £air_experience daily air experience gain and §Y10§! £command_power command points cap,\nAdditionally, for the §Ycountry§!:\nReduces §G1%§! $production_cost_air_facility_factor$\nAnd for the §Ystate§!:\nIncreases §G25%§! £construction_speed_icon$modifier_state_production_speed_air_facility_factor$"
+
+ Academy_of_Sciences_desc:0 "Each level of this building provides the country with §Y3%§! £research_icon research speed bonus,\nAdditionally, for the §Ycountry§!:\nReduces §G1%§! $production_cost_nuclear_facility_factor$\nAnd for the §Ystate§!:\nIncreases §G25%§! £construction_speed_icon$modifier_state_production_speed_nuclear_facility_factor$"
+
+ Government_agency_desc:0 "Each level of this building provides the country with §Y0.02§! £pol_power_icon daily political power gain and §Y1%§! reduction in political advisor cost"
+ architectural_institute_desc:0 "Each level of this building provides the country with §Y1%§! £construction_speed_icon construction speed bonus,\nAnd provides the region with §Y15%§! £construction_speed_icon construction speed bonus"
+ hospitals_gc_desc:0 "Each level of this building provides the region with available manpower and reduces garrison casualties."
+
+ ex_limit_sa_mod.1.t:0 "Select Maximum Buildable Factories per Plot"
+ ex_limit_sa_mod.1.d:0 "Dudulu, choosing a smaller limit allows selecting a larger one later, but choosing a larger one prevents selecting a smaller one, because..."
+ ex_limit_sa_mod.1.a:0 "1000"
+ ex_limit_sa_mod.1.b:0 "500"
+ ex_limit_sa_mod.1.e:0 "200"
+ ex_limit_sa_mod.1.c:0 "Too many, it’s overflowing!"
+
+ ex_limit_sa_mod.2.t:0 "A Bit Less"
+ ex_limit_sa_mod.2.d:0 "Dudulu"
+ ex_limit_sa_mod.2.a:0 "100"
+ ex_limit_sa_mod.2.b:0 "50"
+ ex_limit_sa_mod.2.z:0 "25"
+ ex_limit_sa_mod.2.c:0 "10"
+
+ gc_25:0 "Building Cap Selection (Please check decisions)"
+ gc_50:0 " "
+ gc_100:0 " "
+ gc_200:0 " "
+ gc_500:0 " "
+ gc_1000:0 " "
+
+ CHOSE:0 "Building Cap Selection"
+ SA_m:0 "Reselect/Fix Old Save"
+
+ sa_gc_start_event_rule:0 "Start Event Selection"
+ sa_gc_start_event_rule_t:0 "Start Event Selection"
+ sa_gc_start_event_rule_d:0 "Start Event Selection"
+ RULE_GROUP_SA_MOD_SETUP:0 "Building Cap Selection"
+
+ ex_limit_sa_mod.6.t:0 "AI Maximum Buildable Factories per Plot Setting"
+ ex_limit_sa_mod.6.d:0 "AI Maximum Buildable Factories per Plot Selection"
+ ex_limit_sa_mod.6.a:0 "Keep Consistent with Player"
+ ex_limit_sa_mod.6.b:0 "Reset AI"
+
+ ex_limit_sa_mod.7.t:0 "AI Maximum Buildable Factories per Plot"
+ ex_limit_sa_mod.7.d:0 "AI Maximum Buildable Factories per Plot Selection"
+ ex_limit_sa_mod.7.a:0 "1000"
+ ex_limit_sa_mod.7.b:0 "500"
+ ex_limit_sa_mod.7.c:0 "250"
+ ex_limit_sa_mod.7.z:0 "Even Less"
+ ex_limit_sa_mod.8.t:0 "AI Even Less"
+ ex_limit_sa_mod.7.e:0 "100"
+ ex_limit_sa_mod.7.f:0 "50"
+ ex_limit_sa_mod.7.g:0 "25"
+ ex_limit_sa_mod.7.h:0 "10"
+ industrial_complex_construction_speed_factor_TT_1:0 "Local Level 5 Railway"
+ industrial_complex_construction_speed_factor_TT_2:0 "Local Level 5 Port"
+
+ 1_click:0 "[!Dismantling_1_click]\n§R"£GFX_alt  +Right Click":§!\n[!Dismantling_1_alt_right_click]"
+ 2_click:0 "[!Dismantling_2_click]\n§R"£GFX_alt  +Right Click":§!\n[!Dismantling_2_alt_right_click]"
+ 3_click:0 "[!Dismantling_3_click]\n§R"£GFX_alt  +Right Click":§!\n[!Dismantling_3_alt_right_click]"
+ 4_click:0 "[!Dismantling_4_click]\n§R"£GFX_alt  +Right Click":§!\n[!Dismantling_4_alt_right_click]"
+ 5_click:0 "[!Dismantling_5_click]\n§R"£GFX_alt  +Right Click":§!\n[!Dismantling_5_alt_right_click]"
+
+ 6_click:0 "[!Dismantling_6_click]\n§R"£GFX_alt  +Right Click":§!\n[!Dismantling_6_alt_right_click]"
+ 7_click:0 "[!Dismantling_7_click]\n§R"£GFX_alt  +Right Click":§!\n[!Dismantling_7_alt_right_click]"
+ 8_click:0 "[!Dismantling_8_click]\n§R"£GFX_alt  +Right Click":§!\n[!Dismantling_8_alt_right_click]"
+ 9_click:0 "[!Dismantling_9_click]\n§R"£GFX_alt  +Right Click":§!\n[!Dismantling_9_alt_right_click]"
+ 10_click:0 "[!Dismantling_10_click]\n§R"£GFX_alt  +Right Click":§!\n[!Dismantling_10_alt_right_click]"
+
+ open_close: "Open/Close §RBatch Building Construction§!\n§4"£GFX_alt  +Right Click":§!Show/Hide 2D"
+ Provincial_building_management_text: "XD"
+
+ factories_used_by_regional_development_gc: "§YCivilian Factories Required for Regional Development§!"
+ modifier_factories_used_by_regional_development_gc: "§YCivilian Factories Required for Regional Development§!"
+
+ modifier_steel_for_regional_development_gc: "§YSteel Required for Regional Development§!"
+ steel_for_regional_development_gc: "§YSteel Required for Regional Development§!"
+
+ gc_dym_1_country: "§YRegional Development Consumption Statistics§!"
+ gc_dym_1_state: "§YUnder Regional Development§!"
+ gc_idea_1_tt: "§YCivilian Factories Required for Regional Development:§!§R[?gc_dym_1_country^1]§!\n§YSteel Required for Regional Development:§!§R[?gc_dym_1_country^2]§!"
+ gc_idea_1_desc: "This national spirit is used for statistics only"
+
+ prc_simple_arsenal: "Simple Arsenal Workshop"
+ prc_simple_arsenal_plural: "Simple Arsenal Workshops"
+ prc_simple_arsenal_desc: "\nEach of these buildings produces weekly:\n§G30§! units of §YRifles§! £GFX_infantry_equipment_text_icon \nAs production technology improves, it will unlock production of §YSupport Equipment§! and §YArtillery§!."
+ prc_simple_arsenal_artillery_gc: "Weekly Artillery Production"
+ prc_simple_arsenal_support_equipment_gc: "Weekly Support Equipment Production"
+ prc_simple_arsenal_gun_gc: "Weekly Rifle Production"
+ gc_idea_economy_1: "People's War"
+ gc_idea_mobilization_laws_1: "Ideological Propaganda"
+ gc_idea_trade_laws_1: "Base Area Economy"
+ production_cost_prc_simple_arsenal_factor: "§Y$prc_simple_arsenal$§! Construction Cost"
+ production_speed_prc_simple_arsenal_factor: "§Y$prc_simple_arsenal$§! Construction Speed Bonus"
+
+ modifier_production_cost_prc_simple_arsenal_factor: "§Y$prc_simple_arsenal$§! Construction Cost"
+ modifier_production_speed_prc_simple_arsenal_factor: "§Y$prc_simple_arsenal$§! Construction Speed Bonus"
+ Academy_of_Sciences_gc: "For statistics only: We currently have §G[?modifier@Academy_of_Sciences_gc]§! §Y$Academy_of_Sciences$§!"
+ Guerrilla_Warfare_0: "For statistics only: We currently have §G[?modifier@prc_simple_arsenal_gc]§! §Y$prc_simple_arsenal$§!"
+
+ air_base_4_TT: "Built §Y$air_base$§! of at least §G5§!"
+ army_school_1_TT: "Built §Y$army_school$§! of at least §G2§!"
+ arms_factory_4_TT: "Built §Y$arms_factory$§! of at least §G5§!"
+ Academy_of_Sciences_0_TT: "Built §Y$Academy_of_Sciences$§! of at least §G1§!"
+ naval_base_4_TT: "Built §Y$naval_base$§! of at least §G5§!"
+ development_state_disabled: "§RStill under construction!§!\nNote: The disappearance of factory and resource consumption modifiers does not mean completion; it usually takes an additional week for acceptance.\nNote: If you want to upgrade the region, ensure §Yat least 10 civilian factories are available§!."
+ THIS_STATE: "§G[THIS.GetName]§!:"
+ Academy_of_Sciences_gc_desc: "Each of these buildings additionally provides:\n§YWeekly Special Project Breakthrough Progress (Random):§! §G2%§!"
+

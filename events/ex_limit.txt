@@ -1,0 +1,467 @@
+﻿add_namespace = ex_limit_sa_mod
+add_namespace = architectural_institute
+
+country_event = {
+	id = ex_limit_sa_mod.1
+	title = ex_limit_sa_mod.1.t
+	desc = ex_limit_sa_mod.1.d
+	picture = GFX_report_event_soviet_tank_parade
+	immediate = {
+		for_each_scope_loop = {
+			array = global.countries
+			hidden_effect = {
+				set_technology = {
+					synthetic_refinery_num = 1
+					popup = no
+				}
+			}
+		}
+	}
+	is_triggered_only = yes
+	#1000
+	option = {
+		name = ex_limit_sa_mod.1.a
+		country_event = { id = ex_limit_sa_mod.6 }
+		hidden_effect = {
+			set_technology = {
+				gc_1000 = 1
+				popup = no
+			}
+			set_variable = { global.tech_leav = 1000 }
+		}
+	}
+	#500
+	option = {
+		name = ex_limit_sa_mod.1.b
+		country_event = { id = ex_limit_sa_mod.6 }
+		hidden_effect = {
+			set_technology = {
+				gc_500 = 1
+				popup = no
+			}
+			set_variable = { global.tech_leav = 500 }
+		}
+	}
+	#200
+	option = {
+		name = ex_limit_sa_mod.1.e
+		country_event = { id = ex_limit_sa_mod.6 }
+		hidden_effect = {
+			set_technology = {
+				gc_200 = 1
+				popup = no
+			}
+			set_variable = { global.tech_leav = 200 }
+		}
+	}
+	
+	#更少
+	option = {
+		name = ex_limit_sa_mod.1.c
+		country_event = { id = ex_limit_sa_mod.2 }
+	}
+}
+
+country_event = {
+	id = ex_limit_sa_mod.2
+	title = ex_limit_sa_mod.2.t
+	desc = ex_limit_sa_mod.2.d
+	picture = GFX_report_event_soviet_tank_parade
+	
+	is_triggered_only = yes
+	#100
+	option = {
+		name = ex_limit_sa_mod.2.a
+		country_event = { id = ex_limit_sa_mod.6 }
+		hidden_effect = {
+			set_technology = {
+				gc_100 = 1
+				popup = no
+			}
+			set_variable = { global.tech_leav = 100 }
+		}
+	}
+	#50
+	option = {
+		name = ex_limit_sa_mod.2.b
+		country_event = { id = ex_limit_sa_mod.6 }
+		hidden_effect = {
+			set_technology = {
+				gc_50 = 1
+				popup = no
+			}
+			set_variable = { global.tech_leav = 50 }
+		}
+	}
+	option = {
+		name = ex_limit_sa_mod.2.z
+		country_event = { id = ex_limit_sa_mod.6 }
+		hidden_effect = {
+			set_technology = {
+				gc_25 = 1
+				popup = no
+			}
+			set_variable = { global.tech_leav = 25 }
+		}
+	}
+	#10
+	option = {
+		name = ex_limit_sa_mod.2.c
+		country_event = { id = ex_limit_sa_mod.6 }
+		hidden_effect = {
+			set_technology = {
+				gc_10 = 1
+				popup = no
+			}
+			set_variable = { global.tech_leav = 10 }
+		}
+	}
+}
+
+country_event = {
+	id = ex_limit_sa_mod.3
+	title = ex_limit_sa_mod.3.t
+	desc = ex_limit_sa_mod.3.d
+	picture = GFX_report_event_soviet_tank_parade
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		for_each_scope_loop = {
+			array = global.countries
+			hidden_effect = {
+				set_technology = {
+					synthetic_refinery_num = 1
+					popup = no
+				}
+				add_dynamic_modifier = {
+					modifier = Government_agency
+				}
+				add_dynamic_modifier = {
+					modifier = architectural_institute
+				}
+				add_dynamic_modifier = {
+					modifier = air_school
+				}
+				add_dynamic_modifier = {
+					modifier = naval_school
+				}
+				add_dynamic_modifier = {
+					modifier = army_school
+				}
+				add_dynamic_modifier = {
+					modifier = Academy_of_Sciences
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_game_rule = {
+					rule = a_sa_gc_mod_rule
+					option = sa_gc_25_rule
+				}
+			}
+			for_each_scope_loop = {
+				array = global.countries
+				hidden_effect = {
+					set_technology = {
+						gc_25 = 1
+						popup = no
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_game_rule = {
+					rule = a_sa_gc_mod_rule
+					option = sa_gc_50_rule
+				}
+			}
+			for_each_scope_loop = {
+				array = global.countries
+				hidden_effect = {
+					set_technology = {
+						gc_50 = 1
+						popup = no
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_game_rule = {
+					rule = a_sa_gc_mod_rule
+					option = sa_gc_100_rule
+				}
+			}
+			for_each_scope_loop = {
+				array = global.countries
+				hidden_effect = {
+					set_technology = {
+						gc_100 = 1
+						popup = no
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_game_rule = {
+					rule = a_sa_gc_mod_rule
+					option = sa_gc_200_rule
+				}
+			}
+			for_each_scope_loop = {
+				array = global.countries
+				hidden_effect = {
+					set_technology = {
+						gc_200 = 1
+						popup = no
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_game_rule = {
+					rule = a_sa_gc_mod_rule
+					option = sa_gc_500_rule
+				}
+			}
+			for_each_scope_loop = {
+				array = global.countries
+				hidden_effect = {
+					set_technology = {
+						gc_500 = 1
+						popup = no
+					}
+				}
+			}
+		}
+		if = {
+			limit = { 
+				has_game_rule = {
+					rule = a_sa_gc_mod_rule
+					option = sa_gc_1000_rule
+				}
+			}
+			for_each_scope_loop = {
+				array = global.countries
+				hidden_effect = {
+					set_technology = {
+						gc_1000 = 1
+						popup = no
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ex_limit_sa_mod.4
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		for_each_scope_loop = {
+			array = global.countries
+			hidden_effect = {
+				set_technology = {
+					synthetic_refinery_num = 1
+					popup = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ex_limit_sa_mod.5
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		for_each_scope_loop = {
+			array = global.countries
+			add_dynamic_modifier = {
+				modifier = Government_agency
+			}
+			add_dynamic_modifier = {
+				modifier = architectural_institute
+			}
+			add_dynamic_modifier = {
+				modifier = air_school
+			}
+			add_dynamic_modifier = {
+				modifier = naval_school
+			}
+			add_dynamic_modifier = {
+				modifier = army_school
+			}
+			add_dynamic_modifier = {
+				modifier = Academy_of_Sciences
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ex_limit_sa_mod.6
+	fire_only_once = yes
+	is_triggered_only = yes
+	title = ex_limit_sa_mod.6.t
+	desc = ex_limit_sa_mod.6.d
+	option = {
+		name = ex_limit_sa_mod.6.a
+		hidden_effect = {
+			every_possible_country = {
+				meta_effect = {
+					text = {
+						set_technology = { gc_[GET_TECH_LEAV] = 1 }
+					}
+					GET_TECH_LEAV = global.tech_leav
+				}
+			}
+		}
+	}
+	option = {
+		name = ex_limit_sa_mod.6.b
+		country_event = { id = ex_limit_sa_mod.7 }
+		
+	}
+}
+
+country_event = {
+	id = ex_limit_sa_mod.7
+	title = ex_limit_sa_mod.7.t
+	desc = ex_limit_sa_mod.7.d
+	picture = GFX_report_event_soviet_tank_parade
+	is_triggered_only = yes
+	#1000
+	option = {
+		name = ex_limit_sa_mod.7.a
+		every_possible_country = {
+			limit = { is_ai = yes }
+			hidden_effect = {
+				set_technology = {
+					gc_1000 = 1
+					popup = no
+				}
+			}
+		}
+	}
+	#500
+	option = {
+		name = ex_limit_sa_mod.7.b
+		every_possible_country = {
+			limit = { is_ai = yes }
+			hidden_effect = {
+				set_technology = {
+					gc_500 = 1
+					popup = no
+				}
+			}
+		}
+	}
+	#200
+	option = {
+		name = ex_limit_sa_mod.7.c
+		every_possible_country = {
+			limit = { is_ai = yes }
+			hidden_effect = {
+				set_technology = {
+					gc_200 = 1
+					popup = no
+				}
+			}
+		}
+	}
+	###更少
+	option = {
+		name = ex_limit_sa_mod.7.z
+		country_event = { id = ex_limit_sa_mod.8 }
+	}
+}
+
+country_event = {
+	id = ex_limit_sa_mod.8
+	title = ex_limit_sa_mod.8.t
+	desc = ex_limit_sa_mod.7.d
+	picture = GFX_report_event_soviet_tank_parade
+	is_triggered_only = yes
+	
+	#更少
+	option = {
+		name = ex_limit_sa_mod.7.e
+		every_possible_country = {
+			limit = { is_ai = yes }
+			hidden_effect = {
+				set_technology = {
+					gc_100 = 1
+					popup = no
+				}
+			}
+		}
+	}
+	option = {
+		name = ex_limit_sa_mod.7.f
+		every_possible_country = {
+			limit = { is_ai = yes }
+			hidden_effect = {
+				set_technology = {
+					gc_50 = 1
+					popup = no
+				}
+			}
+		}
+	}
+	option = {
+		name = ex_limit_sa_mod.7.g
+		every_possible_country = {
+			limit = { is_ai = yes }
+			hidden_effect = {
+				set_technology = {
+					gc_25 = 1
+					popup = no
+				}
+			}
+		}
+	}
+	option = {
+		name = ex_limit_sa_mod.7.h
+		every_possible_country = {
+			limit = { is_ai = yes }
+			hidden_effect = {
+				set_technology = {
+					gc_10 = 1
+					popup = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#建筑院
+	id = architectural_institute.1
+	hidden = yes
+	fire_only_once = yes
+	title = architectural_institute.1.t
+	desc = architectural_institute.1.d
+	picture = GFX_report_event_soviet_tank_parade
+	is_triggered_only = yes
+	option = {
+		name = architectural_institute.1.a
+		if = {
+			limit = { 
+				check_variable = {
+					building_level@architectural_institute = 5
+				}
+			}
+		}
+	}
+	option = {
+		name = architectural_institute.1.b
+	}
+}

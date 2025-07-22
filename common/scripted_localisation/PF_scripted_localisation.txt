@@ -1,0 +1,113 @@
+defined_text = {
+    name = Level_of_regional_development_TT
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = wasteland
+			}
+		}
+		localization_key = wasteland
+    }
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = small_island
+			}
+		}
+		localization_key = small_island
+    }
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = enclave
+			}
+		}
+		localization_key = enclave
+    }
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = tiny_island
+			}
+		}
+		localization_key = tiny_island
+    }
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = pastoral
+			}
+		}
+		localization_key = pastoral
+    }
+	#enclave: "飞地"
+	#small_island: "小岛"
+	#tiny_island: "极小岛屿"
+	#pastoral: "牧区"
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = rural
+			}
+		}
+		localization_key = rural
+    }
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = large_town
+			}
+		}
+		localization_key = large_town
+    }
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = town
+			}
+		}
+		localization_key = town
+    }
+	#town: "发达乡村地区"
+	#large_town: "稀疏城镇地区"
+	#rural: "乡村地区"
+	
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = megalopolis
+			}
+		}
+		localization_key = megalopolis
+    }
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = metropolis
+			}
+		}
+		localization_key = metropolis
+    }
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = large_city
+			}
+		}
+		localization_key = large_city
+    }
+	text = {
+		trigger = { 
+			THIS = {
+				has_state_category = city
+			}
+		}
+		localization_key = city
+    }
+}
+
+#wasteland: "荒漠"
+#city: "城镇地区"
+#large_city: "密集城镇地区"
+#metropolis: "大城市地区"
+#megalopolis: "大都市地区"

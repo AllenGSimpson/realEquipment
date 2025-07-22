@@ -1,0 +1,111 @@
+
+army_school = {
+	experience_gain_army = modifier@experience_gain_army_gc
+	max_command_power = modifier@max_command_power_army_gc
+}
+naval_school = {
+	experience_gain_navy = modifier@experience_gain_navy_gc
+	max_command_power = modifier@max_command_power_navy_gc
+}
+air_school = {
+	experience_gain_air = modifier@experience_gain_air_gc
+	max_command_power = modifier@max_command_power_air_gc
+}
+
+architectural_institute = {
+	production_speed_buildings_factor = modifier@production_speed_buildings_factor_gc
+}
+
+Government_agency = {
+	political_power_gain = modifier@political_power_gain_gc
+	political_advisor_cost_factor = modifier@political_advisor_cost_factor_gc
+}
+
+Academy_of_Sciences = {
+	research_speed_factor = modifier@research_speed_factor_gc
+}
+#wasteland: "荒漠"
+#city: "城镇地区"
+#large_city: "密集城镇地区"
+#metropolis: "大城市地区"
+#megalopolis: "大都市地区"
+#town: "发达乡村地区"
+#state_production_speed_<建筑>_factor
+wasteland = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	
+}
+city = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	state_industrial_complex_max_level_terrain_limit = 5
+}
+large_city = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	state_industrial_complex_max_level_terrain_limit = 10
+}
+metropolis = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	state_industrial_complex_max_level_terrain_limit = 50
+}
+megalopolis = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	state_industrial_complex_max_level_terrain_limit = 100
+}
+town = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	state_industrial_complex_max_level_terrain_limit = 1
+}
+#large_town: "稀疏城镇地区"
+#rural: "乡村地区"
+#enclave: "飞地"
+#small_island: "小岛"
+#tiny_island: "极小岛屿"
+#pastoral: "牧区"
+large_town = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	
+}
+rural = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	
+}
+enclave = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	
+}
+small_island = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	
+}
+tiny_island = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	
+}
+pastoral = {
+	icon = GFX_modifiers_generic_railways
+	state_production_speed_buildings_factor = -0.9
+	
+}
+
+gc_dym_1_state = {
+	icon = GFX_modifiers_generic_railways
+	factories_used_by_regional_development_gc = -10
+	steel_for_regional_development_gc = -10
+}
+
+gc_dym_1_country = {
+	icon = GFX_modifiers_generic_railways
+	industrial_factory_donations = gc_dym_1_country^1
+	country_resource_cost_steel = gc_dym_1_country^2
+}

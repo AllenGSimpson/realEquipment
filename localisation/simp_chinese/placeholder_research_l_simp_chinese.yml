@@ -1,0 +1,348 @@
+﻿l_simp_chinese:
+ PLACEHOLDER_DOCTRINE_LABEL:0 "Cavalry Offensive Doctrine"
+ PLACEHOLDER_2_LABEL:0 "MOTORIZATION"
+ PLACEHOLDER_2_LABEL_TT:0 "He abandoned the outdated horse and turned the rudder to the introduction of armored vehicles."
+ placeholder_2_desc:0 "Each weapon has its own role, and when it is operated in the right place and according to its role, it will show remarkable performance. A rifle optimized for cavalry raises the basic combat power of a unit."
+
+tank_doc_initiator_desc: "CACCA"
+ilcazzo: "ilcazzo"
+TANK_DOCTRINE_LABEL: "装甲部队学说"
+ARMORED_WAVE_LABEL: "装甲支援步兵学说"
+COMBINED_ARMOR_LABEL: "部队合成学说"
+ARMOR_SPEARHEAD_LABEL: "装甲集中使用学说"
+ARMORED_WAVE_LABEL_TT: "以便宜好用的坦克部队砸碎当面之敌！"
+COMBINED_ARMOR_LABEL_TT: "坦克部队只是军中一角，通力合作才有和谐的死亡之音！"
+ARMOR_SPEARHEAD_LABEL_TT: "以手术刀般灵巧的坦克部队进行快速突击击穿敌阵！"
+
+INFANTRY_DOCTRINE_LABEL: "步兵部队学说"
+OVERWHELMING_INFANTRY_LABEL: "步兵消耗学说"
+DECISIVE_INFANTRY_LABEL: "步兵决战学说"
+ADAPTABLE_INFANTRY_LABEL: "步兵运动战学说"
+OVERWHELMING_INFANTRY_LABEL_TT: "三军既出，用兵者决不能为一二小卒之失利轻动方略。"
+DECISIVE_INFANTRY_LABEL_TT: "为求胜利，惟所战必胜，所攻无不克为上上之选。"
+ADAPTABLE_INFANTRY_LABEL_TT: "不教而战，乃谓弃之。用兵之要在于精训。"
+
+COMMAND_CONTROL_DOCTRINE_LABEL: "指挥部组织学说"
+CENTRALISED_COMMAND_LABEL: "后方指挥学说"
+DECENTRALISED_COMMAND_LABEL: "军官指挥学说"
+FLEXIBLE_COMMAND_LABEL: "灵活指挥学活"
+CENTRALISED_COMMAND_LABEL_TT: "集我良将之能，乃成良谋"
+DECENTRALISED_COMMAND_LABEL_TT: "敌前万事皆由将校出，自应令将校弁官出谋划策"
+FLEXIBLE_COMMAND_LABEL_TT: "将士用命之外，尚有上下一心，上下一心则需上下信从，上下信从要在上下相知。"
+
+
+ARTILLERY_DOCTRINE_LABEL: "火炮学说"
+RELENTLESS_ARTILLERY_LABEL: "大炮兵学说"
+VERSATILE_ARTILLERY_LABEL: "步炮协同学说"
+INTEGRATED_ARTILLERY_LABEL: "炮兵机动学说"
+RELENTLESS_ARTILLERY_LABEL_TT: "炮兵建设已有成例: 大造火炮一齐开火！"
+VERSATILE_ARTILLERY_LABEL_TT: "炮兵只是部队一角，步炮协作才能成功！"
+INTEGRATED_ARTILLERY_LABEL_TT: "炮兵只是火力工具，火力掩护保障前进！"
+
+
+Emphasis_On_Movement: "坦克设计重视速度"  
+Emphasis_On_Firepower: "坦克设计重视火力"  
+Emphasis_On_Cooperation: "坦克设计重视通联"  
+Tank_Primacy: "坦克作战自主执行"  
+Infantry_Armor_Cooperation: "坦克作战协同步兵"  
+Tank_Heavy_Formations: "坦克门类合成冲击"  
+All_Around_Versatility: "重视坦克灵活学说"  
+Cruiser_Infantry_Split: "坦克门类编制分离"  
+Focal_Point: "坦克目标关键地段"  
+Large_Front_Advances: "坦克目标前线整体"  
+Mobile_Combat_Formations: "前线编组重视机动"  
+Mobile_Exploitation_Force: "机动部队掩护穿插"  
+Combat_Command: "前线编组灵活调整"  
+Mobile_Reserves: "机动部队留作预备"  
+Integrated_Forces: "前线编组兵种整合"  
+Armored_Spearhead: "装甲部队冲击正面"  
+Ensure_Operational_Depth: "装甲部队进入纵深"  
+Break_Trough_And_Encircle: "锤砧战术包绕前敌"  
+Ravage_Their_BackLines: "穿插袭扰敌军后方"  
+Cross_Branch_Coordination: "步坦协同保障后续"  
+War_Of_Movement: "战略目标重视机动"  
+Battle_Of_Annihilation: "战略目标重视杀伤"  
+War_Of_Supremacy: "战略目标重视压制"  
+Fire_Superiority: "步兵作战重视火力"  
+Fire_And_Maneuver: "步兵作战重视机动"  
+Attritional_Defense: "防御策略避免避战"  
+Elastic_Defense: "防御策略避免损人"  
+Static_Defense: "防御策略避免失地"  
+Mass_Infantry_Organization: "步兵编制继续扩大"  
+Small_Unit_Tactics: "步兵编制保障灵活"  
+All_Around_Defense: "独立支撑防御阵地"  
+Overlapping_Defensive_Positions: "相互掩护防御阵地"  
+Combined_Arms: "重视步兵军种通联"  
+Flexible_Formations: "鼓励步兵自组编队"  
+Skirmish_Lines: "规范前线部队编队"  
+Violent_Attacks: "步兵攻击重视火力"  
+Lightning_Attacks: "步兵攻击重视战术"  
+Continuous_Operations: "重视步兵轮换参战"  
+Continuous_Front: "保证步兵充填战线"  
+Frontal_Assault: "步兵攻击重视规模"  
+Infiltration_Tactics: "重视步兵渗透战法"  
+Counterstrikes: "保证步兵效死反击"  
+Multiple_Sides_Attack: "步兵攻击重视合击"  
+Massed_Fire: "重视火炮数量"  
+Forward_Operators: "重视火炮精确射击"  
+Pre_Assault_Barrage: "步炮协作重视掩护"  
+Dedicated_Artillery_Divisions: "设计专门火炮编制"  
+Huge_Barrages: "火炮作战重视规模"  
+Direct_Fire_Support: "火炮射击重视需求"  
+Establish_Kill_Zones: "火炮射击重视计划"  
+Regimental_Fire_Support: "设计旅级火炮编制"  
+Fire_By_Command: "火炮行动依靠命令"  
+Fire_By_Request: "火炮行动依靠呼叫"  
+Counterbattery_Fire: "步炮协作重视反炮"  
+Converging_Fire: "设计一线火炮编制"  
+Superior_Calculations: "火炮作战重视推进"  
+Rapid_Fire: "火炮训练重视速度"  
+Emphasis_On_Neutralization: "炮火利用重视杀伤"  
+Advanced_Firebases: "火炮前线构筑阵地"  
+Concentrated_Strongpoints: "火炮阵地重视防御"  
+Suppressive_Barrages: "炮火利用重视压制"  
+Shock_And_Awe: "火炮前线持续压制"  
+Unity_Of_Command: "指挥全权交由后方"  
+Mission_Command: "指挥全权分散前线"  
+Control_By_Directive: "指挥控制命令实现"  
+Maintain_Flexibility: "指挥控制传达实现"  
+Encourage_Local_Initiative: "指挥控制自主实现"  
+Strong_Hierarchy: "上下关系重视级别"  
+Top_Down_Structure: "指挥命令总指签发"  
+Always_Ensure_Grip: "指挥命令严格执行"  
+Set_Piece_Battle: "指挥作战各司其职"  
+Ensure_Supply_Effectiveness: "指挥保障补给价值"  
+Assign_Air_Armies_To_Fronts: "空军指挥划归前线"  
+Unity_Trough_Effort: "上下关系重视合作"  
+Ensure_Supply_Efficiency: "指挥保障补给效率"  
+Front_Level_Coordination: "指挥注重计划协调"  
+Seamless_Airforce_Cooperation: "空军指挥自主协调"  
+Decentralised_Decisionmaking: "上下关系重视前线"  
+Forward_Control: "指挥命令前线签发"  
+Tactical_Autonomy: "指挥命令自主执行"  
+Dynamic_Battle: "指挥作战各展所长"  
+Focus_On_Operational_Mobility: "指挥注重计划机动"  
+Focus_On_Operational_Secrecy: "指挥注重计划隐秘"  
+Maintain_Operational_Intent: "指挥命令适当执行"  
+Bridge_The_Gap_Between_Tactics_And_Strategy: "指挥宏观控制微观"  
+Methodical_Battle: "指挥宏观协调微观"  
+Culminating_Point_Of_Victory: "指挥宏观引导微观"  
+
+Emphasis_On_Movement_desc: "发扬装甲部队的主要特征即其机动性，改善坦克速度"
+
+Emphasis_On_Firepower_desc: "发扬装甲部队的合成特征即其机动火力，改善坦克火力"  
+
+Emphasis_On_Cooperation_desc: "发扬装甲部队的辅助特征即其对步兵的掩护，改善步坦通联"  
+
+Tank_Primacy_desc: "战场主动居于良好利用坦克的一方。"  
+
+Infantry_Armor_Cooperation_desc: "步坦协作如二轮并行，缺一不可。"  
+
+Tank_Heavy_Formations_desc: "装甲部队效果最佳即为其大规模集中使用时。"  
+
+All_Around_Versatility_desc: "应将坦克部队建立为我陆军各部可仰赖掩护、减少伤亡的部队。"  
+
+Cruiser_Infantry_Split_desc: "唯有清晰地制定各种坦克的用途才有可能保证各种坦克各安其位进行作战。"  
+
+Focal_Point_desc: "捕捉战术行动中的关键点是保证成功的重要前提。"  
+
+Large_Front_Advances_desc: "在前线分散投入坦克部队在多个地段达成突破是我军的指导方针。"  
+
+Mobile_Combat_Formations_desc: "步兵火力弱小速度缓慢，应当辅助坦克扫平敌军抵抗。"  
+
+Mobile_Exploitation_Force_desc: "应当保证坦克打出的空位由其他机动部队填补。"  
+
+Combat_Command_desc: "保证部队灵活编组，我军就能更灵活地完成任务。"  
+
+Mobile_Reserves_desc: "必须保证在机动战术任务开展时手头永远有一只机动部队预备队填补空缺。"  
+
+Integrated_Forces_desc: "必须开展合作训练和特殊演习，确保步兵知道可以依靠坦克兵，反之亦然。"  
+
+Armored_Spearhead_desc: "在狭窄的战线上集中我们最强悍的部队，会让敌人的任何战线都土崩瓦解。"  
+
+Ensure_Operational_Depth_desc: "我们的进攻行动并不只是为了歼灭面前的敌人，因为我们必须做好准备，以确保长期作战能力。"  
+
+Break_Trough_And_Encircle_desc: "集中力量包饺子吃饺子，迅速压制敌人的抵抗，对我们的装甲行动至关重要。"  
+
+Ravage_Their_BackLines_desc: "一旦取得突破，消除敌人在后方的抵抗至关重要。"  
+
+Cross_Branch_Coordination_desc: "在我们的装甲部队和步兵之间建立联系，将确保两者之间的适当协调。"  
+
+War_Of_Movement_desc: "决定我们成败的，不是我们火炮的大小，而是我们履带的速度。"  
+
+Battle_Of_Annihilation_desc: "我们坦克的主要用途是炸毁敌人，其他任何东西都是次要的。"  
+
+War_Of_Supremacy_desc: "我们的坦克军团必须在战争的各个方面建立起对敌人的全面优势。"  
+
+Fire_Superiority_desc: "赢得火炮对射的最好办法就是拉来更多更大的炮。"  
+
+Fire_And_Maneuver_desc: "确保在步兵行动中始终保持机动性，将保证我们比敌人更胜一筹。"  
+
+Attritional_Defense_desc: "胆敢攻击我军的敌人将如镰刀割麦子一般被放倒。"  
+
+Elastic_Defense_desc: "我们的战线应当在敌人的压力下形成城垛，以便在适当的时候就位。"  
+
+Static_Defense_desc: "我们的防御作战将维护这样一个信念：我们的土地，一寸也别想拿走。"  
+
+Mass_Infantry_Organization_desc: "我们步兵的优势将体现在数量和协调上。"  
+
+Small_Unit_Tactics_desc: "协调良好的小部队往往能完成乌合之众无法完成的宏大任务。"  
+
+All_Around_Defense_desc: "我们的士兵必须知道应当在面对一切形式进攻下如何掩护自保，尤其是在被敌军围困的情况下。"  
+
+Overlapping_Defensive_Positions_desc: "分层火力将确保有力地抵御敌人的任何攻击。"  
+
+Combined_Arms_desc: "步兵只是我军全局大框架的一部分。"  
+
+Flexible_Formations_desc: "让我们的部队采用更多的临时组建方式，而不是将其压进死板僵化的编制方格，关乎我军能否一直打胜仗。"  
+
+Skirmish_Lines_desc: "建立明确的火力线并保持我们的队形，将确保所有行动的秩序和纪律。"  
+
+Violent_Attacks_desc: "只有使用压倒性的力量，不顾一切，才能打击敌人最致命的地方。"  
+
+Lightning_Attacks_desc: "为了保证敌人无暇自保，我们的打击将是快速、出其不意和致命的。"  
+
+Continuous_Operations_desc: "我们的人员必须进行演习和轮换，以确保长期的作战能力。"  
+
+Continuous_Front_desc: "确保防线不出现缺口，确保我们的士兵无论在哪里战斗，都不会感到孤单。"  
+
+Frontal_Assault_desc: "今天，我要求你们向敌人发起孤注一掷的冲锋。我保证你们明天就能战胜敌人。"  
+
+Infiltration_Tactics_desc: "指示我们的士兵绕过和包抄敌人的阵地，只在准备出击时现身，这就是最伟大的战术。"  
+
+Counterstrikes_desc: "绝不给敌人喘息的机会！绝不不战而逃！报复是我们的座右铭。"  
+
+Multiple_Sides_Attack_desc: "即使是最坚固的敌军阵地，从多个阵地发起会合攻击也必然会导致其失败。"  
+
+Massed_Fire_desc: "将足够多的炮管集中在一个区域，就能避免火炮精度不够的问题。"  
+
+Forward_Operators_desc: "先进的后坐力系统能提供准确的反馈，确保我们的火炮能击中最致命的地方。"  
+
+Pre_Assault_Barrage_desc: "在进攻前猛轰敌人的阵地，什么软的硬的都变成一团乱麻了。"  
+
+Dedicated_Artillery_Divisions_desc: "将火炮集中到特定的编队中，可以为我们想要进行的任何战斗带来无与伦比的火力。"  
+
+Huge_Barrages_desc: "每当一根炮管开火时，它绝不能孤军奋战，必须有成百上千的其他炮管以同样的致命目的发出雷鸣般的响声。"  
+
+Direct_Fire_Support_desc: "在必要时，我们会指示炮兵直接向敌军开火，弹道学才是最重要的。"  
+
+Establish_Kill_Zones_desc: "在战场上划分不同的区域，由不同的火炮进行监视，确保没有任何目标能在即将到来的攻击中幸免于难。"  
+
+Regimental_Fire_Support_desc: "我们必须确保军队中的每个团都能在指挥系统的支持下，在战场上发挥一定的火力。"  
+
+Fire_By_Command_desc: "不要让乌合之众在大炮问题上发号施令，我们的将军们更适合这样做。"  
+
+Fire_By_Request_desc: "前线部队受权负责目标捕捉和火力控制，这关系到他们的切身利益。"  
+
+Counterbattery_Fire_desc: "压制敌人的枪声比盲目开火和暴露我们的阵地更重要。"  
+
+Converging_Fire_desc: "多个火源集中攻击一个目标，可确保最大限度地破坏局部区域。"  
+
+Superior_Calculations_desc: "先进的瞄准和射击技术使我们的火炮更加高效。"  
+
+Rapid_Fire_desc: "让我们的士兵掌握快速装弹、瞄准和射击的技巧，可以在不引进更多大炮的情况下增加火力。"  
+
+Emphasis_On_Neutralization_desc: "在我军肆无忌惮地为所欲为时，能将敌人牢牢控制在原地，这对我们的炮组来说是一项巨大的成就。"  
+
+Advanced_Firebases_desc: "建立前沿阵地，使我们的炮兵能够密切合作，这是持续火力支援的最高境界。"
+
+Concentrated_Strongpoints_desc: "通过用大炮加固关键阵地，我们可以确保能够打击敌人，而敌人却无法触及。"  
+
+Suppressive_Barrages_desc: "持续射击的目的是让敌人原地待命、士气低落，这将使我们的其他部队在战斗中获得更大的自由。"  
+
+Shock_And_Awe_desc: "在火力和武力方面建立优势，确保敌人看清楚谁是猎人，谁是猎物。"  
+
+Unity_Of_Command_desc: "最重要的是，要确保我们的部队准确无误地按照上级命令执行。"
+
+Mission_Command_desc: "最好是让我们的前线军官自由行动，让他们提出自己的计划。"  
+
+Control_By_Directive_desc: "对我们的士兵进行适当的程序和演习培训，提供明确、高层次的命令，同时允许一定的灵活性。"  
+
+Maintain_Flexibility_desc: "僵化的战略必然会被打破，我们必须确保在各个层面都高度重视适应性。"  
+
+Encourage_Local_Initiative_desc: "战场上的军官有责任适应和应对不断变化的战场情况。"  
+
+Strong_Hierarchy_desc: "要确保每个人都对上级负责，不得以任何方式违抗命令或曲解命令。"  
+
+Top_Down_Structure_desc: "命令从最高指挥层向下流动，就像河水从山上流下一样。"  
+
+Always_Ensure_Grip_desc: "一旦前线开始猴子成大王就会出问题，我们必须下达详细的命令，防止此种情况。"  
+
+Set_Piece_Battle_desc: "要赢得战争，就必须经过深思熟虑和周密计划，让敌人无处可逃。"  
+
+Ensure_Supply_Effectiveness_desc: "后勤军官见鬼去，我们的补给品必须优先提供给指挥部认为最有价值的部队，以执行接下来的行动。"  
+
+Assign_Air_Armies_To_Fronts_desc: "空军部队必须在陆军将军和元帅的指挥下，向他们认为最需要的地方提供援助。"  
+
+Unity_Trough_Effort_desc: "加强队伍的协调性和纪律性，以保证团结、达成目的。"  
+
+Ensure_Supply_Efficiency_desc: "我们不能总是抱怨物资短缺，一旦发生这种情况，我们就必须将就。"  
+
+Front_Level_Coordination_desc: "必须在最高层确保不同军事编队之间的合作，保证一定摧毁敌人。"  
+
+Seamless_Airforce_Cooperation_desc: "在前线部署空中联络员，使空中支援能够在我们的士兵最需要的地方发挥作用。"  
+
+Decentralised_Decisionmaking_desc: "在战场上的所有人员中，最了解敌人的人就是那些每天都在射击的人，让他们来发号施令吧。"  
+
+Forward_Control_desc: "前线跟从行动的指挥官更适合规划和执行行动，而不是一些闷头的扶手椅将军。"  
+
+Tactical_Autonomy_desc: "独立行动是一切成功之母，让独立作战的思想在各级指挥部尽情发挥作用。"  
+
+Dynamic_Battle_desc: "保持战斗的流动性并对不断变化的情况做出反应，意味着任何敌人都不会对我们即将采取的行动有所准备。"  
+
+Focus_On_Operational_Mobility_desc: "必须尽一切努力确保在我们的行动中保持机动性，以获得战略优势。"  
+
+Focus_On_Operational_Secrecy_desc: "通过有目的地误导敌人的注意力，在各个层面制造欺骗，敌人将不知道我们在何时何地发动攻击。"  
+
+Maintain_Operational_Intent_desc: "最重要的是让大家知道：进攻是有目的的，目的是要达成的。"  
+
+Bridge_The_Gap_Between_Tactics_And_Strategy_desc: "建立适当的作战艺术将是战术和战略的最高结合点。"  
+
+Methodical_Battle_desc: "我们的每一场战斗，我们发起的每一次进攻，都必须是为了一个更大的战略目的。"  
+
+Culminating_Point_Of_Victory_desc: "胜利的顶点是军事力量无法再战的那一刻，我们要尽早将敌人置于死地。"  
+
+
+
+
+Centralized_High_Command_spirit: "Centralized High Command"  
+Centralized_High_Command_spirit_desc: "Centralized High Command desc"  
+
+Cross_Branch_Training_spirit: "Cross Branch Training"  
+Cross_Branch_Training_spirit_desc: "Cross Branch Training desc"  
+
+Field_Experience_For_All_Officers_spirit: "Field Experience For All Officers"  
+Field_Experience_For_All_Officers_spirit_desc: "Field Experience For All Officers desc"  
+
+artillery_primer_spirit: "Artillery Primer"  
+artillery_primer_spirit_desc: "Artillery Primer desc"  
+
+infantry_studies_spirit: "Infantry Studies"  
+infantry_studies_spirit_desc: "Infantry Studies desc"  
+
+mobility_integration_spirit: "Mobility Integration"  
+mobility_integration_spirit_desc: "Mobility Integration desc"  
+
+command_lessons_spirit: "Command Lessons"  
+command_lessons_spirit_desc: "Command Lessons desc"  
+
+King_Of_Battle_spirit: "King Of Battle"  
+King_Of_Battle_spirit_desc: "King Of Battle desc"  
+
+Cannons_Are_Always_Ready_spirit: "Cannons Are Always Ready"  
+Cannons_Are_Always_Ready_spirit_desc: "Cannons Are Always Ready desc"  
+
+Unbreakable_Will_spirit: "Unbreakable Will"  
+Unbreakable_Will_spirit_desc: "Unbreakable Will desc"  
+
+Tyranny_Of_Technique_spirit: "Tyranny Of Technique"  
+Tyranny_Of_Technique_spirit_desc: "Tyranny Of Technique desc"  
+
+Armor_First_In_The_Fight_spirit: "Armor First In The Fight"  
+Armor_First_In_The_Fight_spirit_desc: "Armor First In The Fight desc"  
+
+One_Hand_Washes_The_Other_spirit: "One Hand Washes The Other"  
+One_Hand_Washes_The_Other_spirit_desc: "One Hand Washes The Other desc"  
+
+The_Ever_Faithful_Companion_spirit: "The Ever Faithful Companion"  
+The_Ever_Faithful_Companion_spirit_desc: "The Ever Faithful Companion desc"  

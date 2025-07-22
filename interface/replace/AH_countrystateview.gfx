@@ -1,0 +1,10 @@
+spriteTypes = {
+	#####钢铁萌心适配
+	spriteType = {
+		name = "GFX_buildings_strip"
+		textureFile = "gfx/interface/buildings/building_icon_strip-50.dds"
+		noOfFrames = 50
+	}
+
+	
+}

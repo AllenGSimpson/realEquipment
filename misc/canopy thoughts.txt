@@ -1,0 +1,19 @@
+No Canopy: Max speed lock (if this is possible)
+
+Bird Cage: Unlocks speeds over a certain amount (if this is possible). Increases cost.
+
+Malcolm Hood: Increases defense (I see you coming!); increases agility [slightly] (I can more quickly anticipate, see, and counter your attacks). Increases cost.
+
+Bubble Canopy: Increases defense, agility and attack. Increases cost a lot.
+
+Pressurized Cabin: Comes later. Increases cost quite a bit. Main advantage is high altitude flying which increases attack ability. Since I'm not sure how the air combat formula works, I do not know the best numbers to manipulate to mimic the advantages of high-altitude flying.
+
+Fighter Canopy Tech Line
+
+Assumed Starting Tech: No Canopy / Open Cockpit (or small windscreen only)
+
+Tech 1 "Bird Cage" (e.g. Bf 109) - Flat glass sections held in position by a metal frame and muntins. Rear view is blocked. The frame causes blind spots.
+
+Tech 2 "Malcolm Hood" (e.g. Spitfire) - Expanding the bird cage concept but bulging the glass outward and adding flush-mounted recessed glass panels behind the openable canopy giving a better view to the rear.
+
+Tech 3 "Bubble Canopy" - A single piece of plexiglass constructed without bracing that allows a full 360 degree view.

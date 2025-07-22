@@ -1,0 +1,88 @@
+[h1]Improved Air Designer[/h1]
+
+I started out making my own mod with changes to the air designer.  However, I really enjoyed Freezer's work on the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2948174914]Reworked Air Designer[/url], so I began incorporating some (many?) of his elements into my own mod.  I added, changed, removed, and otherwise modified many parts.
+
+The main add is Canopy type to Fighters.  You now start with Open Cockpit and most countries start with Bird Cage type (think Bf 109).  Later you get the Malcom Hood (think Spitfire) and eventually the Bubble Canopy (think P-51).  
+
+I also consolidated engine aspiration and functionality into a discreet module slot.  You now have turbo-chargers, super-chargers, turbosuperchargers, compressor and improved compressor (jets), and single and dual stage rockets in this slot (depending on engine type).  
+
+Turbo Chargers and Superchargers have been revamped to make a greater distinction between the two and have much greater costs associated with them, especially turbo chargers since these were extremely problematic, complicated, and took up a lot of room in the aircraft.  Superchargers are about half the production cost of turbo chargers.  Both decrease engine life and, thus, reliability suffers.  Instead of these items being an obvious add, you now must weigh the costs versus the benefits.
+
+I added nose-mounted weaponry to 2-engine airframes.  These are used mainly for Heavy Fighters.  Nose-mounted weaponry also gives an Air Attack boost to Interception missions (center line weaponry has increased range and effectiveness) for taking out those bombers.
+
+I modified aircraft ranges to be less than Freezer's mod but more than Paradox's latest modifications.  So, hopefully there is a happy median there.  Let me know what you think.
+
+I have also incorporated my [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3049456199]Improved Heavy Fighters[/url] mod into this mod, and of course there are also Medium Naval Bombers.
+
+Enjoy!
+
+[h2]Compatibility[/h2]
+
+This mod makes extensive changes to many files.  It will not be compatible with any mod that has changes centered around aircraft.  HOWEVER, this is definitely compatible with my New Fighter Icon Series mods!
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3032986648]Germany[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3075188739]England[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3036422313]Japan[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3112047071]USA[/url]
+
+
+[b]*This mod requires the By Blood Alone and Arms Against Tyranny DLC's[/b]
+
+[h1][b]I won't be working on any compatibility patches at this time.  However, if you would like to make one, let me know, and I'll add the link here.  Thanks![/b][/h1]
+
+[h2]Future Plans[/h2]
+
+[i][b]This is a beta version of the mod for people to try out.[/b][/i]  I will eventually make more changes as time allows, especially if I get feedback.  
+
+[h3]Troubleshooting[/h3]
+
+Please let me know if you experience any issues.  Please view the change notes to see the changes I've made with any updates I've posted.
+
+[h3]Thank You[/h3]
+
+If you like this mod, please give it a thumbs up.  Thanks!
+
+[h2]UPDATES[/h2]
+
+AI files for all majors completed. 
+
+[b][i]Germany AI done![/i][/b]
+[b][i]England AI done![/i][/b]
+[b][i]Japan AI done![/i][/b]
+[b][i]USA AI done![/i][/b]
+[b][i]USSR AI done![/i][/b]
+[b][i]Italy AI done![/i][/b]
+
+Updated the starting aircraft of all major countries (GER, ITA, JAPAN, ENG, SOV, USA, FRA) to be in line with the modules of Improved Air Designer.
+
+Many of the aircraft were locked out because modules were not in the correct slots or were missing modules. I have corrected all of these. Also, many of the aircraft are now much more in line with their historical counterparts. For example, adding Radial Engines instead of liquid cooled Inline Engines. I also added Non-Strategic Materials to most of the Interwar biplanes to simulate wood and fabric skin coverings for these.
+
+Many of the icons were updated also to more closely match the aircraft's historical counterpart. This also allows the player to more easily tell the difference between aircraft instead of seeing the same single engine biplane icon for several aircraft types.
+
+I added a Hurricane prototype to England's starting line up since England was already prototyping this aircraft in 1936. It has fabric wing and control surfaces coverings, so I also added the Non-Strategic Materials module to this prototype.
+
+[b]*Added default icons to USA, USSR, Italy, Japan (Germany and England already had them).  Now you will no longer see biplane icons used for other than biplanes!  The icons should roughly correspond to their historical counterparts (limited by the default icon set provided by Paradox).  
+
+[h3]If you would like a more thorough set of icons, check out my New Fighter Icon Series (links above).[/h3][/b]
+
+[b]*Updated to version 1.14.4 (no relevant changes)[/b]
+
+[h3]April 22[/h3]
+I'm starting on a project to modify the MIO's (Military Industrial Organizations) to be more unique (most upgrades of each MIO are the same across all nations . . . i.e. generic).  
+
+My first foray into this is to modify the U.S. MIO's.  North American Aviation (of P-51 fame) seemed too generic.  I completely revamped it to be almost exclusively unique.  I also added a little more focus on Medium Bombers since North American also designed and manufactured the famous B-25 Mitchell.  
+
+I also added a new MIO: Republic Aviation (the U.S. had no Multi-Role MIO . . . which I found extremely odd).  They're famous for designing and manufacturing the vaunted P-47 Thunderbolt . . . the most produced American fighter of the war.  Since the P-47 was literally designed around the huge Pratt & Whitney 18 cylinder, 2000 hp, superturbocharged, R-2800 Double Wasp engine, I added some MIO traits focused around this.  I also added a "U.S. Radial Engine Supremancy" focus in the American focus tree which gives a 100% research bonus for Radial Engines 3 and 4.  In radial engine technology, the U.S. was at least 3 years ahead of Germany (inline engines were a different matter with the U.S. having to rely on British Merlin engines until the U.S. Allison company could catch up in tech).  
+
+I also revamped Lockheed to have the famous "Skunk Works" division which focuses on producing the famous P-38 Lightning heavy fighter.  I also gave Douglas Company some awesome traits associated with the C-47 transport.  Based on the DC-3 which Douglas had produced for some time, the C-47 was arguably the best transport of the war: rugged, easy to fly, short take-off and landing, and excellent range.  I therefore gave Douglas the ability to produce transports at a much faster rate and with much better range.
+
+I also included N-009's excellent [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3075594855]Soviet CAS MIO[/url] mod transforming Illyushin into a CAS MIO instead of Medium Airframe MIO and adding a different Medium plane MIO.
+
+Let me know what you think!
+
+[b]** Unfortunately, all of these changes require the DLC Arms Against Tyranny. [/b]  However, I believe if you go into the Change Notes tab, you can select "Revert to this version" to go back to a previous version if you do not have this DLC.
+
+
+[b][h1]Known Compatibility Patches[/h1][/b]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3234152398]Equestria at War[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3229705181&searchtext=]Kaissereich[/url]

@@ -1,0 +1,375 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai = no
+					has_game_rule = {
+						rule = a_sa_gc_mod_rule
+						option = sa_gc_start_event_rule
+					}
+				}
+				country_event = {id = ex_limit_sa_mod.1 }
+				set_variable = {
+					root.open_close = 1
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
+			random_country = {
+				country_event = { id = ex_limit_sa_mod.3 }
+			}
+			every_state = {
+				if = {
+					limit = {
+						any_province_building_level = {
+							province = {
+								all_provinces = yes
+							}
+							building = naval_base
+							level > 4
+						}
+						NOT = {
+							has_state_flag = industrial_complex_construction_speed_factor_TT_1
+						}
+					}
+					set_state_flag = industrial_complex_construction_speed_factor_TT_1
+				}
+				if = {
+					limit = {
+						check_variable = {
+							building_level@army_school > 1
+						}
+						NOT = {
+							has_state_flag = army_school_1_TT
+						}
+					}
+					set_state_flag = army_school_1_TT
+				}
+				if = {
+					limit = {
+						check_variable = {
+							building_level@arms_factory > 4
+						}
+						NOT = {
+							has_state_flag = arms_factory_4_TT
+						}
+					}
+					set_state_flag = arms_factory_4_TT
+				}
+				if = {
+					limit = {
+						check_variable = {
+							building_level@Academy_of_Sciences > 0
+						}
+						NOT = {
+							has_state_flag = Academy_of_Sciences_0_TT
+						}
+					}
+					set_state_flag = Academy_of_Sciences_0_TT
+				}
+				if = {
+					limit = {
+						naval_base > 4
+						NOT = {
+							has_state_flag = naval_base_4_TT
+						}
+					}
+					set_state_flag = naval_base_4_TT
+				}
+				if = {
+					limit = {
+						check_variable = {
+							building_level@air_base > 4
+						}
+						NOT = {
+							has_state_flag = air_base_4_TT
+						}
+					}
+					set_state_flag = air_base_4_TT
+				}
+			}
+			every_country = {
+				limit = {
+					is_major = yes
+				}
+				capital_scope = {
+					add_building_construction = {
+						type = Academy_of_Sciences
+						level = 2
+					}
+				}
+				random_controlled_state = {
+					limit = {
+						is_core_of = PREV
+						Academy_of_Sciences = 0
+					}
+					add_building_construction = {
+						type = Academy_of_Sciences
+						level = 1
+					}
+				}
+				if = {
+					limit = { 
+						OR = {
+							TAG = USA
+							TAG = GER
+							TAG = ENG
+						}
+					}
+					random_controlled_state = {
+						limit = {
+							is_core_of = PREV
+							Academy_of_Sciences = 0
+						}
+						add_building_construction = {
+							type = Academy_of_Sciences
+							level = 1
+						}
+					}
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			ROOT = {
+				if = {
+					limit = {
+						NOT = {
+							has_tech = synthetic_refinery_num
+						}
+					}
+					country_event = { id = ex_limit_sa_mod.4 }
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = Academy_of_Sciences
+							}
+						}
+					}
+					country_event = { id = ex_limit_sa_mod.5 }
+				}
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			every_owned_state = {
+				if = {
+					limit = { 
+						is_in_array = {
+							array = ROOT.regional_development_state_gc
+							value = THIS
+						}
+						NOT = { has_dynamic_modifier = {modifier = gc_dym_1_state} }
+					}
+					increase_state_category = yes
+					remove_from_array = {
+						array = ROOT.regional_development_state_gc
+						value = THIS
+					}
+				}
+			}
+			every_state = {
+				if = {
+					limit = {
+						any_province_building_level = {
+							province = {
+								all_provinces = yes
+							}
+							building = naval_base
+							level > 4
+						}
+						NOT = {
+							has_state_flag = industrial_complex_construction_speed_factor_TT_1
+						}
+					}
+					set_state_flag = industrial_complex_construction_speed_factor_TT_1
+				}
+				if = {
+					limit = {
+						check_variable = {
+							building_level@army_school > 1
+						}
+						NOT = {
+							has_state_flag = army_school_1_TT
+						}
+					}
+					set_state_flag = army_school_1_TT
+				}
+				if = {
+					limit = {
+						check_variable = {
+							building_level@arms_factory > 4
+						}
+						NOT = {
+							has_state_flag = arms_factory_4_TT
+						}
+					}
+					set_state_flag = arms_factory_4_TT
+				}
+				if = {
+					limit = {
+						check_variable = {
+							building_level@Academy_of_Sciences > 0
+						}
+						NOT = {
+							has_state_flag = Academy_of_Sciences_0_TT
+						}
+					}
+					set_state_flag = Academy_of_Sciences_0_TT
+				}
+				if = {
+					limit = {
+						naval_base > 4
+						NOT = {
+							has_state_flag = naval_base_4_TT
+						}
+					}
+					set_state_flag = naval_base_4_TT
+				}
+				if = {
+					limit = {
+						check_variable = {
+							building_level@air_base > 4
+						}
+						NOT = {
+							has_state_flag = air_base_4_TT
+						}
+					}
+					set_state_flag = air_base_4_TT
+				}
+			}
+			
+			clear_variable = ROOT.gc_dym_1_country^1
+			clear_variable = ROOT.gc_dym_1_country^2
+
+					every_owned_state = {
+						add_to_variable = {
+							ROOT.gc_dym_1_country^1 = THIS.modifier@factories_used_by_regional_development_gc
+						}
+						add_to_variable = {
+							ROOT.gc_dym_1_country^2 = THIS.modifier@steel_for_regional_development_gc
+						}
+					}
+					if = {
+						limit = { 
+							NOT = {
+								has_dynamic_modifier = {
+									modifier = gc_dym_1_country
+								}
+							}
+						}
+						add_dynamic_modifier = {
+							modifier = gc_dym_1_country
+						}
+					}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			FROM.FROM = {
+				if = {
+					limit = { 
+						has_dynamic_modifier = {
+							modifier = gc_dym_1_country
+						}
+					}
+					remove_dynamic_modifier = {
+					modifier = gc_dym_1_state
+				}
+				if = {
+					limit = { 
+						is_in_array = {
+							array = FROM.regional_development_state_gc
+							value = THIS
+						}
+					}
+					remove_from_array = {
+						array = FROM.regional_development_state_gc
+						value = THIS
+					}
+				}
+				}
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+				if = {
+					limit = {
+						has_tech = infantry_weapons
+						prc_simple_arsenal >0
+					}
+					THIS = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = modifier@prc_simple_arsenal_gun_gc
+						}
+					}
+				}
+				if = {
+					limit = { 
+						has_tech = tech_support 
+						prc_simple_arsenal >0
+					}
+					THIS = {
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = modifier@prc_simple_arsenal_support_equipment_gc
+						}
+					}
+				}
+				if = {
+					limit = { 
+						has_tech = gw_artillery
+						prc_simple_arsenal >0
+					}
+					THIS = {
+						add_equipment_to_stockpile = {
+							type = artillery_equipment
+							amount = modifier@prc_simple_arsenal_artillery_gc
+						}
+					}
+				}
+				if = {
+					limit = { 
+						check_variable = {
+							modifier@Research_points_gc > 0
+						}
+					}
+					random_list = {
+						1 = {
+							add_breakthrough_progress = {
+								specialization = specialization_land
+								value = modifier@Research_points_gc
+							}
+						}
+						1 = {
+							add_breakthrough_progress = {
+								specialization = specialization_naval
+								value = modifier@Research_points_gc
+							}
+						}
+						1 = {
+							add_breakthrough_progress = {
+								specialization = specialization_nuclear
+								value = modifier@Research_points_gc
+							}
+						}
+						1 = {
+							add_breakthrough_progress = {
+								specialization = GFX_specialization_air
+								value = modifier@Research_points_gc
+							}
+						}
+					}
+				}
+		}
+	}
+}

@@ -1,0 +1,179 @@
+SA_m = {
+	CHOSE = {
+		available = {
+			is_ai = no
+		}
+		ai_will_do = {
+			factor = -999
+		}
+		#fire_only_once = yes
+		visible = {
+			OR = {
+				NOT = { has_dynamic_modifier = {
+					modifier = Academy_of_Sciences
+				} }
+				NOT = {
+					AND = {
+						has_tech = gc_25
+						has_tech = gc_50
+						has_tech = gc_100
+						has_tech = gc_200
+						has_tech = gc_500
+						has_tech = gc_1000
+					}
+				}
+			}
+		}
+		complete_effect = {
+			country_event = { id = ex_limit_sa_mod.1 }
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { 
+							has_dynamic_modifier = {
+							modifier = Academy_of_Sciences
+							} 
+						}
+					}
+					for_each_scope_loop = {
+						array = global.countries
+						add_dynamic_modifier = {
+							modifier = Government_agency
+						}
+						add_dynamic_modifier = {
+							modifier = architectural_institute
+						}
+						add_dynamic_modifier = {
+							modifier = air_school
+						}
+						add_dynamic_modifier = {
+							modifier = naval_school
+						}
+						add_dynamic_modifier = {
+							modifier = army_school
+						}
+						add_dynamic_modifier = {
+							modifier = Academy_of_Sciences
+						}
+					}
+				}
+			}
+		}
+	}
+	debug_SA = {
+		available = {
+			#num_of_available_civilian_factories > 10
+		}
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			add_to_variable = {
+				global.BALP_LeaderGetCredits = 3000
+			}
+			every_state = {
+				limit = { 
+						is_in_array = {
+							array = ROOT.regional_development_state_gc
+							value = THIS
+						}
+						NOT = { has_dynamic_modifier = {modifier = gc_dym_1_state} }
+					}
+					increase_state_category = yes
+					remove_from_array = {
+						array = ROOT.regional_development_state_gc
+						value = THIS
+					}
+			}
+		}
+	}
+	Guerrilla_Warfare_gc = {
+		name = Guerrilla_Warfare_0
+		desc = prc_simple_arsenal_desc
+		icon = GFX_prc_simple_arsenal
+		available = {
+			always = no
+		}
+		complete_effect = {
+			effect_tooltip = {
+				custom_effect_tooltip = WEEKLY
+			ROOT = {
+				if = {
+					limit = {
+						has_tech = infantry_weapons
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = modifier@prc_simple_arsenal_gun_gc
+					}
+				}
+				if = {
+					limit = { has_tech = tech_support }
+					add_equipment_to_stockpile = {
+						type = support_equipment
+						amount = modifier@prc_simple_arsenal_support_equipment_gc
+					}
+				}
+				if = {
+					limit = { 
+						has_tech = gw_artillery
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = modifier@prc_simple_arsenal_artillery_gc
+					}
+				}
+			}
+			}
+		}
+	}
+	Academy_of_Sciences_gc = {
+		icon = GFX_Academy_of_Sciences
+		available = {
+			always = no
+		}
+		complete_effect = {
+			custom_effect_tooltip = WEEKLY
+			effect_tooltip = {
+				if = {
+					limit = { 
+						check_variable = {
+							modifier@Research_points_gc > 0
+						}
+					}
+					meta_effect = {
+						text = {
+							random_list = {
+								1 = {
+									add_breakthrough_progress = {
+										specialization = specialization_land
+										value = [Research_points_gc]
+									}
+								}
+								1 = {
+									add_breakthrough_progress = {
+										specialization = specialization_naval
+										value = [Research_points_gc]
+									}
+								}
+								1 = {
+									add_breakthrough_progress = {
+										specialization = specialization_nuclear
+										value = [Research_points_gc]
+									}
+								}
+								1 = {
+									add_breakthrough_progress = {
+										specialization = specialization_air
+										value = [Research_points_gc]
+									}
+								}
+							}
+						}
+						Research_points_gc = "[?modifier@Research_points_gc]"
+					}
+				}
+			}
+		}
+	}
+}

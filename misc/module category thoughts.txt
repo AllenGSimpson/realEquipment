@@ -1,0 +1,13 @@
+Survivability
+	Fire Extinguisher
+	Armor Plates
+	Self-Sealing Fuel Tanks
+
+Piston Engine Enhancement
+	Engine Injection System
+	High-Octane Additive
+
+Range
+	Drop Tanks
+	Extra Fuel Tanks
+	Non-Strategic Materials

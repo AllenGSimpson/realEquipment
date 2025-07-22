@@ -1,0 +1,64 @@
+#tree_header_text = {
+		
+# text = mio_header_operational_department
+# text = mio_header_design_department
+# text = mio_header_engines_department
+# text = mio_header_mechanical_design
+# text = mio_header_design_and_production
+# text = mio_header_equipment_and_specialization
+# text = mio_header_production
+# text = mio_header_engines
+# text = mio_header_wings
+# text = mio_header_weapons
+# text = mio_header_light_aircraft
+# text = mio_header_medium_aircraft
+
+
+### EQUIPMENT STATS ###
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+#air_superiority
+#reliability
+#naval_strike_attack
+#naval_strike_targetting
+#manpower
+#fuel_consumption
+#build_cost_ic
+#resources
+#thrust - only if you have BBA DLC
+#weight - only if you have BBA DLC
+#maximum_speed
+#air_range
+#air_agility
+#air_attack
+#air_defence
+#surface_detection
+#sub_detection
+#air_ground_attack
+#air_bombing
+#mines_planting - if you have MtG and BBA
+#mines_sweeping - if you have MtG and BBA
+#night_penalty - only if you have BBA DLC (you need to have module because base value is 0 - radio navigatio
+
+### PRODUCTION MODIFIERS ###
+#production_cost_factor
+#production_capacity_factor
+#production_efficiency_cap_factor
+#production_efficiency_gain_factor
+#production_resource_need_factor
+#production_resource_penalty_factor
+#production_conversion_speed_factor
+
+### ORGANIZATION MODIFIERS ###
+#military_industrial_organization_research_bonus
+#military_industrial_organization_design_team_assign_cost
+#military_industrial_organization_design_team_change_cost
+#military_industrial_organization_industrial_manufacturer_assign_cost
+#military_industrial_organization_task_capacity
+#military_industrial_organization_size_up_requirement
+#military_industrial_organization_funds_gain

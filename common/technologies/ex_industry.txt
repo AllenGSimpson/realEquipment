@@ -1,0 +1,171 @@
+technologies = {
+	gc_1000 = {
+		enable_building = {
+			building = arms_factory
+			level = 1000
+		}
+		enable_building = {
+			building = industrial_complex
+			level = 1000
+		}
+		enable_building = {
+			building = dockyard
+			level = 1000
+		}
+		allow = {
+			always = no
+		}
+	}
+
+	gc_500 = {
+		enable_building = {
+			building = arms_factory
+			level = 500
+		}
+		enable_building = {
+			building = industrial_complex
+			level = 500
+		}
+		enable_building = {
+			building = dockyard
+			level = 500
+		}
+		allow = {
+			always = no
+		}
+	}
+
+	gc_200 = {
+		enable_building = {
+			building = arms_factory
+			level = 200
+		}
+		enable_building = {
+			building = industrial_complex
+			level = 200
+		}
+		enable_building = {
+			building = dockyard
+			level = 200
+		}
+		allow = {
+			always = no
+		}
+	}
+
+	gc_100 = {
+		enable_building = {
+			building = arms_factory
+			level = 100
+		}
+		enable_building = {
+			building = industrial_complex
+			level = 100
+		}
+		enable_building = {
+			building = dockyard
+			level = 100
+		}
+		allow = {
+			always = no
+		}
+	}
+	gc_50 = {
+		allow = {
+			always = no
+		}
+		enable_building = {
+			building = arms_factory
+			level = 50
+		}
+		enable_building = {
+			building = industrial_complex
+			level = 50
+		}
+		enable_building = {
+			building = dockyard
+			level = 50
+		}
+	}
+	gc_25 = {
+		enable_building = {
+			building = arms_factory
+			level = 25
+		}
+		enable_building = {
+			building = industrial_complex
+			level = 25
+		}
+		enable_building = {
+			building = dockyard
+			level = 25
+		}
+		allow = {
+			always = no
+		}
+	}
+	gc_10 = {
+		enable_building = {
+			building = arms_factory
+			level = 10
+		}
+		enable_building = {
+			building = industrial_complex
+			level = 10
+		}
+		enable_building = {
+			building = dockyard
+			level = 10
+		}
+		allow = {
+			always = no
+		}
+	}
+	gc_5 = {
+		enable_building = {
+			building = arms_factory
+			level = 5
+		}
+		enable_building = {
+			building = industrial_complex
+			level = 5
+		}
+		enable_building = {
+			building = dockyard
+			level = 5
+		}
+		allow = {
+			always = no
+		}
+	}
+	synthetic_refinery_num = {
+		enable_building = {
+			building = synthetic_refinery
+			level = 50
+		}
+
+		enable_building = {
+			building = steel_mill
+			level = 50
+		}
+		enable_building = {
+			building = aluminum_mill
+			level = 50
+		}
+		enable_building = {
+			building = tungsten_smelter
+			level = 50
+		}
+		enable_building = {
+			building = chromium_smelter
+			level = 50
+		}
+		enable_building = {
+			building = oil_smelter
+			level = 50
+		}
+		allow = {
+			always = no
+		}
+	}
+}

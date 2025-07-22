@@ -1,0 +1,99 @@
+research_speed_factor_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+political_advisor_cost_factor_gc= {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+political_power_gain_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+production_speed_buildings_factor_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+
+max_command_power_air_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+max_command_power_navy_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+max_command_power_army_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+
+experience_gain_air_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+experience_gain_navy_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+experience_gain_army_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+
+experience_gain_army_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+Research_points_gc = {
+	color_type = good
+	value_type = number
+	precision = 3
+}
+factories_used_by_regional_development_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+steel_for_regional_development_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+
+prc_simple_arsenal_artillery_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+prc_simple_arsenal_support_equipment_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+prc_simple_arsenal_gun_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+prc_simple_arsenal_gc = {
+	color_type = good
+	value_type = number
+	precision = 1
+}
+Academy_of_Sciences_gc = {
+	color_type = good
+	value_type = number
+	precision = 3
+}

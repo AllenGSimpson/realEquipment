@@ -1,0 +1,32 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_del_bui_bg" 
+		texturefile = "gfx/interface/del_bui_bg.png"
+	} 
+	spriteType = {
+		name = "GFX_op_cl"  
+		texturefile = "gfx/interface/button_left_right.png"
+		noOfFrames = 2
+	} 
+	frameAnimatedSpriteType = {
+        name = "GFX_idea_yo"  
+        texturefile = "gfx/interface/youC.png"
+        noOfFrames = 8
+		animation_rate_fps = 8
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}  
+
+	frameAnimatedSpriteType = {
+		name = "GFX_idea_zheng"  
+		texturefile = "gfx/interface/zheng.png"
+		noOfFrames = 2
+		animation_rate_fps = 2
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+	}  
+}

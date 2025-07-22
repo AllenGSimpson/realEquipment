@@ -1,0 +1,306 @@
+@first_column_x = -300
+@second_column_x = -224
+@third_column_x = -164
+@fourth_column_x = -104
+@fifth_column_x = -44
+
+@first_line_y = -338
+@second_line_y = 200
+guiTypes = {
+	
+	containerWindowType = {
+		name = op_win
+		position = {
+			x = 554
+			y = -10
+		}
+		buttonType = {
+			name = op_win_button
+			position = {
+				x = 32
+				y = -22
+			}
+			spriteType = GFX_production_line_arrow_right
+			pdx_tooltip = open_close
+		}
+		iconType = {
+			name = "header_bg"
+			quadTextureSprite = GFX_idea_yo
+			scale = 0.5
+			position = {
+				x = 20
+				y = -50
+			}
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "Building_delet"
+		#position = { x = 770 y = 450 }
+		origo = center
+		show_position = { x = 890 y = 380 }
+		hide_position = { x = 800 y = 380 }
+		show_animation_type = linear
+		hide_animation_type = linear
+		animation_type = linear
+		animation_time = 300
+		show_sound = no
+		hide_sound = no
+		fade_time = 300
+		fade_type = linear
+		iconType = {
+			name = "header_bg"
+			quadTextureSprite = GFX_idea_yo
+			position = { x = -250 y = -465 }
+			scale = 0.5
+			
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = GFX_del_bui_bg
+			position = { x = -306 y = -413 }
+			spriteType = "GFX_build_bg"
+		}
+		buttonType = {
+			name = open_close
+			position = { x = -189 y = -388 }
+			pdx_tooltip = open_close
+			spriteType = GFX_production_line_arrow_left
+			frame = 1
+		}
+		buttonType = {
+			name = "Dismantling_1"
+			position = { x = @first_column_x y = -338 }
+			spriteType = GFX_infrastructure
+			frame = 1
+			clicksound = click_default
+			pdx_tooltip = "1_click"
+			
+		}
+		buttonType = {
+			name = "Dismantling_2"
+			position = { x = @first_column_x y = -275 }
+			spriteType = GFX_industrial_complex
+			frame = 1
+			clicksound = click_default
+			pdx_tooltip = "2_click"
+		}
+		buttonType = {
+			name = "Dismantling_3"
+			position = { x = @first_column_x y = -212 }
+			spriteType = GFX_arms_factory
+			frame = 1
+			clicksound = click_default
+			pdx_tooltip = "3_click"
+		}
+		buttonType = {
+			name = "Dismantling_4"
+			position = { x = @first_column_x y = -146 }
+			spriteType = GFX_dockyard
+			frame = 1
+			clicksound = click_default
+			pdx_tooltip = "4_click"
+		}
+		buttonType = {
+			name = "Dismantling_5"
+			position = { x = @first_column_x y = -79 }
+			spriteType = GFX_synthetic_refinery
+			frame = 1
+			clicksound = click_default
+			pdx_tooltip = "5_click"
+		}
+
+		buttonType = {
+			name = "Dismantling_6"
+			position = { x = @first_column_x y = -13 }
+			spriteType = "GFX_oil_smelter"
+			frame = 1
+			clicksound = click_default
+			pdx_tooltip = "6_click"
+		}
+		buttonType = {
+			name = "Dismantling_7"
+			position = { x = @first_column_x y = 50 }
+			spriteType = GFX_steel_mill
+			frame = 1
+			clicksound = click_default
+			pdx_tooltip = "7_click"
+		}
+		buttonType = {
+			name = "Dismantling_8"
+			position = { x = @first_column_x y = 113 }
+			spriteType = GFX_aluminum_mill
+			frame = 1
+			clicksound = click_default
+			pdx_tooltip = "8_click"
+		}
+		buttonType = {
+			name = "Dismantling_9"
+			position = { x = @first_column_x y = 173 }
+			spriteType = GFX_tungsten_smelter
+			frame = 1
+			clicksound = click_default
+			pdx_tooltip = "9_click"
+		}
+		buttonType = {
+			name = "Dismantling_10"
+			position = { x = @first_column_x y = 238 }
+			spriteType = GFX_chromium_smelter
+			frame = 1
+			clicksound = click_default
+			pdx_tooltip = "10_click"
+		}
+
+		instantTextBoxType = {
+			alwaystransparent = yes
+			alwaystransparent = yes
+			name = building_num_1
+			position = { x = -350 y = -323 }
+			font = "hoi_18b"
+			borderSize = { x = 0 y = 0 }
+			text = "Provincial_building_management_text"
+			maxWidth = 300
+			format = center
+		}
+		instantTextBoxType = {
+			alwaystransparent = yes
+			name = building_num_2
+			position = { x = -350 y = -257 }
+			font = "hoi_18b"
+			borderSize = { x = 0 y = 0 }
+			text = "Provincial_building_management_text"
+			maxWidth = 300
+			format = center
+		}
+		instantTextBoxType = {
+			alwaystransparent = yes
+			name = building_num_3
+			position = { x = -350 y = -191 }
+			font = "hoi_18b"
+			borderSize = { x = 0 y = 0 }
+			text = "Provincial_building_management_text"
+			maxWidth = 300
+			format = center
+		}
+		instantTextBoxType = {
+			alwaystransparent = yes
+			name = building_num_4
+			position = { x = -350 y = -125 }
+			font = "hoi_18b"
+			borderSize = { x = 0 y = 0 }
+			text = "Provincial_building_management_text"
+			maxWidth = 300
+			format = center
+		}
+		instantTextBoxType = {
+			alwaystransparent = yes
+			name = building_num_5
+			position = { x = -350 y = -59 }
+			font = "hoi_18b"
+			borderSize = { x = 0 y = 0 }
+			text = "Provincial_building_management_text"
+			maxWidth = 300
+			format = center
+		}
+		instantTextBoxType = {
+			alwaystransparent = yes
+			name = building_num_6
+			position = { x = -350 y = 7 }
+			font = "hoi_18b"
+			borderSize = { x = 0 y = 0 }
+			text = "Provincial_building_management_text"
+			maxWidth = 300
+			format = center
+		}
+		instantTextBoxType = {
+			alwaystransparent = yes
+			name = building_num_7
+			position = { x = -350 y = 68 }
+			font = "hoi_18b"
+			borderSize = { x = 0 y = 0 }
+			text = "Provincial_building_management_text"
+			maxWidth = 300
+			format = center
+		}
+		instantTextBoxType = {
+			alwaystransparent = yes
+			name = building_num_8
+			position = { x = -350 y = 129 }
+			font = "hoi_18b"
+			borderSize = { x = 0 y = 0 }
+			text = "Provincial_building_management_text"
+			maxWidth = 300
+			format = center
+		}
+		instantTextBoxType = {
+			alwaystransparent = yes
+			name = building_num_9
+			position = { x = -350 y = 192 }
+			font = "hoi_18b"
+			borderSize = { x = 0 y = 0 }
+			text = "Provincial_building_management_text"
+			maxWidth = 300
+			format = center
+		}
+		instantTextBoxType = {
+			alwaystransparent = yes
+			name = building_num_10
+			position = { x = -350 y = 256 }
+			font = "hoi_18b"
+			borderSize = { x = 0 y = 0 }
+			text = "Provincial_building_management_text"
+			maxWidth = 300
+			format = center
+		}
+
+	}
+
+	containerWindowType = {
+		name = "GC_state_Level_of_regional_development"
+		position = { x = 460 y = 505 }
+		size = {
+			width = 120
+			height = 80
+		}
+		clipping = no
+		background = {
+			name = background0
+			quadTextureSprite = GFX_mini_bg_grey
+			position = {
+				x = -5
+				y = -5
+			}
+		}
+		iconType = {
+			name = "Background"
+			quadTextureSprite = GFX_generic_text_bg_108
+		}
+		instantTextBoxType = {
+			position = {
+				x = -48
+				y = 5
+			}
+			format = center
+			name = Level_of_regional_development_text
+			text = [Level_of_regional_development_TT]
+			font = "hoi_18mbs"
+		}
+		iconType = {
+			name = "Background2"
+			position = {
+				x = 0
+				y = 35
+			}
+			#quadTextureSprite = GFX_generic_text_bg_108
+		}
+		buttonType = {
+			#scale = 0.9
+			name = "state_picture"
+			position = { x = 8 y = 30 }
+			spriteType = GFX_modifiers_generic_railways
+			pdx_tooltip = development_state
+			pdx_disabled_tooltip = development_state_disabled
+		}
+	}
+	
+}	

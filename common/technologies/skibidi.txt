@@ -1,0 +1,70 @@
+technologies = {
+    volkssturm = {
+	}
+    trench_warfare = {
+	}
+    mobile_warfare = {
+	}
+    mass_assault = {
+	}
+    grand_battle_plan = {
+	}
+    delay = {
+	}
+    elastic_defence = {
+	}
+    schwerpunk = {
+	}
+    blitzkrieg = {
+	}
+    pocket_defence = {
+	}
+    defence_in_depth = {
+	}
+    prepared_defense = {
+	}
+    superior_firepower = {
+	}
+    sup_delay = {
+	}
+    delay = {
+	}
+    elastic_defence = {
+	}
+    mobile_defence = {
+	}
+    grand_assault = {
+	}
+    kampfgruppe = {
+	}
+    mechanised_offensive = {
+	}
+    branch_interoperation = {
+	}
+    infiltration_assault = {
+	}
+    vast_offensives = {
+	}
+    large_front_offensive = {
+	}
+    werwolf_guerillas = {
+	}
+    modern_blitzkrieg = {
+	}
+    air_land_battle = {
+	}
+    c3i_theory = {
+	}
+    infiltration_in_depth = {
+	}
+    continuous_offensive = {
+	}
+    guerilla_warfare = {
+	}
+    branch_interoperation = {
+	}
+   
+
+
+
+}

@@ -1,0 +1,94 @@
+steel_mill_build = {
+	enable = {
+		check_variable  = {
+			resource@steel < -8
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = building_target
+		id = steel_mill
+		value = 1
+	}
+}
+
+aluminum_mill_build = {
+	enable = {
+		check_variable  = {
+			resource@aluminium < -8
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = building_target
+		id = aluminum_mill
+		value = 1
+	}
+}
+
+tungsten_smelter_build = {
+	enable = {
+		check_variable  = {
+			resource@tungsten < -8
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = building_target
+		id = tungsten_smelter
+		value = 1
+	}
+}
+
+chromium_smelter_build = {
+	enable = {
+		check_variable  = {
+			resource@chromium < -8
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = building_target
+		id = chromium_smelter
+		value = 1
+	}
+}
+oil_smelter_build = {
+	enable = {
+		check_variable  = {
+			resource@oil < -8
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = building_target
+		id = oil_smelter
+		value = 1
+	}
+}
+
+no_more_build_dockyard = {
+	enable = {
+		check_variable  = {
+			building_level@dockyard > 100
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = building_target
+		id = dockyard
+		value = -100
+	}
+}

@@ -1,0 +1,66 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_aluminum_mill"
+		texturefile = "gfx/interface/ex_building_GUI/aluminum_mill.dds"
+	}
+	SpriteType = {
+		name = "GFX_arms_factory"
+		texturefile = "gfx/interface/ex_building_GUI/arms_factory.dds"
+	}
+	SpriteType = {
+		name = "GFX_building_level_bg"
+		texturefile = "gfx/interface/ex_building_GUI/building_level_bg.dds"
+	}
+	SpriteType = {
+		name = "GFX_build_bg"
+		texturefile = "gfx/interface/ex_building_GUI/building_icon_2X10.png"
+	}
+	SpriteType = {
+		name = "GFX_chromium_smelter"
+		texturefile = "gfx/interface/ex_building_GUI/chromium_smelter.dds"
+	}
+	SpriteType = {
+		name = "GFX_dockyard"
+		texturefile = "gfx/interface/ex_building_GUI/dockyard.dds"
+	}
+	SpriteType = {
+		name = "GFX_industrial_complex"
+		texturefile = "gfx/interface/ex_building_GUI/industrial_complex.dds"
+	}
+	SpriteType = {
+		name = "GFX_infrastructure"
+		texturefile = "gfx/interface/ex_building_GUI/infrastructure.dds"
+	}
+	SpriteType = {
+		name = "GFX_oil_smelter"
+		texturefile = "gfx/interface/ex_building_GUI/oil_smelter.dds"
+	}
+	SpriteType = {
+		name = "GFX_refund_operation"
+		texturefile = "gfx/interface/ex_building_GUI/refund_operation.dds"
+	}
+	SpriteType = {
+		name = "GFX_steel_mill"
+		texturefile = "gfx/interface/ex_building_GUI/steel_mill.dds"
+	}
+	SpriteType = {
+		name = "GFX_synthetic_refinery"
+		texturefile = "gfx/interface/ex_building_GUI/synthetic_refinery.dds"
+	}
+	SpriteType = {
+		name = "GFX_tungsten_smelter"
+		texturefile = "gfx/interface/ex_building_GUI/tungsten_smelter.dds"
+	}
+	SpriteType = {
+		name = "GFX_Base_Area"
+		texturefile = "gfx/interface/根据地.png"
+	}
+	SpriteType = {
+		name = "GFX_Academy_of_Sciences"
+		texturefile = "gfx/interface/ex_building_GUI/Academy_of_Sciences.png"
+	}
+	SpriteType = {
+		name = "GFX_prc_simple_arsenal"
+		texturefile = "gfx/interface/ex_building_GUI/prc_simple_arsenal.png"
+	}
+}

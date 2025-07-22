@@ -101,6 +101,10 @@ technologies = {
 			}
 		}
 		
+		enable_equipment_modules = { 
+		canopy3						### ADDED
+		}		
+		
 		categories = {
 			industry
 			cat_production

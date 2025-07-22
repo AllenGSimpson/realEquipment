@@ -1,0 +1,95 @@
+ideas = {
+	country = {
+		gc_idea_1 = {
+			
+			name = gc_dym_1_country
+			modifier = {
+				custom_modifier_tooltip = gc_idea_1_tt
+			}
+		}
+	}
+	economy = {
+		law = yes
+		use_list_view = yes
+		gc_idea_economy_1 = {
+			picture = FRA_national_mobilization_focus
+			name = gc_idea_economy_1
+			visible = {
+				always = no
+			}
+			modifier = {
+				conscription = 0.03
+				conscription_factor = 0.1
+				consumer_goods_factor = 0.15
+				war_support_factor = 0.1
+				resistance_growth_on_our_occupied_states = 0.3
+				resistance_decay_on_our_occupied_states = -0.3
+				resistance_target_on_our_occupied_states = 0.3
+			}
+		}
+		gc_idea_economy_1 = {
+			
+			name = gc_idea_economy_2
+			visible = {
+				always = no
+			}
+			modifier = {
+				production_cost_prc_simple_arsenal_factor = -0.3
+				production_speed_prc_simple_arsenal_factor = 0.5
+				production_speed_arms_factory_factor = -0.5
+			}
+		}
+		
+	}
+	mobilization_laws = {
+		law = yes
+		use_list_view = yes
+		gc_idea_mobilization_laws_1 = {
+			visible = {
+				always = no
+			}
+			picture = generic_communist_army
+			modifier = {
+				political_power_cost = -0.25
+				recruitable_population = 0.1
+				conscription = 0.02
+				weekly_manpower = 1500
+				army_org_regain = 0.1
+				org_loss_when_moving = -0.2
+				army_org_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+	}
+	trade_laws = {
+		law = yes
+		use_list_view = yes
+		gc_idea_trade_laws_1 = {
+			picture = gre_agricultural_communes
+			name = gc_idea_trade_laws_1
+			visible = {
+				always = no
+			}
+			modifier = {
+				production_cost_prc_simple_arsenal_factor = -0.3
+				production_speed_prc_simple_arsenal_factor = 0.5
+				production_speed_arms_factory_factor = -0.5
+				min_export = 0.1
+				
+			}
+		}
+		gc_idea_trade_laws_2 = {
+			
+			name = gc_idea_trade_laws_2
+			visible = {
+				always = no
+			}
+			modifier = {
+				production_cost_prc_simple_arsenal_factor = -0.3
+				production_speed_prc_simple_arsenal_factor = 0.5
+				production_speed_arms_factory_factor = -0.5
+			}
+		}
+	}
+}

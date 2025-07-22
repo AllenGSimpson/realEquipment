@@ -5,10 +5,10 @@ air_wings = {
 	378 = {
 		# 7th Bombardment Group 
 		# 19th Bombardment Group 
-		medium_plane_airframe_0 = {
+		medium_plane_airframe_1 = {
 			owner = "USA" 
 			amount = 60
-			version_name = "B-6A"
+			version_name = "B-10"
 		}
 		# 17th Attack Group 
 		small_plane_cas_airframe_0 = {
@@ -66,10 +66,10 @@ air_wings = {
 			version_name = "P-26A"
 		}
 		# 5th Composite Group 
-		medium_plane_airframe_0 = {
+		medium_plane_airframe_1 = {
 			owner = "USA" 
 			amount = 36
-			version_name = "B-6A"
+			version_name = "B-10"
 		}
 	}
 
@@ -90,18 +90,29 @@ air_wings = {
 	}
 
 	### Philippines Composite Group -- Manilla
-#	327 = { 
-#		# 4th Composite Group 
-#		fighter_equipment_0 =  {
-#			owner = "USA" 
-#			amount = 36
-#		}
-#	}
+	327 = { 
+		# 4th Composite Group 
+		small_plane_airframe_0 =  {
+			owner = "USA" 
+			amount = 36
+			version_name = "P-26A"
+		}
+		medium_plane_airframe_1 = {
+			owner = "USA" 
+			amount = 24
+			version_name = "B-10"
+		}
+		medium_plane_naval_bomber_airframe_0 =  {
+			owner = "USA" 
+			amount = 12
+			version_name = "P2Y"
+		}
+	}
 
 	### USN Atlantic Naval Patrol Division -- Norfolk
 	362 = { 
 		# Naval Patrol Wing 3 
-		medium_plane_airframe_0 =  {
+		medium_plane_naval_bomber_airframe_0 =  {
 			owner = "USA" 
 			amount = 36
 			version_name = "P2Y"
@@ -111,7 +122,7 @@ air_wings = {
 	378 = { 
 		# Naval Patrol Wing 1 
 		# Naval Patrol Wing 2 
-		medium_plane_airframe_0 =  {
+		medium_plane_naval_bomber_airframe_0 =  {
 			owner = "USA" 
 			amount = 72
 			version_name = "P2Y"
@@ -151,6 +162,7 @@ instant_effect = {
 		requested_factories = 1
 		progress = 0.15
 		efficiency = 50
+		industrial_manufacturer = mio:USA_north_american_aviation_organization
 	}
 
 }

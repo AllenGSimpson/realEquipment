@@ -1,0 +1,414 @@
+buildings = {
+
+	#金属冶炼厂
+	#钢厂
+	steel_mill = {
+		show_on_map = 0
+		base_cost = 6000
+		icon_frame = 38
+		refinery = no
+		level_cap = {
+			#shares_slots = yes
+			state_max = 50
+		}
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				has_resources_amount = { resource = steel  amount > 20  delivered = yes }
+			}
+		}
+		value = 5
+		infrastructure_construction_effect = yes
+		local_resources_steel = 10
+	}
+	#铝厂
+	aluminum_mill = {
+		show_on_map = 0
+		base_cost = 6000
+		icon_frame = 39
+		refinery = no
+		level_cap = {
+			#shares_slots = yes
+			state_max = 50
+		}
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				has_resources_amount = { resource = aluminium  amount > 20  delivered = yes }
+			}
+		}
+		value = 5
+		infrastructure_construction_effect = yes
+		local_resources_aluminium = 10
+	}
+	#钨厂
+	tungsten_smelter = {
+		show_on_map = 0
+		base_cost = 6000
+		icon_frame = 40
+		refinery = no
+		level_cap = {
+			#shares_slots = yes
+			state_max = 50
+		}
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				has_resources_amount = { resource = tungsten  amount > 20  delivered = yes }
+			}
+		}
+		value = 5
+		infrastructure_construction_effect = yes
+		local_resources_tungsten= 10
+	}
+	#铬厂
+	chromium_smelter = {
+		show_on_map = 0
+		base_cost = 6000
+		icon_frame = 41
+		refinery = no
+		level_cap = {
+			#shares_slots = yes
+			state_max = 50
+		}
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				has_resources_amount = { resource = chromium  amount > 20  delivered = yes }
+			}
+		}
+		value = 5
+		infrastructure_construction_effect = yes
+		local_resources_chromium = 10
+	}
+
+	#另外加的
+	#油井
+	oil_smelter = {
+		show_on_map = 0
+		base_cost = 6000
+		icon_frame = 10
+		refinery = no
+		level_cap = {
+			#shares_slots = yes
+			state_max = 50
+		}
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				has_resources_amount = { resource = oil  amount > 20  delivered = yes }
+			}
+		}
+		value = 5
+		infrastructure_construction_effect = yes
+		local_resources_oil = 10
+	}
+	#陆军学校#拥有一座即可陆军考试，大于5,10，获取高级内阁的概率提升，获得陆军学说卡，获得陆军科技加速卡
+	army_school = {
+		show_on_map = 0
+		base_cost = 5000
+		refinery = no
+		per_level_extra_cost = 6000
+		icon_frame = 34
+		level_cap = {
+			#shares_slots = yes
+			state_max = 3
+		}
+		value = 5
+		##show_modifier = yes
+		infrastructure_construction_effect = yes
+		country_modifiers = {
+			modifiers = { 
+				experience_gain_army_gc = 0.05
+				max_command_power_army_gc = 10
+				production_cost_land_facility_factor = -0.01
+			}
+		}
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				has_state_flag = arms_factory_4_TT
+			}
+		}
+		state_modifiers = {
+			state_production_speed_land_facility_factor = 0.25
+		}
+	}
+	#海军学校#拥有一座即可海军考试，大于5,10，获取高级内阁的概率提升，获得海军学说卡，获得海军科技加速卡
+	naval_school = {
+		show_on_map = 0
+		base_cost = 6000
+		refinery = no
+		per_level_extra_cost = 10000
+		icon_frame = 33
+		level_cap = {
+			#shares_slots = yes
+			state_max = 3
+		}
+		value = 5
+		##show_modifier = yes
+		only_costal = yes
+		infrastructure_construction_effect = yes
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				has_state_flag = naval_base_4_TT
+				
+			}
+		}
+		country_modifiers = {
+			modifiers = { 
+				experience_gain_navy_gc = 0.05
+				max_command_power_navy_gc = 10
+				production_cost_naval_facility_factor = -0.01
+			}
+		}
+		state_modifiers = {
+			state_production_speed_naval_facility_factor = 0.25
+		}
+	}
+	#空军学校#拥有一座即可空军考试，大于5,10，获取高级内阁的概率提升，获得空军学说卡，获得空军科技加速卡
+	air_school = {
+		show_on_map = 0
+		base_cost = 6000
+		refinery = no
+		per_level_extra_cost = 10000
+		icon_frame = 35
+		level_cap = {
+			#shares_slots = yes
+			state_max = 3
+		}
+		value = 5
+		##show_modifier = yes
+		infrastructure_construction_effect = yes
+		country_modifiers = {
+			modifiers = { 
+				experience_gain_air_gc = 0.05
+				max_command_power_air_gc = 10
+				production_cost_air_facility_factor = -0.01
+			}
+		}
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				custom_trigger_tooltip = {
+					has_state_flag = air_base_4_TT
+					tooltip = air_base_4_TT
+				}
+			}
+		}
+		state_modifiers = {
+			state_production_speed_air_facility_factor = 0.25
+		}
+	}
+	#科学院#拥有一座即可科学考试，大于5,10，获取高级内阁的概率提升，获得电子科研加速卡，一个地块5,10时获得一个科研槽,获得修正"科研圣地"
+	Academy_of_Sciences = {#无效
+		show_on_map = 0
+		base_cost = 20000
+		refinery = no
+		per_level_extra_cost = 10000
+		per_controlled_building_extra_cost = 5000
+		icon_frame = 31
+		level_cap = {
+			#shares_slots = yes
+			state_max = 2
+		}
+		value = 5
+		infrastructure_construction_effect = yes
+		country_modifiers = {
+			modifiers = { 
+				Academy_of_Sciences_gc = 1
+				research_speed_factor_gc = 0.03
+				Research_points_gc = 0.02
+				production_cost_nuclear_facility_factor = -0.01
+			}
+		}
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				owner = {
+					amount_research_slots > 3
+				}
+			}
+		}
+		state_modifiers = {
+			state_production_speed_nuclear_facility_factor = 0.25
+		}
+		#show_modifier = yes
+		
+	}
+	#行政院#拥有一座即可行政考试，大于5,10，获取高级内阁的概率提升
+	Government_agency = {
+		show_on_map = 0
+		base_cost = 10000
+		refinery = no
+		per_level_extra_cost = 1000
+		icon_frame = 30
+		level_cap = {
+			#shares_slots = yes
+			state_max = 5
+		}
+		value = 5
+		#show_modifier = yes
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				owner = {
+					has_stability > 0.8
+				}
+			}
+		}
+		infrastructure_construction_effect = yes
+		country_modifiers = {
+			modifiers = { 
+				political_power_gain_gc = 0.02
+				political_advisor_cost_factor_gc = -0.01
+			}
+		}
+	}
+	#建筑院#拥有一座即可建筑师考试，大于5,20，获取高级内阁的概率提升，获得工程师摇篮，获得建筑科学加成卡
+	architectural_institute = {
+		show_on_map = 0
+		base_cost = 10000
+		refinery = no
+		#show_modifier = yes
+		per_level_extra_cost = 1000
+		icon_frame = 29
+		level_cap = {
+			#shares_slots = yes
+			state_max = 5
+		}
+		value = 5
+		infrastructure_construction_effect = yes
+		country_modifiers = {
+			modifiers = { 
+				production_speed_buildings_factor_gc = 0.01
+			}
+		}
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = industrial_complex_construction_speed_factor_TT_1
+						hidden_trigger = {
+							has_state_flag = industrial_complex_construction_speed_factor_TT_1
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = industrial_complex_construction_speed_factor_TT_2
+						hidden_trigger = {
+							has_railway_level = {
+								level = 5
+								state = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		state_modifiers = {
+			state_production_speed_buildings_factor = 0.15
+		}
+	}
+#	GA_share_dealing_gc = {
+#		show_on_map = 0
+#		base_cost = 10000
+#		refinery = no
+#		#show_modifier = yes
+#		per_level_extra_cost = 1000
+#		icon_frame = 36
+#		level_cap = {
+#			#shares_slots = yes
+#			state_max = 5
+#		}
+#		value = 5
+#		infrastructure_construction_effect = yes
+#		country_modifiers = {
+#			modifiers = { 
+#				mon_cic_outputs = 2000
+#			}
+#		}
+		#trade_opinion_factor = 0.01
+		#min_export = 0.01
+#	}
+	hospitals_gc = {
+		show_on_map = 1
+		base_cost = 10000
+		refinery = yes
+		per_level_extra_cost = 1000
+		icon_frame = 37
+		spawn_point = special_project_facility_spawn 
+		level_cap = {
+			
+			#province_max = 1
+			state_max = 5
+		}
+	
+		# 建设速度修改器
+		construction_speed_factor = {
+			factor = 1.15
+			trigger = { 
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = industrial_complex_construction_speed_factor_TT_1
+						hidden_trigger = {
+							has_state_flag = industrial_complex_construction_speed_factor_TT_1
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = industrial_complex_construction_speed_factor_TT_2
+						hidden_trigger = {
+							has_railway_level = {
+								level = 5
+								state = THIS
+							}
+						}
+					}
+				}
+			}
+		}
+		per_controlled_building_extra_cost = 100
+		per_level_extra_cost = 1000
+		supply_node = yes
+		need_supply = yes
+		detecting_intel_type = civilian 
+		value = 5
+		infrastructure_construction_effect = yes
+		country_modifiers = {
+			modifiers = { 
+				monthly_population = 0.01
+			}
+		}
+		state_modifiers = {
+			local_manpower = 0.05
+			local_non_core_manpower = 0.05
+			resistance_damage_to_garrison = -0.05
+			state_production_speed_hospitals_gc_factor = -0.15
+		}
+	}
+	prc_simple_arsenal = {
+		show_on_map = 0
+		base_cost = 600
+		#show_modifier = yes
+		per_level_extra_cost = 600
+		icon_frame = 45
+		level_cap = {
+			province_max = 2
+		}
+		value = 5
+		infrastructure_construction_effect = yes
+		country_modifiers = {
+			modifiers = { 
+				prc_simple_arsenal_gun_gc = 30
+				prc_simple_arsenal_support_equipment_gc = 5
+				prc_simple_arsenal_artillery_gc = 2
+				prc_simple_arsenal_gc = 1
+			}
+		}
+		
+		state_modifiers = {
+			
+		}
+	}
+}

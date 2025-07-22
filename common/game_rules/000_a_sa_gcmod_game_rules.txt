@@ -1,0 +1,40 @@
+a_sa_gc_mod_rule = {
+	name = "ex_limit_sa_mod.1.t"
+	group = "RULE_GROUP_SA_MOD_SETUP"
+	icon = "GFX_theater_group_settings_btn"
+	default = {
+		name = sa_gc_start_event_rule
+		text = "sa_gc_start_event_rule_t"
+		desc = "sa_gc_start_event_rule_d"
+	}
+	option = {
+		name = sa_gc_25_rule
+		text = "25"
+		desc = "25"
+	}
+	option = {
+		name = sa_gc_50_rule
+		text = "50"
+		desc = "50"
+	}
+	option = {
+		name = sa_gc_100_rule
+		text = "100"
+		desc = "100"
+	}
+	option = {
+		name = sa_gc_200_rule
+		text = "200"
+		desc = "200"
+	}
+	option = {
+		name = sa_gc_500_rule
+		text = "500"
+		desc = "500"
+	}
+	option = {
+		name = sa_gc_1000_rule
+		text = "1000"
+		desc = "1000"
+	}
+}

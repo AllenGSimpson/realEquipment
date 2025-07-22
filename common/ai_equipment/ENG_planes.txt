@@ -18,7 +18,7 @@ ENG_fighter = {
 	great_war_fighter_default = {
 		priority = {
 			factor = 1
-			modifier = { 
+			modifier = {
 				has_tech = basic_small_airframe
 				factor = 0 #let's not waste XP here
 			}
@@ -32,7 +32,9 @@ ENG_fighter = {
 				fixed_auxiliary_weapon_slot_1 = empty
 				engine_type_slot = engine_1_1x
 				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
+				special_type_slot_2 = empty
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy0
 			}
 		}
 
@@ -45,7 +47,7 @@ ENG_fighter = {
 	basic_fighter_default = {
 		priority = {
 			factor = 100
-			modifier = { 
+			modifier = {
 				has_tech = improved_small_airframe
 				factor = 0 #let's not waste XP here
 			}
@@ -57,17 +59,38 @@ ENG_fighter = {
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = light_mg_4x
-				engine_type_slot = engine_2_1x
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = { any_of = { engine_2_1x engine_1_1x } }
 				special_type_slot_1 = empty	
-				special_type_slot_2 = empty	
+				special_type_slot_2 = empty
+				special_type_slot_7 = early_supercharger
+				special_type_slot_8 = canopy1
+				special_type_slot_9 = reflex_gunsight_1
 			}
 		}
 
 		allowed_modules = {
 			light_mg_4x
+			aircraft_cannon_1_2x
 			aircraft_cannon_1_1x
+			aircraft_cannon_2_2x
+			aircraft_cannon_2_1x
+			engine_1_1x
 			engine_2_1x
+			heavy_mg_4x
+			engine_3_1x
+			fuel_tanks_small
 			armor_plate_small
+			drop_tanks
+			pressurized_cockpit
+			early_supercharger
+			supercharger
+			water_injection_small
+			self_sealing_fuel_tanks_small
+			canopy1
+			canopy2
+			reflex_gunsight_1
+			reflex_gunsight_2
 		}
 	}
 
@@ -75,7 +98,7 @@ ENG_fighter = {
 		name = HurricaneMkIIC
 		priority = {
 			factor = 100
-			modifier = { 
+			modifier = {
 				has_tech = improved_small_airframe
 				factor = 0 #let's not waste XP here
 			}
@@ -86,18 +109,42 @@ ENG_fighter = {
 			type = small_plane_airframe_1
 			modules = {
 				fixed_main_weapon_slot = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				engine_type_slot = engine_3_1x
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = { any_of = { engine_3_1x engine_2_1x } }
 				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = self_sealing_fuel_tanks_small
+				special_type_slot_3 = water_injection_small			
+				special_type_slot_4 = pressurized_cockpit
+				special_type_slot_5 = empty	
+				special_type_slot_6 = empty
+				special_type_slot_7 = supercharger
+				special_type_slot_8 = canopy1
+				special_type_slot_9 = reflex_gunsight_2
 			}
 		}
 
 		allowed_modules = {
 			light_mg_4x
+			aircraft_cannon_1_2x
 			aircraft_cannon_1_1x
+			aircraft_cannon_2_2x
+			aircraft_cannon_2_1x
 			engine_2_1x
+			heavy_mg_4x
+			engine_3_1x
+			fuel_tanks_small
 			armor_plate_small
+			drop_tanks
+			pressurized_cockpit
+			early_supercharger
+			supercharger
+			water_injection_small
+			self_sealing_fuel_tanks_small
+			canopy1
+			canopy2
+			reflex_gunsight_1
+			reflex_gunsight_2
 		}
 	}
 
@@ -105,8 +152,8 @@ ENG_fighter = {
 	improved_fighter_default = {
 		priority = {
 			factor = 200
-			modifier = { 
-				has_tech = advanced_small_airframe 
+			modifier = {
+				has_tech = advanced_small_airframe
 				factor = 0 #let's not waste XP here
 			}
 		}
@@ -117,17 +164,41 @@ ENG_fighter = {
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = light_mg_4x
-				engine_type_slot = engine_3_1x
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = { any_of = { engine_3_1x engine_2_1x } }
 				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = self_sealing_fuel_tanks_small	
+				special_type_slot_2 = self_sealing_fuel_tanks_small
+				special_type_slot_3 = water_injection_small			
+				special_type_slot_4 = pressurized_cockpit
+				special_type_slot_5 = empty	
+				special_type_slot_6 = empty
+				special_type_slot_7 = supercharger
+				special_type_slot_8 = canopy1	
+				special_type_slot_9 = reflex_gunsight_2
 			}
 		}
 
 		allowed_modules = {
 			light_mg_4x
+			heavy_mg_4x			
+			heavy_mg_2x
+			aircraft_cannon_1_2x
+			aircraft_cannon_1_1x
+			aircraft_cannon_2_2x
+			aircraft_cannon_2_1x
+			engine_2_1x			
 			engine_3_1x
-			engine_2_1x
-			armor_plate_small
+			drop_tanks
+			water_injection_small
+			pressurized_cockpit
+			supercharger
+			self_sealing_fuel_tanks_small	
+			canopy1
+			canopy2
+			canopy3
+			reflex_gunsight_1
+			reflex_gunsight_2
+			gyro_gunsight_1	
 		}
 	}
 
@@ -135,8 +206,8 @@ ENG_fighter = {
 		name = spitfireMkVb
 		priority = {
 			factor = 200
-			modifier = { 
-				has_tech = advanced_small_airframe 
+			modifier = {
+				has_tech = advanced_small_airframe
 				factor = 0 #let's not waste XP here
 			}
 		}
@@ -147,17 +218,39 @@ ENG_fighter = {
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				engine_type_slot = engine_3_1x
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = { any_of = { engine_3_1x engine_2_1x } }
 				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = self_sealing_fuel_tanks_small	
+				special_type_slot_2 = self_sealing_fuel_tanks_small
+				special_type_slot_3 = water_injection_small			
+				special_type_slot_4 = pressurized_cockpit
+				special_type_slot_5 = empty	
+				special_type_slot_6 = empty
+				special_type_slot_7 = supercharger
+				special_type_slot_8 = canopy2
+				special_type_slot_9 = reflex_gunsight_2		
 			}
 		}
 
 		allowed_modules = {
+			light_mg_4x
+			heavy_mg_4x			
+			heavy_mg_2x
 			aircraft_cannon_1_2x
-			engine_3_1x
+			aircraft_cannon_1_1x
+			aircraft_cannon_2_2x
+			aircraft_cannon_2_1x
 			engine_2_1x
-			armor_plate_small
+			engine_3_1x
+			drop_tanks
+			water_injection_small
+			pressurized_cockpit
+			supercharger
+			self_sealing_fuel_tanks_small
+			canopy2
+			canopy3
+			reflex_gunsight_2
+			gyro_gunsight_1	
 		}
 	}
 
@@ -165,8 +258,8 @@ ENG_fighter = {
 		name = spitfireMkIXC
 		priority = {
 			factor = 200
-			modifier = { 
-				has_tech = advanced_small_airframe 
+			modifier = {
+				has_tech = advanced_small_airframe
 				factor = 0 #let's not waste XP here
 			}
 		}
@@ -176,18 +269,43 @@ ENG_fighter = {
 			type = small_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				engine_type_slot = engine_3_1x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+				fixed_auxiliary_weapon_slot_2 = empty
+				engine_type_slot = { any_of = { engine_3_1x engine_2_1x } }
 				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = self_sealing_fuel_tanks_small	
+				special_type_slot_2 = self_sealing_fuel_tanks_small
+				special_type_slot_3 = water_injection_small			
+				special_type_slot_4 = pressurized_cockpit
+				special_type_slot_5 = drop_tanks	
+				special_type_slot_6 = empty
+				special_type_slot_7 = turbocharger
+				special_type_slot_8 = canopy2
+				special_type_slot_9 = reflex_gunsight_2		
 			}
 		}
 
 		allowed_modules = {
+			light_mg_4x
+			heavy_mg_4x			
+			heavy_mg_2x
 			aircraft_cannon_1_2x
-			engine_3_1x
+			aircraft_cannon_1_1x
+			aircraft_cannon_2_2x
+			aircraft_cannon_2_1x
 			engine_2_1x
-			armor_plate_small
+			engine_3_1x
+			engine_4_1x
+			drop_tanks
+			water_injection_small
+			pressurized_cockpit
+			supercharger
+			turbocharger
+			turbosupercharger
+			self_sealing_fuel_tanks_small	
+			canopy2
+			canopy3
+			reflex_gunsight_2
+			gyro_gunsight_1	
 		}
 	}
 
@@ -195,8 +313,8 @@ ENG_fighter = {
 		name = spitfireMk21
 		priority = {
 			factor = 200
-			modifier = { 
-				has_tech = advanced_small_airframe 
+			modifier = {
+				has_tech = advanced_small_airframe
 				factor = 0 #let's not waste XP here
 			}
 		}
@@ -207,17 +325,42 @@ ENG_fighter = {
 			modules = {
 				fixed_main_weapon_slot = aircraft_cannon_1_2x
 				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				engine_type_slot = engine_4_1x
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_2x
+				engine_type_slot = { any_of = { engine_4_1x engine_3_1x engine_2_1x } }
 				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = self_sealing_fuel_tanks_small	
+				special_type_slot_2 = self_sealing_fuel_tanks_small
+				special_type_slot_3 = water_injection_small			
+				special_type_slot_4 = pressurized_cockpit
+				special_type_slot_5 = drop_tanks	
+				special_type_slot_6 = empty
+				special_type_slot_7 = turbosupercharger
+				special_type_slot_8 = canopy3	
+				special_type_slot_9 = gyro_gunsight_1	
 			}
 		}
 
 		allowed_modules = {
+			light_mg_4x
+			heavy_mg_4x			
+			heavy_mg_2x
 			aircraft_cannon_1_2x
-			engine_3_1x
+			aircraft_cannon_1_1x
+			aircraft_cannon_2_2x
+			aircraft_cannon_2_1x
 			engine_2_1x
-			armor_plate_small
+			engine_3_1x
+			engine_4_1x
+			drop_tanks
+			water_injection_small
+			pressurized_cockpit
+			supercharger
+			turbocharger
+			turbosupercharger
+			self_sealing_fuel_tanks_small
+			canopy2
+			canopy3
+			reflex_gunsight_2
+			gyro_gunsight_1	
 		}
 	}
 
@@ -231,26 +374,47 @@ ENG_fighter = {
 			match_value = 4000
 			type = small_plane_airframe_3
 			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				engine_type_slot = engine_4_1x
+				fixed_main_weapon_slot = { any_of = { aircraft_cannon_2_2x aircraft_cannon_1_2x } }
+				fixed_auxiliary_weapon_slot_1 = { any_of = { aircraft_cannon_2_2x aircraft_cannon_1_2x } }
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_2x
+				engine_type_slot = { any_of = { engine_4_1x engine_3_1x } }
 				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = self_sealing_fuel_tanks_small	
-				special_type_slot_3 = drop_tanks
+				special_type_slot_3 = water_injection_small			
+				special_type_slot_4 = pressurized_cockpit
+				special_type_slot_5 = drop_tanks	
+				special_type_slot_6 = empty
+				special_type_slot_7 = turbosupercharger
+				special_type_slot_8 = canopy3
+				special_type_slot_9 = gyro_gunsight_1
 			}
 		}
 
 		allowed_modules = { 
+			heavy_mg_4x			
+			heavy_mg_2x
+			aircraft_cannon_1_2x
+			aircraft_cannon_1_1x
 			aircraft_cannon_2_2x
-			heavy_mg_4x
+			aircraft_cannon_2_1x
+			engine_3_1x
 			engine_4_1x
-			engine_2_1x
-			engine_2_2x
-			armor_plate_small
+			drop_tanks
+			water_injection_small
+			pressurized_cockpit
+			supercharger
+			turbocharger
+			turbosupercharger
+			self_sealing_fuel_tanks_small	
+			canopy2
+			canopy3
+			reflex_gunsight_2
+			gyro_gunsight_1	
+			gyro_gunsight_2
 		}
 	}
 
-	advanced_fighter_imrpoved = {
+	advanced_fighter_improved = {
 		name = spitefulXIV
 		priority = {
 			factor = 300
@@ -260,22 +424,40 @@ ENG_fighter = {
 			match_value = 4500
 			type = small_plane_airframe_3
 			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_2_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
-				engine_type_slot = engine_4_1x
+				fixed_main_weapon_slot = { any_of = { aircraft_cannon_2_2x aircraft_cannon_1_2x } }
+				fixed_auxiliary_weapon_slot_1 = { any_of = { aircraft_cannon_2_2x aircraft_cannon_1_2x } }
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_2x
+				engine_type_slot = { any_of = { engine_4_1x engine_3_1x } }
 				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = self_sealing_fuel_tanks_small
-				special_type_slot_3 = drop_tanks	
+				special_type_slot_3 = water_injection_small			
+				special_type_slot_4 = pressurized_cockpit
+				special_type_slot_5 = drop_tanks	
+				special_type_slot_6 = auto_extinguisher_system_small
+				special_type_slot_7 = turbosupercharger
+				special_type_slot_8 = canopy3
+				special_type_slot_9 = gyro_gunsight_2	
 			}
 		}
 
 		allowed_modules = { 
+			heavy_mg_4x			
+			heavy_mg_2x
+			aircraft_cannon_1_2x
 			aircraft_cannon_2_2x
-			heavy_mg_4x
+			aircraft_cannon_2_1x
 			engine_4_1x
-			engine_2_1x
-			engine_2_2x
-			armor_plate_small
+			drop_tanks
+			water_injection_small
+			pressurized_cockpit
+			supercharger
+			turbocharger
+			turbosupercharger
+			self_sealing_fuel_tanks_small	
+			canopy3
+			gyro_gunsight_1	
+			gyro_gunsight_2
+			auto_extinguisher_system_small
 		}
 	}
 
@@ -290,20 +472,36 @@ ENG_fighter = {
 			match_value = 5000
 			type = small_plane_airframe_4
 			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_2_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_main_weapon_slot = aircraft_nose_cannon_2_2x
+				fixed_auxiliary_weapon_slot_1 = nose_heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = empty
 				engine_type_slot = jet_engine_2x
 				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = self_sealing_fuel_tanks_small
-				special_type_slot_3 = drop_tanks
+				special_type_slot_3 = pressurized_cockpit
+				special_type_slot_4 = empty
+				special_type_slot_5 = drop_tanks	
+				special_type_slot_6 = auto_extinguisher_system_small
+				special_type_slot_7 = compressor
+				special_type_slot_8 = canopy3
+				special_type_slot_9 = gyro_gunsight_2	
 			}
 		}
 
 		allowed_modules = { 
-			aircraft_cannon_2_2x
-			aircraft_cannon_2_2x
+			aircraft_nose_cannon_2_2x
+			nose_heavy_mg_4x
 			jet_engine_2x
 			armor_plate_small
+			self_sealing_fuel_tanks_small
+			drop_tanks
+			auto_extinguisher_system_small
+			compressor
+			improved_compressor
+			canopy3
+			afterburner
+			supersonic_air_intake
+			swept_wings			
 		}
 	}
 }
@@ -324,7 +522,7 @@ ENG_cas = {
 	}
 	cas_1 = {
 		priority = {
-			factor = 100	
+			factor = 100
 		}
 		target_variant = {
 			match_value = 1000
@@ -334,6 +532,8 @@ ENG_cas = {
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
 				engine_type_slot = engine_2_1x
 				special_type_slot_1 = empty
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy1
 			}
 			
 		}
@@ -358,8 +558,10 @@ ENG_cas = {
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
 				engine_type_slot = engine_2_2x
 				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = fuel_tanks_small	
+				special_type_slot_2 = fuel_tanks_small
 				special_type_slot_3 = self_sealing_fuel_tanks_small
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy1
 			}
 		}
 		allowed_modules = {
@@ -383,7 +585,9 @@ ENG_cas = {
 				engine_type_slot = engine_3_1x
 				special_type_slot_1 = drop_tanks
 				special_type_slot_2 = armor_plate_small
-				special_type_slot_3 = self_sealing_fuel_tanks_small	
+				special_type_slot_3 = self_sealing_fuel_tanks_small
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy1	
 			}
 		}
 
@@ -422,7 +626,9 @@ ENG_naval_bomber = {
 				fixed_auxiliary_weapon_slot_1 = empty
 				engine_type_slot = engine_2_1x
 				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
+				special_type_slot_2 = empty
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy1		
 			}
 		}
 		allowed_modules = {
@@ -440,10 +646,13 @@ ENG_naval_bomber = {
 			modules = {
 				fixed_main_weapon_slot = nav_bomber_weapon
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				fixed_auxiliary_weapon_slot_6 = lmg_defense_turret
 				engine_type_slot = engine_2_2x
-				special_type_slot_1 = lmg_defense_turret
-				special_type_slot_2 = empty	
-				special_type_slot_3 = self_sealing_fuel_tanks_small
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy1
 			}
 		}
 		allowed_modules = {
@@ -465,10 +674,13 @@ ENG_naval_bomber = {
 				fixed_main_weapon_slot = nav_bomber_weapon
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
 				fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+				fixed_auxiliary_weapon_slot_6 = lmg_defense_turret
 				engine_type_slot = engine_3_2x
-				special_type_slot_1 = empty	
-				special_type_slot_2 = empty	
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
 				special_type_slot_3 = self_sealing_fuel_tanks_small
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy1
 			}
 
 		}
@@ -508,7 +720,7 @@ ENG_cv_fighter = {
 	great_war_cv_fighter_default = {
 		priority = {
 			factor = 1
-			modifier = { 
+			modifier = {
 				has_tech = basic_small_airframe
 				factor = 0 #let's not waste XP here
 			}
@@ -519,14 +731,16 @@ ENG_cv_fighter = {
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = empty
-				engine_type_slot = engine_1_1x
+				engine_type_slot = radial_engine_1_1x
 				special_type_slot_1 = empty
-				special_type_slot_2 = empty	
+				special_type_slot_2 = empty
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy0	
 			}
 		}
 
 		allowed_modules = {
-			engine_1_1x
+			radial_engine_1_1x
 			light_mg_4x
 		}
 	}
@@ -545,6 +759,9 @@ ENG_cv_fighter = {
 				engine_type_slot = engine_2_1x
 				special_type_slot_1 = self_sealing_fuel_tanks_small
 				special_type_slot_2 = armor_plate_small
+				special_type_slot_7 = early_supercharger
+				special_type_slot_8 = canopy1
+				special_type_slot_9 = reflex_gunsight_1
 			}
 		}
 
@@ -567,16 +784,20 @@ ENG_cv_fighter = {
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				engine_type_slot = engine_3_1x
+				engine_type_slot = { any_of = { engine_3_1x engine_2_1x } }
 				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = empty	
+				special_type_slot_2 = empty
 				special_type_slot_3 = self_sealing_fuel_tanks_small
+				special_type_slot_7 = supercharger
+				special_type_slot_8 = canopy2
+				special_type_slot_9 = reflex_gunsight_2
 			}
 		}
 
 		allowed_modules = {
 			light_mg_4x
 			aircraft_cannon_1_2x
+			engine_2_1x
 			engine_3_1x
 			armor_plate_small
 		}
@@ -591,18 +812,24 @@ ENG_cv_fighter = {
 			match_value = 4000
 			type = cv_small_plane_airframe_3
 			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				engine_type_slot = engine_4_1x
+				fixed_main_weapon_slot = { any_of = { aircraft_cannon_2_2x aircraft_cannon_1_2x } }
+				fixed_auxiliary_weapon_slot_1 = { any_of = { aircraft_cannon_2_2x aircraft_cannon_1_2x } }
+				engine_type_slot = { any_of = { engine_4_1x engine_3_1x } }
 				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = empty	
+				special_type_slot_2 = empty
 				special_type_slot_3 = self_sealing_fuel_tanks_small
+				special_type_slot_7 = supercharger
+				special_type_slot_8 = canopy2
+				special_type_slot_9 = gyro_gunsight_2
 			}
 		}
 
-		allowed_modules = { 
+		allowed_modules = {
 			aircraft_cannon_2_2x
+			aircraft_cannon_1_2x
+			self_sealing_fuel_tanks_small		   
 			heavy_mg_4x
+			engine_3_1x
 			engine_4_1x
 			armor_plate_small
 		}
@@ -623,15 +850,19 @@ ENG_cv_fighter = {
 				engine_type_slot = jet_engine_2x
 				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = empty
-				special_type_slot_3 = self_sealing_fuel_tanks_small	
+				special_type_slot_3 = self_sealing_fuel_tanks_small
+				special_type_slot_7 = compressor
+				special_type_slot_8 = canopy3
+				special_type_slot_9 = gyro_gunsight_2	
 			}
 		}
 
-		allowed_modules = { 
+		allowed_modules = {
 			aircraft_cannon_2_2x
 			aircraft_cannon_2_2x
 			jet_engine_2x
 			armor_plate_small
+			self_sealing_fuel_tanks_small					
 		}
 	}
 }
@@ -671,7 +902,9 @@ ENG_cv_cas = {
 				fixed_auxiliary_weapon_slot_1 = empty
 				engine_type_slot = engine_2_1x
 				special_type_slot_1 = dive_brakes_small
-				special_type_slot_2 = empty	
+				special_type_slot_2 = empty
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy1	
 			}
 			
 		}
@@ -698,6 +931,8 @@ ENG_cv_cas = {
 				special_type_slot_1 = dive_brakes_small
 				special_type_slot_2 = armor_plate_small	
 				special_type_slot_3 = self_sealing_fuel_tanks_small
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy1
 			}
 		}
 
@@ -705,7 +940,9 @@ ENG_cv_cas = {
 			small_bomb_bay
 			bomb_locks
 			engine_3_1x
+			armor_plate_small  
 			dive_brakes_small
+			self_sealing_fuel_tanks_small		
 		}
 	}
 	cv_cas_3 = {
@@ -720,20 +957,25 @@ ENG_cv_cas = {
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
-				engine_type_slot = engine_4_1x
+				engine_type_slot = { any_of = { engine_4_1x engine_3_1x } }
 				special_type_slot_1 = dive_brakes_small
-				special_type_slot_2 = drop_tanks	
+				special_type_slot_2 = drop_tanks
 				special_type_slot_3 = armor_plate_small
 				special_type_slot_3 = self_sealing_fuel_tanks_small
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy1
 			}
 		}
 
 		allowed_modules = {
 			small_bomb_bay
 			bomb_locks
+			engine_3_1x
 			engine_4_1x
+			armor_plate_small  
 			dive_brakes_small
 			drop_tanks
+			self_sealing_fuel_tanks_small		
 		}
 	}
 }
@@ -771,9 +1013,12 @@ ENG_cv_naval_bomber = {
 			modules = {
 				fixed_main_weapon_slot = nav_bomber_weapon
 				fixed_auxiliary_weapon_slot_1 = empty
+				fixed_auxiliary_weapon_slot_6 = lmg_defense_turret
 				engine_type_slot = engine_2_1x
-				special_type_slot_1 = lmg_defense_turret
-				special_type_slot_2 = empty	
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy1	
 			}
 		}
 
@@ -794,10 +1039,13 @@ ENG_cv_naval_bomber = {
 			modules = {
 				fixed_main_weapon_slot = nav_bomber_weapon
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				fixed_auxiliary_weapon_slot_6 = lmg_defense_turret
 				engine_type_slot = engine_3_1x
-				special_type_slot_1 = lmg_defense_turret
+				special_type_slot_1 = empty
 				special_type_slot_2 = empty
-				special_type_slot_3 = self_sealing_fuel_tanks_small	
+				special_type_slot_3 = self_sealing_fuel_tanks_small
+				special_type_slot_7 = normally_aspirated_engine
+				special_type_slot_8 = canopy1	
 			}
 
 		}
@@ -827,16 +1075,22 @@ ENG_cv_naval_bomber = {
 				engine_type_slot = engine_4_1x
 				special_type_slot_1 = empty
 				special_type_slot_2 = empty
-				special_type_slot_3 = self_sealing_fuel_tanks_small	
+				special_type_slot_3 = self_sealing_fuel_tanks_small
+				special_type_slot_7 = turbocharger
+				special_type_slot_8 = canopy1	
 			}
 
 		}
 
 		allowed_modules = {
 			nav_bomber_weapon
+			heavy_bomb_locks	   
 			bomb_locks
+			aircraft_cannon_2_2x		   
+			engine_4_1x 
 			engine_3_1x
 			lmg_defense_turret
+			self_sealing_fuel_tanks_small					
 		}
 	}
 }
@@ -869,7 +1123,7 @@ ENG_tactical_bomber = {
 	gw_tac_bomber_default = {
 		priority = {
 			factor = 100
-			modifier = { 
+			modifier = {
 				has_tech = basic_medium_airframe
 				factor = 0 #let's not waste XP here
 			}
@@ -882,7 +1136,8 @@ ENG_tactical_bomber = {
 				fixed_auxiliary_weapon_slot_1 = empty
 				engine_type_slot = engine_1_2x
 				special_type_slot_1 = self_sealing_fuel_tanks_medium
-				special_type_slot_2 = empty	
+				special_type_slot_2 = empty
+				special_type_slot_7 = normally_aspirated_engine	
 			}
 			
 		}
@@ -909,6 +1164,7 @@ ENG_tactical_bomber = {
 				engine_type_slot = engine_2_2x
 				special_type_slot_1 = fuel_tanks_medium
 				special_type_slot_2 = self_sealing_fuel_tanks_medium	
+				special_type_slot_7 = normally_aspirated_engine
 			}
 			
 		}
@@ -931,10 +1187,12 @@ ENG_tactical_bomber = {
 				fixed_main_weapon_slot = medium_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
 				fixed_auxiliary_weapon_slot_2 = bomb_locks
+				fixed_auxiliary_weapon_slot_5 = lmg_defense_turret_2x
 				engine_type_slot = engine_3_2x
-				special_type_slot_1 = lmg_defense_turret_2x
+				special_type_slot_1 = empty
 				special_type_slot_2 = fuel_tanks_medium	
 				special_type_slot_3 = self_sealing_fuel_tanks_medium
+				special_type_slot_7 = normally_aspirated_engine
 			}
 			
 		}
@@ -965,9 +1223,12 @@ ENG_tactical_bomber = {
 					} 
 				}
 				fixed_auxiliary_weapon_slot_3 = { any_of = { rocket_rails nav_bomber_weapon } }
+				fixed_auxiliary_weapon_slot_5 = lmg_defense_turret_2x
+				fixed_auxiliary_weapon_slot_6 = lmg_defense_turret_2x
 				engine_type_slot = engine_4_2x
 				special_type_slot_1 = fuel_tanks_medium
 				special_type_slot_2 = self_sealing_fuel_tanks_medium	
+				special_type_slot_7 = turbocharger
 			}
 			
 		}
@@ -997,7 +1258,8 @@ ENG_tactical_bomber = {
 				fixed_auxiliary_weapon_slot_2 = bomb_locks
 				engine_type_slot = jet_engine_2x
 				special_type_slot_1 = fuel_tanks_medium
-				special_type_slot_2 = self_sealing_fuel_tanks_medium	
+				special_type_slot_2 = self_sealing_fuel_tanks_medium
+				special_type_slot_7 = compressor	
 			}
 			
 		}
@@ -1040,9 +1302,11 @@ ENG_heavy_fighter = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = light_mg_4x
 				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_5 = lmg_defense_turret
 				engine_type_slot = engine_2_2x
 				special_type_slot_1 = fuel_tanks_medium
-				special_type_slot_2 = lmg_defense_turret	
+				special_type_slot_2 = empty
+				special_type_slot_7 = early_supercharger	
 			}
 			
 		}
@@ -1066,13 +1330,14 @@ ENG_heavy_fighter = {
 			type = medium_plane_fighter_airframe_2
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_nose_cannon_1_2x
+				fixed_auxiliary_weapon_slot_2 = aircraft_nose_cannon_1_2x
 				fixed_auxiliary_weapon_slot_3 = { any_of = { rocket_rails bomb_locks nav_bomber_weapon } }
 				engine_type_slot = engine_3_2x
 				special_type_slot_1 = armor_plate_medium
 				special_type_slot_2 = fuel_tanks_medium	
 				special_type_slot_3 = self_sealing_fuel_tanks_medium
+				special_type_slot_7 = supercharger
 			}
 			
 		}
@@ -1099,13 +1364,14 @@ ENG_heavy_fighter = {
 			match_value = 2000
 			type = medium_plane_fighter_airframe_3
 			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_2_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_main_weapon_slot = aircraft_nose_cannon_2_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_nose_cannon_2_2x
 				fixed_auxiliary_weapon_slot_2 = bomb_locks
 				engine_type_slot = engine_4_2x
 				special_type_slot_1 = fuel_tanks_medium
 				special_type_slot_2 = armor_plate_medium
-				special_type_slot_3 = self_sealing_fuel_tanks_medium	
+				special_type_slot_3 = self_sealing_fuel_tanks_medium
+				special_type_slot_7 = turbosupercharger	
 			}
 			
 		}
@@ -1154,9 +1420,12 @@ ENG_strategic_bomber = {
 				fixed_main_weapon_slot = large_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = empty
 				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_5 = lmg_defense_turret_2x
+				fixed_auxiliary_weapon_slot_6 = lmg_defense_turret
 				engine_type_slot = engine_2_4x
-				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = lmg_defense_turret
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
+				special_type_slot_7 = early_supercharger
 			}
 			
 		}
@@ -1182,9 +1451,11 @@ ENG_strategic_bomber = {
 				fixed_main_weapon_slot = large_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
 				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_5 = lmg_defense_turret_2x
+				fixed_auxiliary_weapon_slot_6 = lmg_defense_turret_2x
 				engine_type_slot = engine_3_4x
-				special_type_slot_1 = lmg_defense_turret_2x
-				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
 				special_type_slot_3 = { 
 					any_of = { 
 						air_ground_radar_2 
@@ -1203,6 +1474,7 @@ ENG_strategic_bomber = {
 				}
 				special_type_slot_5 = self_sealing_fuel_tanks_large
 				special_type_slot_6 = armor_plate_large
+				special_type_slot_7 = supercharger
 			}
 			
 		}
@@ -1233,9 +1505,11 @@ ENG_strategic_bomber = {
 				fixed_main_weapon_slot = large_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
 				fixed_auxiliary_weapon_slot_2 = large_bomb_bay
+				fixed_auxiliary_weapon_slot_5 = cannon_defense_turret_2x
+				fixed_auxiliary_weapon_slot_6 = hmg_defense_turret_2x
 				engine_type_slot = engine_4_4x
-				special_type_slot_1 = cannon_defense_turret_2x
-				special_type_slot_2 = hmg_defense_turret_2x
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
 				special_type_slot_3 = { 
 					any_of = { 
 						air_ground_radar_2 
@@ -1254,6 +1528,7 @@ ENG_strategic_bomber = {
 				}
 				special_type_slot_5 = self_sealing_fuel_tanks_large
 				special_type_slot_6 = armor_plate_large
+				special_type_slot_7 = supercharger
 			}
 			
 		}
@@ -1311,10 +1586,13 @@ ENG_maritime_patrol = {
 				fixed_main_weapon_slot = nav_bomber_weapon
 				fixed_auxiliary_weapon_slot_1 = empty
 				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_5 = lmg_defense_turret_2x
+				fixed_auxiliary_weapon_slot_6 = empty
 				engine_type_slot = engine_2_4x
 				special_type_slot_1 = lmg_defense_turret_2x
 				special_type_slot_2 = fuel_tanks_large
 				special_type_slot_3 = flying_boat_large
+				special_type_slot_7 = normally_aspirated_engine
 			}
 			
 		}
@@ -1341,12 +1619,15 @@ ENG_maritime_patrol = {
 				fixed_main_weapon_slot = nav_bomber_weapon
 				fixed_auxiliary_weapon_slot_1 = nav_bomber_weapon
 				fixed_auxiliary_weapon_slot_2 = empty
+				fixed_auxiliary_weapon_slot_5 = lmg_defense_turret_2x
+				fixed_auxiliary_weapon_slot_6 = hmg_defense_turret_2x
 				engine_type_slot = engine_2_4x
-				special_type_slot_1 = hmg_defense_turret_2x
-				special_type_slot_2 = lmg_defense_turret_2x
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty
 				special_type_slot_3 = fuel_tanks_large
 				special_type_slot_4 = flying_boat_large
 				special_type_slot_5 = self_sealing_fuel_tanks_large
+				special_type_slot_7 = early_turbocharger
 			}
 			
 		}
@@ -1373,14 +1654,15 @@ ENG_maritime_patrol = {
 				fixed_main_weapon_slot = nav_bomber_weapon
 				fixed_auxiliary_weapon_slot_1 = nav_bomber_weapon
 				fixed_auxiliary_weapon_slot_2 = nav_bomber_weapon
+				fixed_auxiliary_weapon_slot_5 = cannon_defense_turret_2x
+				fixed_auxiliary_weapon_slot_6 = hmg_defense_turret_2x
 				engine_type_slot = engine_4_4x
-				special_type_slot_1 = cannon_defense_turret_2x
+				special_type_slot_1 = empty
 				special_type_slot_2 = { 
 					any_of = {
 						air_ground_radar_2
 						air_ground_radar_1
 						recon_camera
-						hmg_defense_turret_2x 
 					}
 				}
 				special_type_slot_3 = fuel_tanks_large
@@ -1392,6 +1674,7 @@ ENG_maritime_patrol = {
 						air_ground_radar_1
 					}
 				}
+				special_type_slot_7 = normally_aspirated_engine
 			}
 			
 		}
