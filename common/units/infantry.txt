@@ -29,24 +29,24 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 60
+		max_strength = 850
+		max_organisation = 100
 		default_morale = 0.3
-		manpower = 1000
+		manpower = 850
 
 		#Misc Abilities
 		training_time = 90
 		suppression = 1.5
-		weight = 0.5
+		weight = 0.9
 		
-		supply_consumption = 0.06
+		supply_consumption = 0.085
 	
 		need = {
-			infantry_equipment = 100
+			infantry_equipment = 850
 		}
 	}
 
-	bicycle_battalion = {
+	bicycle_battalion = { #uses Radfahr-btl (Volks-Grenadier) for manpower and equipment table
 		abbreviation = "BIC"
 		sprite = bicycle
 		map_icon_category = infantry
@@ -71,22 +71,22 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 60
+		max_strength = 700
+		max_organisation = 85
 		default_morale = 0.3
 		maximum_speed = 0.6
-		manpower = 1000
+		manpower = 700
 
 		#Misc Abilities
-		training_time = 90
+		training_time = 80
 		suppression = 2
-		weight = 0.5
+		weight = 0.8
 		
-		supply_consumption = 0.06
+		supply_consumption = 0.070
 	
 		need = {
-			infantry_equipment = 100
-			support_equipment = 10			
+			infantry_equipment = 700
+			support_equipment = 700			
 		}
 
 		forest = {
@@ -118,7 +118,7 @@ sub_units = {
 		}
 	}
 	
-	marine = {
+	marine = { #uses USMC F-Series rifle bn. for manpower and equipment table
 		abbreviation = "MRN"
 		sprite = infantry
 		map_icon_category = infantry
@@ -147,20 +147,21 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 20
-		max_organisation = 70
+		max_strength = 1000
+		max_organisation = 120
 		default_morale = 0.4
 		manpower = 1000
 
 		#Misc Abilities
 		training_time = 120
 		suppression = 1
-		weight = 0.5
-		supply_consumption = 0.05
+		weight = 1.1
+		supply_consumption = 0.100
 		breakthrough = 0.3
 	
 		need = {
-			infantry_equipment = 150
+			infantry_equipment = 1000
+			support_equipment = 60
 		}
 
 		marsh = {
@@ -174,7 +175,7 @@ sub_units = {
 		}
 	}
 	
-	marine_commando  = {
+	marine_commando  = { #uses USMC F-Series rifle bn. for manpower and equipment table
 		abbreviation = "MRC"
 		sprite = infantry
 		map_icon_category = infantry
@@ -204,20 +205,21 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 20
-		max_organisation = 70
+		max_strength = 1000
+		max_organisation = 120
 		default_morale = 0.4
 		manpower = 1000
 
 		#Misc Abilities
 		training_time = 120
 		suppression = 1
-		weight = 0.5
-		supply_consumption = 0.05
-		breakthrough = 0.3
+		weight = 1.1
+		supply_consumption = 0.1
+		breakthrough = 0.45
 	
 		need = {
-			infantry_equipment = 150
+			infantry_equipment = 1000
+			support_equipment = 60
 		}
 
 		marsh = {
@@ -231,7 +233,7 @@ sub_units = {
 		}
 	}
 	
-	mountaineers = {
+	mountaineers = { # Uses Gebirgsjäger for manpower and equipment table
 		abbreviation = "MTN"
 		sprite = infantry
 		map_icon_category = infantry
@@ -260,21 +262,22 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 20
-		max_organisation = 70
+		max_strength = 900
+		max_organisation = 105
 		default_morale = 0.4
-		manpower = 1000
+		manpower = 900
 
 		#Misc Abilities
 		training_time = 120
 		suppression = 1
-		weight = 0.5
+		weight = 1.0
 		
-		supply_consumption = 0.05
+		supply_consumption = 0.090
 		breakthrough = 0.3
 	
 		need = {
-			infantry_equipment = 140
+			infantry_equipment = 900
+			support_equipment = 60
 		}
 
 		hills = {
@@ -289,7 +292,7 @@ sub_units = {
 		}
 	}
 
-	paratrooper = {
+	paratrooper = { #Uses US Para Infantry Bn. for Manpower and Equipment table
 		abbreviation = "PAR"
 		sprite = infantry
 		map_icon_category = infantry
@@ -317,21 +320,22 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 22
-		max_organisation = 70
+		max_strength = 750
+		max_organisation = 90
 		default_morale = 0.4
-		manpower = 1000
+		manpower = 750
 
 		#Misc Abilities
 		training_time = 150
 		suppression = 1
-		weight = 0.5
-		supply_consumption = 0.05
+		weight = 0.9
+		supply_consumption = 0.075
 
 		can_be_parachuted = yes
 	
 		need = {
-			infantry_equipment = 130
+			infantry_equipment = 750
+			support_equipment = 60
 		}
 	}
 
@@ -359,23 +363,23 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
-		max_organisation = 60
+		max_strength = 900
+		max_organisation = 100
 		default_morale = 0.30
-		manpower = 1200
+		manpower = 870
 
 		#Misc Abilities
 		training_time = 90
 		suppression = 2.2
-		weight = 0.75
-		supply_consumption = 0.065
+		weight = 3.0
+		supply_consumption = 0.090
 	
 		# this is what moves us and sets speed
 		transport = motorized_equipment
 	
 		need = {
-			infantry_equipment = 100
-			motorized_equipment = 35
+			infantry_equipment = 850
+			motorized_equipment = 100
 		}
 
 		forest = {
@@ -405,7 +409,7 @@ sub_units = {
 		}
 	}
 
-	mechanized = {
+	mechanized = { #Uses US Armored Inf. Bn. for Manpower & Equipment
 		abbreviation = "MEC"
 		sprite = mechanized
 		map_icon_category = infantry
@@ -433,17 +437,17 @@ sub_units = {
 		hard_attack = 4.0
 		
 		#Size Definitions
-		max_strength = 30
-		max_organisation = 60
+		max_strength = 900
+		max_organisation = 110
 		default_morale = 0.3
-		manpower = 1200
+		manpower = 900
 
 		#Misc Abilities
 		training_time = 120
 		suppression = 2
-		weight = 1
+		weight = 6.0
 		
-		supply_consumption = 0.14
+		supply_consumption = 0.09
 		
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {
@@ -455,8 +459,8 @@ sub_units = {
 		transport = mech_chassis
 
 		need = {
-			mech_chassis = 40
-			infantry_equipment = 100
+			mech_chassis = 60
+			infantry_equipment = 900
 		}
 
 		forest = {
@@ -528,7 +532,7 @@ sub_units = {
 		}
 	}
 
-	penal_battalion = {
+	penal_battalion = { #Uses Soviet Shtrafbat for manpower and equipment table
 		abbreviation = "PEN"
 		sprite = infantry
 		map_icon_category = infantry
@@ -553,24 +557,24 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 15 #25 (HP)
-		max_organisation = 70 #60 -> Lower HP but higher Org: They should keep fighting longer
+		max_strength = 800 #25 (HP)
+		max_organisation = 60 #60 -> Lower HP but higher Org: They should keep fighting longer
 		default_morale = 0.4 #0.3 (Recovery) -> Easy to get more punishees
-		manpower = 850 #1000 -> Usually no more than 850
+		manpower = 800
 
 		#Misc Abilities
-		training_time = 50 #90 -> Already trained
+		training_time = 60 #90 -> Already trained
 		suppression = 0.5 #1.5 -> Not for suppression roles
-		weight = 0.5
+		weight = 0.9
 		
-		supply_consumption = 0.05 #0.07 -> Don't need that much supply, and they have lower HP
+		supply_consumption = 0.08 #0.07 -> Don't need that much supply, and they have lower HP
 	
 		need = {
-			infantry_equipment = 85 #100 -> Same ratio as regular Infantry			
+			infantry_equipment = 800
 		}
 	}
 
-	irregular_infantry = {
+	irregular_infantry = { #Uses Spanish Maquis for manpower and equipment table
 		abbreviation = "IRR"
 		sprite = infantry
 		map_icon_category = infantry
@@ -595,17 +599,17 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 30 # reg inf 25
-		max_organisation = 45 # reg inf 60
+		max_strength = 600 # reg inf 25
+		max_organisation = 65 # reg inf 60
 		default_morale = 0.2 #  reg inf 0.3
-		manpower = 1000
+		manpower = 600
 
 		#Misc Abilities
-		training_time = 30 # was 75  # reg inf 90
+		training_time = 70 # was 75  # reg inf 90
 		suppression = 1.5 # reg inf 1.5
-		weight = 0.5
+		weight = 0.70
 		
-		supply_consumption = 0.04 # reg inf  0.06
+		supply_consumption = 0.060 # reg inf  0.06
 
 		# generally not as drilled in modern warfare as regular troops 
 		soft_attack = -0.05
@@ -633,11 +637,12 @@ sub_units = {
 		
 		
 		need = {
-			infantry_equipment = 80 # was 100 
+			infantry_equipment = 600 # was 100 
+			support_equipment = 20
 		}
 	}
 
-	militia = {
+	militia = { #Uses Volkssturm table for manpower and equipment
 		abbreviation = "MIL"
 		sprite = infantry
 		map_icon_category = infantry
@@ -663,20 +668,20 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
+		max_strength = 640
 		max_organisation = 50 #reg infantry 60
 		default_morale = 0.3
-		manpower = 1000
+		manpower = 640
 
 		#Misc Abilities
-		training_time = 80 #reg infantry 90
+		training_time = 50 #reg infantry 90
 		suppression = 1.5
-		weight = 0.5
+		weight = 0.7
 		
-		supply_consumption = 0.06
+		supply_consumption = 0.064
 	
 		need = {
-			infantry_equipment = 100
+			infantry_equipment = 640
 		}
 	}
 }
