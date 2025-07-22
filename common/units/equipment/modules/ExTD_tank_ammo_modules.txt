@@ -15,49 +15,53 @@ equipment_modules = {
 	
 	#initially I wanted to give these ammo only for mech, then I realised that was bs and so these two have the "mech" prefix
 	#can't be bothered to change it everywhere <3
-	mech_dft_shell = {
+	mech_dft_shell = { # APHE shells
 		abbreviation = "dftsh"
 		category = tank_ammo
 		sfx = sfx_ui_sd_module_sonar
-		
+		#Default stats
 		xp_cost = 1
 	}
 	
-	mech_cheap_shell = {
+	mech_cheap_shell = { # Basic Solid shot AP
 		abbreviation = "chpsh"
 		category = tank_ammo
 		sfx = sfx_ui_sd_module_sonar
 		
 		add_stats = {
-			reliability = -0.1
+			reliability = 0.05 #less cookoff chance
 		}
 		
 		multiply_stats = {
-			soft_attack = -0.15
-			ap_attack = -0.15
-			build_cost_ic = -0.2
+			soft_attack = -0.15 #no explosive filler
+			#ap_attack = -0.15
+			build_cost_ic = -0.1 #cheaper to make than APHE
 		}
 		
 		xp_cost = 1
 	}
 	
-	mech_he_shell_1 = {
+	mech_he_shell_1 = { # HE shells
 		abbreviation = "mhsh"
 		category = tank_ammo
 		sfx = sfx_ui_sd_module_sonar
 		
 
 		add_stats = {
-			build_cost_ic = 2
+			build_cost_ic = 1
+			reliability = -0.05 #more cookoff chance
 		}
 		multiply_stats = {
 			soft_attack = 0.1
+			#fully explosive filler
+			ap_attack = -0.15 
+			hard_attack = -0.1
 		}
 		
 		xp_cost = 4
 	}
 	
-	mech_he_shell_2 = {
+	mech_he_shell_2 = { # HE-TF shells
 		abbreviation = "mhsh"
 		category = tank_ammo
 		sfx = sfx_ui_sd_module_sonar
@@ -65,15 +69,20 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2.5
+			reliability = -0.05 #more cookoff chance
 		}
 		multiply_stats = {
 			soft_attack = 0.2
+			air_attack = 0.25 # anti-air shells
+			#fully explosive filler
+			ap_attack = -0.15 
+			hard_attack = -0.2
 		}
 		
 		xp_cost = 4
 	}
 	
-	mech_he_shell_3 = {
+	mech_he_shell_3 = { # HE-VTF shells
 		abbreviation = "mhsh"
 		category = tank_ammo
 		sfx = sfx_ui_sd_module_sonar
@@ -81,26 +90,33 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 3
+			reliability = -0.05 #more cookoff chance
 		}
 		multiply_stats = {
 			soft_attack = 0.3
+			air_attack = 0.5 # anti-air shells
+			#fully explosive filler
+			ap_attack = -0.15 
+			hard_attack = -0.3
 		}
 		
 		xp_cost = 4
 	}
 	
-	mech_ap_shell_1 = {
+	mech_ap_shell_1 = { # APCR shells
 		abbreviation = "mash"
 		category = tank_ammo
 		sfx = sfx_ui_sd_module_sonar
 		
 
 		add_stats = {
-			build_cost_ic = 2
+			build_cost_ic = 1
+			reliability = 0.05 #less cookoff chance
 		}
 		
 		multiply_stats = {
 			ap_attack = 0.1
+			soft_attack = -0.15 #no explosive filler
 		}
 
 		build_cost_resources = {
@@ -110,7 +126,7 @@ equipment_modules = {
 		xp_cost = 4
 	}
 	
-	mech_ap_shell_2 = {
+	mech_ap_shell_2 = { # APDS shells
 		abbreviation = "mash"
 		category = tank_ammo
 		sfx = sfx_ui_sd_module_sonar
@@ -118,10 +134,12 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2.5
+			reliability = 0.05 #less cookoff chance
 		}
 		
 		multiply_stats = {
-			ap_attack = 0.2
+			ap_attack = 0.25
+			soft_attack = -0.25 #no explosive filler
 		}
 
 		build_cost_resources = {
@@ -131,7 +149,7 @@ equipment_modules = {
 		xp_cost = 4
 	}
 	
-	mech_ap_shell_3 = {
+	mech_ap_shell_3 = { # APFSDS shells
 		abbreviation = "mash"
 		category = tank_ammo
 		sfx = sfx_ui_sd_module_sonar
@@ -139,10 +157,12 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 3
+			reliability = 0.05 #less cookoff chance
 		}
 		
 		multiply_stats = {
-			ap_attack = 0.3
+			ap_attack = 0.50
+			soft_attack = -0.50 #no explosive filler
 		}
 
 		build_cost_resources = {
