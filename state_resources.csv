@@ -1,0 +1,1017 @@
+State,Oil,Rubber,Aluminum,Tungsten,Steel,Chromium
+France,0,0,0,0,0,0
+Poland,0,0,0,0,0,0
+Iceland,0,0,0,0,0,0
+East Azerbaijan,0,0,0,0,6,0
+Kurdistan,0,0,0,0,0,0
+Yazd,0,0,0,0,0,0
+South Khorasan,0,0,0,0,0,0
+North Khorasan,0,0,0,0,0,0
+Qataghan,0,0,0,0,0,3
+Khyber Pass,0,0,0,0,0,0
+Maymanah,0,0,0,0,2,0
+Qandahar,0,0,0,0,0,0
+Farah,0,0,0,0,0,7
+Greenland,0,0,10,0,0,0
+Al Anbar,3,0,0,0,0,0
+Al Basrah,0,0,7,0,4,0
+Kalat,0,0,0,0,0,0
+Musamdam,1,0,0,0,0,0
+Bahrain,0,0,0,0,0,0
+Interior Oman,2,0,0,0,0,0
+Dhofar,0,0,0,0,0,0
+North-Eastern Slovenia,0,0,0,0,0,0
+Croatia,0,0,0,0,0,0
+Bosnia,0,0,7,0,0,0
+Montenegro,0,0,70,0,0,20
+Macedonia,0,0,10,0,0,50
+Kosavo,0,0,0,0,0,0
+Eastern Serbia,0,0,0,0,3,0
+Eastern Croatia,0,0,0,0,0,0
+Kaunas,0,0,0,0,0,0
+Norway,0,0,0,0,0,0
+Uusima,0,0,0,0,0,0
+Lisbon,0,0,0,32,0,0
+Ireland,0,0,0,0,2,0
+Sardinia,0,0,0,0,0,0
+Sicily,0,0,0,0,0,0
+Malta,0,0,0,0,0,0
+Napoli,0,0,10,0,15,0
+Gibralter,0,0,0,0,0,0
+Northern Ireland,0,0,2,0,0,0
+Latvia,0,0,0,0,1,0
+Scottish Highlands,0,0,9,16,0,1
+Scottish Lowlands,0,0,0,0,0,0
+Wales,0,0,3,0,11,0
+Cornwall,0,0,0,0,0,0
+Gotland,0,0,0,0,0,0
+East Anglia,0,0,0,0,0,0
+Greater London Area,0,0,0,0,0,0
+South-east England,0,0,0,0,0,0
+West Midlands,0,0,0,0,27,0
+East Midlands,0,0,0,0,11,0
+Estonia,0,0,0,0,2,0
+Yorkshire,0,0,0,0,71,0
+Northern England,0,0,0,0,18,0
+North-west England,0,0,2,0,31,0
+Strathclyde,0,0,0,0,21,0
+Connaught,0,0,0,0,0,0
+Munster,0,0,0,0,0,0
+Aberdeenshire,0,0,3,4,0,0
+Crimea,0,0,0,0,0,0
+Skane,0,0,0,0,0,0
+Smaland,0,0,0,0,4,0
+Brittany,0,0,0,0,0,0
+Vaster Gotland,0,0,0,0,2,0
+Sodermanland,0,0,2,0,24,0
+Vestlandet,0,0,10,0,0,1
+Midt-Noreg,0,0,0,0,0,0
+Nord-Noreg,0,0,0,0,6,0
+Aland,0,0,0,0,0,0
+Karelia,0,0,0,0,0,0
+Salla,0,0,0,0,0,0
+Lappi,0,0,0,0,7,2
+Vaasa,0,0,0,0,0,0
+Normandy,0,0,0,0,21,0
+Kuopio,0,0,0,0,3,0
+Eastern Swiss Alps,0,0,15,0,0,0
+Upper Austria,0,0,1,0,15,0
+Tyrol,0,0,0,0,0,0
+Southern plain,0,0,0,0,0,0
+Western Hungary,0,0,40,0,0,0
+Calabria,0,0,0,0,0,0
+Abruzzo,0,0,0,0,0,0
+Piedmont,0,0,16,1,24,2
+Lombardy,0,0,0,0,0,0
+Ile de France,0,0,0,0,0,0
+Veneto,0,0,11,0,20,0
+Emilia Romagna,0,0,9,0,0,0
+Tuscany,0,0,0,0,0,0
+Dalmatia,0,0,0,0,0,0
+Dodecanese,0,0,0,0,0,0
+Catalonia,0,0,0,0,0,0
+Western Aragon,0,0,0,0,15,0
+Valencia,0,0,0,0,0,0
+Murcia,0,0,0,0,0,0
+Sevilla,0,0,0,0,0,0
+Alcase Lorraine,0,0,0,0,28,0
+Extremadura,0,0,0,4,0,0
+Galicia,0,0,0,0,0,0
+Navarre,0,0,0,0,0,0
+Granada,0,0,0,0,8,0
+Leon,0,0,0,10,0,0
+Ciudad Real,0,0,0,0,0,0
+Burgos,0,0,0,0,0,0
+Balearic Islands,0,0,0,0,0,0
+Canary islands,0,0,0,0,0,0
+Beja,0,0,0,0,0,0
+Champagne,0,0,0,0,0,0
+Porto,0,0,0,0,0,0
+Guarda,0,0,0,95,0,0
+Crete,0,0,0,0,0,0
+Cyprus,0,0,0,0,0,3
+Thrace,0,0,0,0,0,11
+Epirus,0,0,0,0,14,14
+Peloponnese,0,0,0,0,0,0
+Aegean Islands,0,0,0,0,0,7
+Memel,0,0,0,0,0,0
+Kaunas,0,0,0,0,2,0
+Aquitaine,0,0,11,0,14,0
+Kurzeme,0,0,0,0,0,0
+Tartu,0,0,0,0,0,0
+Odessa,0,0,0,0,0,0
+Kiev,0,0,0,0,0,0
+Pinsk Marches,0,0,0,0,0,0
+Leningrad Area,0,0,0,0,0,0
+Kherson,0,0,0,0,0,15
+Mykolaiv,0,0,0,0,0,0
+Vinnytsia,0,0,0,0,0,0
+Khmelnytskyi,0,0,0,0,0,0
+Italy,0,0,0,0,0,0
+Franche-comte,0,0,35,0,32,0
+Rivne,0,0,0,0,0,0
+Zhytomyr,0,0,0,0,0,0
+Western Kiev,8,0,7,0,0,0
+Cherkasy,0,0,0,0,0,0
+Brest,0,0,0,0,0,0
+Hrodna,0,0,0,0,0,0
+Minsk,0,0,0,0,0,0
+Viciebsk,0,0,0,0,0,0
+Pskov,0,0,0,0,0,0
+Smolensk,0,0,0,0,0,0
+Bouches-du-Rhone,0,0,60,0,0,0
+Bryansk,0,0,0,0,0,0
+Burgas,0,0,0,0,0,0
+Plovdiv,0,0,0,0,0,1
+Murmansk,0,0,0,0,14,12
+Arkhangelsk,0,0,0,0,0,0
+Eastern Karelia,0,0,0,0,30,0
+Below Zero,0,0,0,0,0,0
+Stalingrad Area,0,0,0,0,0,0
+Rostov Area,0,0,0,0,0,0
+Moscow Area,0,0,0,0,16,0
+Roussillion,0,0,50,0,27,0
+Kursk Area,0,0,0,0,0,0
+Kharkov,0,0,0,0,33,0
+Orel,0,0,0,0,40,8
+tula,0,0,0,0,0,0
+Bryansk,0,0,0,0,0,0
+Glukhov,0,0,0,0,0,0
+Nikopol,4,0,0,0,0,0
+Stalino,0,0,0,0,0,0
+Taganrog,0,0,0,0,0,0
+baku,70,0,0,0,0,0
+Poitou,0,0,0,0,12,0
+Armenia,0,0,0,0,0,0
+Georgia,0,0,0,0,0,0
+Grozny,10,0,0,0,0,0
+Caucasus Mountains,0,0,0,0,0,18
+Krasodar,12,0,0,17,0,0
+Stravropol,0,0,0,0,0,14
+Astrakhan,0,0,0,0,0,0
+Elista,0,0,0,0,0,0
+volgodonsk,0,0,0,0,0,0
+Saratov,0,0,0,0,0,0
+Centre,0,0,0,0,0,0
+Voronezh,0,0,0,0,0,0
+Pochep,0,0,0,0,0,0
+Smolensk,0,0,0,0,0,0
+Roslavl,0,0,0,0,0,0
+Gatchina,0,0,0,0,0,0
+Donetsk,0,0,0,0,0,0
+Rzhev,0,0,0,0,16,0
+Tver,0,0,0,0,0,0
+Yaroslavl,0,0,0,0,0,0
+Kazan,0,0,0,0,25,0
+Limousin,0,0,0,0,0,0
+ulyanovsky,0,0,0,0,14,0
+Samara,0,0,0,0,0,0
+Nizhny Novogrod,0,0,0,0,0,0
+Ivanovo,0,0,0,0,0,0
+Ryazan,0,0,0,0,0,0
+Penza,0,0,0,0,0,0
+Cheboksary,0,0,0,0,0,0
+Livny,0,0,0,0,0,7
+lipetsk,0,0,0,0,0,0
+Liski,0,0,0,0,0,0
+Bourgogne,0,0,0,0,0,0
+Borisoglbsk,0,0,0,0,0,0
+USA,0,0,9,0,28,0
+Torzhok,7,0,0,0,0,0
+Veliky Novogrod,0,0,0,0,0,0
+Tikhvin,0,0,0,0,0,0
+Mikhaylovka,0,0,0,0,0,0
+Persia,0,0,2,2,0,0
+Afghanistan,0,0,0,3,2,2
+French Somaliland,0,0,0,0,0,0
+British Somaliland,0,0,0,0,0,0
+Champagne2,0,0,11,0,0,0
+Pitcarin Island,0,0,0,0,0,0
+ethiopia,0,2,0,0,0,0
+French Africa,0,0,0,0,3,0
+Italian Africa,0,0,0,0,0,0
+British Africa,0,0,0,8,8,4
+South Africa,0,0,0,0,11,53
+Canada,0,0,0,0,0,0
+Mexico,0,0,0,0,6,0
+Argentina,0,0,0,0,0,0
+Chile,0,0,0,8,14,4
+Alcase,0,0,0,0,42,0
+Brazil,0,0,0,0,0,0
+India,0,0,0,0,0,0
+Japan,0,0,1,0,0,0
+China,0,0,0,1,0,0
+New Zealand,0,0,0,0,0,0
+Austraila,0,0,0,0,0,0
+Indochina,0,55,0,0,0,0
+Sinkiang,0,0,0,0,0,0
+Magwe,0,3,0,92,0,0
+Siam,0,8,0,2,0,0
+Pas de Calais,0,0,8,0,24,0
+Spanish Africa,0,0,0,0,40,0
+Iraq,15,0,0,0,0,0
+Saudi Arabia,0,0,0,0,0,0
+Yemen,1,0,0,0,0,0
+Oman,1,0,0,0,0,0
+Congo,0,0,0,0,0,0
+Portugal Africa,0,1,0,0,0,0
+Belgian Africa,0,0,0,0,0,0
+Liberia,0,6,0,0,0,0
+Falkand Islands,0,0,0,0,0,0
+Swiss Plateau,0,0,0,0,0,0
+Loire,0,0,0,0,0,0
+Uruguay,0,0,0,0,2,0
+paraguay,0,0,0,0,0,0
+bolivia,0,0,0,60,2,0
+Peru,14,0,0,0,0,0
+Panama,1,0,0,0,0,0
+Ecuador,2,0,0,0,0,0
+Colombia,0,0,0,0,0,0
+Venezuela,41,0,0,0,0,0
+Britain SA,0,0,0,0,0,0
+Dutch SA,0,0,60,0,0,0
+Midi Pyrenees,0,0,0,0,0,0
+French SA,0,0,0,0,0,0
+BritMex,0,0,0,0,0,0
+Honduras,0,0,0,0,0,1
+Guatemala,0,0,0,0,0,4
+El Salvador,0,0,0,0,0,1
+Cuba,0,0,0,0,3,90
+Costa Rica,0,0,0,0,0,1
+Nicaragua,0,0,0,0,0,1
+Haiti,0,0,0,0,0,2
+Dominican Republic,0,0,0,0,0,1
+Rhone Alpes,0,0,30,0,16,0
+French India,0,0,0,0,0,0
+Goa,0,0,0,0,0,0
+Tibet,0,0,0,2,0,0
+Nepal,0,0,0,0,0,2
+Bhutan,0,0,0,2,0,0
+Yunnan,0,0,0,2,0,0
+HongKong,0,0,0,0,0,0
+Philippines,0,0,0,0,0,0
+Manchukuo,0,0,7,0,0,0
+Tannu Tuva,0,0,0,0,0,2
+Centre sud,0,0,0,0,0,0
+Mongolia,0,0,0,0,2,3
+Newfoundland,0,0,0,0,0,0
+Labrador,0,0,0,0,0,0
+British Borneo,12,40,0,0,0,0
+Dutch Borneo,5,75,0,0,0,0
+Dutch East Indies,10,140,0,0,0,0
+Singapore,0,342,15,189,20,0
+Faroe Islands,0,0,0,0,0,0
+Gloucestershire,0,0,0,0,9,0
+Izmir,0,0,0,0,0,50
+Wallonie,0,0,0,0,22,0
+Bursa,0,0,0,0,0,39
+Edirne,0,0,0,0,0,0
+Antalya,0,0,0,0,0,35
+Afyon,0,0,0,0,0,25
+Adana,0,0,0,0,0,0
+Mersin,0,0,0,0,0,0
+Konya,0,0,0,0,0,0
+Izmit,0,0,0,0,9,19
+Kayseri,0,0,0,0,0,32
+Silvas,0,0,0,0,0,0
+Gelderland,0,0,0,0,0,0
+Diyarbekir,0,0,0,0,0,0
+Vologda,0,0,0,0,0,0
+Hakkari,0,0,0,0,0,0
+Erzurum,0,0,0,0,0,0
+Trabzon,0,0,0,0,0,0
+Samsun,0,0,0,0,0,0
+Sinop,0,0,0,0,0,0
+New England,0,0,0,0,12,0
+New York,0,0,0,0,13,0
+New Jersey,0,0,0,0,0,0
+Friesland,0,0,0,0,0,0
+Pennsylvania,0,0,0,0,44,0
+Maryland,0,0,0,0,0,0
+Virginia,0,0,0,0,0,0
+North Carolina,0,0,0,0,0,0
+South Carolina,0,0,0,0,0,0
+Georgia,0,0,0,0,0,0
+Florida,0,0,0,0,0,0
+Alabama,0,0,0,0,0,0
+Tennesse,0,0,0,0,60,0
+Kentucky,0,0,0,0,0,0
+Denmark,0,0,0,0,0,0
+Mississippi,0,0,0,0,0,0
+Louisiana,44,0,0,0,0,0
+Arkansas,0,0,14,0,0,0
+Missouri,0,0,12,0,0,0
+Oklahoma,60,0,20,0,0,0
+Texas,320,0,50,0,0,0
+New Mexico,14,0,30,0,0,0
+Arizona,5,0,8,0,20,0
+California,180,0,8,0,0,0
+Nevada,0,0,25,32,70,0
+Sweden,0,0,0,0,0,0
+Utah,0,0,0,76,0,0
+Wyoming,0,0,0,0,0,0
+Colorado,14,0,0,0,0,0
+Kansas,30,0,0,0,0,0
+Nebraska,0,0,0,0,0,0
+Oregon,0,0,0,0,0,0
+Washington,0,0,0,0,0,0
+Idaho,0,0,0,18,18,1
+Montana,0,0,0,11,0,0
+North Dakota,7,0,0,0,17,0
+South Tyrol,0,0,14,0,0,0
+South Dakota,0,0,0,0,0,0
+Minnesota,0,0,0,0,110,0
+Iowa,0,0,0,0,0,0
+Michigan,6,0,0,0,60,0
+Wisconsin,0,0,0,0,53,0
+Illinois,0,0,0,0,0,0
+Indiana,0,0,0,0,0,0
+Syktyvkar,0,0,0,0,0,0
+Perm,0,0,6,0,0,0
+Izhevsk,0,0,0,0,0,18
+Austria,2,0,0,0,0,0
+USSR,0,0,0,0,0,0
+Kirov,0,0,14,0,0,0
+Engels,0,0,0,10,10,0
+Akhtubinsk,0,0,0,0,0,15
+Kharabali,0,0,0,0,0,0
+Saykhin,0,0,0,0,0,0
+Atyrau,0,0,0,0,0,0
+Krasnyy Yar,0,0,0,0,0,0
+Uralsk,0,0,0,0,0,0
+Vladivostok,0,0,0,0,0,20
+Khabarovsk,0,0,0,0,0,9
+Madrid,0,0,1,0,0,0
+Sistan,0,0,0,0,0,0
+Hormozgan,12,0,0,0,2,7
+Fars,10,0,0,0,0,0
+Khuzestan,28,0,0,0,0,0
+Kerman,0,0,0,0,0,0
+South Khorasan,0,0,0,0,0,0
+Razavi Khorasan,0,0,0,0,0,0
+Golestan,0,0,0,0,4,5
+Semnan,0,0,0,0,0,0
+Azerbaijan,0,0,0,0,0,0
+Rhineland,0,0,14,0,50,0
+Gilan,0,0,0,0,0,0
+Kurdistan,0,0,0,0,0,0
+Ceylon,0,60,0,0,0,0
+Madras,0,19,0,0,0,0
+Andra Pradesh,0,0,0,0,0,0
+Mysore,0,0,0,0,12,10
+Orissa,0,0,1,0,25,20
+Hyderabad,0,0,0,0,13,11
+Western Indian States,6,0,0,0,0,0
+Bombay,0,0,0,26,0,0
+Hungary,0,0,40,0,6,0
+Bangladesh,0,0,0,0,0,0
+Calcutta,0,0,0,11,13,0
+Assam,5,0,0,0,0,0
+Rajputana,0,0,0,0,0,0
+Arunachal Pradesh,0,0,0,49,0,0
+Bihar,0,0,0,0,0,0
+Central Provinces,0,0,0,0,0,4
+Central Indian Provinces,0,0,0,0,0,0
+United Provinces,0,0,0,0,0,0
+Delhi,0,0,0,0,0,0
+Albania,4,0,1,0,0,1
+West Punjab,0,0,0,0,0,0
+Kashmir,0,0,0,0,0,0
+Peshawar,0,0,0,0,3,0
+Sind,0,0,0,0,0,0
+Baluchistan States,3,0,0,0,0,0
+Quetta,0,0,0,0,0,0
+Cairo,0,0,0,0,0,0
+Alexandria,1,0,0,3,3,0
+Tripoli,0,0,0,0,0,0
+Libyan Coast,0,0,0,0,0,0
+Yugoslavia,0,0,0,0,0,0
+Benghasi,0,0,0,0,0,0
+Derna,0,0,0,0,0,0
+Marsa Matruh,0,0,0,0,0,0
+Sinai,0,0,0,0,0,0
+Israel,0,0,0,0,0,0
+Jordan,0,0,0,0,0,0
+Luxor,0,0,0,0,0,0
+Aswan,0,0,0,0,0,0
+Tunisia,0,0,0,0,31,0
+Western Algeria,0,0,0,0,65,0
+Romania,44,0,0,0,0,0
+Eastern Algeria,0,0,0,0,0,0
+Northern Morocco,0,0,0,0,0,12
+Southern Morocco,0,0,0,0,0,0
+Alaska,0,0,0,0,0,0
+Nova Scotia,0,0,0,0,0,0
+New Brunswick,0,0,0,0,0,0
+Quebec,0,0,4,0,0,0
+Manitoba,0,0,0,0,0,0
+Nunavut,0,0,3,0,0,0
+Saskatchewan,0,0,0,0,0,0
+Greece,0,0,30,10,3,12
+Alberta,0,0,0,0,0,0
+Northwestern Canada,0,0,0,0,0,0
+Northwest Territories,0,0,0,0,0,0
+British Columbia,1,0,0,0,0,0
+Yucatan,0,0,0,0,0,0
+Chiapas,0,0,0,0,0,0
+Oaxaca,8,0,0,0,0,0
+Veracruz,9,0,0,0,0,0
+Nayarit,0,0,0,8,0,0
+Tamaulipas,9,0,0,0,2,0
+Bulgaria,0,0,2,0,0,0
+Coahuila,8,0,0,0,4,0
+Sinaloa,0,0,0,0,0,0
+Chihuahua,0,0,0,0,0,0
+Sonora,0,0,0,0,0,0
+Baja California,0,0,0,0,0,0
+Guerrero,0,0,0,0,4,0
+Meta,0,0,0,0,0,0
+Amazinas,0,0,0,0,0,0
+Bolivar,0,0,0,0,0,0
+Monagas,35,0,0,0,0,0
+Turkey,0,0,0,0,28,11
+Pastaza,0,0,0,0,0,0
+Loreto,0,0,0,0,0,0
+Piura,0,0,0,6,0,0
+La Libertad,15,0,0,0,0,0
+Ucayali,0,0,0,0,0,0
+Amazonas,0,0,0,0,0,0
+Para,0,0,0,0,3,0
+Maranhao,0,13,0,0,0,0
+Rio Grande,0,0,0,3,0,0
+Bahia,0,0,0,0,0,3
+Germany,0,0,0,0,0,0
+Baden,0,0,6,0,0,0
+Rio de Janerio,0,0,0,0,0,0
+Saol Paulo,0,0,0,0,0,0
+Rio Grande Sul,0,0,0,0,0,0
+Santa Catarina,0,0,0,0,0,0
+Iguacu,0,0,0,0,0,0
+Goias,0,0,3,0,0,3
+Northern Chile,0,0,0,42,0,0
+Southern Chile,2,0,0,0,0,0
+Argentine Northwest,0,0,0,0,0,0
+Gran Chaco,0,0,0,30,4,0
+Moselland,0,0,0,0,35,0
+Mesopotamia,2,3,0,0,0,0
+Cuyo,0,0,0,0,0,0
+Patagonia,3,0,0,0,0,0
+Southern Algeria,0,0,0,0,0,0
+North Africa,0,0,0,0,0,0
+Central Africa,0,0,0,0,0,0
+Northern Siberia,0,0,0,0,0,0
+Victoria,0,0,0,0,8,4
+Tasmania,0,0,0,0,0,0
+South Australia,0,0,0,0,0,0
+Wuttemberg,0,0,18,0,0,0
+Northern Territory,0,0,0,0,22,0
+Queensland,0,0,0,24,0,0
+Western Australia,0,0,0,0,0,0
+New Guinea,0,0,0,0,0,0
+Taiwan,0,0,0,0,0,0
+South Korea,0,0,0,0,0,0
+Okinawa,0,0,0,0,0,0
+North Korea,0,0,0,28,18,0
+Nagasaki,0,0,0,0,0,52
+Hiroshima,0,0,0,0,0,0
+Oberbayern,0,0,0,0,0,0
+Tokushima,0,0,0,0,0,0
+Osaka,0,0,3,0,0,0
+Nagoya,0,0,0,0,0,0
+Akita,0,0,0,0,27,0
+Niigata,0,0,0,0,0,0
+Nagano,0,0,0,8,27,0
+Hokkaido,0,0,0,0,0,0
+South Sakhalin,3,0,0,0,0,0
+Cameroun,0,5,0,0,0,0
+Gabon,0,0,0,0,0,0
+Bayreuth,0,0,0,0,0,0
+Angola,0,0,0,0,0,0
+South West Africa,0,0,0,0,0,0
+Bechuana Land,0,0,0,0,0,90
+Madagascar,0,0,0,0,0,0
+East Africa,0,0,0,0,0,0
+Rhodessa,0,0,0,0,0,0
+Tanganyika,0,2,0,0,0,0
+East Africa,0,0,0,0,0,0
+Uganda,0,3,0,0,0,0
+Sudan,0,0,0,0,0,0
+Nassau,0,0,0,0,0,0
+Eritrea,0,0,0,0,2,0
+Khartoum,0,0,0,0,0,0
+Western Egypt,0,0,0,0,0,0
+Lebanon,0,0,0,0,0,0
+Syria,0,0,0,0,0,0
+Lagos,0,0,0,0,0,0
+Mali,0,0,0,0,0,0
+Mauritania,0,0,0,0,0,0
+Nigeria,0,2,0,0,0,0
+Somaliland,0,0,0,0,1,0
+Weser-Ems,0,0,0,0,0,0
+TS 2,0,0,0,0,18,0
+TS 3,0,0,0,0,0,0
+TS 4,0,0,0,0,0,0
+TS 5,0,0,0,0,9,8
+TS 6,0,0,4,10,10,12
+TS 7,0,0,0,0,10,5
+TS 8,0,0,7,0,20,0
+TS 9,0,0,26,0,0,0
+TS 10,0,0,0,0,0,0
+TS 11,0,0,0,0,0,0
+Westfalen,0,0,0,0,0,0
+TS 12,0,0,0,0,0,0
+TS 13,0,0,0,0,0,0
+TS 14,0,0,0,0,0,0
+Ts 15,0,0,0,0,0,23
+Siberia 1,0,0,0,0,0,0
+Siberia 2,0,0,0,0,0,0
+Siberia 3,0,0,0,0,0,0
+Siberia 4,13,0,0,0,0,0
+Siberia 5,0,0,0,0,0,0
+Siberia 6,0,0,0,0,0,0
+Schleswig - Holstein,0,0,0,0,0,0
+Siberia 7,0,0,0,0,0,0
+Northern Urals,0,0,27,0,0,40
+Sourthern Urals,6,0,0,0,40,0
+Kazakhstan,0,0,0,0,0,0
+Turkmenistan,0,0,0,0,0,0
+Uzbekistan,0,0,0,0,0,0
+Kyrgyzstan,0,0,10,4,20,12
+Western Kazakstan,0,0,0,0,0,0
+Some Mountains,0,0,0,0,0,10
+Eastern Kazakhstan,0,0,0,0,0,0
+Ost - Hannover,2,0,0,0,0,0
+Northern Kazakhstan,0,0,0,0,0,0
+Hainan,0,0,0,0,0,0
+Guangzhou,0,0,0,8,15,3
+Guangdong,0,0,0,15,15,3
+Nanning,0,0,0,11,8,3
+Fujian,0,0,0,0,0,0
+Zhejiang,0,0,0,0,0,0
+Shandong,0,0,0,0,0,0
+Jiansu,0,0,0,0,0,0
+Guanxi,0,0,0,15,15,3
+Belgium,0,0,0,0,4,0
+Sud-Hannover,0,0,0,3,9,3
+Jiangxi,0,0,0,0,0,0
+China 1,2,0,0,0,0,0
+China 2,0,0,0,6,0,0
+China 3,0,0,0,0,0,0
+China 4,0,0,0,0,0,0
+China 5,0,0,0,0,14,0
+China 6,0,0,0,0,11,0
+China 7,0,0,0,0,0,0
+Beijing,0,0,0,0,0,0
+China 8,0,0,0,0,0,0
+Mecklenburg,0,0,0,0,0,0
+China 9,0,0,0,0,0,0
+China 10,0,0,0,0,0,0
+China 11,0,0,0,0,0,0
+China 12,0,0,0,0,0,0
+China 13,0,0,0,0,0,0
+Shanxi,0,0,0,0,0,0
+China 14,0,0,0,0,0,0
+Xinjiang,0,0,0,0,0,0
+China 15,0,0,0,0,0,0
+China 16,0,0,2,0,0,2
+Pommern,0,0,0,0,0,0
+China 17,0,0,0,0,0,0
+China 18,0,0,0,0,0,0
+China 19,0,0,0,3,3,0
+Luzon,0,1,0,0,0,0
+Central islands,0,0,0,0,0,0
+Samar,0,0,0,0,0,0
+Palawan,0,0,0,0,0,0
+Mindanao,0,0,0,0,0,0
+Cebu,0,0,0,0,0,0
+Hawaii,0,0,0,0,0,0
+WestPrussen,0,0,6,0,7,0
+Johnston Atoll,0,0,0,0,0,0
+Midway Island,0,0,0,0,0,0
+Wake Island,0,0,0,0,0,0
+Marshall Islands,0,0,0,0,0,0
+Solomon Islands,0,0,0,0,0,0
+New Caledonia,0,0,0,0,0,90
+Fiji,0,0,0,0,0,0
+State 1,0,0,0,0,0,0
+Guam,0,0,0,0,0,0
+Maiana,0,0,0,0,0,0
+Brandenburg,0,0,0,0,0,0
+Mandalay,0,0,0,120,0,0
+Tahiti,0,0,0,0,0,0
+Phoenix Island,0,0,0,0,0,0
+Fongafale,0,0,0,0,0,0
+state 3,0,0,0,0,0,0
+Iwo Jima,0,0,0,0,0,0
+Saipan,0,0,0,0,0,0
+Palau,0,0,0,0,0,0
+Marcus Island,0,0,0,0,0,0
+Galapagos Islands,0,0,0,0,0,0
+Sachsen,0,0,0,0,41,0
+Attu Island,0,0,0,0,0,0
+Sov state 5,0,0,0,0,0,0
+Sov state 6,0,0,0,0,20,0
+Sov state 7,0,0,0,0,0,0
+sov state 8,0,0,0,0,0,0
+North Sakhalin,0,0,0,0,0,0
+Kuwait,0,0,0,0,0,0
+Border state,0,0,0,0,18,0
+Arab UK 1,5,0,0,0,0,0
+Arabian UK 2,0,0,0,0,0,0
+Niederschlesien,0,0,16,0,10,0
+Equatorial Africa,0,3,0,0,0,0
+Tripolitania,0,0,0,0,0,0
+Sirte,0,0,0,0,0,0
+Cyrenaica,0,0,0,0,0,0
+Southern Slovakia,0,0,0,0,13,3
+Gabes,0,0,0,0,0,0
+Norrnorrland,0,0,0,44,50,25
+Lesser  Sunda Islands,0,12,0,0,0,0
+The Moluccas,0,0,0,0,0,0
+Dutch New Guinea,0,0,0,0,0,0
+Oberschlesien,0,0,6,0,8,0
+Laos,0,0,0,0,0,0
+Annam,0,0,0,27,0,6
+Sumatra,12,150,28,0,0,0
+Sulawesi,0,30,0,0,0,0
+Central Australia,0,0,0,0,0,0
+Al Hajara,0,0,0,0,0,0
+Mosul,8,0,0,0,0,0
+Aleppo,0,0,0,0,0,0
+Rub al Khali,0,0,0,0,0,0
+Hejaz,0,0,0,0,0,0
+Wartheland,0,0,15,0,0,0
+Deir-az-Zur,0,0,0,0,0,0
+Soviet Lakes,0,0,0,0,0,0
+Northern Ontario,0,0,9,0,8,0
+Northeastern Canada,0,0,7,0,0,0
+Caroline Islands,0,0,0,0,0,0
+Panama Canal,0,0,0,0,0,0
+Puerto Rico,0,0,0,0,0,0
+British Guyana,0,0,64,0,0,0
+Chaco Boreal,0,0,0,3,2,0
+Jamaica,0,0,0,0,0,0
+Sudatenland,0,0,0,0,4,0
+Bahama Islands,0,0,0,0,0,0
+Trinidad,12,0,0,0,0,0
+Windward Islands,0,0,0,0,0,0
+Southern Bahamas,0,0,0,0,0,0
+French Caribbean,0,0,0,0,0,0
+Curacao,35,0,0,0,0,0
+Bermuda,0,0,0,0,0,0
+Madeira,0,0,0,0,0,0
+Azores,0,0,0,0,0,0
+Rio de Oro,0,0,0,0,0,0
+Holland,0,0,0,0,4,0
+Slovakia,0,0,0,1,0,0
+Sierra Leone,0,0,0,0,32,0
+Gambia,0,0,0,0,0,0
+Cape Verde,0,0,0,0,0,0
+Ascension,0,0,0,0,0,0
+Saint Helena,0,0,0,0,0,0
+Sao Tome,0,0,0,0,0,0
+Reunion,0,0,0,0,0,0
+Mauritius,0,0,0,0,0,0
+Comoro Islands,0,0,0,0,0,0
+Seychelles,0,0,0,0,0,0
+East Slovakia,0,0,0,0,0,0
+Diego Garcia,0,0,0,0,0,0
+Christmas Island,0,0,0,0,0,0
+Cocos Islands,0,0,0,0,0,0
+Kerguelen,0,0,0,0,0,0
+Heilungkiang,0,0,0,0,0,0
+Liaoning,0,0,0,0,0,0
+Liaotung,0,0,0,0,27,0
+Chuho,0,0,0,0,0,0
+Stanleyville,0,3,0,0,0,0
+Natal,0,0,0,0,0,60
+Zaolzie,0,0,0,0,0,0
+South Georgia,0,0,0,0,0,0
+Portuguese Timor,0,0,0,0,0,0
+Petsamo,0,0,0,0,0,0
+Southern Island,0,0,0,4,0,0
+Khorat,0,40,0,0,0,0
+Nauru,0,0,0,0,0,0
+Samoa,0,0,0,0,0,0
+Line Islands,0,0,0,0,0,0
+Guangzhouwan,0,0,0,0,0,0
+Macau,0,0,0,0,0,0
+Carpathian Ruthenia,0,0,0,0,0,0
+St Pierre and Miquelon ,0,0,0,0,0,0
+Central Macedonia,0,0,0,0,0,0
+Pamir,0,0,0,0,0,0
+Andaman,0,0,0,0,0,0
+Nendo,0,0,0,0,0,0
+Savoy,0,0,0,0,0,0
+Litorale,0,0,0,0,0,0
+New Britain,0,0,0,0,0,0
+Aru Islands,0,0,0,0,0,0
+Haida Gwaii,0,0,0,0,0,0
+East Sudatenland,0,0,0,0,0,0
+Vancouver Island,0,0,0,0,0,0
+Cambodia,0,0,0,0,0,0
+Stalinabad,0,0,0,0,3,0
+Qingdao,0,0,0,0,0,0
+Xian,0,0,0,0,0,0
+Dalian,0,0,0,0,0,0
+Ordos,0,0,0,0,0,0
+Dali Bai,0,0,0,0,0,0
+Zunyi,0,0,0,0,0,0
+Huangshan,0,0,0,0,0,0
+Moravia,2,0,0,0,4,0
+Changde,0,0,0,0,0,0
+Liangshan,0,0,0,0,0,0
+Chamdo,0,0,0,0,0,0
+Gannan,0,0,0,0,0,0
+Golog,0,0,0,0,0,0
+Haixi,0,0,0,0,0,0
+Jiuquan,0,0,0,0,0,0
+Shigatse,0,0,0,0,0,0
+Ngari,0,0,0,0,0,0
+Kunlun,0,0,0,0,0,0
+Northern Transylvania,0,0,0,0,0,0
+Dabancheng,0,0,0,0,0,0
+Hulunbuir,0,0,0,0,0,0
+Katowice,0,0,7,0,19,0
+Konigsberg,0,0,0,0,0,0
+West Banat,0,0,0,0,0,0
+Qatar,0,0,0,0,0,0
+Southern Bessarabia,0,0,0,0,0,0
+North Darfur,0,0,0,0,0,0
+Rwanda,0,0,0,3,0,0
+Burundi,0,0,0,0,0,0
+Dobrogea,0,0,0,0,0,0
+Malawi,0,0,0,0,0,0
+Zambia,0,0,0,4,0,18
+Middle Congo,0,2,0,0,0,0
+Cameroon,0,0,0,0,0,0
+Chad,0,0,0,0,0,0
+B.E.T.,0,0,0,0,0,0
+Dahomey,0,0,0,0,0,0
+Togo,0,0,0,0,0,0
+Upper Volta,0,0,0,0,0,0
+Ivory Coast,0,0,0,0,0,0
+Bessarabia,0,0,0,0,0,0
+Guinea,0,0,0,0,0,0
+Niger,0,0,0,0,0,0
+Tombouctou,0,0,0,0,0,0
+Sidi Ifni,0,0,0,0,0,0
+Ermland-Masuren,0,0,0,0,0,0
+Picardy,0,0,4,0,12,0
+Mauritanian Desert,0,0,0,0,0,0
+North Kashmir,0,0,0,0,0,0
+Salamanca,0,0,0,10,0,0
+Cordoba,0,0,0,0,0,0
+moldovia,0,0,0,0,0,0
+Asturias,0,0,0,0,0,0
+Valladolid,0,0,0,10,0,0
+Basque Country,0,0,0,0,8,0
+Guadalajara,0,0,0,0,0,0
+Eastern Aragon,0,0,0,0,0,0
+Santarem,0,0,0,0,0,20
+North Angola,0,0,0,0,0,0
+Istanbul,0,0,0,0,10,45
+Amasya,0,0,0,0,0,0
+Hatay,0,0,0,0,0,0
+Luxemburg,0,0,0,0,14,0
+Bocovina,0,0,0,0,0,0
+Van,0,0,0,0,0,0
+Moesia,1,0,0,0,0,0
+Kosovo,0,0,0,0,2,0
+Southern Serbia,0,0,0,0,0,0
+Herzegovina,0,0,7,0,0,0
+Northern Epirus,0,0,0,0,10,45
+French Basque Country,0,0,0,0,0,0
+Gdynia,0,0,0,0,0,0
+Riga,0,0,0,0,1,0
+Latgale,0,0,0,0,0,0
+Oltenia,0,0,0,0,0,0
+Zemgale,0,0,0,0,0,0
+Saaremaa,0,0,0,0,0,0
+Tallinn,0,0,0,0,0,0
+Rakvere,0,0,0,0,0,0
+Suduva,0,0,0,0,0,0
+Aukstaitija,0,0,0,0,0,0
+West Virginia,0,0,0,0,0,0
+Gobi,0,0,0,0,0,0
+Khovd,0,0,0,0,0,0
+Dornod,0,0,0,0,0,0
+Banat,0,0,4,0,0,0
+Khovsgol,0,0,0,0,0,0
+Chenchnya-Ingushetia,9,0,0,0,0,0
+Chukotka,0,0,0,0,0,0
+Karakalpakstan,0,0,0,0,0,0
+Yamalia,0,0,0,0,0,0
+Nenetsia,7,0,0,0,0,0
+Abkhazia,0,0,0,0,0,0
+Kabardino-Balkaria,0,0,0,0,0,17
+North Ossetia,0,0,0,0,0,8
+Volga Germany,0,0,0,6,14,0
+crisana,0,0,0,0,0,0
+Bukhara,0,0,0,0,0,0
+Khiva,0,0,0,0,0,0
+Dashhowuz,0,0,0,0,0,0
+Mari El,0,0,0,0,0,0
+Balta,0,0,0,0,0,0
+Haraghe,0,0,0,0,0,0
+Bale,0,0,0,0,0,0
+Sidamo,0,3,0,0,0,0
+Illubabor,0,2,0,0,0,0
+Welega,0,0,0,0,0,0
+Transylvania,0,0,0,0,3,0
+Gojjam,0,0,0,0,0,0
+Begemder,0,0,0,0,0,0
+Tigray,0,0,0,0,0,0
+Wello,0,0,0,0,0,0
+jubaland,0,0,0,0,0,0
+Jura Mountains,0,0,18,0,0,0
+Ticino,0,0,15,0,0,0
+Western Swiss Alps,0,0,0,0,0,0
+Voralberg,0,0,0,0,0,0
+Puglia,0,0,0,0,0,0
+Danzig,0,0,0,0,0,0
+Trentino,0,0,0,0,0,0
+Var,0,0,0,0,0,0
+Istria,0,0,0,0,0,0
+Ljubljana,0,0,0,0,0,0
+Jawf,0,0,0,0,0,0
+Tabuk,0,0,0,0,0,0
+Asir-Makkah,0,0,0,0,0,0
+Ha'il,0,0,0,0,0,0
+Najiran,0,0,0,0,0,0
+Dammam,3,0,0,0,0,0
+Poznan,0,0,0,0,0,0
+Cote-Nord,0,0,0,0,0,0
+Saguenay,0,0,0,0,0,0
+ouest du quebec,0,0,0,0,0,0
+Maurice,0,0,0,0,0,0
+Yukon,0,0,0,0,0,0
+Northern Saskatchewan,0,0,0,0,0,0
+Districts of Ontario,0,0,0,0,0,0
+Northern Manitoba,0,0,0,0,0,0
+Isan,0,0,0,0,0,0
+Lanna,0,0,0,0,0,0
+Lodz,0,0,0,0,0,0
+North West Australia,0,0,0,0,0,0
+South West Australia,0,0,0,0,0,0
+North Queensland,0,0,0,0,0,0
+South West Queensland,0,0,0,0,0,0
+Magadan,0,0,0,0,0,0
+Chukchi Peninsulay,0,0,0,0,0,0
+Udachny,0,0,0,0,0,0
+Verkhoyansk,0,0,0,0,0,0
+Khatangsky,0,0,0,0,0,0
+Kargopol,0,0,0,0,0,0
+Kielce,3,0,0,0,5,0
+Kotlas,0,0,0,0,0,0
+Karagandy,0,0,0,0,0,0
+Pavlodar,0,0,0,0,0,6
+Kassala,0,0,0,0,0,0
+Upper Nile,0,0,0,0,0,0
+Bahr al Ghazal,0,0,0,0,0,0
+Blue Nile,0,0,0,0,0,0
+South Darfur,0,0,0,0,0,0
+Lusambo,0,0,0,0,0,0
+Elisabethville,0,0,0,2,0,0
+Krakow,0,0,0,0,0,0
+Costermansville,0,3,0,0,0,0
+Zambesi,0,1,0,0,0,0
+South West Angola,0,0,0,0,0,0
+Karas,0,0,0,0,0,0
+Kuneme,0,0,0,0,0,0
+Kavango,0,0,0,0,0,0
+Manica e Sofala,0,0,0,0,0,0
+Zambezia-Mocambique,0,0,0,0,0,0
+Gao,0,0,0,0,0,0
+Kayes-Koulikoro,0,0,0,0,0,0
+Czechoslovakia,0,0,0,0,5,0
+Lwow,0,0,0,0,8,0
+Benue,0,0,0,0,0,0
+Borno,0,0,0,0,0,0
+Sokoto,0,0,0,0,0,0
+Garissa,0,0,0,0,0,0
+Nyanza-Rift Valley,0,0,0,0,0,0
+Mombasa,0,0,0,0,0,0
+Socotra,0,0,0,0,0,0
+Cairo,0,0,0,0,0,0
+Afar,0,0,0,0,0,0
+South Schleswig,0,0,0,0,0,0
+Tarnopol,0,0,0,0,0,0
+Bornholm,0,0,0,0,0,0
+Fyn,0,0,0,0,0,0
+Sonderjylland,0,0,0,0,0,0
+Ostergotland,0,0,0,0,3,0
+JanMayen,0,0,0,0,0,0
+Bohuslan,0,0,0,0,0,0
+Dalarna,0,0,0,0,20,0
+Jamtland,0,0,0,0,20,0
+Vasterbotten,0,0,0,35,39,15
+Varmland,0,0,0,0,4,0
+Lublin,0,0,0,0,0,0
+Opplandene,0,0,5,0,0,0
+Telemark,0,0,0,0,0,0
+Agder,0,0,5,0,0,0
+Helgeland,0,0,0,5,3,0
+Troms,0,0,0,5,0,0
+Finnmark,0,0,0,5,0,0
+Turku,0,0,0,0,0,0
+Hame,0,0,0,0,0,0
+Kyme,0,0,0,0,0,0
+Oulu,0,0,0,0,0,0
+Volhynian,0,0,0,0,0,0
+Mikkeli,0,0,0,0,0,0
+Cumbria,0,0,5,0,20,0
+Isle of Man,0,0,0,0,0,0
+Shetland,0,0,0,0,0,0
+Shkoder,0,0,1,0,0,1
+Ceara,0,0,0,0,0,0
+Pernambuco,0,0,0,0,0,0
+Piaui,0,0,0,0,0,0
+Para,0,10,0,0,0,0
+Amapa,0,0,4,0,0,0
+Polesie,0,0,0,0,0,0
+Acre,0,0,6,0,0,0
+Tocantins,0,0,0,0,0,0
+Rondonia,0,0,0,0,0,0
+Espirito Santo,0,0,0,0,1,0
+Parana,0,0,0,0,0,0
+Cerro Largo,0,0,0,0,2,0
+Paysandu,3,0,0,0,0,0
+Tacna,0,0,0,2,0,0
+Easter Island,0,0,0,0,0,0
+Aysen,1,0,1,0,0,0
+Nowogrodek,0,0,0,0,0,0
+Araucania,0,0,0,0,24,0
+Arica,0,0,0,14,0,0
+Atacama,0,0,0,0,0,0
+Tierra del Fuego,1,0,0,0,0,0
+Santa Cruz,3,0,0,0,0,0
+Chubut,4,0,0,0,0,0
+Santa Fe,6,0,0,0,0,0
+Formosa,0,0,0,5,2,0
+San Luis,0,0,0,0,0,0
+Los Andes,0,0,0,0,0,0
+Wilejka,0,0,0,0,0,0
+San Juan,0,0,0,0,0,0
+Deep Amazonas,0,0,0,0,0,0
+Deep Amazonas,0,0,0,0,0,0
+Deep Amazonas,0,0,0,0,0,0
+Deep Amazonas,0,0,0,0,0,0
+Deep Amazonas,0,0,0,0,0,0
+Deep Amazonas,0,0,0,0,0,0
+Deep Amazonas,0,0,0,0,0,0
+Deep Amazonas,0,0,0,0,0,0
+Rio Branco,0,0,0,0,0,0
+Bialystok,0,0,0,0,0,0
+Western Macedonia,0,0,6,0,0,20
+Northern Dobruja,0,0,0,0,0,0
+South Sudetenland,0,0,0,0,2,0
+Bacs,0,0,0,0,0,0
+South Transdanubia,1,0,20,0,0,0
+Burgenland,0,0,0,0,0,0
+Steiermark Karnten,0,0,1,0,15,0
+Antwerp,0,0,0,0,10,0
+Actual Baden,0,0,6,0,0,0
+Kaiser Wilhelms Land,0,0,0,0,0,0
+Mazurskie,0,0,0,0,0,0
+Ardennes,0,0,0,0,9,0
+Barotseland,0,0,0,4,0,16
+Madras States,0,2,0,0,0,0
+Deccan States,0,0,0,0,0,0
+Bastar,0,0,0,0,0,0
+Sikkim,0,0,0,0,0,0
+East Punjab,0,0,0,0,0,0
+Waziristan,0,0,0,0,0,0
+Baluchistan,0,0,0,0,0,0
+Bahawalpur,0,0,0,0,0,0
+Jutland,0,0,0,0,0,0
+Manipur,0,0,0,0,0,0
+Gwalior,0,0,0,0,0,0
+Province of Aden,0,0,0,0,0,0
+Kentung and Yawnghwe,0,0,0,0,0,0
+Tenasserim,0,0,0,0,0,0
+Pegu,0,0,0,0,0,0
+Irrawaddy,0,0,0,0,0,0
+Arakan,0,0,0,0,0,0
+Sagaing,0,0,0,0,0,0
+Federated Shan States,0,0,0,0,0,0
