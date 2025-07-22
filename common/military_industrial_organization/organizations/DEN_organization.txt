@@ -8,6 +8,23 @@
 
  #################### 
 #Ikke - Denmark doesn't do tanks!
+#thechtoto - they do now!
+
+DEN_frichs_organization = {
+    include = generic_tank_organization
+    icon = GFX_idea_den_frichs
+    allowed = { 
+        tag = DEN
+    }
+	equipment_type = {  
+        armor
+        train_equipment
+    }
+    research_categories = { 
+        armor
+        train_tech
+    }
+}
 
 #####################
 
@@ -138,9 +155,18 @@ DEN_burmeister_wain_organization = {
     include = generic_task_force_ship_organization
     icon = GFX_idea_DEN_burmeister_wain_organization
     allowed = { 
-        tag = DEN
+		OR = {
+			tag = DEN
+			tag = ICE
+		}
         has_dlc = "Arms Against Tyranny"
     } 
+	available = {
+		if = {
+			limit = { owner = { tag = ICE } }
+			owner = { is_subject_of = DEN }
+		}
+	}
 
     tree_header_text = {
         text = mio_header_systems
@@ -258,6 +284,14 @@ DEN_burmeister_wain_organization = {
             production_resource_penalty_factor = -0.05
         }
     }
+}
+
+DEN_aalborg_shipyard_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_den_aalborg_shipyard
+	allowed = { 
+		tag = DEN
+	}
 }
 
 ###########################
@@ -863,7 +897,7 @@ DEN_triangel_organization = {
         all_parents = { DEN_mio_trait_truck_mass_production }
 
         limit_to_equipment_type = {
-            mech_chassis
+            mechanized_equipment
         }
 
         production_bonus = {
@@ -886,7 +920,7 @@ DEN_triangel_organization = {
         
         limit_to_equipment_type = {
             motorized_equipment
-            mech_chassis
+            mechanized_equipment
         }
 
         equipment_bonus = {

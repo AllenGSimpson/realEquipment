@@ -1,0 +1,81 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+SLO_zts_martin_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_slo_zts_martin
+	allowed = { 
+		tag = SLO
+	}
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+SLO_dubnica_nas_vahom_plant_air_organization = {
+	name = SLO_dubnica_nas_vahom_plant
+	include = generic_multi_role_aircraft_organization
+	icon = GFX_idea_slo_dubnica_nad_vahom_plant
+	allowed = { 
+		tag = SLO
+	}
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+SLO_povazska_bystrica_plant = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_slo_povazska_bystrica_plant
+	allowed = { 
+		tag = SLO
+	}
+}
+
+SLO_dubnica_nas_vahom_plant = {
+	include = generic_artillery_organization
+	icon = GFX_idea_slo_dubnica_nad_vahom_plant
+	allowed = {	 
+		tag = SLO 
+	}
+}
+
+SLO_podpolianske_stojarne = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_slo_podpolianske_strojarne
+	allowed = {	 
+		tag = SLO 
+	}
+} 

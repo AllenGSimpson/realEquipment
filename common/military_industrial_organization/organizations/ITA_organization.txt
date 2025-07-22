@@ -10,7 +10,7 @@
 
 
 ITA_fiat_organization = {
-	include = generic_tank_organization
+	include = generic_mobile_tank_organization
 	icon = GFX_idea_fiat
 	
 	allowed = {	
@@ -27,6 +27,10 @@ ITA_fiat_organization = {
 			AND = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
+			}
+			AND = {
+				tag = BRA
+				has_dlc = "Trial of Allegiance"
 			}
 		}
 	}
@@ -75,6 +79,202 @@ ITA_fiat_organization = {
 				#is_in_faction_with = ITA
 				NOT = { has_completed_focus = BUL_nationalization }
 			}
+		}
+		IF = {
+			limit = {
+				FROM = {
+					original_tag = BRA
+				}
+			}
+			FROM = {
+				has_completed_focus = BRA_italian_trucks
+			}
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_new_industrialization_program
+		name = ITA_new_industrialization_program
+		icon = GFX_generic_mio_department_icon_tank_general_production
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = ITA_new_industrialization_program
+				has_completed_focus = ITA_strengthen_northern_industry
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_tankette_specialization
+		name = ITA_mio_trait_tankette_specialization
+		icon = GFX_generic_mio_department_icon_tank_light_tank_quality
+		special_trait_background = yes
+
+		position = { x=9 y=1 }
+
+		equipment_bonus = {
+			armor_value = -0.05
+			maximum_speed = 0.05
+			build_cost_ic = -0.03
+		}
+	}
+}
+
+ITA_ansaldo_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_ita_ansaldo
+	allowed = {
+		tag = ITA
+	}
+	
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ITA } }
+			}
+			FROM = { NOT = { has_war_with = ITA } }
+		}
+		ELSE = { #original_tag = ITA
+			FROM = {
+				controls_state = 158 #PIEMONT (Torino)
+			}
+			ITA_is_northern_designer = yes
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_brealthrough_tanks
+		name = ITA_mio_trait_brealthrough_tanks
+		icon = GFX_generic_mio_trait_icon_breakthrough
+		special_trait_background = yes
+		any_parent = { generic_mio_trait_power_traverse }
+
+		position = { x=2 y=1 }
+
+		equipment_bonus = {
+			breakthrough = 0.07
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_47_mm_long_gun
+		name = ITA_mio_trait_47_mm_long_gun
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_weapons
+		special_trait_background = yes
+		any_parent = { ITA_mio_trait_brealthrough_tanks }
+
+		position = { x=2 y=2 }
+
+		equipment_bonus = {
+			soft_attack = 0.07
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_modern_facilities
+		name = ITA_mio_trait_modern_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=3 y=0 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = ITA_modernize_ansaldo_facilities
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_design_team_assign_cost = -0.5
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_new_industrialization_program
+		name = ITA_new_industrialization_program
+		icon = GFX_generic_mio_department_icon_tank_general_production
+		special_trait_background = yes
+
+		position = { x=9 y=1 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = ITA_new_industrialization_program
+				has_completed_focus = ITA_strengthen_northern_industry
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+}
+
+ITA_ansaldo_assault_guns_organization = {
+	name = ITA_ansaldo_organization
+	include = generic_assault_guns_organization
+	icon = GFX_idea_ita_ansaldo
+	allowed = {
+		tag = ITA
+	}
+	
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ITA } }
+			}
+			FROM = { NOT = { has_war_with = ITA } }
+		}
+		ELSE = { #original_tag = ITA
+			FROM = {
+				controls_state = 158 #PIEMONT (Torino)
+			}
+			ITA_is_northern_designer = yes
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_modern_facilities
+		name = ITA_mio_trait_modern_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=3 y=0 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = ITA_modernize_ansaldo_facilities
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_design_team_assign_cost = -0.5
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
 		}
 	}
 	
@@ -346,6 +546,79 @@ ITA_cantieri_navali_tosi_organization = {
 	}
 }
 
+ITA_ansaldo_ships_organization = {
+	name = ITA_ansaldo_organization
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_ita_ansaldo
+	
+	allowed = {	
+		tag = ITA 
+	}
+	
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ITA } }
+			}
+			FROM = { NOT = { has_war_with = ITA } }
+		}
+		ELSE = { #original_tag = ITA
+			FROM = {
+				controls_state = 158 #PIEMONT (Torino)
+			}
+			ITA_is_northern_designer = yes
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_modern_facilities
+		name = ITA_mio_trait_modern_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=3 y=0 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = ITA_modernize_ansaldo_facilities
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_design_team_assign_cost = -0.5
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_new_industrialization_program
+		name = ITA_new_industrialization_program
+		icon = GFX_generic_mio_department_icon_ship_screen_ship_production
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = ITA_new_industrialization_program
+				has_completed_focus = ITA_strengthen_northern_industry
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+}
+
 
 
 ###########################
@@ -417,6 +690,20 @@ ITA_macchi_organization = {
 
 		production_bonus = {
 			production_capacity_factor = 0.1
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_strong_construction
+		name = ITA_mio_trait_strong_construction
+		icon = GFX_generic_mio_department_icon_plane_fighter_production
+		special_trait_background = yes
+
+		position = { x=1 y=0 }
+
+		equipment_bonus = {
+			air_agility = 0.05
+			build_cost_ic = 0.03
 		}
 	}
 }
@@ -526,6 +813,7 @@ ITA_caproni_organization = {
 	allowed = {	 
 		OR = {
 			tag = ITA 
+			tag = PRU # established in 1936 as Fábrica Nacional de Aviones Caproni
 			AND = {
 				tag = ETH 
 				has_dlc = "By Blood Alone"
@@ -594,6 +882,22 @@ ITA_piaggio_organization = {
 			controls_state = 158 #PIEMONTE
 		}
 		ITA_is_northern_designer = yes
+	}
+	
+	add_trait = {
+		token = ITA_mio_trait_p_xii_engines
+		name = ITA_mio_trait_p_xii_engines
+		icon = GFX_generic_mio_department_icon_plane_heavy_engine
+		special_trait_background = yes
+		
+		position = { x=0 y=0 }
+		
+		equipment_bonus = {
+			maximum_speed = 0.07
+		}
+		organization_modifier = {
+			military_industrial_organization_design_team_assign_cost = -0.15
+		}
 	}
 
 	add_trait = { 
@@ -724,7 +1028,7 @@ ITA_crda_cant_organization = {
 }
 
 ITA_fiat_aviazione_organization = {
-	include = generic_range_focused_aircraft_organization
+	include = generic_high_agility_fighter_aircraft_organization
 	icon = GFX_idea_ITA_fiat_aviazione
 	
 	allowed = {	 
@@ -744,11 +1048,19 @@ ITA_fiat_aviazione_organization = {
 			maximum_speed = 0.1
 		}
 	}
+	
+	add_trait = {
+		token = ITA_mio_trait_very_low_wing_loading
+		name = ITA_mio_trait_very_low_wing_loading
+		icon = GFX_generic_mio_trait_icon_air_agility
+		special_trait_background = yes
+		any_parent = { generic_mio_trait_cantilever_wing_structure }
+		
+		position = { x=5 y=1 }  
 
-	override_trait = {
-		token = generic_mio_trait_extra_cargo_doors
-
-		position = { x=8 y=0 }
+		equipment_bonus = {
+			air_agility = 0.07
+		}
 	}
 
 	add_trait = {
@@ -758,11 +1070,7 @@ ITA_fiat_aviazione_organization = {
 		special_trait_background = yes
 		
 		position = { x=0 y=1 }  
-		relative_position_id = generic_mio_trait_low_drag_wings
-		
-		any_parent = { generic_mio_trait_low_drag_wings }
-		
-		limit_to_equipment_type = { mio_cat_eq_all_small_plane }
+
 		equipment_bonus = {
 			air_agility = 0.05
 			air_attack = 0.03
@@ -870,8 +1178,9 @@ ITA_beretta_organization = {
 }
 
 ITA_lancia_organization = {
+	name = ITA_fiat_organization # Lancia is a bit stupid, FIAT was by far the main producer and deisgner of Italian military vehicles
 	include = generic_motorized_mechanized_organization
-	icon = GFX_idea_lancia
+	icon = GFX_idea_fiat
 	
 	allowed = {	 
 		OR = {
@@ -1058,14 +1367,13 @@ ITA_officine_meccaniche_organization = {
 
 	equipment_type = {
 		motorized_equipment
-		mech_chassis
+		mechanized_equipment
 		motorized_rocket_equipment
 		train_equipment
 	}
 	
 	research_categories = {
-		motorized_equipment
-		mot_rockets
+		mio_cat_tech_all_motorized_mechanized
 		train_equipment
 	}
 
@@ -1082,7 +1390,7 @@ ITA_officine_meccaniche_organization = {
 
 		limit_to_equipment_type = {
 			motorized_equipment
-			mech_chassis
+			mechanized_equipment
 			motorized_rocket_equipment
 		}
 	}
@@ -1092,14 +1400,14 @@ ITA_officine_meccaniche_organization = {
 
 		limit_to_equipment_type = {
 			motorized_equipment
-			mech_chassis
+			mechanized_equipment
 			motorized_rocket_equipment
 		}
 	}
 
 	add_trait = { 
 		token = ITA_mio_trait_new_ricostruzione_iundustriale_motorized
-		name = ITA_new_ricostruzione_industriale
+		name = ITA_new_ricostruzione_industriale_motorized
 		icon = GFX_generic_mio_department_icon_motorized_production
 		special_trait_background = yes
 
@@ -1108,8 +1416,7 @@ ITA_officine_meccaniche_organization = {
 		
 		available = {
 			FROM = {
-				has_completed_focus = ITA_new_industrialization_program
-				has_completed_focus = ITA_strengthen_northern_industry
+				has_completed_focus = ITA_new_ricostruzione_industriale
 			}
 		}
 
@@ -1119,7 +1426,7 @@ ITA_officine_meccaniche_organization = {
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
@@ -1129,7 +1436,7 @@ ITA_officine_meccaniche_organization = {
 
 	add_trait = { 
 		token = ITA_mio_trait_new_ricostruzione_iundustriale_mechanized
-		name = ITA_new_ricostruzione_industriale
+		name = ITA_new_ricostruzione_industriale_mechanized
 		icon = GFX_generic_mio_department_icon_mechanized_production
 		special_trait_background = yes
 
@@ -1138,17 +1445,16 @@ ITA_officine_meccaniche_organization = {
 		
 		available = {
 			FROM = {
-				has_completed_focus = ITA_new_industrialization_program
-				has_completed_focus = ITA_strengthen_northern_industry
+				has_completed_focus = ITA_new_ricostruzione_industriale
 			}
 		}
 
 		limit_to_equipment_type = {
-			mech_chassis
+			mechanized_equipment
 		}
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = 0.1
+			military_industrial_organization_research_bonus = 0.05
 		}
 
 		production_bonus = {
@@ -1158,8 +1464,82 @@ ITA_officine_meccaniche_organization = {
 
 	add_trait = { 
 		token = ITA_mio_trait_new_ricostruzione_iundustriale_train
-		name = ITA_new_ricostruzione_industriale
+		name = ITA_new_ricostruzione_industriale_train
 		icon = GFX_military_industrial_organization_train
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = ITA_new_ricostruzione_industriale
+			}
+		}
+
+		limit_to_equipment_type = {
+			train_equipment
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+}
+
+ITA_fiat_ansaldo_organization = {
+	include = generic_armored_car_organization
+	icon = GFX_idea_ita_ansaldo
+	allowed = {	
+		tag = ITA
+		has_dlc = "La Resistance"
+	}
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ITA } }
+			}
+			FROM = { NOT = { has_war_with = ITA } }
+		}
+		ELSE = { #original_tag = ITA
+			FROM = {
+				controls_state = 158 #PIEMONT (Torino)
+			}
+			ITA_is_northern_designer = yes
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_modern_facilities
+		name = ITA_mio_trait_modern_facilities
+		icon = GFX_generic_mio_trait_icon_production_capacity
+		special_trait_background = yes
+
+		position = { x=3 y=0 }
+		
+		available = {
+			FROM = {
+				has_completed_focus = ITA_modernize_ansaldo_facilities
+			}
+		}
+
+		organization_modifier = {
+			military_industrial_organization_design_team_assign_cost = -0.5
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+	
+	add_trait = { 
+		token = ITA_mio_trait_new_industrialization_program
+		name = ITA_new_industrialization_program
+		icon = GFX_generic_mio_department_icon_armored_car_production
 		special_trait_background = yes
 
 		position = { x=9 y=0 }
@@ -1171,10 +1551,6 @@ ITA_officine_meccaniche_organization = {
 			}
 		}
 
-		limit_to_equipment_type = {
-			train_equipment
-		}
-
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.1
 		}
@@ -1182,5 +1558,14 @@ ITA_officine_meccaniche_organization = {
 		production_bonus = {
 			production_capacity_factor = 0.1
 		}
+	}
+}
+
+ITA_agusta_organization = {
+	include = generic_helicopter_organization
+	icon = GFX_idea_ita_agusta
+	
+	allowed = {	
+		original_tag = ITA
 	}
 }
