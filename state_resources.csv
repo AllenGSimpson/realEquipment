@@ -1,122 +1,298 @@
-State,ID,Oil,Rubber,Aluminum,Tungsten,Steel,Chromium
+State,ID,Oil (bbl/day),Rubber,Aluminum,Tungsten,Steel (t/day),Chromium
+Texas,375,1147000,0,50,0,0,0
+California,378,736000,0,8,0,0,0
+baku,229,433000,0,0,0,0,0
+Oklahoma,374,403000,0,20,0,0,0
+Venezuela,307,380000,0,0,0,0,0
+Kansas,383,300000,0,0,0,0,0
+Romania,46,177000,0,0,0,0,0
+Khuzestan,413,160000,0,0,0,0,0
+Louisiana,371,151000,0,0,0,0,0
+Iraq,291,105000,0,0,0,0,0
+Grozny,232,63000,0,0,0,0,0
+New Mexico,376,42000,0,30,0,0,0
+Colorado,382,38000,0,0,0,0,0
+Monagas,489,35000,0,0,0,0,0
+Sumatra,672,30000,150,28,0,0,0
+La Libertad,493,15000,0,0,0,0,0
+Peru,303,14000,0,0,0,0,0
+Siberia 4,577,13000,0,0,0,0,0
+Krasodar,234,12000,0,0,17,0,0
+British Borneo,333,12000,40,0,0,0,0
+Hormozgan,411,12000,0,0,0,0,7
+Trinidad,691,12000,0,0,0,0,0
+Dutch East Indies,335,10000,140,0,0,0,0
+Fars,412,10000,0,0,0,0,0
+Veracruz,477,9000,0,0,0,0,0
+Tamaulipas,479,9000,0,0,0,0,0
+Chenchnya-Ingushetia,821,9000,0,0,0,0,0
+Western Kiev,202,8000,0,7,0,0,0
+Oaxaca,476,8000,0,0,0,0,0
+Coahuila,480,8000,0,0,0,0,0
+Mosul,676,8000,0,0,0,0,0
+North Dakota,389,7000,0,0,0,57600,0
+Torzhok,262,7000,0,0,0,0,0
+Nenetsia,825,7000,0,0,0,0,0
+Michigan,393,6000,0,0,0,10598400,0
+Sourthern Urals,582,6000,0,0,0,4608000,0
+Western Indian States,428,6000,0,0,0,0,0
+Santa Fe,956,6000,0,0,0,0,0
+Arizona,377,5000,0,8,0,1411200,0
+Dutch Borneo,334,5000,75,0,0,0,0
+Assam,432,5000,0,0,0,0,0
+Arab UK 1,658,5000,0,0,0,0,0
+Albania,44,4000,0,1,0,0,1
+Nikopol,226,4000,0,0,0,0,0
+Chubut,955,4000,0,0,0,0,0
+Kielce,88,3000,0,0,0,0,0
+Baluchistan States,444,3000,0,0,0,0,0
+Patagonia,512,3000,0,0,0,0,0
+South Sakhalin,537,3000,0,0,0,0,0
+Dammam,859,3000,0,0,0,0,0
+Paysandu,946,3000,0,0,0,0,0
+Santa Cruz,954,3000,0,0,0,0,0
+Al Anbar,1010,3000,0,0,0,0,0
+Austria,4,2000,0,0,0,0,0
+Ost - Hannover,59,2000,0,0,0,0,0
+Moravia,75,2000,0,0,0,0,0
+Ecuador,305,2000,0,0,0,0,0
+Southern Chile,507,2000,0,0,0,0,0
+Mesopotamia,510,2000,3,0,0,0,0
+China 1,601,2000,0,0,0,0,0
+Interior Oman,1015,2000,0,0,0,0,0
+Yemen,293,1000,0,0,0,0,0
+Oman,294,1000,0,0,0,0,0
+Panama,304,1000,0,0,0,0,0
+Alexandria,447,1000,0,0,3,0,0
+British Columbia,473,1000,0,0,0,0,0
+Moesia,801,1000,0,0,0,0,0
+Aysen,949,1000,0,1,0,0,0
+Tierra del Fuego,953,1000,0,0,0,0,0
+South Transdanubia,974,1000,0,20,0,0,0
+Musamdam,1013,1000,0,0,0,0,0
+Minnesota,391,0,0,0,0,33984000,0
+Moselland,51,0,0,0,0,22089600,0
+Rhineland,42,0,0,14,0,13392000,0
+Pennsylvania,360,0,0,0,0,12902400,0
+Vasterbotten,918,0,0,0,35,12902400,15
+Westfalen,57,0,0,0,0,9705600,0
+Orel,222,0,0,0,0,8208000,8
+Wisconsin,394,0,0,0,0,6307200,0
+Alcase,28,0,0,0,0,5529600,0
+Yorkshire,130,0,0,0,0,4060800,0
+Czechoslovakia,9,0,0,0,0,3600000,0
+Sachsen,65,0,0,0,0,3513600,0
+Western Algeria,459,0,0,0,0,3312000,0
+Wallonie,34,0,0,0,0,3110400,0
+Oberschlesien,67,0,0,6,0,2908800,0
+Nevada,379,0,0,25,32,2908800,0
+Tennesse,368,0,0,0,0,2764800,0
+West Midlands,128,0,0,0,0,2505600,0
+Liaotung,716,0,0,0,0,1728000,0
+Turkey,49,0,0,0,0,1699200,11
+Pas de Calais,29,0,0,8,0,1497600,0
+USA,261,0,0,9,0,1440000,0
+North-west England,132,0,0,2,0,1209600,0
+Spanish Africa,290,0,0,0,0,1152000,0
+Guerrero,485,0,0,0,0,1152000,0
+Guangdong,593,0,0,0,15,1152000,3
+Sierra Leone,700,0,0,0,0,1065600,0
+Orissa,426,0,0,1,0,1008000,20
+Calcutta,431,0,0,0,11,1008000,0
+Singapore,336,0,342,15,189,950400,0
+Alcase Lorraine,17,0,0,0,0,806400,0
+China 6,606,0,0,0,0,576000,0
+Katowice,762,0,0,7,0,547200,0
+Northern England,131,0,0,0,0,518400,0
+Guangzhou,592,0,0,0,8,460800,3
+Kursk Area,220,0,0,0,0,432000,0
+Tunisia,458,0,0,0,0,432000,0
+Nanning,594,0,0,0,11,316800,3
+Mexico,277,0,0,0,0,288000,0
+Gran Chaco,509,0,0,0,30,288000,0
+North Korea,527,0,0,0,28,259200,0
+Guanxi,599,0,0,0,15,172800,3
+Cuba,315,0,0,0,0,115200,90
+Formosa,957,0,0,0,5,115200,0
+Estonia,13,0,0,0,0,86400,0
+Kaunas,189,0,0,0,0,86400,0
+Latvia,12,0,0,0,0,57600,0
+Idaho,387,0,0,0,18,57600,1
+South Dakota,390,0,0,0,0,57600,0
+Riga,808,0,0,0,0,57600,0
+Nagasaki,528,0,0,0,0,6850,52
+Akita,533,0,0,0,0,2190,0
+Hokkaido,536,0,0,0,0,1920,0
+Osaka,531,0,0,3,0,1640,0
+Japan,282,0,0,1,0,820,0
+Hiroshima,529,0,0,0,0,300,0
+Niigata,534,0,0,0,0,300,0
+Nagoya,532,0,0,0,0,270,0
 France,1,0,0,0,0,0,0
+Italy,2,0,0,0,0,0,0
+Swiss Plateau,3,0,0,0,0,0,0
+Germany,5,0,0,0,0,0,0
+Belgium,6,0,0,0,0,0,0
+Holland,7,0,0,0,0,0,0
+Luxemburg,8,0,0,0,0,0,0
 Poland,10,0,0,0,0,0,0
+Kaunas,11,0,0,0,0,0,0
+Brittany,14,0,0,0,0,0,0
+Normandy,15,0,0,0,0,0,0
+Ile de France,16,0,0,0,0,0,0
+Champagne,18,0,0,0,0,0,0
+Aquitaine,19,0,0,11,0,0,0
+Franche-comte,20,0,0,35,0,0,0
+Bouches-du-Rhone,21,0,0,60,0,0,0
+Roussillion,22,0,0,50,0,0,0
+Poitou,23,0,0,0,0,0,0
+Centre,24,0,0,0,0,0,0
+Limousin,25,0,0,0,0,0,0
+Bourgogne,26,0,0,0,0,0,0
+Champagne2,27,0,0,11,0,0,0
+Loire,30,0,0,0,0,0,0
+Midi Pyrenees,31,0,0,0,0,0,0
+Rhone Alpes,32,0,0,30,0,0,0
+Centre sud,33,0,0,0,0,0,0
+Gelderland,35,0,0,0,0,0,0
+Friesland,36,0,0,0,0,0,0
+Denmark,37,0,0,0,0,0,0
+Sweden,38,0,0,0,0,0,0
+South Tyrol,39,0,0,14,0,0,0
+USSR,40,0,0,0,0,0,0
+Madrid,41,0,0,1,0,0,0
+Hungary,43,0,0,40,0,0,0
+Yugoslavia,45,0,0,0,0,0,0
+Greece,47,0,0,30,10,0,12
+Bulgaria,48,0,0,2,0,0,0
+Baden,50,0,0,6,0,0,0
+Wuttemberg,52,0,0,18,0,0,0
+Oberbayern,53,0,0,0,0,0,0
+Bayreuth,54,0,0,0,0,0,0
+Nassau,55,0,0,0,0,0,0
+Weser-Ems,56,0,0,0,0,0,0
+Schleswig - Holstein,58,0,0,0,0,0,0
+Sud-Hannover,60,0,0,0,3,0,3
+Mecklenburg,61,0,0,0,0,0,0
+Pommern,62,0,0,0,0,0,0
+WestPrussen,63,0,0,6,0,0,0
+Brandenburg,64,0,0,0,0,0,0
+Niederschlesien,66,0,0,16,0,0,0
+Wartheland,68,0,0,15,0,0,0
+Sudatenland,69,0,0,0,0,0,0
+Slovakia,70,0,0,0,1,0,0
+East Slovakia,71,0,0,0,0,0,0
+Zaolzie,72,0,0,0,0,0,0
+Carpathian Ruthenia,73,0,0,0,0,0,0
+East Sudatenland,74,0,0,0,0,0,0
+Northern Transylvania,76,0,0,0,0,0,0
+Dobrogea,77,0,0,0,0,0,0
+Bessarabia,78,0,0,0,0,0,0
+moldovia,79,0,0,0,0,0,0
+Bocovina,80,0,0,0,0,0,0
+Oltenia,81,0,0,0,0,0,0
+Banat,82,0,0,4,0,0,0
+crisana,83,0,0,0,0,0,0
+Transylvania,84,0,0,0,0,0,0
+Danzig,85,0,0,0,0,0,0
+Poznan,86,0,0,0,0,0,0
+Lodz,87,0,0,0,0,0,0
+Krakow,89,0,0,0,0,0,0
+Lwow,90,0,0,0,0,0,0
+Tarnopol,91,0,0,0,0,0,0
+Lublin,92,0,0,0,0,0,0
+Volhynian,93,0,0,0,0,0,0
+Polesie,94,0,0,0,0,0,0
+Nowogrodek,95,0,0,0,0,0,0
+Wilejka,96,0,0,0,0,0,0
+Bialystok,97,0,0,0,0,0,0
+Mazurskie,98,0,0,0,0,0,0
+Jutland,99,0,0,0,0,0,0
 Iceland,100,0,0,0,0,0,0
-East Azerbaijan,1000,0,0,0,0,6,0
-Kurdistan,421,0,0,0,0,0,0
-Yazd,1002,0,0,0,0,0,0
-South Khorasan,415,0,0,0,0,0,0
-North Khorasan,1004,0,0,0,0,0,0
-Qataghan,1005,0,0,0,0,0,3
-Khyber Pass,1006,0,0,0,0,0,0
-Maymanah,1007,0,0,0,0,2,0
-Qandahar,1008,0,0,0,0,0,0
-Farah,1009,0,0,0,0,0,7
 Greenland,101,0,0,10,0,0,0
-Al Anbar,1010,3,0,0,0,0,0
-Al Basrah,1011,0,0,7,0,4,0
-Kalat,1012,0,0,0,0,0,0
-Musamdam,1013,1,0,0,0,0,0
-Bahrain,1014,0,0,0,0,0,0
-Interior Oman,1015,2,0,0,0,0,0
-Dhofar,1016,0,0,0,0,0,0
 North-Eastern Slovenia,102,0,0,0,0,0,0
 Croatia,103,0,0,0,0,0,0
 Bosnia,104,0,0,7,0,0,0
 Montenegro,105,0,0,70,0,0,20
 Macedonia,106,0,0,10,0,0,50
 Kosavo,107,0,0,0,0,0,0
-Eastern Serbia,108,0,0,0,0,3,0
+Eastern Serbia,108,0,0,0,0,0,0
 Eastern Croatia,109,0,0,0,0,0,0
-Kaunas,11,0,0,0,0,0,0
 Norway,110,0,0,0,0,0,0
 Uusima,111,0,0,0,0,0,0
 Lisbon,112,0,0,0,32,0,0
-Ireland,113,0,0,0,0,2,0
+Ireland,113,0,0,0,0,0,0
 Sardinia,114,0,0,0,0,0,0
 Sicily,115,0,0,0,0,0,0
 Malta,116,0,0,0,0,0,0
-Napoli,117,0,0,10,0,15,0
+Napoli,117,0,0,10,0,0,0
 Gibralter,118,0,0,0,0,0,0
 Northern Ireland,119,0,0,2,0,0,0
-Latvia,12,0,0,0,0,1,0
 Scottish Highlands,120,0,0,9,16,0,1
 Scottish Lowlands,121,0,0,0,0,0,0
-Wales,122,0,0,3,0,11,0
+Wales,122,0,0,3,0,0,0
 Cornwall,123,0,0,0,0,0,0
 Gotland,124,0,0,0,0,0,0
 East Anglia,125,0,0,0,0,0,0
 Greater London Area,126,0,0,0,0,0,0
 South-east England,127,0,0,0,0,0,0
-West Midlands,128,0,0,0,0,27,0
-East Midlands,129,0,0,0,0,11,0
-Estonia,13,0,0,0,0,2,0
-Yorkshire,130,0,0,0,0,71,0
-Northern England,131,0,0,0,0,18,0
-North-west England,132,0,0,2,0,31,0
-Strathclyde,133,0,0,0,0,21,0
+East Midlands,129,0,0,0,0,0,0
+Strathclyde,133,0,0,0,0,0,0
 Connaught,134,0,0,0,0,0,0
 Munster,135,0,0,0,0,0,0
 Aberdeenshire,136,0,0,3,4,0,0
 Crimea,137,0,0,0,0,0,0
 Skane,138,0,0,0,0,0,0
-Smaland,139,0,0,0,0,4,0
-Brittany,14,0,0,0,0,0,0
-Vaster Gotland,140,0,0,0,0,2,0
-Sodermanland,141,0,0,2,0,24,0
+Smaland,139,0,0,0,0,0,0
+Vaster Gotland,140,0,0,0,0,0,0
+Sodermanland,141,0,0,2,0,0,0
 Vestlandet,142,0,0,10,0,0,1
 Midt-Noreg,143,0,0,0,0,0,0
-Nord-Noreg,144,0,0,0,0,6,0
+Nord-Noreg,144,0,0,0,0,0,0
 Aland,145,0,0,0,0,0,0
 Karelia,146,0,0,0,0,0,0
 Salla,147,0,0,0,0,0,0
-Lappi,148,0,0,0,0,7,2
+Lappi,148,0,0,0,0,0,2
 Vaasa,149,0,0,0,0,0,0
-Normandy,15,0,0,0,0,21,0
-Kuopio,150,0,0,0,0,3,0
+Kuopio,150,0,0,0,0,0,0
 Eastern Swiss Alps,151,0,0,15,0,0,0
-Upper Austria,152,0,0,1,0,15,0
+Upper Austria,152,0,0,1,0,0,0
 Tyrol,153,0,0,0,0,0,0
 Southern plain,154,0,0,0,0,0,0
 Western Hungary,155,0,0,40,0,0,0
 Calabria,156,0,0,0,0,0,0
 Abruzzo,157,0,0,0,0,0,0
-Piedmont,158,0,0,16,1,24,2
+Piedmont,158,0,0,16,1,0,2
 Lombardy,159,0,0,0,0,0,0
-Ile de France,16,0,0,0,0,0,0
-Veneto,160,0,0,11,0,20,0
+Veneto,160,0,0,11,0,0,0
 Emilia Romagna,161,0,0,9,0,0,0
 Tuscany,162,0,0,0,0,0,0
 Dalmatia,163,0,0,0,0,0,0
 Dodecanese,164,0,0,0,0,0,0
 Catalonia,165,0,0,0,0,0,0
-Western Aragon,166,0,0,0,0,15,0
+Western Aragon,166,0,0,0,0,0,0
 Valencia,167,0,0,0,0,0,0
 Murcia,168,0,0,0,0,0,0
 Sevilla,169,0,0,0,0,0,0
-Alcase Lorraine,17,0,0,0,0,28,0
 Extremadura,170,0,0,0,4,0,0
 Galicia,171,0,0,0,0,0,0
 Navarre,172,0,0,0,0,0,0
-Granada,173,0,0,0,0,8,0
+Granada,173,0,0,0,0,0,0
 Leon,174,0,0,0,10,0,0
 Ciudad Real,175,0,0,0,0,0,0
 Burgos,176,0,0,0,0,0,0
 Balearic Islands,177,0,0,0,0,0,0
 Canary islands,178,0,0,0,0,0,0
 Beja,179,0,0,0,0,0,0
-Champagne,18,0,0,0,0,0,0
 Porto,180,0,0,0,0,0,0
 Guarda,181,0,0,0,95,0,0
 Crete,182,0,0,0,0,0,0
 Cyprus,183,0,0,0,0,0,3
 Thrace,184,0,0,0,0,0,11
-Epirus,185,0,0,0,0,14,14
+Epirus,185,0,0,0,0,0,14
 Peloponnese,186,0,0,0,0,0,0
 Aegean Islands,187,0,0,0,0,0,7
 Memel,188,0,0,0,0,0,0
-Kaunas,189,0,0,0,0,2,0
-Aquitaine,19,0,0,11,0,14,0
 Kurzeme,190,0,0,0,0,0,0
 Tartu,191,0,0,0,0,0,0
 Odessa,192,0,0,0,0,0,0
@@ -127,11 +303,8 @@ Kherson,196,0,0,0,0,0,15
 Mykolaiv,197,0,0,0,0,0,0
 Vinnytsia,198,0,0,0,0,0,0
 Khmelnytskyi,199,0,0,0,0,0,0
-Italy,2,0,0,0,0,0,0
-Franche-comte,20,0,0,35,0,32,0
 Rivne,200,0,0,0,0,0,0
 Zhytomyr,201,0,0,0,0,0,0
-Western Kiev,202,8,0,7,0,0,0
 Cherkasy,203,0,0,0,0,0,0
 Brest,204,0,0,0,0,0,0
 Hrodna,205,0,0,0,0,0,0
@@ -139,52 +312,41 @@ Minsk,206,0,0,0,0,0,0
 Viciebsk,207,0,0,0,0,0,0
 Pskov,208,0,0,0,0,0,0
 Smolensk,209,0,0,0,0,0,0
-Bouches-du-Rhone,21,0,0,60,0,0,0
 Bryansk,210,0,0,0,0,0,0
 Burgas,211,0,0,0,0,0,0
 Plovdiv,212,0,0,0,0,0,1
-Murmansk,213,0,0,0,0,14,12
+Murmansk,213,0,0,0,0,0,12
 Arkhangelsk,214,0,0,0,0,0,0
-Eastern Karelia,215,0,0,0,0,30,0
+Eastern Karelia,215,0,0,0,0,0,0
 Below Zero,216,0,0,0,0,0,0
 Stalingrad Area,217,0,0,0,0,0,0
 Rostov Area,218,0,0,0,0,0,0
-Moscow Area,219,0,0,0,0,16,0
-Roussillion,22,0,0,50,0,27,0
-Kursk Area,220,0,0,0,0,0,0
-Kharkov,221,0,0,0,0,33,0
-Orel,222,0,0,0,0,40,8
+Moscow Area,219,0,0,0,0,0,0
+Kharkov,221,0,0,0,0,0,0
 tula,223,0,0,0,0,0,0
 Bryansk,224,0,0,0,0,0,0
 Glukhov,225,0,0,0,0,0,0
-Nikopol,226,4,0,0,0,0,0
 Stalino,227,0,0,0,0,0,0
 Taganrog,228,0,0,0,0,0,0
-baku,229,70,0,0,0,0,0
-Poitou,23,0,0,0,0,12,0
 Armenia,230,0,0,0,0,0,0
 Georgia,231,0,0,0,0,0,0
-Grozny,232,10,0,0,0,0,0
 Caucasus Mountains,233,0,0,0,0,0,18
-Krasodar,234,12,0,0,17,0,0
 Stravropol,235,0,0,0,0,0,14
 Astrakhan,236,0,0,0,0,0,0
 Elista,237,0,0,0,0,0,0
 volgodonsk,238,0,0,0,0,0,0
 Saratov,239,0,0,0,0,0,0
-Centre,24,0,0,0,0,0,0
 Voronezh,240,0,0,0,0,0,0
 Pochep,241,0,0,0,0,0,0
 Smolensk,242,0,0,0,0,0,0
 Roslavl,243,0,0,0,0,0,0
 Gatchina,244,0,0,0,0,0,0
 Donetsk,245,0,0,0,0,0,0
-Rzhev,246,0,0,0,0,16,0
+Rzhev,246,0,0,0,0,0,0
 Tver,247,0,0,0,0,0,0
 Yaroslavl,248,0,0,0,0,0,0
-Kazan,249,0,0,0,0,25,0
-Limousin,25,0,0,0,0,0,0
-ulyanovsky,250,0,0,0,0,14,0
+Kazan,249,0,0,0,0,0,0
+ulyanovsky,250,0,0,0,0,0,0
 Samara,251,0,0,0,0,0,0
 Nizhny Novogrod,252,0,0,0,0,0,0
 Ivanovo,253,0,0,0,0,0,0
@@ -194,32 +356,25 @@ Cheboksary,256,0,0,0,0,0,0
 Livny,257,0,0,0,0,0,7
 lipetsk,258,0,0,0,0,0,0
 Liski,259,0,0,0,0,0,0
-Bourgogne,26,0,0,0,0,0,0
 Borisoglbsk,260,0,0,0,0,0,0
-USA,261,0,0,9,0,28,0
-Torzhok,262,7,0,0,0,0,0
 Veliky Novogrod,263,0,0,0,0,0,0
 Tikhvin,264,0,0,0,0,0,0
 Mikhaylovka,265,0,0,0,0,0,0
 Persia,266,0,0,2,2,0,0
-Afghanistan,267,0,0,0,3,2,2
+Afghanistan,267,0,0,0,3,0,2
 French Somaliland,268,0,0,0,0,0,0
 British Somaliland,269,0,0,0,0,0,0
-Champagne2,27,0,0,11,0,0,0
 Pitcarin Island,270,0,0,0,0,0,0
 ethiopia,271,0,2,0,0,0,0
-French Africa,272,0,0,0,0,3,0
+French Africa,272,0,0,0,0,0,0
 Italian Africa,273,0,0,0,0,0,0
-British Africa,274,0,0,0,8,8,4
-South Africa,275,0,0,0,0,11,53
+British Africa,274,0,0,0,8,0,4
+South Africa,275,0,0,0,0,0,53
 Canada,276,0,0,0,0,0,0
-Mexico,277,0,0,0,0,6,0
 Argentina,278,0,0,0,0,0,0
-Chile,279,0,0,0,8,14,4
-Alcase,28,0,0,0,0,42,0
+Chile,279,0,0,0,8,0,4
 Brazil,280,0,0,0,0,0,0
 India,281,0,0,0,0,0,0
-Japan,282,0,0,1,0,0,0
 China,283,0,0,0,1,0,0
 New Zealand,284,0,0,0,0,0,0
 Austraila,285,0,0,0,0,0,0
@@ -227,41 +382,27 @@ Indochina,286,0,55,0,0,0,0
 Sinkiang,287,0,0,0,0,0,0
 Magwe,288,0,3,0,92,0,0
 Siam,289,0,8,0,2,0,0
-Pas de Calais,29,0,0,8,0,24,0
-Spanish Africa,290,0,0,0,0,40,0
-Iraq,291,15,0,0,0,0,0
 Saudi Arabia,292,0,0,0,0,0,0
-Yemen,293,1,0,0,0,0,0
-Oman,294,1,0,0,0,0,0
 Congo,295,0,0,0,0,0,0
 Portugal Africa,296,0,1,0,0,0,0
 Belgian Africa,297,0,0,0,0,0,0
 Liberia,298,0,6,0,0,0,0
 Falkand Islands,299,0,0,0,0,0,0
-Swiss Plateau,3,0,0,0,0,0,0
-Loire,30,0,0,0,0,0,0
-Uruguay,300,0,0,0,0,2,0
+Uruguay,300,0,0,0,0,0,0
 paraguay,301,0,0,0,0,0,0
-bolivia,302,0,0,0,60,2,0
-Peru,303,14,0,0,0,0,0
-Panama,304,1,0,0,0,0,0
-Ecuador,305,2,0,0,0,0,0
+bolivia,302,0,0,0,60,0,0
 Colombia,306,0,0,0,0,0,0
-Venezuela,307,41,0,0,0,0,0
 Britain SA,308,0,0,0,0,0,0
 Dutch SA,309,0,0,60,0,0,0
-Midi Pyrenees,31,0,0,0,0,0,0
 French SA,310,0,0,0,0,0,0
 BritMex,311,0,0,0,0,0,0
 Honduras,312,0,0,0,0,0,1
 Guatemala,313,0,0,0,0,0,4
 El Salvador,314,0,0,0,0,0,1
-Cuba,315,0,0,0,0,3,90
 Costa Rica,316,0,0,0,0,0,1
 Nicaragua,317,0,0,0,0,0,1
 Haiti,318,0,0,0,0,0,2
 Dominican Republic,319,0,0,0,0,0,1
-Rhone Alpes,32,0,0,30,0,16,0
 French India,320,0,0,0,0,0,0
 Goa,321,0,0,0,0,0,0
 Tibet,322,0,0,0,2,0,0
@@ -272,18 +413,12 @@ HongKong,326,0,0,0,0,0,0
 Philippines,327,0,0,0,0,0,0
 Manchukuo,328,0,0,7,0,0,0
 Tannu Tuva,329,0,0,0,0,0,2
-Centre sud,33,0,0,0,0,0,0
-Mongolia,330,0,0,0,0,2,3
+Mongolia,330,0,0,0,0,0,3
 Newfoundland,331,0,0,0,0,0,0
 Labrador,332,0,0,0,0,0,0
-British Borneo,333,12,40,0,0,0,0
-Dutch Borneo,334,5,75,0,0,0,0
-Dutch East Indies,335,10,140,0,0,0,0
-Singapore,336,0,342,15,189,20,0
 Faroe Islands,337,0,0,0,0,0,0
-Gloucestershire,338,0,0,0,0,9,0
+Gloucestershire,338,0,0,0,0,0,0
 Izmir,339,0,0,0,0,0,50
-Wallonie,34,0,0,0,0,22,0
 Bursa,340,0,0,0,0,0,39
 Edirne,341,0,0,0,0,0,0
 Antalya,342,0,0,0,0,0,35
@@ -291,10 +426,9 @@ Afyon,343,0,0,0,0,0,25
 Adana,344,0,0,0,0,0,0
 Mersin,345,0,0,0,0,0,0
 Konya,346,0,0,0,0,0,0
-Izmit,347,0,0,0,0,9,19
+Izmit,347,0,0,0,0,0,19
 Kayseri,348,0,0,0,0,0,32
 Silvas,349,0,0,0,0,0,0
-Gelderland,35,0,0,0,0,0,0
 Diyarbekir,350,0,0,0,0,0,0
 Vologda,351,0,0,0,0,0,0
 Hakkari,352,0,0,0,0,0,0
@@ -302,11 +436,9 @@ Erzurum,353,0,0,0,0,0,0
 Trabzon,354,0,0,0,0,0,0
 Samsun,355,0,0,0,0,0,0
 Sinop,356,0,0,0,0,0,0
-New England,357,0,0,0,0,12,0
-New York,358,0,0,0,0,13,0
+New England,357,0,0,0,0,0,0
+New York,358,0,0,0,0,0,0
 New Jersey,359,0,0,0,0,0,0
-Friesland,36,0,0,0,0,0,0
-Pennsylvania,360,0,0,0,0,44,0
 Maryland,361,0,0,0,0,0,0
 Virginia,362,0,0,0,0,0,0
 North Carolina,363,0,0,0,0,0,0
@@ -314,45 +446,24 @@ South Carolina,364,0,0,0,0,0,0
 Georgia,365,0,0,0,0,0,0
 Florida,366,0,0,0,0,0,0
 Alabama,367,0,0,0,0,0,0
-Tennesse,368,0,0,0,0,60,0
 Kentucky,369,0,0,0,0,0,0
-Denmark,37,0,0,0,0,0,0
 Mississippi,370,0,0,0,0,0,0
-Louisiana,371,44,0,0,0,0,0
 Arkansas,372,0,0,14,0,0,0
 Missouri,373,0,0,12,0,0,0
-Oklahoma,374,60,0,20,0,0,0
-Texas,375,320,0,50,0,0,0
-New Mexico,376,14,0,30,0,0,0
-Arizona,377,5,0,8,0,20,0
-California,378,180,0,8,0,0,0
-Nevada,379,0,0,25,32,70,0
-Sweden,38,0,0,0,0,0,0
 Utah,380,0,0,0,76,0,0
 Wyoming,381,0,0,0,0,0,0
-Colorado,382,14,0,0,0,0,0
-Kansas,383,30,0,0,0,0,0
 Nebraska,384,0,0,0,0,0,0
 Oregon,385,0,0,0,0,0,0
 Washington,386,0,0,0,0,0,0
-Idaho,387,0,0,0,18,18,1
 Montana,388,0,0,0,11,0,0
-North Dakota,389,7,0,0,0,17,0
-South Tyrol,39,0,0,14,0,0,0
-South Dakota,390,0,0,0,0,0,0
-Minnesota,391,0,0,0,0,110,0
 Iowa,392,0,0,0,0,0,0
-Michigan,393,6,0,0,0,60,0
-Wisconsin,394,0,0,0,0,53,0
 Illinois,395,0,0,0,0,0,0
 Indiana,396,0,0,0,0,0,0
 Syktyvkar,397,0,0,0,0,0,0
 Perm,398,0,0,6,0,0,0
 Izhevsk,399,0,0,0,0,0,18
-Austria,4,2,0,0,0,0,0
-USSR,40,0,0,0,0,0,0
 Kirov,400,0,0,14,0,0,0
-Engels,401,0,0,0,10,10,0
+Engels,401,0,0,0,10,0,0
 Akhtubinsk,402,0,0,0,0,0,15
 Kharabali,403,0,0,0,0,0,0
 Saykhin,404,0,0,0,0,0,0
@@ -361,32 +472,22 @@ Krasnyy Yar,406,0,0,0,0,0,0
 Uralsk,407,0,0,0,0,0,0
 Vladivostok,408,0,0,0,0,0,20
 Khabarovsk,409,0,0,0,0,0,9
-Madrid,41,0,0,1,0,0,0
 Sistan,410,0,0,0,0,0,0
-Hormozgan,411,12,0,0,0,2,7
-Fars,412,10,0,0,0,0,0
-Khuzestan,413,28,0,0,0,0,0
 Kerman,414,0,0,0,0,0,0
-South Khorasan,1003,0,0,0,0,0,0
+South Khorasan,415,0,0,0,0,0,0
 Razavi Khorasan,416,0,0,0,0,0,0
-Golestan,417,0,0,0,0,4,5
+Golestan,417,0,0,0,0,0,5
 Semnan,418,0,0,0,0,0,0
 Azerbaijan,419,0,0,0,0,0,0
-Rhineland,42,0,0,14,0,50,0
 Gilan,420,0,0,0,0,0,0
-Kurdistan,1001,0,0,0,0,0,0
+Kurdistan,421,0,0,0,0,0,0
 Ceylon,422,0,60,0,0,0,0
 Madras,423,0,19,0,0,0,0
 Andra Pradesh,424,0,0,0,0,0,0
-Mysore,425,0,0,0,0,12,10
-Orissa,426,0,0,1,0,25,20
-Hyderabad,427,0,0,0,0,13,11
-Western Indian States,428,6,0,0,0,0,0
+Mysore,425,0,0,0,0,0,10
+Hyderabad,427,0,0,0,0,0,11
 Bombay,429,0,0,0,26,0,0
-Hungary,43,0,0,40,0,6,0
 Bangladesh,430,0,0,0,0,0,0
-Calcutta,431,0,0,0,11,13,0
-Assam,432,5,0,0,0,0,0
 Rajputana,433,0,0,0,0,0,0
 Arunachal Pradesh,434,0,0,0,49,0,0
 Bihar,435,0,0,0,0,0,0
@@ -394,18 +495,14 @@ Central Provinces,436,0,0,0,0,0,4
 Central Indian Provinces,437,0,0,0,0,0,0
 United Provinces,438,0,0,0,0,0,0
 Delhi,439,0,0,0,0,0,0
-Albania,44,4,0,1,0,0,1
 West Punjab,440,0,0,0,0,0,0
 Kashmir,441,0,0,0,0,0,0
-Peshawar,442,0,0,0,0,3,0
+Peshawar,442,0,0,0,0,0,0
 Sind,443,0,0,0,0,0,0
-Baluchistan States,444,3,0,0,0,0,0
 Quetta,445,0,0,0,0,0,0
 Cairo,446,0,0,0,0,0,0
-Alexandria,447,1,0,0,3,3,0
 Tripoli,448,0,0,0,0,0,0
 Libyan Coast,449,0,0,0,0,0,0
-Yugoslavia,45,0,0,0,0,0,0
 Benghasi,450,0,0,0,0,0,0
 Derna,451,0,0,0,0,0,0
 Marsa Matruh,452,0,0,0,0,0,0
@@ -414,9 +511,6 @@ Israel,454,0,0,0,0,0,0
 Jordan,455,0,0,0,0,0,0
 Luxor,456,0,0,0,0,0,0
 Aswan,457,0,0,0,0,0,0
-Tunisia,458,0,0,0,0,31,0
-Western Algeria,459,0,0,0,0,65,0
-Romania,46,44,0,0,0,0,0
 Eastern Algeria,460,0,0,0,0,0,0
 Northern Morocco,461,0,0,0,0,0,12
 Southern Morocco,462,0,0,0,0,0,0
@@ -427,41 +521,28 @@ Quebec,466,0,0,4,0,0,0
 Manitoba,467,0,0,0,0,0,0
 Nunavut,468,0,0,3,0,0,0
 Saskatchewan,469,0,0,0,0,0,0
-Greece,47,0,0,30,10,3,12
 Alberta,470,0,0,0,0,0,0
 Northwestern Canada,471,0,0,0,0,0,0
 Northwest Territories,472,0,0,0,0,0,0
-British Columbia,473,1,0,0,0,0,0
 Yucatan,474,0,0,0,0,0,0
 Chiapas,475,0,0,0,0,0,0
-Oaxaca,476,8,0,0,0,0,0
-Veracruz,477,9,0,0,0,0,0
 Nayarit,478,0,0,0,8,0,0
-Tamaulipas,479,9,0,0,0,2,0
-Bulgaria,48,0,0,2,0,0,0
-Coahuila,480,8,0,0,0,4,0
 Sinaloa,481,0,0,0,0,0,0
 Chihuahua,482,0,0,0,0,0,0
 Sonora,483,0,0,0,0,0,0
 Baja California,484,0,0,0,0,0,0
-Guerrero,485,0,0,0,0,4,0
 Meta,486,0,0,0,0,0,0
 Amazinas,487,0,0,0,0,0,0
 Bolivar,488,0,0,0,0,0,0
-Monagas,489,35,0,0,0,0,0
-Turkey,49,0,0,0,0,28,11
 Pastaza,490,0,0,0,0,0,0
 Loreto,491,0,0,0,0,0,0
 Piura,492,0,0,0,6,0,0
-La Libertad,493,15,0,0,0,0,0
 Ucayali,494,0,0,0,0,0,0
 Amazonas,495,0,0,0,0,0,0
-Para,496,0,0,0,0,3,0
+Para,496,0,0,0,0,0,0
 Maranhao,497,0,13,0,0,0,0
 Rio Grande,498,0,0,0,3,0,0
 Bahia,499,0,0,0,0,0,3
-Germany,5,0,0,0,0,0,0
-Baden,50,0,0,6,0,0,0
 Rio de Janerio,500,0,0,0,0,0,0
 Saol Paulo,501,0,0,0,0,0,0
 Rio Grande Sul,502,0,0,0,0,0,0
@@ -469,43 +550,26 @@ Santa Catarina,503,0,0,0,0,0,0
 Iguacu,504,0,0,0,0,0,0
 Goias,505,0,0,3,0,0,3
 Northern Chile,506,0,0,0,42,0,0
-Southern Chile,507,2,0,0,0,0,0
 Argentine Northwest,508,0,0,0,0,0,0
-Gran Chaco,509,0,0,0,30,4,0
-Moselland,51,0,0,0,0,35,0
-Mesopotamia,510,2,3,0,0,0,0
 Cuyo,511,0,0,0,0,0,0
-Patagonia,512,3,0,0,0,0,0
 Southern Algeria,513,0,0,0,0,0,0
 North Africa,514,0,0,0,0,0,0
 Central Africa,515,0,0,0,0,0,0
 Northern Siberia,516,0,0,0,0,0,0
-Victoria,517,0,0,0,0,8,4
+Victoria,517,0,0,0,0,0,4
 Tasmania,518,0,0,0,0,0,0
 South Australia,519,0,0,0,0,0,0
-Wuttemberg,52,0,0,18,0,0,0
-Northern Territory,520,0,0,0,0,22,0
+Northern Territory,520,0,0,0,0,0,0
 Queensland,521,0,0,0,24,0,0
 Western Australia,522,0,0,0,0,0,0
 New Guinea,523,0,0,0,0,0,0
 Taiwan,524,0,0,0,0,0,0
 South Korea,525,0,0,0,0,0,0
 Okinawa,526,0,0,0,0,0,0
-North Korea,527,0,0,0,28,18,0
-Nagasaki,528,0,0,0,0,0,52
-Hiroshima,529,0,0,0,0,0,0
-Oberbayern,53,0,0,0,0,0,0
 Tokushima,530,0,0,0,0,0,0
-Osaka,531,0,0,3,0,0,0
-Nagoya,532,0,0,0,0,0,0
-Akita,533,0,0,0,0,27,0
-Niigata,534,0,0,0,0,0,0
-Nagano,535,0,0,0,8,27,0
-Hokkaido,536,0,0,0,0,0,0
-South Sakhalin,537,3,0,0,0,0,0
+Nagano,535,0,0,0,8,0,0
 Cameroun,538,0,5,0,0,0,0
 Gabon,539,0,0,0,0,0,0
-Bayreuth,54,0,0,0,0,0,0
 Angola,540,0,0,0,0,0,0
 South West Africa,541,0,0,0,0,0,0
 Bechuana Land,542,0,0,0,0,0,90
@@ -516,8 +580,7 @@ Tanganyika,546,0,2,0,0,0,0
 East Africa,547,0,0,0,0,0,0
 Uganda,548,0,3,0,0,0,0
 Sudan,549,0,0,0,0,0,0
-Nassau,55,0,0,0,0,0,0
-Eritrea,550,0,0,0,0,2,0
+Eritrea,550,0,0,0,0,0,0
 Khartoum,551,0,0,0,0,0,0
 Western Egypt,552,0,0,0,0,0,0
 Lebanon,553,0,0,0,0,0,0
@@ -526,19 +589,17 @@ Lagos,555,0,0,0,0,0,0
 Mali,556,0,0,0,0,0,0
 Mauritania,557,0,0,0,0,0,0
 Nigeria,558,0,2,0,0,0,0
-Somaliland,559,0,0,0,0,1,0
-Weser-Ems,56,0,0,0,0,0,0
-TS 2,560,0,0,0,0,18,0
+Somaliland,559,0,0,0,0,0,0
+TS 2,560,0,0,0,0,0,0
 TS 3,561,0,0,0,0,0,0
 TS 4,562,0,0,0,0,0,0
-TS 5,563,0,0,0,0,9,8
-TS 6,564,0,0,4,10,10,12
-TS 7,565,0,0,0,0,10,5
-TS 8,566,0,0,7,0,20,0
+TS 5,563,0,0,0,0,0,8
+TS 6,564,0,0,4,10,0,12
+TS 7,565,0,0,0,0,0,5
+TS 8,566,0,0,7,0,0,0
 TS 9,567,0,0,26,0,0,0
 TS 10,568,0,0,0,0,0,0
 TS 11,569,0,0,0,0,0,0
-Westfalen,57,0,0,0,0,0,0
 TS 12,570,0,0,0,0,0,0
 TS 13,571,0,0,0,0,0,0
 TS 14,572,0,0,0,0,0,0
@@ -546,44 +607,31 @@ Ts 15,573,0,0,0,0,0,23
 Siberia 1,574,0,0,0,0,0,0
 Siberia 2,575,0,0,0,0,0,0
 Siberia 3,576,0,0,0,0,0,0
-Siberia 4,577,13,0,0,0,0,0
 Siberia 5,578,0,0,0,0,0,0
 Siberia 6,579,0,0,0,0,0,0
-Schleswig - Holstein,58,0,0,0,0,0,0
 Siberia 7,580,0,0,0,0,0,0
 Northern Urals,581,0,0,27,0,0,40
-Sourthern Urals,582,6,0,0,0,40,0
 Kazakhstan,583,0,0,0,0,0,0
 Turkmenistan,584,0,0,0,0,0,0
 Uzbekistan,585,0,0,0,0,0,0
-Kyrgyzstan,586,0,0,10,4,20,12
+Kyrgyzstan,586,0,0,10,4,0,12
 Western Kazakstan,587,0,0,0,0,0,0
 Some Mountains,588,0,0,0,0,0,10
 Eastern Kazakhstan,589,0,0,0,0,0,0
-Ost - Hannover,59,2,0,0,0,0,0
 Northern Kazakhstan,590,0,0,0,0,0,0
 Hainan,591,0,0,0,0,0,0
-Guangzhou,592,0,0,0,8,15,3
-Guangdong,593,0,0,0,15,15,3
-Nanning,594,0,0,0,11,8,3
 Fujian,595,0,0,0,0,0,0
 Zhejiang,596,0,0,0,0,0,0
 Shandong,597,0,0,0,0,0,0
 Jiansu,598,0,0,0,0,0,0
-Guanxi,599,0,0,0,15,15,3
-Belgium,6,0,0,0,0,4,0
-Sud-Hannover,60,0,0,0,3,9,3
 Jiangxi,600,0,0,0,0,0,0
-China 1,601,2,0,0,0,0,0
 China 2,602,0,0,0,6,0,0
 China 3,603,0,0,0,0,0,0
 China 4,604,0,0,0,0,0,0
-China 5,605,0,0,0,0,14,0
-China 6,606,0,0,0,0,11,0
+China 5,605,0,0,0,0,0,0
 China 7,607,0,0,0,0,0,0
 Beijing,608,0,0,0,0,0,0
 China 8,609,0,0,0,0,0,0
-Mecklenburg,61,0,0,0,0,0,0
 China 9,610,0,0,0,0,0,0
 China 10,611,0,0,0,0,0,0
 China 11,612,0,0,0,0,0,0
@@ -594,10 +642,9 @@ China 14,616,0,0,0,0,0,0
 Xinjiang,617,0,0,0,0,0,0
 China 15,618,0,0,0,0,0,0
 China 16,619,0,0,2,0,0,2
-Pommern,62,0,0,0,0,0,0
 China 17,620,0,0,0,0,0,0
 China 18,621,0,0,0,0,0,0
-China 19,622,0,0,0,3,3,0
+China 19,622,0,0,0,3,0,0
 Luzon,623,0,1,0,0,0,0
 Central islands,624,0,0,0,0,0,0
 Samar,625,0,0,0,0,0,0
@@ -605,7 +652,6 @@ Palawan,626,0,0,0,0,0,0
 Mindanao,627,0,0,0,0,0,0
 Cebu,628,0,0,0,0,0,0
 Hawaii,629,0,0,0,0,0,0
-WestPrussen,63,0,0,6,0,7,0
 Johnston Atoll,630,0,0,0,0,0,0
 Midway Island,631,0,0,0,0,0,0
 Wake Island,632,0,0,0,0,0,0
@@ -616,7 +662,6 @@ Fiji,636,0,0,0,0,0,0
 State 1,637,0,0,0,0,0,0
 Guam,638,0,0,0,0,0,0
 Maiana,639,0,0,0,0,0,0
-Brandenburg,64,0,0,0,0,0,0
 Mandalay,640,0,0,0,120,0,0
 Tahiti,641,0,0,0,0,0,0
 Phoenix Island,642,0,0,0,0,0,0
@@ -627,64 +672,52 @@ Saipan,646,0,0,0,0,0,0
 Palau,647,0,0,0,0,0,0
 Marcus Island,648,0,0,0,0,0,0
 Galapagos Islands,649,0,0,0,0,0,0
-Sachsen,65,0,0,0,0,41,0
 Attu Island,650,0,0,0,0,0,0
 Sov state 5,651,0,0,0,0,0,0
-Sov state 6,652,0,0,0,0,20,0
+Sov state 6,652,0,0,0,0,0,0
 Sov state 7,653,0,0,0,0,0,0
 sov state 8,654,0,0,0,0,0,0
 North Sakhalin,655,0,0,0,0,0,0
 Kuwait,656,0,0,0,0,0,0
-Border state,657,0,0,0,0,18,0
-Arab UK 1,658,5,0,0,0,0,0
+Border state,657,0,0,0,0,0,0
 Arabian UK 2,659,0,0,0,0,0,0
-Niederschlesien,66,0,0,16,0,10,0
 Equatorial Africa,660,0,3,0,0,0,0
 Tripolitania,661,0,0,0,0,0,0
 Sirte,662,0,0,0,0,0,0
 Cyrenaica,663,0,0,0,0,0,0
-Southern Slovakia,664,0,0,0,0,13,3
+Southern Slovakia,664,0,0,0,0,0,3
 Gabes,665,0,0,0,0,0,0
-Norrnorrland,666,0,0,0,44,50,25
+Norrnorrland,666,0,0,0,44,0,25
 Lesser  Sunda Islands,667,0,12,0,0,0,0
 The Moluccas,668,0,0,0,0,0,0
 Dutch New Guinea,669,0,0,0,0,0,0
-Oberschlesien,67,0,0,6,0,8,0
 Laos,670,0,0,0,0,0,0
 Annam,671,0,0,0,27,0,6
-Sumatra,672,12,150,28,0,0,0
 Sulawesi,673,0,30,0,0,0,0
 Central Australia,674,0,0,0,0,0,0
 Al Hajara,675,0,0,0,0,0,0
-Mosul,676,8,0,0,0,0,0
 Aleppo,677,0,0,0,0,0,0
 Rub al Khali,678,0,0,0,0,0,0
 Hejaz,679,0,0,0,0,0,0
-Wartheland,68,0,0,15,0,0,0
 Deir-az-Zur,680,0,0,0,0,0,0
 Soviet Lakes,681,0,0,0,0,0,0
-Northern Ontario,682,0,0,9,0,8,0
+Northern Ontario,682,0,0,9,0,0,0
 Northeastern Canada,683,0,0,7,0,0,0
 Caroline Islands,684,0,0,0,0,0,0
 Panama Canal,685,0,0,0,0,0,0
 Puerto Rico,686,0,0,0,0,0,0
 British Guyana,687,0,0,64,0,0,0
-Chaco Boreal,688,0,0,0,3,2,0
+Chaco Boreal,688,0,0,0,3,0,0
 Jamaica,689,0,0,0,0,0,0
-Sudatenland,69,0,0,0,0,4,0
 Bahama Islands,690,0,0,0,0,0,0
-Trinidad,691,12,0,0,0,0,0
 Windward Islands,692,0,0,0,0,0,0
 Southern Bahamas,693,0,0,0,0,0,0
 French Caribbean,694,0,0,0,0,0,0
-Curacao,695,35,0,0,0,0,0
+Curacao,695,0,0,0,0,0,0
 Bermuda,696,0,0,0,0,0,0
 Madeira,697,0,0,0,0,0,0
 Azores,698,0,0,0,0,0,0
 Rio de Oro,699,0,0,0,0,0,0
-Holland,7,0,0,0,0,4,0
-Slovakia,70,0,0,0,1,0,0
-Sierra Leone,700,0,0,0,0,32,0
 Gambia,701,0,0,0,0,0,0
 Cape Verde,702,0,0,0,0,0,0
 Ascension,703,0,0,0,0,0,0
@@ -694,18 +727,15 @@ Reunion,706,0,0,0,0,0,0
 Mauritius,707,0,0,0,0,0,0
 Comoro Islands,708,0,0,0,0,0,0
 Seychelles,709,0,0,0,0,0,0
-East Slovakia,71,0,0,0,0,0,0
 Diego Garcia,710,0,0,0,0,0,0
 Christmas Island,711,0,0,0,0,0,0
 Cocos Islands,712,0,0,0,0,0,0
 Kerguelen,713,0,0,0,0,0,0
 Heilungkiang,714,0,0,0,0,0,0
 Liaoning,715,0,0,0,0,0,0
-Liaotung,716,0,0,0,0,27,0
 Chuho,717,0,0,0,0,0,0
 Stanleyville,718,0,3,0,0,0,0
 Natal,719,0,0,0,0,0,60
-Zaolzie,72,0,0,0,0,0,0
 South Georgia,720,0,0,0,0,0,0
 Portuguese Timor,721,0,0,0,0,0,0
 Petsamo,722,0,0,0,0,0,0
@@ -716,7 +746,6 @@ Samoa,726,0,0,0,0,0,0
 Line Islands,727,0,0,0,0,0,0
 Guangzhouwan,728,0,0,0,0,0,0
 Macau,729,0,0,0,0,0,0
-Carpathian Ruthenia,73,0,0,0,0,0,0
 St Pierre and Miquelon ,730,0,0,0,0,0,0
 Central Macedonia,731,0,0,0,0,0,0
 Pamir,732,0,0,0,0,0,0
@@ -727,10 +756,9 @@ Litorale,736,0,0,0,0,0,0
 New Britain,737,0,0,0,0,0,0
 Aru Islands,738,0,0,0,0,0,0
 Haida Gwaii,739,0,0,0,0,0,0
-East Sudatenland,74,0,0,0,0,0,0
 Vancouver Island,740,0,0,0,0,0,0
 Cambodia,741,0,0,0,0,0,0
-Stalinabad,742,0,0,0,0,3,0
+Stalinabad,742,0,0,0,0,0,0
 Qingdao,743,0,0,0,0,0,0
 Xian,744,0,0,0,0,0,0
 Dalian,745,0,0,0,0,0,0
@@ -738,7 +766,6 @@ Ordos,746,0,0,0,0,0,0
 Dali Bai,747,0,0,0,0,0,0
 Zunyi,748,0,0,0,0,0,0
 Huangshan,749,0,0,0,0,0,0
-Moravia,75,2,0,0,0,4,0
 Changde,750,0,0,0,0,0,0
 Liangshan,751,0,0,0,0,0,0
 Chamdo,752,0,0,0,0,0,0
@@ -749,10 +776,8 @@ Jiuquan,756,0,0,0,0,0,0
 Shigatse,757,0,0,0,0,0,0
 Ngari,758,0,0,0,0,0,0
 Kunlun,759,0,0,0,0,0,0
-Northern Transylvania,76,0,0,0,0,0,0
 Dabancheng,760,0,0,0,0,0,0
 Hulunbuir,761,0,0,0,0,0,0
-Katowice,762,0,0,7,0,19,0
 Konigsberg,763,0,0,0,0,0,0
 West Banat,764,0,0,0,0,0,0
 Qatar,765,0,0,0,0,0,0
@@ -760,7 +785,6 @@ Southern Bessarabia,766,0,0,0,0,0,0
 North Darfur,767,0,0,0,0,0,0
 Rwanda,768,0,0,0,3,0,0
 Burundi,769,0,0,0,0,0,0
-Dobrogea,77,0,0,0,0,0,0
 Malawi,770,0,0,0,0,0,0
 Zambia,771,0,0,0,4,0,18
 Middle Congo,772,0,2,0,0,0,0
@@ -771,41 +795,34 @@ Dahomey,776,0,0,0,0,0,0
 Togo,777,0,0,0,0,0,0
 Upper Volta,778,0,0,0,0,0,0
 Ivory Coast,779,0,0,0,0,0,0
-Bessarabia,78,0,0,0,0,0,0
 Guinea,780,0,0,0,0,0,0
 Niger,781,0,0,0,0,0,0
 Tombouctou,782,0,0,0,0,0,0
 Sidi Ifni,783,0,0,0,0,0,0
 Ermland-Masuren,784,0,0,0,0,0,0
-Picardy,785,0,0,4,0,12,0
+Picardy,785,0,0,4,0,0,0
 Mauritanian Desert,786,0,0,0,0,0,0
 North Kashmir,787,0,0,0,0,0,0
 Salamanca,788,0,0,0,10,0,0
 Cordoba,789,0,0,0,0,0,0
-moldovia,79,0,0,0,0,0,0
 Asturias,790,0,0,0,0,0,0
 Valladolid,791,0,0,0,10,0,0
-Basque Country,792,0,0,0,0,8,0
+Basque Country,792,0,0,0,0,0,0
 Guadalajara,793,0,0,0,0,0,0
 Eastern Aragon,794,0,0,0,0,0,0
 Santarem,795,0,0,0,0,0,20
 North Angola,796,0,0,0,0,0,0
-Istanbul,797,0,0,0,0,10,45
+Istanbul,797,0,0,0,0,0,45
 Amasya,798,0,0,0,0,0,0
 Hatay,799,0,0,0,0,0,0
-Luxemburg,8,0,0,0,0,14,0
-Bocovina,80,0,0,0,0,0,0
 Van,800,0,0,0,0,0,0
-Moesia,801,1,0,0,0,0,0
-Kosovo,802,0,0,0,0,2,0
+Kosovo,802,0,0,0,0,0,0
 Southern Serbia,803,0,0,0,0,0,0
 Herzegovina,804,0,0,7,0,0,0
-Northern Epirus,805,0,0,0,0,10,45
+Northern Epirus,805,0,0,0,0,0,45
 French Basque Country,806,0,0,0,0,0,0
 Gdynia,807,0,0,0,0,0,0
-Riga,808,0,0,0,0,1,0
 Latgale,809,0,0,0,0,0,0
-Oltenia,81,0,0,0,0,0,0
 Zemgale,810,0,0,0,0,0,0
 Saaremaa,811,0,0,0,0,0,0
 Tallinn,812,0,0,0,0,0,0
@@ -816,18 +833,14 @@ West Virginia,816,0,0,0,0,0,0
 Gobi,817,0,0,0,0,0,0
 Khovd,818,0,0,0,0,0,0
 Dornod,819,0,0,0,0,0,0
-Banat,82,0,0,4,0,0,0
 Khovsgol,820,0,0,0,0,0,0
-Chenchnya-Ingushetia,821,9,0,0,0,0,0
 Chukotka,822,0,0,0,0,0,0
 Karakalpakstan,823,0,0,0,0,0,0
 Yamalia,824,0,0,0,0,0,0
-Nenetsia,825,7,0,0,0,0,0
 Abkhazia,826,0,0,0,0,0,0
 Kabardino-Balkaria,827,0,0,0,0,0,17
 North Ossetia,828,0,0,0,0,0,8
-Volga Germany,829,0,0,0,6,14,0
-crisana,83,0,0,0,0,0,0
+Volga Germany,829,0,0,0,6,0,0
 Bukhara,830,0,0,0,0,0,0
 Khiva,831,0,0,0,0,0,0
 Dashhowuz,832,0,0,0,0,0,0
@@ -838,7 +851,6 @@ Bale,836,0,0,0,0,0,0
 Sidamo,837,0,3,0,0,0,0
 Illubabor,838,0,2,0,0,0,0
 Welega,839,0,0,0,0,0,0
-Transylvania,84,0,0,0,0,3,0
 Gojjam,840,0,0,0,0,0,0
 Begemder,841,0,0,0,0,0,0
 Tigray,842,0,0,0,0,0,0
@@ -849,7 +861,6 @@ Ticino,846,0,0,15,0,0,0
 Western Swiss Alps,847,0,0,0,0,0,0
 Voralberg,848,0,0,0,0,0,0
 Puglia,849,0,0,0,0,0,0
-Danzig,85,0,0,0,0,0,0
 Trentino,850,0,0,0,0,0,0
 Var,851,0,0,0,0,0,0
 Istria,852,0,0,0,0,0,0
@@ -859,8 +870,6 @@ Tabuk,855,0,0,0,0,0,0
 Asir-Makkah,856,0,0,0,0,0,0
 Ha'il,857,0,0,0,0,0,0
 Najiran,858,0,0,0,0,0,0
-Dammam,859,3,0,0,0,0,0
-Poznan,86,0,0,0,0,0,0
 Cote-Nord,860,0,0,0,0,0,0
 Saguenay,861,0,0,0,0,0,0
 ouest du quebec,862,0,0,0,0,0,0
@@ -871,7 +880,6 @@ Districts of Ontario,866,0,0,0,0,0,0
 Northern Manitoba,867,0,0,0,0,0,0
 Isan,868,0,0,0,0,0,0
 Lanna,869,0,0,0,0,0,0
-Lodz,87,0,0,0,0,0,0
 North West Australia,870,0,0,0,0,0,0
 South West Australia,871,0,0,0,0,0,0
 North Queensland,872,0,0,0,0,0,0
@@ -882,7 +890,6 @@ Udachny,876,0,0,0,0,0,0
 Verkhoyansk,877,0,0,0,0,0,0
 Khatangsky,878,0,0,0,0,0,0
 Kargopol,879,0,0,0,0,0,0
-Kielce,88,3,0,0,0,5,0
 Kotlas,880,0,0,0,0,0,0
 Karagandy,881,0,0,0,0,0,0
 Pavlodar,882,0,0,0,0,0,6
@@ -893,7 +900,6 @@ Blue Nile,886,0,0,0,0,0,0
 South Darfur,887,0,0,0,0,0,0
 Lusambo,888,0,0,0,0,0,0
 Elisabethville,889,0,0,0,2,0,0
-Krakow,89,0,0,0,0,0,0
 Costermansville,890,0,3,0,0,0,0
 Zambesi,891,0,1,0,0,0,0
 South West Angola,892,0,0,0,0,0,0
@@ -904,8 +910,6 @@ Manica e Sofala,896,0,0,0,0,0,0
 Zambezia-Mocambique,897,0,0,0,0,0,0
 Gao,898,0,0,0,0,0,0
 Kayes-Koulikoro,899,0,0,0,0,0,0
-Czechoslovakia,9,0,0,0,0,5,0
-Lwow,90,0,0,0,0,8,0
 Benue,900,0,0,0,0,0,0
 Borno,901,0,0,0,0,0,0
 Sokoto,902,0,0,0,0,0,0
@@ -916,31 +920,27 @@ Socotra,906,0,0,0,0,0,0
 Cairo,907,0,0,0,0,0,0
 Afar,908,0,0,0,0,0,0
 South Schleswig,909,0,0,0,0,0,0
-Tarnopol,91,0,0,0,0,0,0
 Bornholm,910,0,0,0,0,0,0
 Fyn,911,0,0,0,0,0,0
 Sonderjylland,912,0,0,0,0,0,0
-Ostergotland,913,0,0,0,0,3,0
+Ostergotland,913,0,0,0,0,0,0
 JanMayen,914,0,0,0,0,0,0
 Bohuslan,915,0,0,0,0,0,0
-Dalarna,916,0,0,0,0,20,0
-Jamtland,917,0,0,0,0,20,0
-Vasterbotten,918,0,0,0,35,39,15
-Varmland,919,0,0,0,0,4,0
-Lublin,92,0,0,0,0,0,0
+Dalarna,916,0,0,0,0,0,0
+Jamtland,917,0,0,0,0,0,0
+Varmland,919,0,0,0,0,0,0
 Opplandene,920,0,0,5,0,0,0
 Telemark,921,0,0,0,0,0,0
 Agder,922,0,0,5,0,0,0
-Helgeland,923,0,0,0,5,3,0
+Helgeland,923,0,0,0,5,0,0
 Troms,924,0,0,0,5,0,0
 Finnmark,925,0,0,0,5,0,0
 Turku,926,0,0,0,0,0,0
 Hame,927,0,0,0,0,0,0
 Kyme,928,0,0,0,0,0,0
 Oulu,929,0,0,0,0,0,0
-Volhynian,93,0,0,0,0,0,0
 Mikkeli,930,0,0,0,0,0,0
-Cumbria,931,0,0,5,0,20,0
+Cumbria,931,0,0,5,0,0,0
 Isle of Man,932,0,0,0,0,0,0
 Shetland,933,0,0,0,0,0,0
 Shkoder,934,0,0,1,0,0,1
@@ -949,29 +949,19 @@ Pernambuco,936,0,0,0,0,0,0
 Piaui,937,0,0,0,0,0,0
 Para,938,0,10,0,0,0,0
 Amapa,939,0,0,4,0,0,0
-Polesie,94,0,0,0,0,0,0
 Acre,940,0,0,6,0,0,0
 Tocantins,941,0,0,0,0,0,0
 Rondonia,942,0,0,0,0,0,0
-Espirito Santo,943,0,0,0,0,1,0
+Espirito Santo,943,0,0,0,0,0,0
 Parana,944,0,0,0,0,0,0
-Cerro Largo,945,0,0,0,0,2,0
-Paysandu,946,3,0,0,0,0,0
+Cerro Largo,945,0,0,0,0,0,0
 Tacna,947,0,0,0,2,0,0
 Easter Island,948,0,0,0,0,0,0
-Aysen,949,1,0,1,0,0,0
-Nowogrodek,95,0,0,0,0,0,0
-Araucania,950,0,0,0,0,24,0
+Araucania,950,0,0,0,0,0,0
 Arica,951,0,0,0,14,0,0
 Atacama,952,0,0,0,0,0,0
-Tierra del Fuego,953,1,0,0,0,0,0
-Santa Cruz,954,3,0,0,0,0,0
-Chubut,955,4,0,0,0,0,0
-Santa Fe,956,6,0,0,0,0,0
-Formosa,957,0,0,0,5,2,0
 San Luis,958,0,0,0,0,0,0
 Los Andes,959,0,0,0,0,0,0
-Wilejka,96,0,0,0,0,0,0
 San Juan,960,0,0,0,0,0,0
 Deep Amazonas,961,0,0,0,0,0,0
 Deep Amazonas,962,0,0,0,0,0,0
@@ -982,19 +972,16 @@ Deep Amazonas,966,0,0,0,0,0,0
 Deep Amazonas,967,0,0,0,0,0,0
 Deep Amazonas,968,0,0,0,0,0,0
 Rio Branco,969,0,0,0,0,0,0
-Bialystok,97,0,0,0,0,0,0
 Western Macedonia,970,0,0,6,0,0,20
 Northern Dobruja,971,0,0,0,0,0,0
-South Sudetenland,972,0,0,0,0,2,0
+South Sudetenland,972,0,0,0,0,0,0
 Bacs,973,0,0,0,0,0,0
-South Transdanubia,974,1,0,20,0,0,0
 Burgenland,975,0,0,0,0,0,0
-Steiermark Karnten,976,0,0,1,0,15,0
-Antwerp,977,0,0,0,0,10,0
+Steiermark Karnten,976,0,0,1,0,0,0
+Antwerp,977,0,0,0,0,0,0
 Actual Baden,978,0,0,6,0,0,0
 Kaiser Wilhelms Land,979,0,0,0,0,0,0
-Mazurskie,98,0,0,0,0,0,0
-Ardennes,980,0,0,0,0,9,0
+Ardennes,980,0,0,0,0,0,0
 Barotseland,981,0,0,0,4,0,16
 Madras States,982,0,2,0,0,0,0
 Deccan States,983,0,0,0,0,0,0
@@ -1004,7 +991,6 @@ East Punjab,986,0,0,0,0,0,0
 Waziristan,987,0,0,0,0,0,0
 Baluchistan,988,0,0,0,0,0,0
 Bahawalpur,989,0,0,0,0,0,0
-Jutland,99,0,0,0,0,0,0
 Manipur,990,0,0,0,0,0,0
 Gwalior,991,0,0,0,0,0,0
 Province of Aden,992,0,0,0,0,0,0
@@ -1015,3 +1001,17 @@ Irrawaddy,996,0,0,0,0,0,0
 Arakan,997,0,0,0,0,0,0
 Sagaing,998,0,0,0,0,0,0
 Federated Shan States,999,0,0,0,0,0,0
+East Azerbaijan,1000,0,0,0,0,0,0
+Kurdistan,1001,0,0,0,0,0,0
+Yazd,1002,0,0,0,0,0,0
+South Khorasan,1003,0,0,0,0,0,0
+North Khorasan,1004,0,0,0,0,0,0
+Qataghan,1005,0,0,0,0,0,3
+Khyber Pass,1006,0,0,0,0,0,0
+Maymanah,1007,0,0,0,0,0,0
+Qandahar,1008,0,0,0,0,0,0
+Farah,1009,0,0,0,0,0,7
+Al Basrah,1011,0,0,7,0,0,0
+Kalat,1012,0,0,0,0,0,0
+Bahrain,1014,0,0,0,0,0,0
+Dhofar,1016,0,0,0,0,0,0
